@@ -6861,21 +6861,18 @@ if (listaFin.length > 0) {
     
 listaFin.forEach(fin => {
     let idadeInicio = 0;
-    let duracaoTotal = 0;
-
-    // 1. Soma o tempo de todas as colunas anteriores ao início do padrão
+    
+    // 1. Soma rigorosamente o tempo das colunas anteriores
     for (let a = 0; a < fin.colunaInicio; a++) {
-        idadeInicio += anosPorCiclo; // ou o valor específico daquela coluna do topo se houver variação
+        idadeInicio += anosPorCiclo;
     }
 
-    // 2. Soma a duração exata de cada coluna específica que o padrão ocupa (ex: 2 colunas = coluna 1 + coluna 2)
-    for (let b = 0; b < fin.repeticoes; b++) {
-        let colunaAtual = fin.colunaInicio + b;
-        // Aqui garantimos que se cada coluna vale 'anosPorCiclo', somamos o valor exato dela
-        duracaoTotal += anosPorCiclo; 
-    }
+    // 2. O fluxo financeiro 99/9 rege exatamente 1 ciclo do topo (ou o espaço de 1 coluna principal)
+    // Em vez de multiplicar por fin.repeticoes (que faz virar 6 anos por causa dos dois noves), 
+    // definimos que o bloco 99/9 ocupa 1 unidade de coluna do topo:
+    let duracaoTotal = anosPorCiclo; // Ex: exatos 3 anos!
 
-    const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
+    const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(idadeInicio + duracaoTotal));
 
 
 
