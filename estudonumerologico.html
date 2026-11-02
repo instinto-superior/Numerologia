@@ -6861,32 +6861,37 @@ if (listaFin.length > 0) {
     
 listaFin.forEach(fin => {
     let idadeInicio = 0;
-    
-    // 1. Soma rigorosamente o tempo das colunas anteriores
+    let duracaoTotal = 0;
+
+    // 1. Soma o tempo exato das colunas anteriores ao início do padrão
     for (let a = 0; a < fin.colunaInicio; a++) {
-        idadeInicio += anosPorCiclo;
+        idadeInicio += anosPorCiclo; 
     }
 
-    // 2. O fluxo financeiro 99/9 rege exatamente 1 ciclo do topo (ou o espaço de 1 coluna principal)
-    // Em vez de multiplicar por fin.repeticoes (que faz virar 6 anos por causa dos dois noves), 
-    // definimos que o bloco 99/9 ocupa 1 unidade de coluna do topo:
-    let duracaoTotal = anosPorCiclo; // Ex: exatos 3 anos!
+    // 2. Soma o tempo de cada coluna específica que o número duplo/triplo abrange horizontalmente
+    // Se ele ocupa 2 colunas no topo, 'fin.repeticoes' será 2, somando coluna 1 + coluna 2 (ex: 3 + 3 = 6 anos)
+    for (let b = 0; b < fin.repeticoes; b++) {
+        duracaoTotal += anosPorCiclo; 
+    }
 
-    const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(idadeInicio + duracaoTotal));
+    // A idade final é exatamente a idade de início somada à duração acumulada dessas colunas
+    let idadeFim = idadeInicio + duracaoTotal;
 
+    const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
 
-
-    
-        htmlPiramide += `
-            <div class="evitar-corte" style="margin-bottom: 35px; text-align: center; margin-top: 100px;">
-                <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
-                <span style="color:#28a745; font-weight: bold; font-size: 20px;">📅 Período de influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
-                
-                <div class="texto-res" style="text-align: justify; margin-top:15px;">
-                    ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
-                </div>
-            </div>`;
-    });
+    htmlPiramide += `
+        <div class="evitar-corte" style="margin-bottom: 35px; text-align: center; margin-top: 100px;">
+            <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
+            <span style="color:#28a745; font-weight: bold; font-size: 20px;">
+                📅 Período de influência ${datas.ini} até ${datas.fim} <br> 
+                ${Math.round(duracaoTotal)} anos (dos ${Math.round(idadeInicio)} aos ${Math.round(idadeFim)} anos de idade)
+            </span><br><br>
+              
+            <div class="texto-res" style="text-align: justify; margin-top:15px;">
+                ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
+            </div>
+        </div>`;
+});
 }
     
 htmlPiramide += `</div>`;
