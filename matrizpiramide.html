@@ -1059,7 +1059,81 @@ input[type="text"], select {
     box-sizing: border-box; 
 }     
         
+   .menu-abas-vertical {
+    display: flex;
+    flex-direction: column; /* Força o empilhamento vertical */
+    width: 210% !important;     /* Força a largura máxima */
+    max-width: 100% !important; /* Garante que não ultrapasse a tela */
+    background: #d97a1e;    /* Cor de fundo para destacar */
     
+    padding: 10px;
+    margin-top: 20px;       /* Distância do relatório acima */
+    border-top: 2px solid #000;
+    font-size: 24px; 
+}
+
+.menu-abas-vertical button {
+    /* Faz o botão ocupar toda a largura disponível do container pai */
+    width: 100%; 
+    
+    /* Define o tamanho da fonte (ex: 16px, 1.2rem, etc) */
+    font-size: 22px; 
+    color: #000000;
+    padding: 15px;
+    margin: 5px 0;
+    text-align: center; /* Se quiser alinhar à esquerda, troque para 'left' */
+    background: #d97a1e;
+    border: 1px solid #000;
+    cursor: pointer;
+    
+    /* Importante para que o padding não faça o botão ultrapassar o limite do container */
+    box-sizing: border-box; 
+}
+    
+
+/* 1. Garante que qualquer div que contenha aba OCUPE O ESPAÇO TOTAL */
+.conteudo-aba {
+    width: 210mm !important;     /* Força a largura máxima */
+    max-width: 210mm !important; /* Garante que não ultrapasse a tela */
+    display: none;              /* O padrão é escondido */
+    box-sizing: border-box;     /* Importante: para o padding não estourar a tela */
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. Quando a aba estiver ativa, ela TEM que ser um bloco que ocupa a tela */
+.conteudo-aba.ativa {
+    display: block !important;
+}
+
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-abas button {
+        width: 210% !important;  
+        font-size: 18px; 
+        display: block !important;     /* Garante que ocupe a linha inteira */
+        box-sizing: border-box;        /* Garante que padding não quebre o layout */
+        padding: 15px !important;      /* Ajuste confortável para o toque do dedo */
+        margin: 5px 0 !important;      /* Espaçamento entre eles */
+        text-align: center;            /* Centraliza o texto */
+    }
+}
+    
+/* 3. MANTÉM A ESTRUTURA PARA IMPRESSÃO (NÃO MEXA) */
+@media print {
+    .menu-abas { display: none !important; }
+    .conteudo-aba { display: block !important; width: 210mm !important; }
+}
+/* PDF */
+@media print {
+    .menu-abas { display: none !important; }
+    .conteudo-aba { display: block !important; } /* Mostra tudo no PDF */
+    #capa-numerologica, #conteudo-relatorio { width: 210mm !important; }
+}
+
+    /* Esconde o container travado por padrão, evita que ele apareça antes do tempo */
+    #container-travado { display: none; } 
     
     </style>
 </head>
@@ -2073,6 +2147,151 @@ let dTopo = mDes[mDes.length - 1][0];
 // Agora chamamos a função usando esses valores
 let htmlSinteseFinal = gerarSinteseFinal(vTopo, pTopo, sTopo, dTopo, window.textosSintese);
 
+
+function gerarPlayerYouTube(videoID) {
+    if (!videoID) return '';
+    
+    // Links originais
+    const srcURL = `https://www.youtube.com/embed/${videoID}?rel=0&modestbranding=1`;
+    const linkURL = `https://www.youtube.com/watch?v=${videoID}`;
+
+    // URL de uma imagem de placeholder genérica e bonita (exemplo do YouTube ou do seu repositório)
+    // Você pode substituir por uma imagem hospedada no seu GitHub
+    const imagemPadrao = `https://img.youtube.com/vi/${videoID}/maxresdefault.jpg`;
+
+    // O player para o relatório HTML (mantido)
+    let playerHTML = `
+    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; border: 2px solid #d4af37; margin: 20px 0;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="${srcURL}" frameborder="0" allowfullscreen></iframe>
+    </div>`;
+
+    // O link para o PDF: Agora com uma imagem grande e visual de "Play"
+    let linkPDF = `
+    <div class="link-pdf-apenas" style="display: block; margin: 30px auto; text-align: center; break-inside: avoid; page-break-inside: avoid;">
+         <a href="${linkURL}" target="_blank" style="text-decoration: none;">
+            <div style="position: relative; max-width: 600px; margin: 0 auto; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); border: 3px solid #d4af37;">
+                <img src="${imagemPadrao}" style="width: 100%; display: block;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center;">
+                    <div style="font-size: 60px; color: white; background: rgba(0,0,0,0.6); padding: 10px 25px; border-radius: 50px;">▶</div>
+                </div>
+            </div>
+            <p style="color: #d4af37; font-weight: bold; margin-top: 15px; font-size: 16px;">Clique na imagem para assistir ao vídeo</p>
+         </a>
+    </div>`;
+
+    return playerHTML + linkPDF;
+}
+
+
+        
+
+function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
+    const categoriaDados = textos[chaveNoTexto]; // ex: textos.ciclos
+    if (!categoriaDados) return '';
+
+    let htmlInterno = "";
+
+    // SE FOR OBJETO (Ciclos, Momentos, Desafios)
+    if (typeof resObjeto === 'object') {
+        for (let fase in resObjeto) {
+            let valorFase = resObjeto[fase]; // ex: 3
+            let dadosFase = categoriaDados[fase] ? categoriaDados[fase][valorFase] : null;
+
+            if (dadosFase) {
+                htmlInterno += `
+                <div style="margin-bottom: 20px;">
+                    <h3 style="color: #d97a1e;">Fase ${fase}:</h3>
+                    ${aplicarFiltroTexto(dadosFase.conteudo)}
+                    ${(dadosFase.videoID && dadosFase.videoID.trim() !== "") ? gerarPlayerYouTube(dadosFase.videoID) : ""}
+                </div>`;
+            }
+        }
+    } else {
+        // SE FOR TEXTO SIMPLES (Caminho de Vida, Essência, etc)
+        const dados = categoriaDados[resObjeto];
+        const conteudo = (typeof dados === 'object') ? dados.conteudo : dados;
+        const video = (typeof dados === 'object') ? dados.videoID : null;
+        
+        htmlInterno = `
+            ${aplicarFiltroTexto(conteudo)}
+            ${video ? gerarPlayerYouTube(video) : ""}`;
+    }
+
+    return `
+    <div class="page">
+        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${titulo}</h2>
+        <div class="evitar-corte texto-res">
+            ${htmlInterno}
+        </div>
+    </div>`;
+}
+
+       
+
+function buscarVideoID(categoria, valor, genero) {
+    if (categoria === "equilibrio") return null; 
+
+    // A variável 'BibliotecaVideos' está global ou dentro de 'textos'? 
+    // Como você me mostrou, ela parece ser global no arquivo de textos.
+    // Vamos verificar ambos os locais:
+    
+    // 1. TENTA NA BIBLIOTECA GLOBAL
+    if (typeof BibliotecaVideos !== 'undefined' && BibliotecaVideos[categoria]) {
+        if (BibliotecaVideos[categoria][valor]) {
+            return BibliotecaVideos[categoria][valor];
+        }
+    }
+
+    // 2. BACKUP: TENTA NO OBJETO 'textos' (caso esteja lá dentro)
+    if (typeof textos !== 'undefined' && textos.BibliotecaVideos && textos.BibliotecaVideos[categoria]) {
+        return textos.BibliotecaVideos[categoria][valor] || null;
+    }
+
+    // 3. BACKUP ANTIGO: Tenta buscar no formato antigo dos textos
+    if (typeof textos !== 'undefined' && textos[categoria] && textos[categoria][valor]) {
+        const item = textos[categoria][valor];
+        if (typeof item === 'object' && item.videoID) {
+            return item.videoID;
+        }
+    }
+
+    console.warn(`DEBUG: Nenhum vídeo encontrado para ${categoria}[${valor}]`);
+    return null;
+}
+
+// --- EXTRAÇÃO INTELIGENTE DO CONTEÚDO E VÍDEO ---
+// Esta lógica funciona para QUALQUER item do seu BancoEquilibrioUnificado
+function extrairDadosEquilibrio(dados) {
+    if (typeof dados === 'object' && dados !== null && 'conteudo' in dados) {
+        return {
+            texto: dados.conteudo,
+            video: dados.videoID || null
+        };
+    } else {
+        // Se for string pura, não tem vídeo
+        return {
+            texto: dados || "Conteúdo não disponível.",
+            video: null
+        };
+    }
+}
+
+
+
+/**
+ * Renderiza um bloco de texto com um vídeo opcional abaixo.
+ * @param {string} htmlConteudo - O HTML do texto (parágrafos, títulos).
+ * @param {string|null} videoID - O ID do vídeo do YouTube (opcional).
+ */
+function renderizarBlocoComVideo(htmlConteudo, videoID = null) {
+    return `
+        <div class="bloco-conteudo-dinamico">
+            ${htmlConteudo}
+            ${videoID ? `<div class="container-video" style="margin-top: 20px;">${gerarPlayerYouTube(videoID)}</div>` : ""}
+        </div>
+    `;
+}
+
     
 
     let meuHtml = `  
@@ -2096,14 +2315,50 @@ let htmlSinteseFinal = gerarSinteseFinal(vTopo, pTopo, sTopo, dTopo, window.text
 <div class="no-print" style="position: fixed; top: 10px; left: 10px; z-index: 9999; text-align: center;">
     <button onclick="window.location.href='index.html'" style="background: #d62600; color: white; border: 2px solid white; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; font-weight: bold; font-size: 18px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">X</button>
     <div style="color: white; font-size: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">⬅️ VOLTAR AO PORTAL</div>
-</div>
+</div>`;
 
 
+meuHtml += `<div class="menu-abas">
 
+    <button onclick="abrirAba('tela-sumario')" style="width:100%; margin-bottom:5px; font-size: 22px;">Sumário</button>
+    
+    <button onclick="abrirAba('tela-Capa')" style="width:100%; margin-bottom:5px; font-size: 22px;">Capa</button>
+    
+
+        <button onclick="abrirAba('tela-social')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome Social</button>
+     
+   
 
     
-        
-<div class="container-master">
+    <button onclick="abrirAba('tela-introducao')" style="width:100%; margin-bottom:5px; font-size: 22px;">Introdução: Instinto Superior e Numerologia</button>
+     <button onclick="abrirAba('tela-resultado')" style="width:100%; margin-bottom:5px; font-size: 22px;">SÍNTESE</button>
+
+    <button onclick="abrirAba('tela-parte2')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 1: regentes</button>
+    <button onclick="abrirAba('tela-parte1')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 2: SEQUENCIAS ESPECIAIS</button>
+
+    <button onclick="abrirAba('tela-parte3')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 3: BLOQUEIOS</button>
+
+    <button onclick="abrirAba('tela-parte4')" style="width:100%; margin-bottom:5px; font-size: 22px;">FINANCEIRO/button>
+
+
+    <button onclick="abrirAba('tela-parte5')" style="width:100%; margin-bottom:5px; font-size: 22px;">POTENCIAS/button>
+
+    <button onclick="abrirAba('tela-parte6')" style="width:100%; margin-bottom:5px; font-size: 22px;">FILOSOFIA</button>
+
+  <div id="container-travado">
+       </div>
+
+    <div id="aviso-trava-menu" class="aviso-trava">
+        🔒 AS PARTES 5, 6, 7 E 8 SERÃO LIBERADAS APÓS O PERÍODO DE GARANTIA
+    </div>
+
+  
+</div>`;
+
+    
+          meuHtml += '<div id="tela-Capa" class="conteudo-aba">'; 
+    const idVideocapa = "CQ1bcGIcX_w";   
+meuHtml += renderizarBlocoComVideo(`<div class="container-master">
     <div id="capa-numerologica" style="
             width: 210mm; 
             height: 297.1mm; 
@@ -2151,7 +2406,10 @@ let htmlSinteseFinal = gerarSinteseFinal(vTopo, pTopo, sTopo, dTopo, window.text
     </div>
 
     <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;">
-`;
+`,idVideocapa); 
+
+ 
+html += '</div>';
 
 
     
@@ -2159,7 +2417,7 @@ let htmlSinteseFinal = gerarSinteseFinal(vTopo, pTopo, sTopo, dTopo, window.text
 
 
 
-
+meuHtml += '<div id="tela-sumario" class="conteudo-aba">'; 
     
 // --- PÁGINA 1: SUMÁRIO (AJUSTADA PARA CABER EM UMA FOLHA) ---
 meuHtml += `
@@ -2200,7 +2458,9 @@ meuHtml += `
 </div>
 `;
 
+meuHtml += '</div>';
 
+    meuHtml += '<div id="tela-introducao" class="conteudo-aba">';
 
 meuHtml += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -2564,8 +2824,9 @@ meuHtml += `
 </div>
 `;
     
-
-
+ meuHtml += '</div>';  
+    
+    meuHtml += '<div id="tela-resultado" class="conteudo-aba">';
 
 meuHtml += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -2608,7 +2869,7 @@ meuHtml += `
     </div>
 `;
     
-    
+
 
 // 1. Primeiro, calculamos o conteúdo chamando a função
 // Use as variáveis mVida, mPes, mSoc e mDes que aparecem no seu loop acima
@@ -2623,9 +2884,9 @@ const resultadoDaSintese = gerarSinteseFinal(
 // 2. Agora adicionamos ao relatório SEM ASPAS
 meuHtml += resultadoDaSintese;
 
-
+meuHtml += '</div>'; 
     
-
+meuHtml += '<div id="tela-parte2" class="conteudo-aba">';
 meuHtml += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -2678,9 +2939,9 @@ meuHtml += montarSecaoMatriz("SOCIAL", mSoc, textosSocial, explicacoes.social, r
 
 meuHtml += montarSecaoMatriz("DESTINO", mDes, textosDestino, explicacoes.destino, resultadoPotencia.destino, window.introsPiramides.destino.intro, window.introsPiramides.destino.regente, nome);
 
-          
+     meuHtml += '</div>';      
        
-
+meuHtml += '<div id="tela-parte1" class="conteudo-aba">';
 meuHtml += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -2725,7 +2986,7 @@ meuHtml += `
 
 // 1. TÍTULO E SEPARADOR
 meuHtml += `<div class="separador-luxo"><div class="caixa-interna"><h2>Sequências Especiais ⭐</h2></div></div>`;
-
+ 
 // 2. INTRODUÇÃO REFORMULADA (ABORDAGEM TÉCNICA E PROBABILÍSTICA)
 meuHtml += `
 <div class="page evitar-corte" style="padding: 20px 0;">
@@ -2773,9 +3034,9 @@ meuHtml += `
 
 
 
-
+  meuHtml += '</div>';      
    
-
+meuHtml += '<div id="tela-parte3" class="conteudo-aba">';
 meuHtml += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -2884,10 +3145,10 @@ meuHtml += `
 </section>`;
 
 
+ meuHtml += '</div>';      
 
 
-
-
+html += '<div id="tela-parte4" class="conteudo-aba">';  
 meuHtml += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -2991,12 +3252,12 @@ meuHtml += `
 }
 
 
-
+ meuHtml += '</div>';      
 
 
        
             
-
+meuHtml += '<div id="tela-parte5" class="conteudo-aba">';  
     
 meuHtml += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -3161,9 +3422,9 @@ meuHtml += `
 </div>
 `;      
 
+ meuHtml += '</div>';    
 
-
-    
+    html += '<div id="tela-parte6" class="conteudo-aba">';
 meuHtml += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -3326,7 +3587,7 @@ meuHtml += `
 `;
     
 
-
+meuHtml += '</div>';    
 
     meuHtml += `</div>`;
     document.getElementById('resultado-final').innerHTML = meuHtml;
