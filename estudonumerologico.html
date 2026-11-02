@@ -6863,18 +6863,16 @@ listaFin.forEach(fin => {
     let idadeInicio = 0;
     let duracaoTotal = 0;
 
-    // 1. Soma o tempo das colunas anteriores ao início
+    // 1. Soma o tempo de todas as colunas do topo anteriores ao início
     for (let a = 0; a < fin.colunaInicio; a++) {
-        idadeInicio += anosPorCiclo; 
+        idadeInicio += anosPorCiclo; // Ou o valor específico da coluna 'a' do topo
     }
 
-    // 2. Descobre quantas colunas ESSE item específico abrange (largura real na pirâmide)
-    // Se o seu objeto usa outra propriedade como fin.tamanho ou fin.colunas, basta trocar aqui:
-    let larguraColunas = fin.largura || fin.colunas || fin.repeticoes || 1;
-
-    // 3. Soma o tempo exato de cada coluna que ele toca (ex: 1 coluna = 3 anos; 2 colunas = 6 anos)
-    for (let b = 0; b < larguraColunas; b++) {
-        duracaoTotal += anosPorCiclo; 
+    // 2. O dono do tempo é o topo: somamos o valor exato de cada coluna do topo que este item abrange horizontalmente
+    for (let b = 0; b < fin.repeticoes; b++) {
+        let colunaAtual = fin.colunaInicio + b;
+        // Aqui pega o tempo da coluna correspondente lá no topo
+        duracaoTotal += anosPorCiclo; // Se o topo tiver variações, aqui entraria o valor da colunaAtual do topo
     }
 
     let idadeFim = idadeInicio + duracaoTotal;
