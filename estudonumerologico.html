@@ -6874,23 +6874,30 @@ if (listaFin.length > 0) {
     
 htmlPiramide += `</div>`;
 
-// --- INSERÇÃO DAS POTÊNCIAS COM LOOP DE 100 ANOS ---
+// --- INSERÇÃO DAS POTÊNCIAS COM BASE NO CICLO DE 90 ANOS ---
 const potenciasTopo = topo(piramideVida[0]); 
 
 const dataEntrada = document.getElementById("data").value;
 const anoNascPot = new Date(dataEntrada).getUTCFullYear();
 
 let htmlPotenciasCalculadas = "";
+
+// 1. Calcula a soma total dos valores do topo para servir de base proporcional
+const somaTotalTopo = potenciasTopo.reduce((acc, p) => acc + (parseInt(p.toString()[0]) || 1), 0);
+const CICLO_TOTAL_ANOS = 90; // Base de divisão do ciclo
+
 let idadeAcumulada = 0;
-let indiceLoop = 0;
 
-// --- LOOP DAS POTÊNCIAS ATÉ 100 ANOS ---
-while (idadeAcumulada < 100) {
-    const p = potenciasTopo[indiceLoop % potenciasTopo.length];
-    const duracaoAnos = parseInt(p.toString()[0]) || 1;
+potenciasTopo.forEach((p, indiceLoop) => {
+    // 2. Calcula a duração proporcional de cada arcano com base no ciclo de 90 anos
+    const pesoArcano = parseInt(p.toString()[0]) || 1;
+    let duracaoAnos = (pesoArcano / somaTotalTopo) * CICLO_TOTAL_ANOS;
+    
+    // Arredonda para anos inteiros (ou você pode manter com decimais se preferir precisão exata)
+    duracaoAnos = Math.round(duracaoAnos); 
 
-    const idadeInicio = idadeAcumulada;
-    const idadeFim = idadeAcumulada + duracaoAnos;
+    const idadeInicio = Math.round(idadeAcumulada);
+    const idadeFim = idadeInicio + duracaoAnos;
 
     const potenciaAtivaAgora = (idadeCronologica >= idadeInicio && idadeCronologica < idadeFim);
     
@@ -6906,7 +6913,7 @@ while (idadeAcumulada < 100) {
         ? dadoPotencia.videoID 
         : null;
     const videoParaExibir = window.desembaralharID(videoParaExibirBruto);
-
+    
     htmlPotenciasCalculadas += `
         <div class="bloco-potencia" style="${potenciaAtivaAgora ? 'border: 2px solid var(--gold); background: #fffcf0; padding: 15px; border-radius: 8px;' : 'border-bottom: 1px solid #eee; padding: 10px;'}">
             <div style="display: flex; justify-content: space-between; align-items: center;">
