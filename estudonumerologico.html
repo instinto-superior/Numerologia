@@ -6863,17 +6863,19 @@ listaFin.forEach(fin => {
         let idadeInicio = 0;
         let duracaoTotal = 0;
 
-        // 1. Soma o tempo exato das colunas do topo anteriores ao início do fluxo financeiro
+        // 1. Soma o tempo das colunas anteriores
         for (let a = 0; a < fin.colunaInicio; a++) {
-            idadeInicio += anosPorCiclo; 
+            idadeInicio += anosPorCiclo;
         }
 
-        // 2. Calcula a largura exata de colunas do topo que este fluxo abrange horizontalmente na pirâmide
-        // Se o seu detector usa outra propriedade para o tamanho/extensão, ajustamos aqui:
-        let larguraColunas = (fin.largura !== undefined) ? fin.largura : (fin.repeticoes || 1);
+        // 2. CORREÇÃO CRUCIAL: O financeiro tem 2 dígitos (99), mas a largura real dele 
+        // em colunas na pirâmide vem de fin.largura ou fin.tamanho (se existir), 
+        // ou se for uma ocorrência padrão de 1 coluna, vale 1. 
+        // (Impedimos que o 99 force obrigatoriamente 2 repetições se ele ocupa apenas 1 espaço de topo).
+        let larguraFinanceira = fin.largura !== undefined ? fin.largura : (fin.tamanho !== undefined ? fin.tamanho : 1);
 
-        for (let b = 0; b < larguraColunas; b++) {
-            duracaoTotal += anosPorCiclo; 
+        for (let b = 0; b < larguraFinanceira; b++) {
+            duracaoTotal += anosPorCiclo;
         }
 
         let idadeFim = idadeInicio + duracaoTotal;
