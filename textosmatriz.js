@@ -1,4 +1,4 @@
- resultadoPotencia = {
+let resultadoPotencia = {
  principal:{
 "10": "Esta vibração se origina da potência 10, que indica momentos de reconhecimento ou mudanças favoráveis que impulsionam novas oportunidades na vida. Representa o início de um novo ciclo onde o universo conspira para que sua liderança natural floresça sem grandes obstruções externas.",
 "11": "Esta vibração se origina da potência 11, trazendo um canal de intuição e inspiração que ilumina suas decisões. Indica que sua força de vontade é guiada por uma percepção superior, permitindo que você tome a frente de projetos com uma sensibilidade que outros não possuem.",
