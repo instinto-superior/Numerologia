@@ -902,7 +902,7 @@ videoID: "z1nW3rmNeEI"
 <p>Operando no seu aspecto construtivo, essa engrenagem entrega uma capacidade admirável de liderar com integridade inabalável, unindo a força do exemplo à profundidade mental. Na vivência real, você se torna o homem que ergue escudos para proteger o seu clã e os seus negócios, tomando decisões audaciosas e independentes sem jamais abrir mão da ética e do planejamento minucioso. A sua força se consolida quando você entende que assumir o comando de forma soberana só tem valor real quando amparado por uma análise criteriosa da realidade e pelo compromisso com o bem-estar do seu grupo.</p>
 <p>Por outro lado, meça as consequências quando o sistema sofre atrito no aspecto disfuncional: o risco é o autoritarismo disfarçado de proteção, a cobrança perfeccionista sufocante ou o isolamento analítico do regente 7 que o distancia das pessoas reais. Se a rigidez moral do 6 se choca com a centralização excessiva do 1 sem a temperança da inteligência relacional, o homem acaba gerando ambientes tóxicos e paralisação por excesso de controle. A Potência 61 no campo da vida deixa o veredito claro: o seu topo depende de unir a sua vocação para liderar e proteger à clareza mental de quem decide com sabedoria técnica.</p>
 `,
-videoID: "z1nW3rmNeEI"
+videoID: "z1nW3rmNeEI" 
     },
  
  62:{
