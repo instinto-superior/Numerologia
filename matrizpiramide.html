@@ -2764,14 +2764,11 @@ meuHtml += `
         <span style="padding: 0 10px; color: #b8860b; font-size: 10px; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">Portais Detectados</span>
         <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #b8860b, transparent); opacity: 0.5;"></div>
     </div>
- <div class="conteudo-travado">
+ 
     <div class="texto-res-compacto evitar-corte" style="font-size: 15px; line-height: 1.5; color: #333;">
         ${extrairEspeciaisSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}
-    </div></div>
-                        <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
-
-         </div>
+    </div>
+           
 </section>`;
 
 
@@ -2881,13 +2878,9 @@ meuHtml += `
         <span style="padding: 0 10px; color: #d32f2f; font-size: 10px; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">Detecção de Bloqueios</span>
         <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #d32f2f, transparent); opacity: 0.5;"></div>
     </div>
-<div class="conteudo-travado">
-    <div class="texto-res-compacto" style="background: transparent; padding: 0; margin-top: -5px;"> ${extrairNegativasSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}
-    </div></div>
-                        <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
 
-         </div>
+    <div class="texto-res-compacto" style="background: transparent; padding: 0; margin-top: -5px;"> ${extrairNegativasSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}
+    </div>
 </section>`;
 
 
@@ -2989,14 +2982,10 @@ meuHtml += `
         <span style="padding: 0 10px; color: #2e7d32; font-size: 10px; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">Oportunidades Ativas</span>
         <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #2e7d32, transparent); opacity: 0.5;"></div>
     </div>
-    <div class="conteudo-travado">
+
     <div class="texto-res-compacto evitar-corte" style="font-size: 15px; line-height: 1.5; color: #333;">
         ${htmlFinanceiro}
-    </div></div>
-                        <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
-
-         </div>
+    </div>
 </section>`;
 
 }
@@ -3098,14 +3087,10 @@ meuHtml += `
         <span style="padding: 0 15px; color: #827108; font-size: 12px; letter-spacing: 2px;">MAPA CRONOLÓGICO</span>
         <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #d4af37, transparent);"></div>
     </div>
-    <div class="conteudo-travado">
+ 
     <div class="conteudo-ciclos-integrados">
         ${gerarLoopIntegrado(mVida, mPes, mSoc, mDes, crono)}
-    </div>    </div>
-                        <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
-
-         </div>
+    </div>    
 </div>`;
 
 
