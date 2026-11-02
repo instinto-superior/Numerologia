@@ -6887,8 +6887,7 @@ listaFin.forEach(fin => {
     
 htmlPiramide += `</div>`;
 
-// --- INSERÇÃO DAS POTÊNCIAS (DIVISÃO CABALÍSTICA DE 90 ANOS) ---
-const potenciasTopo = topo(piramideVida[0]); 
+
 
 const dataEntrada = document.getElementById("data").value;
 const anoNascPot = new Date(dataEntrada).getUTCFullYear();
@@ -6896,9 +6895,7 @@ const anoNascPot = new Date(dataEntrada).getUTCFullYear();
 let htmlPotenciasCalculadas = "";
 
 // 1. A cabalística divide 90 anos igualmente pela quantidade de arcanos gerados no topo
-const CICLO_TOTAL_ANOS = 90;
-const quantidadeArcanos = potenciasTopo.length;
- anosPorCiclo = quantidadeArcanos > 0 ? CICLO_TOTAL_ANOS / quantidadeArcanos : 10;
+
 
 let idadeAcumulada = 0;
 
