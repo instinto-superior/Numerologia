@@ -1066,7 +1066,7 @@ input[type="text"], select {
     <!-- NOVO CAMPO DE SELEÇÃO DE TEXTO ADICIONADO AQUI -->
 
     
-       <button class="btn-gerar" onclick="verificarGêneroEGerar()">GERAR O MAPA</button>
+       <button class="btn-gerar" onclick="verificarGeneroEGerar()">GERAR O MAPA</button>
     </div>
 
 
@@ -3477,7 +3477,7 @@ function montarSecaoHabilidadeEspecial() {
 }
 
 
-function verificarGêneroEGerar() {
+function verificarGeneroEGerar() {
     console.log("Botão clicado! Verificando gênero...");
     
     // 1. Pega o elemento
@@ -6888,16 +6888,16 @@ listaFin.forEach(fin => {
 htmlPiramide += `</div>`;
 
 // --- INSERÇÃO DAS POTÊNCIAS (DIVISÃO CABALÍSTICA DE 90 ANOS) ---
- potenciasTopo = topo(piramideVida[0]); 
+const potenciasTopo = topo(piramideVida[0]); 
 
- dataEntrada = document.getElementById("data").value;
- anoNascPot = new Date(dataEntrada).getUTCFullYear();
+const dataEntrada = document.getElementById("data").value;
+const anoNascPot = new Date(dataEntrada).getUTCFullYear();
 
 let htmlPotenciasCalculadas = "";
 
 // 1. A cabalística divide 90 anos igualmente pela quantidade de arcanos gerados no topo
- CICLO_TOTAL_ANOS = 90;
- quantidadeArcanos = potenciasTopo.length;
+const CICLO_TOTAL_ANOS = 90;
+const quantidadeArcanos = potenciasTopo.length;
  anosPorCiclo = quantidadeArcanos > 0 ? CICLO_TOTAL_ANOS / quantidadeArcanos : 10;
 
 let idadeAcumulada = 0;
