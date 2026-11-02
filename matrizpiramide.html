@@ -2323,13 +2323,8 @@ meuHtml += `<div class="menu-abas">
     <button onclick="abrirAba('tela-sumario')" style="width:100%; margin-bottom:5px; font-size: 22px;">Sumário</button>
     
     <button onclick="abrirAba('tela-Capa')" style="width:100%; margin-bottom:5px; font-size: 22px;">Capa</button>
-    
-
-        <button onclick="abrirAba('tela-social')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome Social</button>
-     
-   
-
-    
+           
+       
     <button onclick="abrirAba('tela-introducao')" style="width:100%; margin-bottom:5px; font-size: 22px;">Introdução: Instinto Superior e Numerologia</button>
      <button onclick="abrirAba('tela-resultado')" style="width:100%; margin-bottom:5px; font-size: 22px;">SÍNTESE</button>
 
@@ -2338,10 +2333,10 @@ meuHtml += `<div class="menu-abas">
 
     <button onclick="abrirAba('tela-parte3')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 3: BLOQUEIOS</button>
 
-    <button onclick="abrirAba('tela-parte4')" style="width:100%; margin-bottom:5px; font-size: 22px;">FINANCEIRO/button>
+    <button onclick="abrirAba('tela-parte4')" style="width:100%; margin-bottom:5px; font-size: 22px;">FINANCEIRO</button>
 
 
-    <button onclick="abrirAba('tela-parte5')" style="width:100%; margin-bottom:5px; font-size: 22px;">POTENCIAS/button>
+    <button onclick="abrirAba('tela-parte5')" style="width:100%; margin-bottom:5px; font-size: 22px;">POTENCIAS</button>
 
     <button onclick="abrirAba('tela-parte6')" style="width:100%; margin-bottom:5px; font-size: 22px;">FILOSOFIA</button>
 
@@ -2357,8 +2352,8 @@ meuHtml += `<div class="menu-abas">
 
     
           meuHtml += '<div id="tela-Capa" class="conteudo-aba">'; 
-    const idVideocapa = "CQ1bcGIcX_w";   
-meuHtml += renderizarBlocoComVideo(`<div class="container-master">
+  
+meuHtml += `<div class="container-master">
     <div id="capa-numerologica" style="
             width: 210mm; 
             height: 297.1mm; 
@@ -2406,7 +2401,7 @@ meuHtml += renderizarBlocoComVideo(`<div class="container-master">
     </div>
 
     <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;"> </div>
-`,idVideocapa); 
+`; 
 
  
 meuHtml += '</div>';
