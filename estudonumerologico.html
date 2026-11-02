@@ -6760,22 +6760,21 @@ if (dadosNegativas.detalhes.length > 0) {
     <h2 style="color:red; margin-top:30px; border-bottom: 2px #ffffff; padding-bottom:10px; text-align: left;"> </h2>
     `;
 
-    dadosNegativas.detalhes.forEach(neg => {
+dadosNegativas.detalhes.forEach(neg => {
         let idadeInicio = 0;
         let duracaoTotal = 0;
 
+        // Soma as colunas anteriores
         for (let a = 0; a < neg.colunaInicio; a++) {
-            let arcRef = arcanosTopo[a] || arcanosTopo[arcanosTopo.length - 1];
-            idadeInicio += parseInt(arcRef.toString()[0]) || 1;
+            idadeInicio += anosPorCiclo;
         }
-
+        // Soma as colunas da sequência (ex: 3 colunas = 3 + 3 + 3)
         for (let b = 0; b < neg.repeticoes; b++) {
-            let colReal = neg.colunaInicio + b;
-            let arcAtual = arcanosTopo[colReal] || arcanosTopo[arcanosTopo.length - 1];
-            duracaoTotal += parseInt(arcAtual.toString()[0]) || 1;
+            duracaoTotal += anosPorCiclo;
         }
 
-        const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
+        const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
+        // ... (o restante do código HTML do bloqueio continua igualzinho abaixo)
         const videoNegativoBruto = textos.SeqNegVida[neg.numero] ? textos.SeqNegVida[neg.numero].videoID : null;
         const videoNegativo = window.desembaralharID(videoNegativoBruto);
 
@@ -6812,15 +6811,19 @@ if (listaEspeciais.length > 0) {
         ${idVideoIntroEspeciais ? gerarPlayerYouTube(idVideoIntroEspeciais) : ""}
     </div>`;
     
-    listaEspeciais.forEach(esp => {
-        let idadeInicio = 0; let duracaoTotal = 0;
+listaEspeciais.forEach(esp => {
+        let idadeInicio = 0;
+        let duracaoTotal = 0;
+
         for (let a = 0; a < esp.colunaInicio; a++) {
-            idadeInicio += parseInt((arcanosTopo[a] || arcanosTopo[0]).toString()[0]) || 1;
+            idadeInicio += anosPorCiclo;
         }
         for (let b = 0; b < esp.repeticoes; b++) {
-            duracaoTotal += parseInt((arcanosTopo[esp.colunaInicio + b] || arcanosTopo[0]).toString()[0]) || 1;
+            duracaoTotal += anosPorCiclo;
         }
-        const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
+
+        const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
+        // ... (o restante do código HTML da especial continua igualzinho abaixo)
 
         htmlPiramide += `
             <div class="evitar-corte" style="margin-bottom: 35px; text-align: center;">
@@ -6850,15 +6853,19 @@ if (listaFin.length > 0) {
         ${idVideoIntroFinanceiros ? gerarPlayerYouTube(idVideoIntroFinanceiros) : ""}
     </div>`;
     
-    listaFin.forEach(fin => {
-        let idadeInicio = 0; let duracaoTotal = 0;
+listaFin.forEach(fin => {
+        let idadeInicio = 0;
+        let duracaoTotal = 0;
+
         for (let a = 0; a < fin.colunaInicio; a++) {
-            idadeInicio += parseInt((arcanosTopo[a] || arcanosTopo[0]).toString()[0]) || 1;
+            idadeInicio += anosPorCiclo;
         }
         for (let b = 0; b < fin.repeticoes; b++) {
-            duracaoTotal += parseInt((arcanosTopo[fin.colunaInicio + b] || arcanosTopo[0]).toString()[0]) || 1;
+            duracaoTotal += anosPorCiclo;
         }
-        const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
+
+        const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
+        // ... (o restante do código HTML do financeiro continua igualzinho abaixo)
 
         htmlPiramide += `
             <div class="evitar-corte" style="margin-bottom: 35px; text-align: center; margin-top: 100px;">
