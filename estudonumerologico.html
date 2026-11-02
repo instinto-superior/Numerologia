@@ -6913,7 +6913,7 @@ potenciasTopo.forEach((p, indiceLoop) => {
         ? dadoPotencia.videoID 
         : null;
     const videoParaExibir = window.desembaralharID(videoParaExibirBruto);
-    
+
     htmlPotenciasCalculadas += `
         <div class="bloco-potencia" style="${potenciaAtivaAgora ? 'border: 2px solid var(--gold); background: #fffcf0; padding: 15px; border-radius: 8px;' : 'border-bottom: 1px solid #eee; padding: 10px;'}">
             <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -6936,8 +6936,7 @@ potenciasTopo.forEach((p, indiceLoop) => {
         </div>`;
     
     idadeAcumulada = idadeFim;
-    indiceLoop++;
-}
+});
 
 // --- CAIXINHAS DOURADAS (VITRINE) ---
 let htmlCaixinhas = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 25px; border: 1px solid #ffffff;">`;
