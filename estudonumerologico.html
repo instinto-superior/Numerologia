@@ -6603,6 +6603,12 @@ function embaralharArray(array) {
     return copia;
 }
 
+// --- DECLARAÇÃO GLOBAL DOS CICLOS (Coloque logo no topo da função que gera o mapa) ---
+const potenciasTopo = topo(piramideVida[0]); 
+const CICLO_TOTAL_ANOS = 90;
+const quantidadeArcanos = potenciasTopo.length;
+const anosPorCiclo = quantidadeArcanos > 0 ? CICLO_TOTAL_ANOS / quantidadeArcanos : 10;
+    
 // --- 1. PRIMEIRO: DETECTA TUDO (COM EMBARALHAMENTO DOS ARCANOS) ---
 const arcanosTopoOriginal = topo(piramideVida[0]);
 const arcanosTopo = embaralharArray(arcanosTopoOriginal);
