@@ -6863,20 +6863,21 @@ listaFin.forEach(fin => {
     let idadeInicio = 0;
     let duracaoTotal = 0;
 
-    // 1. Soma o tempo exato das colunas anteriores ao início do padrão
+    // 1. Soma o tempo das colunas anteriores ao início
     for (let a = 0; a < fin.colunaInicio; a++) {
         idadeInicio += anosPorCiclo; 
     }
 
-    // 2. Soma o tempo de cada coluna específica que o número duplo/triplo abrange horizontalmente
-    // Se ele ocupa 2 colunas no topo, 'fin.repeticoes' será 2, somando coluna 1 + coluna 2 (ex: 3 + 3 = 6 anos)
-    for (let b = 0; b < fin.repeticoes; b++) {
+    // 2. Descobre quantas colunas ESSE item específico abrange (largura real na pirâmide)
+    // Se o seu objeto usa outra propriedade como fin.tamanho ou fin.colunas, basta trocar aqui:
+    let larguraColunas = fin.largura || fin.colunas || fin.repeticoes || 1;
+
+    // 3. Soma o tempo exato de cada coluna que ele toca (ex: 1 coluna = 3 anos; 2 colunas = 6 anos)
+    for (let b = 0; b < larguraColunas; b++) {
         duracaoTotal += anosPorCiclo; 
     }
 
-    // A idade final é exatamente a idade de início somada à duração acumulada dessas colunas
     let idadeFim = idadeInicio + duracaoTotal;
-
     const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
 
     htmlPiramide += `
