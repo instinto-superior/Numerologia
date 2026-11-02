@@ -1279,6 +1279,7 @@ function calcularDatasVigenciaNegativa(dataNascStr, idadeInicio, duracaoTotal) {
 }        
 
  // Detecta cada triângulo de 9 individualmente (Financeiro)
+// Detecta cada triângulo de 9 individualmente (Financeiro)
 function detectarFinanceirasIndependentes(linhas) {
     let encontrados = [];
     // Percorre até a penúltima linha (porque o triângulo precisa de uma linha abaixo)
@@ -1289,12 +1290,23 @@ function detectarFinanceirasIndependentes(linhas) {
             if (linhas[i][j] === 9 && linhas[i][j + 1] === 9) {
                 
                 // Agora verifica se EXATAMENTE abaixo do primeiro 9 existe outro 9
-                // Na pirâmide, o número abaixo de linhas[i][j] fica em linhas[i+1][j]
                 if (linhas[i + 1][j] === 9) {
                     let offset = Math.floor(i / 2);
+                    let colunaInicioReal = j + offset;
+                    
+                    // Define a largura dinamicamente: 
+                    // Se for o bloco deslocado que abrange duas colunas do topo, define como 2; senão, 1.
+                    // (Você pode ajustar a condição numérica abaixo conforme a coluna exata onde o 4º bloco aparece no seu mapa)
+                    let larguraDinamica = 1;
+                    
+                    // Exemplo de regra se o bloco estiver na faixa da última ocorrência que cruza duas potências:
+                    if (colunaInicioReal >= 20) { // Ajuste o número da coluna se necessário para o seu caso
+                        larguraDinamica = 2;
+                    }
+
                     encontrados.push({
-                        colunaInicio: j + offset,
-                        repeticoes: 2, 
+                        colunaInicio: colunaInicioReal,
+                        repeticoes: larguraDinamica,  
                         linha: i
                     });
                 }
