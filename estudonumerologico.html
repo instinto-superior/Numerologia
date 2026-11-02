@@ -6860,37 +6860,38 @@ if (listaFin.length > 0) {
     </div>`;
     
 listaFin.forEach(fin => {
-    let idadeInicio = 0;
-    let duracaoTotal = 0;
+        let idadeInicio = 0;
+        let duracaoTotal = 0;
 
-    // 1. Soma o tempo de todas as colunas do topo anteriores ao início
-    for (let a = 0; a < fin.colunaInicio; a++) {
-        idadeInicio += anosPorCiclo; // Ou o valor específico da coluna 'a' do topo
-    }
+        // 1. Soma o tempo exato das colunas do topo anteriores ao início do fluxo financeiro
+        for (let a = 0; a < fin.colunaInicio; a++) {
+            idadeInicio += anosPorCiclo; 
+        }
 
-    // 2. O dono do tempo é o topo: somamos o valor exato de cada coluna do topo que este item abrange horizontalmente
-    for (let b = 0; b < fin.repeticoes; b++) {
-        let colunaAtual = fin.colunaInicio + b;
-        // Aqui pega o tempo da coluna correspondente lá no topo
-        duracaoTotal += anosPorCiclo; // Se o topo tiver variações, aqui entraria o valor da colunaAtual do topo
-    }
+        // 2. Calcula a largura exata de colunas do topo que este fluxo abrange horizontalmente na pirâmide
+        // Se o seu detector usa outra propriedade para o tamanho/extensão, ajustamos aqui:
+        let larguraColunas = (fin.largura !== undefined) ? fin.largura : (fin.repeticoes || 1);
 
-    let idadeFim = idadeInicio + duracaoTotal;
-    const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
+        for (let b = 0; b < larguraColunas; b++) {
+            duracaoTotal += anosPorCiclo; 
+        }
 
-    htmlPiramide += `
-        <div class="evitar-corte" style="margin-bottom: 35px; text-align: center; margin-top: 100px;">
-            <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
-            <span style="color:#28a745; font-weight: bold; font-size: 20px;">
-                📅 Período de influência ${datas.ini} até ${datas.fim} <br> 
-                ${Math.round(duracaoTotal)} anos (dos ${Math.round(idadeInicio)} aos ${Math.round(idadeFim)} anos de idade)
-            </span><br><br>
-              
-            <div class="texto-res" style="text-align: justify; margin-top:15px;">
-                ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
-            </div>
-        </div>`;
-});
+        let idadeFim = idadeInicio + duracaoTotal;
+        const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
+
+        htmlPiramide += `
+            <div class="evitar-corte" style="margin-bottom: 35px; text-align: center; margin-top: 100px;">
+                <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
+                <span style="color:#28a745; font-weight: bold; font-size: 20px;">
+                    📅 Período de influência ${datas.ini} até ${datas.fim} <br> 
+                    ${Math.round(duracaoTotal)} anos (dos ${Math.round(idadeInicio)} aos ${Math.round(idadeFim)} anos de idade)
+                </span><br><br>
+                  
+                <div class="texto-res" style="text-align: justify; margin-top:15px;">
+                    ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
+                </div>
+            </div>`;
+    });
 }
     
 htmlPiramide += `</div>`;
