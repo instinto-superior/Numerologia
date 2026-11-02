@@ -3384,7 +3384,6 @@ async function inicializarSeguranca() {
     try {
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
-        // Dentro da inicializarSeguranca
 
         let dados = todasVendas[userEmail];
         let emailLimpo = userEmail; 
@@ -3395,31 +3394,46 @@ async function inicializarSeguranca() {
              return;
         }
 
-        // 1. CÁLCULO DA DATA (COM VARIÁVEL DECLARADA FORA DO IF)
-        let diffDiasTotal = 0;
-// 2. Verifica se o prazo de 30 dias venceu
-if (dados.data_inicio) {
-    const dataInicio = new Date(dados.data_inicio).getTime();
-    const agora = new Date().getTime();
-    const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
-    
-    // --- O CÁLCULO QUE VOCÊ QUER MOSTRAR ---
-    const diasRestantes = 30 - diffDiasTotal;
-    window.diasRestantesGlobais = 30 - diffDiasTotal; // O "window." torna a variável visível para todo o site
-    // --- AQUI NÓS ATUALIZAMOS O AVISO NO HTML ---
-    const aviso = document.getElementById("aviso-expiracao-total");
-    if (aviso) {
-        aviso.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
-    }
-    console.log("Dias restantes calculados e enviados para o HTML:", diasRestantes);
-    // ------------------------------------------
+        // --- BLOCO DE RENOVAÇÃO / COMPRA NOVA QUE COLOCAMOS ---
+        const dataInicioFirebase = dados.data_inicio; 
+        const dataInicioSalvoBrowser = localStorage.getItem('mapa_data_inicio_token');
 
-    if (diffDiasTotal > 30) {
-        alert("Seu período de acesso de 30 dias expirou.");
-        window.location.href = "index.html";
-        return;
-    }
-}
+        if (dataInicioSalvoBrowser && dataInicioSalvoBrowser !== dataInicioFirebase) {
+            console.log("Nova data de início detectada. Destravando campos.");
+            localStorage.removeItem('mapa_genero');
+            localStorage.removeItem('mapa_nome');
+            localStorage.removeItem('mapa_data');
+            localStorage.removeItem('mapa_data_inicio_token');
+        }
+        localStorage.setItem('mapa_data_inicio_token', dataInicioFirebase);
+        // -----------------------------------------------------
+
+        let diffDiasTotal = 0;
+        
+        // 2. Verifica se o prazo de 30 dias venceu
+        if (dados.data_inicio) {
+            const dataInicio = new Date(dados.data_inicio).getTime();
+            const agora = new Date().getTime();
+            diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+            
+            setTimeout(() => {
+                verificarLiberacaoMenu(diffDiasTotal);
+            }, 500); 
+
+            const diasRestantes = 38 - diffDiasTotal;
+            window.diasRestantesGlobais = 38 - diffDiasTotal; 
+            
+            const aviso = document.getElementById("aviso-expiracao-total");
+            if (aviso) {
+                aviso.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
+            }
+
+            if (diffDiasTotal > 30) {
+                alert("Seu período de acesso de 30 dias expirou.");
+                window.location.href = "index.html";
+                return;
+            }
+        }
 
         // 3. STATUS ATIVO
         if (dados.status === 'usado' || dados.status !== 'ativo') {
@@ -3427,14 +3441,6 @@ if (dados.data_inicio) {
             window.location.href = "index.html";
             return;
         }
-
-        // 4. TRAVA DE SESSÃO (COMENTADA PARA EVITAR ERRO 401)
-        /*
-        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ sessao_ativa: sessionID })
-        });
-        */
 
         // 5. CARREGAMENTO DO RELATÓRIO
         dadosGlobais = dados; 
@@ -3489,50 +3495,33 @@ function verificarLiberacaoPDF(dados) {
     const agora = new Date();
     const diffDias = (agora - dataCompra) / (1000 * 60 * 60 * 24);
 
-    // --- AQUI ESTÁ A SEPARAÇÃO DAS TRAVAS ---
-    
-    // 1. Relatório: Libera sempre que passar de 7 dias
+    // 1. Relatório: Libera após o prazo
     acessoPremiumLiberado = (diffDias >= 8); 
     
-    // 2. PDF: Libera se passou de 7 dias E não foi baixado
-    const podeBaixarPDF = (diffDias >= 8 && dados.pdf_baixado !== true);
+    // 2. PDF ILIMITADO: Agora libera sempre que o prazo passou (sem olhar se já foi baixado antes!)
+    const podeBaixarPDF = (diffDias >= 8);
 
-    // Lógica do Botão (PDF)
+    // Lógica do Botão (PDF) - Ele nunca mais fica cinza fixo após o primeiro clique
     if (btnPDF) {
         btnPDF.disabled = !podeBaixarPDF;
         btnPDF.style.filter = podeBaixarPDF ? "none" : "grayscale(100%)";
     }
 
-    // Mensagens de Status
-    if (dados.pdf_baixado === true) {
-        if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado.";
-    } else if (diffDias < 7) {
+    // Mensagens de Status (removemos o aviso de "já foi realizado")
+    if (diffDias < 8) {
         if (msgTrava) msgTrava.innerHTML = "🔒 Conteúdo liberado após 8 dias.";
     } else {
-        if (msgTrava) msgTrava.innerHTML = "✅ Estudo pronto para acesso!";
+        if (msgTrava) msgTrava.innerHTML = "✅ Estudo pronto para acesso ilimitado!";
     }
 }
     
 async function registrarDownloadRealizado() {
-    // Pega o ID da URL igual você já faz
-    const userId = new URLSearchParams(window.location.search).get('user');
+    // Como o download agora é ilimitado, não precisamos mais travar o botão no Firebase.
+    // O botão continuará ativo para o usuário baixar quantas vezes quiser!
+    console.log("Download acionado pelo usuário.");
     
-    // Cola aqui a URL que o Make te deu no Passo 1
-    const webhookUrl = "https://hook.us2.make.com/k7af8f50o7wumvaw6wtuv348mfrgoaq3";
-    
-    // Envia o ID para o Make
-    await fetch(webhookUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ userId: userId })
-    });
-    
-    // Trava o botão visualmente para o usuário
-    const btnPDF = document.getElementById("btn-pdf-premium");
-    if (btnPDF) {
-        btnPDF.disabled = true;
-        btnPDF.style.filter = "grayscale(100%)";
-    }
+    // Se você tinha alguma chamada de webhook antiga que bloqueava, pode remover.
+    // Agora o cliente tem total liberdade para baixar o PDF dele sempre que precisar.
 }
     
 async function encerrarSessao() {
@@ -3549,15 +3538,24 @@ function exibirRelatorio(htmlConteudo) {
     const areaResultado = document.getElementById("resultado");
     if (areaResultado) {
         areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
-        verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI
+
+        // --- CHAMA O GERADOR DE MENU ---
+        setTimeout(() => {
+               abrirAba(''); 
+            verificarLiberacaoPDF(dadosGlobais);
+        }, 200); 
     }
 }
+
+
+    
 
 window.onload = function() {
     inicializarSeguranca();
 
 };
 </script>
+        
 
 
    <script>
@@ -3598,6 +3596,137 @@ document.getElementById('btnVideo').addEventListener('click', function() {
         childList: true,
         subtree: true
     });
+</script>
+        
+
+        
+<script>
+function abrirAba(idDaAba) {
+    const todasAsAbas = document.querySelectorAll('.conteudo-aba');
+    todasAsAbas.forEach(aba => aba.classList.remove('ativa'));
+    
+    const abaEscolhida = document.getElementById(idDaAba);
+    
+    if (abaEscolhida) {
+        // --- O SENSOR QUE DESCOBRE O ERRO NO SEU HTML ---
+        const abaPai = abaEscolhida.parentElement.closest('.conteudo-aba');
+        if (abaPai) {
+            alert("🚨 ERRO ACHADO: A aba '" + idDaAba + "' está presa DENTRO da aba '" + abaPai.id + "'. Você esqueceu de colocar o </div> para fechar a anterior!");
+        }
+        
+        abaEscolhida.classList.add('ativa');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        alert("ALERTA: A div '" + idDaAba + "' não foi encontrada!");
+    }
+}
+
+    
+    </script>
+
+<script>
+function verificarLiberacaoMenu(diasPassados) {
+    
+    const estaLiberado = diasPassados >= 7;
+
+    // Criamos um vigia que vai olhar a página até o elemento aparecer
+    const observer = new MutationObserver((mutations, obs) => {
+        const container = document.getElementById('container-travado');
+        const aviso = document.getElementById('aviso-trava-menu');
+
+        if (container && aviso) {
+            // Se encontrou, aplica a lógica
+            if (estaLiberado) {
+                container.style.setProperty('display', 'block', 'important');
+                aviso.style.setProperty('display', 'none', 'important');
+            } else {
+                container.style.setProperty('display', 'none', 'important');
+                aviso.style.setProperty('display', 'block', 'important');
+            }
+            
+            console.log("Menu liberado/bloqueado com sucesso pelo vigia.");
+            obs.disconnect(); // Para de vigiar para não consumir processamento
+        }
+    });
+
+    // Começa a vigiar o corpo da página inteira
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+}
+</script>
+
+
+<script>
+// --- TRAVA DE PERFIL INTELIGENTE (COM SUPORTE A RENOVAÇÃO) ---
+document.addEventListener("DOMContentLoaded", function() {
+    // Pegamos o usuário atual da URL (ex: c_h_mantovanni_gmail_com7309242)
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentUser = urlParams.get('user');
+
+    // Verificamos se o usuário que está logado agora é o mesmo da última vez
+    const ultimoUsuarioSalvo = localStorage.getItem('mapa_usuario_ativo');
+
+    // Se o usuário mudou (ou seja, comprou um novo acesso com outro link/ID), 
+    // nós limpamos a trava antiga automaticamente para liberar o novo preenchimento!
+    if (ultimoUsuarioSalvo && ultimoUsuarioSalvo !== currentUser) {
+        console.log("Novo acesso detectado! Limpando dados do perfil anterior...");
+        localStorage.removeItem('mapa_genero');
+        localStorage.removeItem('mapa_nome');
+        localStorage.removeItem('mapa_data');
+        localStorage.removeItem('mapa_usuario_ativo');
+    }
+
+    const salvoGenero = localStorage.getItem('mapa_genero');
+    const salvoNome = localStorage.getItem('mapa_nome');
+    const salvoData = localStorage.getItem('mapa_data');
+
+    if (salvoNome && salvoData) {
+        // Preenche os campos com os dados salvos da primeira vez
+       // const inputGenero = document.getElementById('generoTexto');
+       // const inputNome = document.getElementById('nome');
+        //const inputData = document.getElementById('data');
+
+        if (inputGenero && salvoGenero) {
+            inputGenero.value = salvoGenero;
+            inputGenero.disabled = true; 
+            inputGenero.style.backgroundColor = "#222"; 
+        }
+        if (inputNome) {
+            inputNome.value = salvoNome;
+            inputNome.disabled = true; 
+            inputNome.style.backgroundColor = "#222";
+        }
+        if (inputData) {
+            inputData.value = salvoData;
+            inputData.disabled = true; 
+            inputData.style.backgroundColor = "#222";
+        }
+
+        console.log("Perfil travado para o usuário atual.");
+    }
+});
+
+// Função de salvamento atualizada para registrar o usuário ativo
+function salvarTravaPerfil() {
+    const genero = document.getElementById('generoTexto').value;
+   const nome = document.getElementById('nome').value;
+    const data = document.getElementById('data').value;
+
+    if (!nome || !data) {
+        alert("Por favor, preencha o nome e a data de nascimento.");
+        return false;
+    }
+
+    // Se ainda não estiver travado, salva os dados da pessoa
+    if (!localStorage.getItem('mapa_nome')) {
+        localStorage.setItem('mapa_genero', genero);
+        localStorage.setItem('mapa_nome', nome);
+        localStorage.setItem('mapa_data', data);
+    }
+    return true;
+}
 </script>
 
     
