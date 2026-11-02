@@ -6874,7 +6874,7 @@ if (listaFin.length > 0) {
     
 htmlPiramide += `</div>`;
 
-// --- INSERÇÃO DAS POTÊNCIAS COM BASE NO CICLO DE 90 ANOS ---
+// --- INSERÇÃO DAS POTÊNCIAS (DIVISÃO CABALÍSTICA DE 90 ANOS) ---
 const potenciasTopo = topo(piramideVida[0]); 
 
 const dataEntrada = document.getElementById("data").value;
@@ -6882,29 +6882,28 @@ const anoNascPot = new Date(dataEntrada).getUTCFullYear();
 
 let htmlPotenciasCalculadas = "";
 
-// 1. Calcula a soma total dos valores do topo para servir de base proporcional
-const somaTotalTopo = potenciasTopo.reduce((acc, p) => acc + (parseInt(p.toString()[0]) || 1), 0);
-const CICLO_TOTAL_ANOS = 90; // Base de divisão do ciclo
+// 1. A cabalística divide 90 anos igualmente pela quantidade de arcanos gerados no topo
+const CICLO_TOTAL_ANOS = 90;
+const quantidadeArcanos = potenciasTopo.length;
+const anosPorCiclo = quantidadeArcanos > 0 ? CICLO_TOTAL_ANOS / quantidadeArcanos : 10;
 
 let idadeAcumulada = 0;
 
 potenciasTopo.forEach((p, indiceLoop) => {
-    // 2. Calcula a duração proporcional de cada arcano com base no ciclo de 90 anos
-    const pesoArcano = parseInt(p.toString()[0]) || 1;
-    let duracaoAnos = (pesoArcano / somaTotalTopo) * CICLO_TOTAL_ANOS;
-    
-    // Arredonda para anos inteiros (ou você pode manter com decimais se preferir precisão exata)
-    duracaoAnos = Math.round(duracaoAnos); 
+    // 2. Cada potência assume o período fixo calculado pela divisão dos 90 anos
+    const duracaoAnos = anosPorCiclo;
 
-    const idadeInicio = Math.round(idadeAcumulada);
-    const idadeFim = idadeInicio + duracaoAnos;
+    const idadeInicio = idadeAcumulada;
+    const idadeFim = idadeAcumulada + duracaoAnos;
 
     const potenciaAtivaAgora = (idadeCronologica >= idadeInicio && idadeCronologica < idadeFim);
     
-    const dataIniPot = new Date(dtNasci.getFullYear() + idadeInicio, dtNasci.getMonth(), dtNasci.getDate());
-    const dataFimPot = new Date(dtNasci.getFullYear() + idadeFim, dtNasci.getMonth(), dtNasci.getDate());
+    const dataIniPot = new Date(dtNasci.getFullYear() + Math.round(idadeInicio), dtNasci.getMonth(), dtNasci.getDate());
+    const dataFimPot = new Date(dtNasci.getFullYear() + Math.round(idadeFim), dtNasci.getMonth(), dtNasci.getDate());
 
-    const dadoPotencia = (typeof textos !== 'undefined' && textos.Potencias) ? textos.Potencias[p] : null;
+    const bancoPotencias = (typeof textos !== 'undefined' && textos.Potencias) ? textos.Potencias : (window.textosPotencias || {});
+    const dadoPotencia = bancoPotencias[p];
+
     const textoParaExibir = (typeof dadoPotencia === 'object' && dadoPotencia !== null) 
         ? dadoPotencia.conteudo 
         : (dadoPotencia || "Vibração em análise.");
@@ -6922,7 +6921,7 @@ potenciasTopo.forEach((p, indiceLoop) => {
             </div>
 
             <div style="font-size: 20px; color: #827108; margin-top: 10px; font-weight: bold;">
-                ⏳ Ciclo: dos ${idadeInicio} aos ${idadeFim} anos
+                ⏳ Ciclo: dos ${Math.round(idadeInicio)} aos ${Math.round(idadeFim)} anos
             </div>
 
             <div style="font-size: 20px; color: #827108; margin: 8px 0; font-weight: bold; letter-spacing: 0.5px;">
