@@ -3785,74 +3785,7 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
 
 
 
-// 1. Função que varre os resultados já gerados na síntese e conta a frequência de cada número (1 a 99)
-function calcularFrequenciaDosNumeros(listaItens) {
-  const contagem = {};
-  for (let i = 1; i <= 99; i++) {
-    contagem[i] = 0;
-  }
-  
-  let totalValidos = 0;
 
-  listaItens.forEach(item => {
-    // Pula itens nulos, objetos complexos (como ciclos compostos) ou conteúdos travados por premium
-    if (!item.valor || typeof item.valor === 'object' || String(item.valor).includes('🔒')) {
-      return;
-    }
-
-    // Extrai todos os números presentes no valor (ex: "1 ⚖️ 2" extrai 1 e 2; "11" extrai 11)
-    const numerosEncontrados = String(item.valor).match(/\d+/g);
-    
-    if (numerosEncontrados) {
-      numerosEncontrados.forEach(numStr => {
-        let num = parseInt(numStr, 10);
-        if (num >= 1 && num <= 99) {
-          contagem[num]++;
-          totalValidos++;
-        }
-      });
-    }
-  });
-
-  if (totalValidos === 0) return [];
-
-  // Monta o ranking ordenado do mais frequente para o menos frequente
-  const resultado = Object.keys(contagem).map(num => {
-    const qtd = contagem[num];
-    const porcentagem = ((qtd / totalValidos) * 100).toFixed(1);
-    return {
-      numero: Number(num),
-      quantidade: qtd,
-      porcentagem: parseFloat(porcentagem)
-    };
-  });
-
-  // Ordena por quantidade (maior para menor) e desempata pelo número
-  resultado.sort((a, b) => b.quantidade - a.quantidade || a.numero - b.numero);
-
-  // Retorna apenas os números que realmente aparecem no mapa da pessoa (quantidade > 0)
-  return resultado.filter(item => item.quantidade > 0);
-}
-
-// 2. Executa a função usando a sua lista de síntese atual
-const rankingFrequenciaMapa = calcularFrequenciaDosNumeros(listaItensSintese);
-
-// 3. Cria o HTML do NOVO BLOCO (que fica acima dos resultados)
-const htmlBlocoPorcentagemNumeros = `
-<div style="margin: 5px 0 12px 0; border: 1px solid #d97a1e; padding: 8px 12px; border-radius: 6px; background: #fffdf9; flex-shrink: 0;">
-    <div style="font-size: 12px; font-weight: bold; text-transform: uppercase; color: #333; margin-bottom: 6px; text-align: center; letter-spacing: 1px;">
-        Frequência Geral dos Números no Mapa
-    </div>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px;">
-        ${rankingFrequenciaMapa.map(item => `
-            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 3px 8px; border-radius: 4px; font-size: 11px;">
-                <span style="font-weight: bold; color: #d97a1e; margin-right: 4px; font-size: 13px;">Nº ${item.numero}</span>
-                <span style="color: #555;">(${item.quantidade}x · <strong>${item.porcentagem}%</strong>)</span>
-            </div>
-        `).join('')}
-    </div>
-</div>
-`;
         
         
         
@@ -5076,7 +5009,74 @@ const listaItensSintese = [
     { label: "Vibração Semanal", valor: obterDiaSemanaVibracional(res.dia), categoria: null }
 ];
 
+// 1. Função que varre os resultados já gerados na síntese e conta a frequência de cada número (1 a 99)
+function calcularFrequenciaDosNumeros(listaItens) {
+  const contagem = {};
+  for (let i = 1; i <= 99; i++) {
+    contagem[i] = 0;
+  }
+  
+  let totalValidos = 0;
+
+  listaItens.forEach(item => {
+    // Pula itens nulos, objetos complexos (como ciclos compostos) ou conteúdos travados por premium
+    if (!item.valor || typeof item.valor === 'object' || String(item.valor).includes('🔒')) {
+      return;
+    }
+
+    // Extrai todos os números presentes no valor (ex: "1 ⚖️ 2" extrai 1 e 2; "11" extrai 11)
+    const numerosEncontrados = String(item.valor).match(/\d+/g);
     
+    if (numerosEncontrados) {
+      numerosEncontrados.forEach(numStr => {
+        let num = parseInt(numStr, 10);
+        if (num >= 1 && num <= 99) {
+          contagem[num]++;
+          totalValidos++;
+        }
+      });
+    }
+  });
+
+  if (totalValidos === 0) return [];
+
+  // Monta o ranking ordenado do mais frequente para o menos frequente
+  const resultado = Object.keys(contagem).map(num => {
+    const qtd = contagem[num];
+    const porcentagem = ((qtd / totalValidos) * 100).toFixed(1);
+    return {
+      numero: Number(num),
+      quantidade: qtd,
+      porcentagem: parseFloat(porcentagem)
+    };
+  });
+
+  // Ordena por quantidade (maior para menor) e desempata pelo número
+  resultado.sort((a, b) => b.quantidade - a.quantidade || a.numero - b.numero);
+
+  // Retorna apenas os números que realmente aparecem no mapa da pessoa (quantidade > 0)
+  return resultado.filter(item => item.quantidade > 0);
+}
+
+// 2. Executa a função usando a sua lista de síntese atual
+const rankingFrequenciaMapa = calcularFrequenciaDosNumeros(listaItensSintese);
+
+// 3. Cria o HTML do NOVO BLOCO (que fica acima dos resultados)
+const htmlBlocoPorcentagemNumeros = `
+<div style="margin: 5px 0 12px 0; border: 1px solid #d97a1e; padding: 8px 12px; border-radius: 6px; background: #fffdf9; flex-shrink: 0;">
+    <div style="font-size: 12px; font-weight: bold; text-transform: uppercase; color: #333; margin-bottom: 6px; text-align: center; letter-spacing: 1px;">
+        Frequência Geral dos Números no Mapa
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px;">
+        ${rankingFrequenciaMapa.map(item => `
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 3px 8px; border-radius: 4px; font-size: 11px;">
+                <span style="font-weight: bold; color: #d97a1e; margin-right: 4px; font-size: 13px;">Nº ${item.numero}</span>
+                <span style="color: #555;">(${item.quantidade}x · <strong>${item.porcentagem}%</strong>)</span>
+            </div>
+        `).join('')}
+    </div>
+</div>
+`;    
 // 2. Agora montamos o HTML do Painel (Esta parte substitui a sua partir da linha html +=)
 html += `
 <div id="folha-resumo-premium" style="
