@@ -5009,28 +5009,38 @@ const listaItensSintese = [
     { label: "Vibração Semanal", valor: obterDiaSemanaVibracional(res.dia), categoria: null }
 ];
 
-// 1. Função que varre os resultados já gerados na síntese e conta a frequência de cada número (1 a 99)
 function calcularFrequenciaDosNumeros(listaItens) {
+  // Inicializa contador apenas para 1 a 9 e os Mestres oficiais
+  const numerosValidosNumerologia = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99];
   const contagem = {};
-  for (let i = 1; i <= 99; i++) {
-    contagem[i] = 0;
-  }
+  numerosValidosNumerologia.forEach(n => contagem[n] = 0);
   
   let totalValidos = 0;
 
+  // Lista das categorias da síntese que representam posições numerológicas puras (excluindo listas de dias, cores, etc.)
+  const categoriasPermitidas = [
+    "dia", "essencia", "motivacao", "desejoOculto", "influencia", 
+    "Personalidade", "comportamento", "Relacionamento", "talento", 
+    "inclinacoes", "subconsciente", "deficits", "Potencias", 
+    "deficiencias", "CaminhodeVida", "Propósito", "Maturidade", "Profissão", "Equilíbrio"
+    
+  ];
+
   listaItens.forEach(item => {
-    // Pula itens nulos, objetos complexos (como ciclos compostos) ou conteúdos travados por premium
-    if (!item.valor || typeof item.valor === 'object' || String(item.valor).includes('🔒')) {
+    // Se não tiver categoria permitida ou estiver travado/nulo, pula
+    if (!item.categoria || !categoriasPermitidas.includes(item.categoria) || !item.valor || String(item.valor).includes('🔒')) {
       return;
     }
 
-    // Extrai todos os números presentes no valor (ex: "1 ⚖️ 2" extrai 1 e 2; "11" extrai 11)
+    // Pega os números daquele item específico
     const numerosEncontrados = String(item.valor).match(/\d+/g);
     
     if (numerosEncontrados) {
       numerosEncontrados.forEach(numStr => {
         let num = parseInt(numStr, 10);
-        if (num >= 1 && num <= 99) {
+        
+        // SÓ CONTA SE FOR UM NÚMERO VÁLIDO DA NUMEROLOGIA (1 a 9 ou Mestre)
+        if (numerosValidosNumerologia.includes(num)) {
           contagem[num]++;
           totalValidos++;
         }
@@ -5040,7 +5050,6 @@ function calcularFrequenciaDosNumeros(listaItens) {
 
   if (totalValidos === 0) return [];
 
-  // Monta o ranking ordenado do mais frequente para o menos frequente
   const resultado = Object.keys(contagem).map(num => {
     const qtd = contagem[num];
     const porcentagem = ((qtd / totalValidos) * 100).toFixed(1);
@@ -5051,10 +5060,9 @@ function calcularFrequenciaDosNumeros(listaItens) {
     };
   });
 
-  // Ordena por quantidade (maior para menor) e desempata pelo número
   resultado.sort((a, b) => b.quantidade - a.quantidade || a.numero - b.numero);
 
-  // Retorna apenas os números que realmente aparecem no mapa da pessoa (quantidade > 0)
+  // Retorna apenas os que realmente apareceram no mapa
   return resultado.filter(item => item.quantidade > 0);
 }
 
