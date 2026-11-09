@@ -6705,10 +6705,7 @@ function embaralharArray(array) {
 }
 
 // --- DECLARAÇÃO GLOBAL DOS CICLOS (Coloque logo no topo da função que gera o mapa) ---
-const potenciasTopo = topo(piramideVida[0]); 
-const CICLO_TOTAL_ANOS = 90;
-const quantidadeArcanos = potenciasTopo.length;
-const anosPorCiclo = quantidadeArcanos > 0 ? CICLO_TOTAL_ANOS / quantidadeArcanos : 10;
+
     
 // --- 1. PRIMEIRO: DETECTA TUDO (COM EMBARALHAMENTO DOS ARCANOS) ---
 const arcanosTopoOriginal = topo(piramideVida[0]);
@@ -7001,31 +6998,30 @@ htmlPiramide += `</div>`;
 
 
 
+// --- INSERÇÃO DAS POTÊNCIAS COM LOOP DE 100 ANOS ---
+const potenciasTopo = topo(piramideVida[0]); 
+
 const dataEntrada = document.getElementById("data").value;
 const anoNascPot = new Date(dataEntrada).getUTCFullYear();
 
 let htmlPotenciasCalculadas = "";
-
-// 1. A cabalística divide 90 anos igualmente pela quantidade de arcanos gerados no topo
-
-
 let idadeAcumulada = 0;
+let indiceLoop = 0;
 
-potenciasTopo.forEach((p, indiceLoop) => {
-    // 2. Cada potência assume o período fixo calculado pela divisão dos 90 anos
-    const duracaoAnos = anosPorCiclo;
+// --- LOOP DAS POTÊNCIAS ATÉ 100 ANOS ---
+while (idadeAcumulada < 100) {
+    const p = potenciasTopo[indiceLoop % potenciasTopo.length];
+    const duracaoAnos = parseInt(p.toString()[0]) || 1;
 
     const idadeInicio = idadeAcumulada;
     const idadeFim = idadeAcumulada + duracaoAnos;
 
     const potenciaAtivaAgora = (idadeCronologica >= idadeInicio && idadeCronologica < idadeFim);
     
-    const dataIniPot = new Date(dtNasci.getFullYear() + Math.round(idadeInicio), dtNasci.getMonth(), dtNasci.getDate());
-    const dataFimPot = new Date(dtNasci.getFullYear() + Math.round(idadeFim), dtNasci.getMonth(), dtNasci.getDate());
+    const dataIniPot = new Date(dtNasci.getFullYear() + idadeInicio, dtNasci.getMonth(), dtNasci.getDate());
+    const dataFimPot = new Date(dtNasci.getFullYear() + idadeFim, dtNasci.getMonth(), dtNasci.getDate());
 
-    const bancoPotencias = (typeof textos !== 'undefined' && textos.Potencias) ? textos.Potencias : (window.textosPotencias || {});
-    const dadoPotencia = bancoPotencias[p];
-
+    const dadoPotencia = (typeof textos !== 'undefined' && textos.Potencias) ? textos.Potencias[p] : null;
     const textoParaExibir = (typeof dadoPotencia === 'object' && dadoPotencia !== null) 
         ? dadoPotencia.conteudo 
         : (dadoPotencia || "Vibração em análise.");
@@ -7038,12 +7034,12 @@ potenciasTopo.forEach((p, indiceLoop) => {
     htmlPotenciasCalculadas += `
         <div class="bloco-potencia" style="${potenciaAtivaAgora ? 'border: 2px solid var(--gold); background: #fffcf0; padding: 15px; border-radius: 8px;' : 'border-bottom: 1px solid #eee; padding: 10px;'}">
             <div style="display: flex; justify-content: space-between; align-items: center;">
-                <h2 style="color: #827108; font-size: 35px; margin: 0; align-items: right;">Potência ${p} ✡︎</h2>
+                <h2 style="color: #827108; font-size: 24px; margin: 0;">Potência ${p} ✡︎</h2>
                 ${potenciaAtivaAgora ? '<span style="background:var(--gold); color:black; font-size:10px; padding:2px 14px; border-radius:10px; font-weight:bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">ATIVO NESTE CICLO</span>' : ''}
             </div>
 
             <div style="font-size: 20px; color: #827108; margin-top: 10px; font-weight: bold;">
-                ⏳ Ciclo: dos ${Math.round(idadeInicio)} aos ${Math.round(idadeFim)} anos
+                ⏳ Ciclo: dos ${idadeInicio} aos ${idadeFim} anos
             </div>
 
             <div style="font-size: 20px; color: #827108; margin: 8px 0; font-weight: bold; letter-spacing: 0.5px;">
@@ -7057,7 +7053,8 @@ potenciasTopo.forEach((p, indiceLoop) => {
         </div>`;
     
     idadeAcumulada = idadeFim;
-});
+    indiceLoop++;
+}
 
 // --- CAIXINHAS DOURADAS (VITRINE) ---
 let htmlCaixinhas = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 25px; border: 1px solid #ffffff;">`;
