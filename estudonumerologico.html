@@ -6704,9 +6704,6 @@ function embaralharArray(array) {
     return copia;
 }
 
-// --- DECLARAÇÃO GLOBAL DOS CICLOS (Coloque logo no topo da função que gera o mapa) ---
-
-    
 // --- 1. PRIMEIRO: DETECTA TUDO (COM EMBARALHAMENTO DOS ARCANOS) ---
 const arcanosTopoOriginal = topo(piramideVida[0]);
 const arcanosTopo = embaralharArray(arcanosTopoOriginal);
@@ -6864,21 +6861,22 @@ if (dadosNegativas.detalhes.length > 0) {
     <h2 style="color:red; margin-top:30px; border-bottom: 2px #ffffff; padding-bottom:10px; text-align: left;"> </h2>
     `;
 
-dadosNegativas.detalhes.forEach(neg => {
+    dadosNegativas.detalhes.forEach(neg => {
         let idadeInicio = 0;
         let duracaoTotal = 0;
 
-        // Soma as colunas anteriores
         for (let a = 0; a < neg.colunaInicio; a++) {
-            idadeInicio += anosPorCiclo;
-        }
-        // Soma as colunas da sequência (ex: 3 colunas = 3 + 3 + 3)
-        for (let b = 0; b < neg.repeticoes; b++) {
-            duracaoTotal += anosPorCiclo;
+            let arcRef = arcanosTopo[a] || arcanosTopo[arcanosTopo.length - 1];
+            idadeInicio += parseInt(arcRef.toString()[0]) || 1;
         }
 
-        const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
-        // ... (o restante do código HTML do bloqueio continua igualzinho abaixo)
+        for (let b = 0; b < neg.repeticoes; b++) {
+            let colReal = neg.colunaInicio + b;
+            let arcAtual = arcanosTopo[colReal] || arcanosTopo[arcanosTopo.length - 1];
+            duracaoTotal += parseInt(arcAtual.toString()[0]) || 1;
+        }
+
+        const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
         const videoNegativoBruto = textos.SeqNegVida[neg.numero] ? textos.SeqNegVida[neg.numero].videoID : null;
         const videoNegativo = window.desembaralharID(videoNegativoBruto);
 
@@ -6915,19 +6913,15 @@ if (listaEspeciais.length > 0) {
         ${idVideoIntroEspeciais ? gerarPlayerYouTube(idVideoIntroEspeciais) : ""}
     </div>`;
     
-listaEspeciais.forEach(esp => {
-        let idadeInicio = 0;
-        let duracaoTotal = 0;
-
+    listaEspeciais.forEach(esp => {
+        let idadeInicio = 0; let duracaoTotal = 0;
         for (let a = 0; a < esp.colunaInicio; a++) {
-            idadeInicio += anosPorCiclo;
+            idadeInicio += parseInt((arcanosTopo[a] || arcanosTopo[0]).toString()[0]) || 1;
         }
         for (let b = 0; b < esp.repeticoes; b++) {
-            duracaoTotal += anosPorCiclo;
+            duracaoTotal += parseInt((arcanosTopo[esp.colunaInicio + b] || arcanosTopo[0]).toString()[0]) || 1;
         }
-
-        const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
-        // ... (o restante do código HTML da especial continua igualzinho abaixo)
+        const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
 
         htmlPiramide += `
             <div class="evitar-corte" style="margin-bottom: 35px; text-align: center;">
@@ -6957,36 +6951,21 @@ if (listaFin.length > 0) {
         ${idVideoIntroFinanceiros ? gerarPlayerYouTube(idVideoIntroFinanceiros) : ""}
     </div>`;
     
-listaFin.forEach(fin => {
-        let idadeInicio = 0;
-        let duracaoTotal = 0;
-
-        // 1. Soma o tempo das colunas anteriores
+    listaFin.forEach(fin => {
+        let idadeInicio = 0; let duracaoTotal = 0;
         for (let a = 0; a < fin.colunaInicio; a++) {
-            idadeInicio += anosPorCiclo;
+            idadeInicio += parseInt((arcanosTopo[a] || arcanosTopo[0]).toString()[0]) || 1;
         }
-
-        // 2. CORREÇÃO CRUCIAL: O financeiro tem 2 dígitos (99), mas a largura real dele 
-        // em colunas na pirâmide vem de fin.largura ou fin.tamanho (se existir), 
-        // ou se for uma ocorrência padrão de 1 coluna, vale 1. 
-        // (Impedimos que o 99 force obrigatoriamente 2 repetições se ele ocupa apenas 1 espaço de topo).
-        let larguraFinanceira = fin.largura !== undefined ? fin.largura : (fin.tamanho !== undefined ? fin.tamanho : 1);
-
-        for (let b = 0; b < larguraFinanceira; b++) {
-            duracaoTotal += anosPorCiclo;
+        for (let b = 0; b < fin.repeticoes; b++) {
+            duracaoTotal += parseInt((arcanosTopo[fin.colunaInicio + b] || arcanosTopo[0]).toString()[0]) || 1;
         }
-
-        let idadeFim = idadeInicio + duracaoTotal;
-        const datas = calcularDatasVigenciaNegativa(dataRaw, Math.round(idadeInicio), Math.round(duracaoTotal));
+        const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
 
         htmlPiramide += `
             <div class="evitar-corte" style="margin-bottom: 35px; text-align: center; margin-top: 100px;">
                 <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
-                <span style="color:#28a745; font-weight: bold; font-size: 20px;">
-                    📅 Período de influência ${datas.ini} até ${datas.fim} <br> 
-                    ${Math.round(duracaoTotal)} anos (dos ${Math.round(idadeInicio)} aos ${Math.round(idadeFim)} anos de idade)
-                </span><br><br>
-                  
+                <span style="color:#28a745; font-weight: bold; font-size: 20px;">📅 Período de influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
+                
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
                 </div>
@@ -6995,8 +6974,6 @@ listaFin.forEach(fin => {
 }
     
 htmlPiramide += `</div>`;
-
-
 
 // --- INSERÇÃO DAS POTÊNCIAS COM LOOP DE 100 ANOS ---
 const potenciasTopo = topo(piramideVida[0]); 
@@ -7098,7 +7075,6 @@ htmlPiramide += `
 
 // --- FINALMENTE: JUNTA A PIRÂMIDE NO CORPO DO RELATÓRIO ---
 html += htmlPiramide;
- 
 
 
  html += `
