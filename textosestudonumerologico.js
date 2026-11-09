@@ -3847,80 +3847,176 @@ deficiencias: {
 
 Potencias: {
 11:{
-     conteudo:`<h4>Potência 11: O Comando Estratégico e a Disciplina de Aço</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na sua realidade operacional, a Potência 11 atua como um motor de dupla tração movido pela iniciativa implacável do duplo 1 (1+1), tendo como maestro e regente o 2. Na prática da sua vida, isso significa que você é constantemente lançado em cenários que exigem coragem para desbravar caminhos sozinho e tomar decisões firmes, mas com uma exigência cirúrgica: tudo deve ser executado com inteligência estratégica, tato e precisão, evitando o desperdício de energia em conflitos estéreis.</p>
-<p>Operando no seu aspecto construtivo, essa engrenagem entrega uma capacidade ímpar de liderança e resiliência sob pressão. Na vivência real, você se torna o homem que assume o controle do próprio destino, erguendo posições de respeito e liderando pelo exemplo. A sua força não vem do caos ou da imposição cega, mas da habilidade fria de alinhar o seu ímpeto de ação com a leitura correta do terreno, mantendo o foco absoluto no objetivo final.</p>
-<p>Por outro lado, quando o sistema sofre atrito no aspecto disfuncional, o risco é a rigidez excessiva, o orgulho de bater de frente ou a dispersão da energia vital por impulso. Se o motor do 1 tenta atropelar a regência estratégica do 2, o ambiente devolve desgaste e resistência desnecessária. A Potência 11 no campo da vida deixa o veredito claro: o verdadeiro poder de um homem se manifesta quando ele exerce domínio absoluto sobre as próprias reações, canalizando sua força para construções sólidas e definitivas.</p>
+     conteudo:`<h4> O Comando Estratégico e a Intuição Prática</h4>
+<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na manifestação desta energia como número de movimento na sua Matriz da Vida, a Potência 11 atua combinando a força de dupla iniciativa (1+1) com a diplomacia e a visão analítica do 2. Trata-se de uma fase ou momento em que o cenário exige de você coragem para abrir caminhos e tomar decisões firmes, unindo o tato e a leitura precisa do ambiente físico e material.</p>
+
+<hr />
+
+<p><strong>• Campo Profissional e Financeiro:</strong> Neste momento, o campo aponta para posições de comando, inovação e gestão estratégica. Você pode se ver diante da oportunidade de enxergar soluções antes dos outros e liderar pelo exemplo. A sua prosperidade material nesta fase depende do equilíbrio entre agir com firmeza e negociar com inteligência, evitando decisões impulsivas sem a devida análise de terreno.</p>
+
+<p><strong>• Campo Relacional e Amoroso:</strong> As suas parcerias e interações ganham um foco voltado para o respeito mútuo e o alinhamento de objetivos. Embora a tendência seja manifestar uma postura forte e independente, a regência desta fase exige que você saiba ouvir, ceder quando necessário e construir acordos claros, evitando transformar divergências do cotidiano em disputas de ego ou de poder.</p>
+
+<p><strong>• Conexão com o Universo e Consciência:</strong> O período traz uma percepção apurada e alta intuição prática, permitindo que você capte nuances do ambiente que costumam passar despercebidas pelos outros. O aprendizado aqui consiste em confiar nessa visão interna sem se isolar ou cair em uma postura de hipercrítica diante dos acontecimentos ao seu redor.</p>
+
+<hr />
+
+<p><strong>• Ponto de Atenção (Sombra):</strong> Risco de rigidez excessiva, impaciência com o ritmo dos outros e tendência a confrontos diretos quando contrariado. Se a sua pressa de agir tentar atropelar a estratégia e a diplomacia, o resultado no plano físico será o desgaste desnecessário de energia e o surgimento de resistências ao seu redor.</p>
+
+<p><strong>• Diretriz de Ação:</strong> Conduza os seus passos com inteligência emocional. O verdadeiro poder desta fase se manifesta quando você unifica uma visão firme à execução estratégica impecável.</p>
 `,
 
  videoID: "z1nW3rmNeEI"
     },
  
  12:{
-     conteudo:`<h4>Potência 12: A Construção Metódica e a Expressão Estratégica</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na sua realidade operacional, a Potência 12 atua como um sistema de duas forças complementares: a iniciativa e a individualidade do <strong>1</strong> somadas à cooperação e à sensibilidade do <strong>2</strong>, tendo como maestro e regente o <strong>3</strong>. Na prática da sua vida, isso significa que você é convocado a tirar ideias do papel e dar o primeiro passo com autonomia, mas o vetor de comando exige que essa ação seja canalizada para a comunicação, a criatividade e a expansão pública, transformando projetos isolados em entregas magnéticas e articuladas.</p>
-<p>Operando no seu aspecto construtivo, essa engrenagem entrega uma capacidade admirável de unir a execução prática com a habilidade de se expressar e influenciar o ambiente ao redor. Na vivência real, você se torna o homem que sabe não apenas fazer o trabalho pesado, mas também negociar, articular e vender suas ideias com clareza e carisma. A sua força se consolida quando você usa a criatividade e o verbo como ferramentas de liderança, conectando sua iniciativa individual aos resultados coletivos.</p>
-<p>Por outro lado, quando o sistema sofre atrito no aspecto disfuncional, o risco é a dispersão de foco, a ansiedade por abraçar o mundo ou a dificuldade de manter a constância nas metas. Se a energia do 1 e do 2 se perde sem a direção firme do regente 3, o homem corre o risco de falar muito e realizar pouco, dissipando seu vigor em frentes vazias. A Potência 12 no campo da vida deixa o veredito claro: o seu sucesso depende de alinhar a coragem de começar com a precisão de se comunicar e construir com foco absoluto.</p>
+     conteudo:`<h4> A Iniciativa Criativa e a Resolução de Impasses</h4>
+<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na manifestação desta energia como número de movimento na sua Matriz da Vida, a Potência 12 inicia sua jornada com a impulsão, a independência e a atitude direta do <strong>1</strong>, transita em seguida pelo tato, pela diplomacia e pela cooperação do <strong>2</strong>, e encontra sua síntese operando sob a regência da expansão, da comunicação e da criatividade do <strong>3</strong>. Trata-se de uma fase ou momento em que o cenário exige de você coragem para dar o primeiro passo em direção aos projetos, sabendo logo após ajustar o passo com diplomacia para transformar dilemas complexos em soluções práticas por meio do diálogo e da versatilidade.</p>
+
+<hr />
+
+<p><strong>• Campo Profissional e Financeiro:</strong> Neste momento, o campo favorece o pioneirismo seguido de colaboração, impulsionando atividades que exigem comunicação eficaz, atendimento, negociação, marketing ou condução de projetos em equipe. Você atua melhor quando assume a dianteira com ideias próprias e, na sequência, utiliza a diplomacia e a clareza para agregar parceiros e aliados. A estabilidade financeira nesta fase consolida-se ao manter o foco nos objetivos principais e evitar a dispersão de energia em muitas frentes simultâneas.</p>
+
+<p><strong>• Campo Relacional e Amoroso:</strong> Suas interações afetivas e parcerias pedem que você una a sua iniciativa pessoal ao diálogo aberto, à leveza e à troca inteligente de ideias. Embora sua tendência natural seja tomar as rédeas das situações, a fase exige atenção para não adotar uma postura de esquiva em momentos de impasse ou evitar conversas necessárias apenas para manter uma harmonia superficial com quem está ao seu lado.</p>
+
+<p><strong>• Conexão com o Universo e Consciência:</strong> O período traz inspiração constante e facilidade para captar tendências e insights criativos no dia a dia. O aprendizado aqui consiste em canalizar essa vibração mental expansiva — gerada pelo seu ímpeto inicial combinado com o tato — para propósitos úteis e produtivos, evitando a ansiedade decorrente do excesso de estímulos externos.</p>
+
+<hr />
+
+<p><strong>• Ponto de Atenção (Sombra):</strong> Risco de dispersão de foco, tendência à procrastinação motivada pelo excesso de ideias e oscilações de ânimo quando confrontado com críticas ou com a rigidez de outras pessoas ao seu redor.</p>
+
+<p><strong>• Diretriz de Ação:</strong> Utilize sua atitude pioneira e o seu dom de comunicação com disciplina e foco. O verdadeiro poder desta fase floresce quando a sua inspiração é colocada em prática com constância, objetividade e responsabilidade.</p>
 `,
 
  videoID: "Q1ExYmNHSWNYX3c"
     },
  
  13:{
-     conteudo:`<h4>Potência 13: A Disciplina Construtiva e a Execução de Base</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na sua realidade operacional, a Potência 13 atua combinando o impulso de iniciativa e coragem do <strong>1</strong> com a expressão criativa e versátil do <strong>3</strong>, tendo como maestro e regente o <strong>4</strong>. Na prática da sua vida, isso significa que você possui ideias ousadas e sabe se comunicar bem, mas o vetor de comando exige que toda essa energia seja canalizada para a disciplina, a estruturação e o trabalho duro, transformando planos teóricos em fundações de concreto.</p>
-<p>Operando no seu aspecto construtivo, essa engrenagem entrega uma capacidade implacável de produzir resultados tangíveis através do esforço focado e da organização. Na vivência real, você se torna o homem que não apenas começa um projeto com entusiasmo, mas que tem a resiliência necessária para sustentar a operação dia após dia, construindo segurança, ordem e estabilidade duradoura. A sua força se consolida quando você submete sua criatividade à rigidez do método.</p>
-<p>Por outro lado, quando o sistema sofre atrito no aspecto disfuncional, o risco é a impaciência crônica, a rebeldia contra regras ou a tendência a abandonar trabalhos pesados no meio do caminho. Se a energia dispersiva do 3 tenta atropelar a disciplina exigida pelo regente 4, o homem esbarra em frustrações e desorganização prática. A Potência 13 no campo da vida deixa o veredito claro: o seu avanço real depende da sua capacidade de transformar qualquer ideia brilhante em uma rotina de execução sólida e inegociável.</p>
+     conteudo:`<h4> A Estruturação Prática e a Disciplina Construtiva</h4>
+<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na manifestação desta energia como número de movimento na sua Matriz da Vida, a Potência 13 inicia sua jornada com a impulsão, a independência e a atitude direta do <strong>1</strong>, transita em seguida pela expressão criativa, pela comunicação e pela versatilidade do <strong>3</strong>, e encontra sua síntese operando sob a regência da ordem, do método, da estabilidade e do trabalho duro do <strong>4</strong>. Trata-se de uma fase ou momento em que o cenário exige de você coragem para iniciar novos projetos ou assumir a frente de uma situação, sabendo usar a comunicação e a inteligência prática para ajustar as ideias, culminando na construção de bases sólidas e duradouras.</p>
+
+<hr />
+
+<p><strong>• Campo Profissional e Financeiro:</strong> Neste momento, o campo favorece o pioneirismo criativo seguido de execução metódica, impulsionando atividades ligadas a negócios próprios, planejamento estruturado, engenharia, gestão de processos ou qualquer empreitada que exija colocar a mão na massa com rigor. Você produz melhor quando assume a iniciativa e utiliza sua versatilidade para resolver imprevistos, aplicando em seguida a disciplina necessária para consolidar os resultados. A estabilidade financeira nesta fase consolida-se ao transformar ideias inovadoras em sistemas organizados, evitando atalhos e apostando na consistência do trabalho diário.</p>
+
+<p><strong>• Campo Relacional e Amoroso:</strong> Suas interações afetivas e parcerias pedem que você una a sua autonomia pessoal à franqueza e ao diálogo claro, trazendo lealdade e compromisso prático para o dia a dia a dois. Embora sua tendência natural seja focar nos objetivos e nas tarefas materiais, a fase exige atenção para não se mostrar inflexível demais, frio ou exigente com quem está ao seu lado, lembrando que a solidez de uma relação também se alimenta de leveza e atenção aos detalhes emocionais.</p>
+
+<p><strong>• Conexão com o Universo e Consciência:</strong> O período traz uma forte capacidade de transformar inspirações mentais e insights criativos em projetos tangíveis e realizáveis. O aprendizado aqui consiste em ancorar a sua energia mental agitada na realidade concreta, entendendo que a verdadeira evolução espiritual e material se manifesta na capacidade de construir com as próprias mãos uma base firme, ordenada e útil para a sua vida e para o coletivo.</p>
+
+<hr />
+
+<p><strong>• Ponto de Atenção (Sombra):</strong> Risco de rigidez excessiva na rotina, impaciência com a lentidão dos processos materiais, tendência a assumir mais responsabilidades do que consegue suportar por excesso de controle, ou frustração quando as inovações iniciais encontram barreiras burocráticas.</p>
+
+<p><strong>• Diretriz de Ação:</strong> Una a sua coragem de começar e a sua criatividade para argumentar com a disciplina inegociável da execução. O verdadeiro poder desta fase se manifesta quando você canaliza sua energia para edificar estruturas sólidas, produtivas e definitivas na matéria.</p>
 `,
 
 videoID: "z1nW3rmNeEI"
     }, 
  
  14:{
-     conteudo:`<h4>Potência 14: A Disciplina Dinâmica e o Foco na Realidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na sua realidade operacional, a Potência 14 atua combinando o ímpeto de individualidade e iniciativa do <strong>1</strong> com a estrutura, a rigidez e a necessidade de ordem do <strong>4</strong>, tendo como maestro e regente o <strong>5</strong>. Na prática da sua vida, isso significa que você é moldado para buscar estabilidade e metas sólidas, mas o vetor de comando exige flexibilidade e adaptação constante diante das mudanças do ambiente, transformando a disciplina rígida em versatilidade inteligente.</p>
-<p>Operando no seu aspecto construtivo, essa engrenagem entrega uma capacidade admirável de sustentar projetos de longo prazo sem perder a agilidade quando o cenário exige correções de rota. Na vivência real, você se torna o homem que sabe fincar estacas firmes, mas que não se engessa diante do inesperado, usando a inteligência prática para superar crises e agarrar oportunidades em movimento. A sua força se consolida quando você equilibra o método com a liberdade de ação.</p>
-<p>Por outro lado, quando o sistema sofre atrito no aspecto disfuncional, o risco é a ansiedade gerada pelo choque entre o desejo de controle absoluto (4) e os imprevistos da vida (5), podendo levar à frustração ou à impulsividade destrutiva. Se o homem tenta engessar a realidade ou resiste às mudanças necessárias, o ambiente cobra seu preço em desgaste. A Potência 14 no campo da vida deixa o veredito claro: o seu sucesso depende de manter a base sólida, mas ter a flexibilidade de navegar pelas tempestades sem perder o rumo.</p>
+     conteudo:`<h4> A Iniciativa Estruturada e a Adaptação Dinâmica</h4>
+<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na manifestação desta energia como número de movimento na sua Matriz da Vida, a Potência 14 inicia sua jornada com a impulsão, a independência e a atitude direta do <strong>1</strong>, transita em seguida pela rigidez, pelo método, pela ordem e pela base sólida do <strong>4</strong>, e encontra sua síntese operando sob a regência da expansão, da versatilidade e da liberdade do <strong>5</strong>. Trata-se de uma fase ou momento em que o cenário exige de você coragem para tomar a iniciativa e abrir novos caminhos, exigindo logo após a aplicação de disciplina, organização e método para consolidar o terreno, culminando na capacidade de se adaptar com inteligência às mudanças do percurso.</p>
+
+<hr />
+
+<p><strong>• Campo Profissional e Financeiro:</strong> Neste momento, o campo favorece o pioneirismo seguido de estruturação rigorosa. Você atua melhor quando assume a dianteira de um projeto com ideias próprias e aplica métodos sólidos, processos organizados e disciplina para tirar a ideia do papel. A estabilidade financeira nesta fase consolida-se ao unir a ousadia de começar com a consistência de manter as contas e os processos em ordem, sabendo pivotar estratégias com flexibilidade (regência 5) caso surjam imprevistos no mercado.</p>
+
+<p><strong>• Campo Relacional e Amoroso:</strong> Suas interações afetivas e parcerias pedem que você una a sua autonomia pessoal à lealdade, ao compromisso e ao respeito às regras combinadas na convivência a dois. Embora sua tendência natural seja focar na independência e na ação, a fase exige que você construa uma base estável com quem está ao seu lado, evitando a frieza excessiva ou a impaciência quando a rotina exigir paciência e estruturação conjunta.</p>
+
+<p><strong>• Conexão com o Universo e Consciência:</strong> O período traz a oportunidade de transformar impulsos mentais e inovações em realizações práticas e metódicas, utilizando a liberdade com responsabilidade. O aprendizado aqui consiste em perceber que a verdadeira expansão (5) só se sustenta quando você combina a coragem de agir (1) com a firmeza de estruturar o que foi construído (4).</p>
+
+<hr />
+
+<p><strong>• Ponto de Atenção (Sombra):</strong> Risco de conflito entre o desejo de liberdade imediata e a necessidade de cumprir etapas metódicas, impaciência com a lentidão dos processos estruturados, rigidez excessiva ao tentar controlar o rumo das coisas, ou dispersão quando a rotina exige constância.</p>
+
+<p><strong>• Diretriz de Ação:</strong> Una a sua coragem de dar o primeiro passo à disciplina necessária para construir bases sólidas. O verdadeiro poder desta fase se manifesta quando você executa com método e mantém a mente aberta para navegar pelas mudanças com inteligência.</p>
 `,
 
  videoID: "z1nW3rmNeEI"
     },
  
  15:{
-     conteudo:`<h4>Potência 15: A Versatilidade Magnética e o Foco Responsável</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na sua realidade operacional, a Potência 15 atua combinando o impulso individual e pioneiro do <strong>1</strong> com a energia de liberdade, movimento e experiências sensoriais do <strong>5</strong>, tendo como maestro e regente o <strong>6</strong>. Na prática da sua vida, isso significa que você é impulsionado a buscar autonomia e a desbravar o mundo com ousadia e versatilidade, mas o vetor de comando exige que toda essa energia de busca e expansão seja canalizada para o compromisso, a responsabilidade e a sustentação do lar e das relações.</p>
-<p>Operando no seu aspecto construtivo, essa engrenagem entrega uma capacidade magnética de liderança carismática e adaptação rápida. Na vivência real, você se torna o homem que sabe atrair oportunidades, transitar por diferentes ambientes com desenvoltura e usar sua inteligência prática para proteger e estruturar o seu clã. A sua força se consolida quando você entende que a verdadeira liberdade não é o caos dos impulsos livres, mas a capacidade de construir um porto seguro onde sua independência encontra propósito e respeito.</p>
-<p>Por outro lado, quando o sistema sofre atrito no aspecto disfuncional, o risco é a dispersão em paixões passageiras, a recusa em assumir deveres ou a tendência a usar a lábia e o magnetismo apenas para gratificação egoísta. Se a sede de novidade do 1 e do 5 foge do controle da regência ética do 6, o homem acaba gerando instabilidade e conflitos nas suas bases afetivas. A Potência 15 no campo da vida deixa o veredito claro: o seu sucesso e a sua realização dependem de unir a sua audácia pessoal a um compromisso inegociável com a lealdade e a responsabilidade.</p>
+     conteudo:`<h4>A Ousadia Direta e a Responsabilidade Afetiva</h4>
+<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na manifestação desta energia como número de movimento na sua Matriz da Vida, a Potência 15 inicia sua jornada com a impulsão, a independência e a atitude direta do <strong>1</strong>, transita em seguida pela busca de experiências, pela sensualidade, pela curiosidade e pela quebra de padrões do <strong>5</strong>, e encontra sua síntese operando sob a regência da harmonia, da família, da responsabilidade e do compromisso do <strong>6</strong>. Trata-se de uma fase ou momento em que o cenário exige de você coragem para tomar a dianteira e experimentar novas frentes, exigindo logo após maturidade para lidar com as consequências das próprias escolhas e harmonizar as demandas da vida pessoal com os deveres assumidos.</p>
+
+<hr />
+
+<p><strong>• Campo Profissional e Financeiro:</strong> Neste momento, o campo favorece o pioneirismo ousado aliado à capacidade de adaptação e vendas, atraindo oportunidades que exigem lábia, inovação e desenvoltura para lidar com o público. Você atua melhor quando assume riscos calculados e traz soluções criativas para resolver problemas. A estabilidade financeira nesta fase consolida-se ao equilibrar o impulso de gastar com o prazer imediato e a necessidade de construir segurança a longo prazo, assumindo com seriedade as responsabilidades profissionais e financeiras.</p>
+
+<p><strong>• Campo Relacional e Amoroso:</strong> Suas interações afetivas e parcerias colocam em foco a balança entre a liberdade pessoal e o compromisso profundo. A convivência pede que você una o seu magnetismo e a ânsia por novidades à lealdade, ao diálogo honesto e ao cuidado genuíno com quem está ao seu lado. A fase exige maturidade para evitar atitudes egoístas, escapismos ou impulsos que possam comprometer a confiança mútua e a estabilidade do lar.</p>
+
+<p><strong>• Conexão com o Universo e Consciência:</strong> O período traz um intenso aprendizado sobre o livre-arbítrio e a responsabilidade. O aprendizado aqui consiste em perceber que a expansão e a busca por prazer (5) e independência (1) perdem o sentido se gerarem caos ao redor, exigindo que você utilize sua inteligência para servir a propósitos construtivos e proteger os vínculos que realmente importam.</p>
+
+<hr />
+
+<p><strong>• Ponto de Atenção (Sombra):</strong> Risco de impulsividade exagerada, busca desenfreada por gratificação instantânea, tendência a fugir de compromissos ou obrigações quando a rotina aperta, e conflito interno entre querer total liberdade e acabar gerando dependência ou cobranças excessivas nos relacionamentos.</p>
+
+<p><strong>• Diretriz de Ação:</strong> Una a sua coragem de ousar com a maturidade de assumir o comando da sua vida com responsabilidade. O verdadeiro poder desta fase se manifesta quando você usa sua energia criativa para construir e proteger o que é sólido, harmonizando a sua liberdade pessoal com o compromisso.</p>
 `,
 
 videoID: "z1nW3rmNeEI"
     }, 
  
  16:{
-     conteudo:`<h4>Potência 16: A Reconstrução Estratégica e o Rigor Analítico</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na sua realidade operacional, a Potência 16 atua combinando o impulso de iniciativa e individualidade do <strong>1</strong> com a versatilidade e o movimento dinâmico do <strong>5</strong> (lembrando que a soma 1+6 resulta no regente <strong>7</strong>). Na prática da sua vida, isso significa que você é lançado em ciclos de quebra de velhas estruturas onde a ousadia pessoal e a adaptação rápida são testadas, mas o vetor de comando exige que tudo isso seja filtrado por uma análise profunda, inteligência estratégica e busca implacável pela verdade dos fatos.</p>
-<p>Operando no seu aspecto construtivo, essa engrenagem entrega uma capacidade admirável de aprender com os próprios tombos, reconstruindo bases mais sólidas e inteligentes após momentos de crise. Na vivência real, você se torna o homem calejado que não se assusta com reviravoltas, pois usa a introspecção e o rigor mental para enxergar o que os outros não veem, transformando experiências difíceis em sabedoria prática e vantagem competitiva. A sua força se consolida quando você une a coragem de agir à lucidez de pensar a longo prazo.</p>
-<p>Por outro lado, quando o sistema sofre atrito no aspecto disfuncional, o risco é o excesso de ceticismo, o isolamento defensivo ou a tendência a sabotar os próprios projetos por rigidez mental ou orgulho ferido. Se a pressa em avançar atropela a necessidade de reavaliação crítica ditada pelo regente 7, o homem acaba batendo cabeça nos mesmos erros. A Potência 16 no campo da vida deixa o veredito claro: o seu verdadeiro avanço depende da sua capacidade de olhar para dentro, corrigir as falhas na raiz e reconstruir sua jornada com lucidez e precisão cirúrgica.</p>
+     conteudo:`<h4> A Iniciativa Transformadora e a Busca de Profundidade</h4>
+<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na manifestação desta energia como número de movimento na sua Matriz da Vida, a Potência 16 inicia sua jornada com a impulsão, a independência e a atitude direta do <strong>1</strong>, transita em seguida pela reestruturação profunda, pela quebra de falsas bases e pela lapidação do <strong>6</strong>, e encontra sua síntese operando sob a regência da análise racional, da introspecção, da sabedoria e da busca pela verdade do <strong>7</strong>. Trata-se de uma fase ou momento em que o cenário exige de você coragem para iniciar ações que podem desestruturar o que estava obsoleto, exigindo em seguida maturidade para lidar com perdas ou ajustes drásticos, culminando na necessidade de recolhimento, estudo e compreensão íntima dos reais motivos por trás dos acontecimentos.</p>
+
+<hr />
+
+<p><strong>• Campo Profissional e Financeiro:</strong> Neste momento, o campo aponta para um ciclo de redefinições drásticas, onde velhos modelos profissionais ou empreendimentos baseados em bases frágeis podem ruir para dar lugar a algo mais autêntico. Você atua melhor quando canaliza o seu ímpeto para investigações profundas, especializações técnicas, auditorias ou trabalhos que exijam alto nível de concentração e rigor analítico. A estabilidade financeira nesta fase consolida-se ao abandonar apostas especulativas ou impulsivas, investindo com cautela em conhecimento especializado e em projetos de longo prazo.</p>
+
+<p><strong>• Campo Relacional e Amoroso:</strong> Suas interações afetivas e parcerias passam por um teste de fogo de autenticidade e verdade. A convivência pede que você deixe de lado máscaras sociais ou a necessidade de controle absoluto, encarando os problemas com maturidade e profundidade emocional. A fase exige que você saiba equilibrar o seu espaço de recolhimento e reflexão com o diálogo honesto, evitando o isolamento frio ou o excesso de exigências críticas em relação à pessoa que está ao seu lado.</p>
+
+<p><strong>• Conexão com o Universo e Consciência:</strong> O período traz uma das experiências mais marcantes de lapidação interna, frequentemente associada ao conceito de reestruturação por crises necessárias (a queda da torre para reconstrução do templo interior). O aprendizado aqui consiste em não resistir às mudanças forçadas pelo destino, utilizando a introspecção e o desenvolvimento da consciência para compreender as leis maiores que regem a sua jornada.</p>
+
+<hr />
+
+<p><strong>• Ponto de Atenção (Sombra):</strong> Risco de orgulho excessivo, tendência a se isolar do mundo quando os planos sofrem reviravoltas, pessimismo diante de imprevistos materiais, rigidez mental intransigente ou repetição de erros por recusar conselhos externos.</p>
+
+<p><strong>• Diretriz de Ação:</strong> Una a sua coragem de encarar os fatos de frente com a disposição de buscar a verdade por trás de cada obstáculo. O verdadeiro poder desta fase se manifesta quando você usa os tombos do caminho como degraus para adquirir sabedoria, maturidade e discernimento superior.</p>
 `,
 
 videoID: "z1nW3rmNeEI"
     }, 
  
  17:{
-     conteudo:`<h4>Potência 17: A Visão de Longo Prazo e a Execução Soberana</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na sua realidade operacional, a Potência 17 atua combinando a iniciativa e a individualidade irredutível do <strong>1</strong> com a profundidade analítica e o rigor mental do <strong>7</strong>, tendo como maestro e regente o <strong>8</strong>. Na prática da sua vida, isso significa que você é moldado para pensar além do óbvio e agir com autonomia intelectual, mas o vetor de comando exige que toda essa bagagem mental e estratégica seja convertida em poder de execução real, gestão de recursos e conquista de resultados materiais sólidos.</p>
-<p>Operando no seu aspecto construtivo, essa engrenagem entrega uma capacidade implacável de planejamento de longo prazo e liderança executiva de alto nível. Na vivência real, você se torna o homem que enxerga o tabuleiro inteiro antes de mover uma peça, combinando a lucidez analítica com a coragem de assumir o comando de grandes projetos, negócios ou finanças. A sua força se consolida quando você prova que a verdadeira inteligência se mede pela capacidade de transformar visão estratégica em soberania e prosperidade prática.</p>
-<p>Por outro lado, quando o sistema sofre atrito no aspecto disfuncional, o risco é o excesso de cálculo que paralisa a ação, a frieza excessiva com as pessoas ou a ânsia de controle absoluto sobre o dinheiro e o poder. Se o isolamento intelectual do 7 e a urgência de mando do 1 atropelam a ética e a justiça de mercado exigidas pelo regente 8, o homem colhe atrito e instabilidade em suas estruturas. A Potência 17 no campo da vida deixa o veredito claro: o seu topo só é alcançado quando você alinha a sua genialidade estratégica à disciplina firme da realização material.</p>
+     conteudo:`<h4> A Iniciativa Estratégica e a Realização de Alto Impacto</h4>
+<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na manifestação desta energia como número de movimento na sua Matriz da Vida, a Potência 17 inicia sua jornada com a impulsão, a independência e a atitude direta do <strong>1</strong>, transita em seguida pela busca da verdade, pela intuição apurada, pela análise minuciosa e pelo aprimoramento técnico do <strong>7</strong>, e encontra sua síntese operando sob a regência do poder material, da gestão de recursos, da justiça e da realização de grande escala do <strong>8</strong>. Trata-se de uma fase ou momento em que o cenário exige de você coragem para tomar a frente com autonomia, unida à exigência de aplicar inteligência estratégica, planejamento refinado e visão de longo prazo para materializar resultados sólidos e de grande impacto na matéria.</p>
+
+<hr />
+
+<p><strong>• Campo Profissional e Financeiro:</strong> Neste momento, o campo favorece negócios de grande porte, posições de liderança executiva, investimentos estratégicos, gestão de equipes ou empreendimentos que exijam alta competência técnica combinada com capacidade de comando. Você atua melhor quando une o seu pioneirismo a uma análise de mercado fria e calculada, sem dar espaço para amadorismos. A estabilidade e a expansão financeira nesta fase consolidam-se ao assumir total responsabilidade pelos lucros e prejuízos, aplicando rigor na administração de recursos, ética nos negócios e foco em metas de alto retorno.</p>
+
+<p><strong>• Campo Relacional e Amoroso:</strong> Suas interações afetivas e parcerias exigem clareza, respeito aos acordos mútuos e maturidade na condução dos objetivos a dois. Embora sua tendência natural seja focar nos compromissos materiais, nos negócios e na busca por conquistas, a fase exige atenção para não se mostrar frio, excessivamente calculista ou distante com quem está ao seu lado. O equilíbrio consiste em usar a força da sua liderança para proteger e prover o ambiente familiar, sem transformar a relação em uma transação de resultados ou cobranças excessivas.</p>
+
+<p><strong>• Conexão com o Universo e Consciência:</strong> O período traz uma sintonia poderosa entre a capacidade de planejar com precisão cirúrgica e o poder de execução na matéria, colocando à prova a sua integridade e senso de justiça (a lei de causa e efeito). O aprendizado aqui consiste em entender que o verdadeiro poder material (8) e o sucesso duradouro só se sustentam quando fundamentados na verdade, na competência técnica (7) e na coragem de agir com retidão (1), compreendendo que a riqueza e a autoridade são instrumentos de responsabilidade perante o mundo.</p>
+
+<hr />
+
+<p><strong>• Ponto de Atenção (Sombra):</strong> Risco de autoritarismo excessivo, ganância por resultados imediatos, tendência a isolar-se em análises mentais complexas sem executar o plano, frieza emocional nas relações por excesso de pragmatismo, ou o perigo de usar atalhos duvidosos que comprometem a reputação construída.</p>
+
+<p><strong>• Diretriz de Ação:</strong> Una a sua coragem de iniciar com a inteligência analítica e a disciplina implacável na execução. O verdadeiro poder desta fase se manifesta quando você lidera com autoridade moral, competência técnica e foco inegociável na construção de um legado sólido e próspero.</p>
 `,
 
  videoID: "z1nW3rmNeEI"
     },
  
  18:{
-     conteudo:`<h4>Potência 18: A Autoridade Executiva e a Visão Sistêmica</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na sua realidade operacional, a Potência 18 atua combinando a iniciativa e a força de comando do <strong>1</strong> com a ambição material, a gestão de recursos e o poder executivo do <strong>8</strong>, tendo como maestro e regente o <strong>9</strong>. Na prática da sua vida, isso significa que você é lançado em cenários onde a conquista de resultados financeiros, status e autoridade é o foco central, mas o vetor de comando exige que toda essa ambição seja orientada por uma visão macro, desapego estratégico e responsabilidade sistêmica de impacto coletivo.</p>
-<p>Operando no seu aspecto construtivo, essa engrenagem entrega uma capacidade admirável de liderança de grandes frentes, negócios e estruturas de poder. Na vivência real, você se torna o homem capaz de gerir recursos com precisão cirúrgica e visão de longo prazo, entendendo que o verdadeiro império se sustenta não apenas pelo lucro bruto, mas pela capacidade de liderar com justiça, sabedoria e entrega de valor real. A sua força se consolida quando você une a ânsia de realização material à maturidade de quem compreende o seu papel no panorama geral.</p>
-<p>Por outro lado, quando o sistema sofre atrito no aspecto disfuncional, o risco é a obsessão implacável por controle, a frieza nos negócios ou a tendência a atropelar pessoas em troca de lucro e poder. Se a ganância do 8 e a empáfia do 1 ignoram os limites e a visão ética do regente 9, o homem acaba construindo estruturas vulneráveis que desabam sob o próprio peso. A Potência 18 no campo da vida deixa o veredito claro: o seu topo financeiro e executivo só tem valor sustentável quando o seu comando serve a um propósito maior e duradouro.</p>
+     conteudo:`<h4>Potência 18 (18/9): A Iniciativa Visionária e a Conclusão de Ciclos</h4>
+<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na manifestação desta energia como número de movimento na sua Matriz da Vida, a Potência 18 inicia sua jornada com a impulsão, a independência e a atitude direta do <strong>1</strong>, transita em seguida pela intuição profunda, pela sensibilidade aguçada, pela superação de ilusões e pela gestão de recursos do <strong>8</strong> (redução de 1+8 ou a força acumulada da matéria), e encontra sua síntese operando sob a regência da conclusão, da sabedoria universal, da entrega e do fechamento de ciclos do <strong>9</strong>. Trata-se de uma fase ou momento em que o cenário exige de você coragem para tomar decisões definitivas e liderar mudanças, exigindo logo após discernimento para enxergar além das aparências, lidar com questões emocionais complexas ou financeiras, culminando na necessidade de desapegar do que cumpriu seu papel para abrir espaço para um novo patamar de evolução.</p>
+
+<hr />
+
+<p><strong>• Campo Profissional e Financeiro:</strong> Neste momento, o campo aponta para a conclusão de grandes projetos, reestruturações financeiras de peso ou a finalização de ciclos de carreira que já não cabem na sua realidade. Você atua melhor quando canaliza sua iniciativa para fechar pontas soltas, resolver pendências judiciais ou comerciais e entregar resultados com excelência e visão humanitária. A estabilidade financeira nesta fase consolida-se ao evitar o apego excessivo a investimentos obsoletos ou a falsas expectativas, sabendo o momento exato de realizar lucros, liquidar obrigações e encerrar parcerias que perderam o sentido.</p>
+
+<p><strong>• Campo Relacional e Amoroso:</strong> Suas interações afetivas e parcerias passam por um crivo de verdade e desapego. A convivência exige maturidade para lidar com ilusões do passado, mágoas antigas ou expectativas irreais que precisam ser dissolvidas pelo diálogo franco. A fase pede que você exerça a generosidade e a compreensão, sabendo que algumas relações exigem transformação profunda ou um encerramento pacífico para que ambos possam seguir seus caminhos com dignidade, sem espaço para rancores ou cobranças desgastantes.</p>
+
+<p><strong>• Conexão com o Universo e Consciência:</strong> O período traz um chamado poderoso para a expansão da consciência e a limpeza cármica. O aprendizado aqui consiste em perceber que a verdadeira força de um homem (1 e 8) se mede pela sua capacidade de perdoar, de aceitar os términos necessários e de servir a um propósito maior (9) sem carregar o peso desnecessário do passado, compreendendo que fechar um ciclo com sabedoria é o requisito indispensável para o próximo salto.</p>
+
+<hr />
+
+<p><strong>• Ponto de Atenção (Sombra):</strong> Risco de apego excessivo a situações ou pessoas do passado, tendência a alimentar ilusões, receio paralisante de perdas materiais ou emocionais, sensação de desgaste por carregar problemas alheios, ou revolta quando o destino força o encerramento de um ciclo inevitável.</p>
+
+<p><strong>• Diretriz de Ação:</strong> Una a sua coragem de decidir com a sabedoria do desapego. O verdadeiro poder desta fase se manifesta quando você tem a grandeza de concluir o que precisa ser encerrado, limpando o terreno com honra e preparando-se de cabeça erguida para o novo ciclo que está por vir.</p>
 `,
 
 videoID: "z1nW3rmNeEI"
@@ -3945,10 +4041,22 @@ videoID: "z1nW3rmNeEI"
     },
  
  21:{
-     conteudo:`<h4>Potência 21: A Diplomacia Estratégica e a Aliança de Valor</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na sua realidade operacional, a Potência 21 inaugura a Camada 2 combinando a sensibilidade, a intuição e a diplomacia do <strong>2</strong> com a iniciativa e a individualidade do <strong>1</strong>, tendo como maestro e regente o <strong>3</strong> ($2+1=3$). Na prática da sua vida, isso significa que você é lançado em cenários onde a cooperação, o tato relacional e as parcerias são ferramentas cruciais, mas o vetor de comando exige que toda essa articulação seja convertida em expressão clara, criatividade e expansão pública, transformando acordos estratégicos em resultados visíveis.</p>
-<p>Operando no seu aspecto construtivo, essa engrenagem entrega uma capacidade admirável de mediar conflitos, unir forças complementares e conduzir negociações difíceis com maestria e carisma. Na vivência real, você se torna o homem que sabe transitar entre os bastidores da diplomacia e a frente dos negócios, usando a inteligência relacional para abrir portas e construir pontes duradouras. A sua força se consolida quando você percebe que saber se associar com as pessoas certas é o maior acelerador de conquistas.</p>
-<p>Por outro lado, quando o sistema sofre atrito no aspecto disfuncional, o risco é a dependência excessiva de terceiros, a indecisão crônica ou o uso da lábia apenas para evitar confrontos necessários. Se a hesitação do 2 paralisa a coragem de agir do 1 e o foco se dispersa sem a direção do regente 3, o homem acaba perdendo oportunidades por excesso de cautela ou promessas vazias. A Potência 21 no campo da vida deixa o veredito claro: o seu avanço depende de unir a sabedoria de somar forças à firmeza de executar com autonomia e clareza.</p>
+     conteudo:`<h4>Potência 21 (21/3): A Diplomacia Ativa e a Condução Estratégica</h4>
+<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na manifestação desta energia como número de movimento na sua Matriz da Vida, a Potência 21 inicia sua jornada com a paciência, a receptividade, a diplomacia e a leitura fina do ambiente do <strong>2</strong>, canaliza essa base para a ação direta, a coragem e a iniciativa pessoal do <strong>1</strong>, e encontra sua síntese operando sob a regência da expansão, da comunicação e da criatividade do <strong>3</strong>. Trata-se de uma fase ou momento em que o cenário exige de você, antes de tudo, saber ouvir, observar o terreno e usar o tato para construir acordos, para só então desferir o passo firme da execução e liderar os acontecimentos com clareza e expressão.</p>
+
+<hr />
+
+<p><strong>• Campo Profissional e Financeiro:</strong> Neste momento, o campo favorece estratégias onde a diplomacia abre as portas para a sua ação executiva. Você produz excelentes resultados ao usar a habilidade de negociação e o bom relacionamento com parceiros como ponto de partida, aplicando em seguida a sua autonomia e atitude para liderar projetos, fechar negócios ou conduzir equipes. A estabilidade financeira consolida-se ao unir a paciência para analisar cada proposta com a coragem de decidir na hora certa, evitando hesitações excessivas.</p>
+
+<p><strong>• Campo Relacional e Amoroso:</strong> Suas interações afetivas e parcerias pedem que você primeiro compreenda o cenário e exerça a empatia, equilibrando a sensibilidade do 2 com a postura firme e marcante do 1. A fase exige que você não guarde frustrações por excesso de recato nem imponha vontades de maneira brusca, utilizando o diálogo sincero do 3 para alinhar expectativas e fortalecer a harmonia a dois com maturidade.</p>
+
+<p><strong>• Conexão com o Universo e Consciência:</strong> O período traz uma sintonia fina entre a intuição apurada para captar o clima ao seu redor e a coragem mental para transformar percepções em atitudes construtivas. O aprendizado aqui consiste em confiar no seu tato diplomático sem perder o ímpeto de realizar, canalizando sua energia mental para propósitos claros sem se deixar paralisar por excesso de ponderação.</p>
+
+<hr />
+
+<p><strong>• Ponto de Atenção (Sombra):</strong> Risco de hesitação inicial seguida de impulsividade caso a paciência se esgote, tendência a assumir uma postura defensiva ou passiva quando confrontado, e oscilação entre querer agradar a todos e impor a própria vontade de forma inflexível.</p>
+
+<p><strong>• Diretriz de Ação:</strong> Harmonize a sua capacidade de escuta e diplomacia com a atitude firme de quem sabe o que quer. O verdadeiro poder desta fase se manifesta quando você usa o tato para preparar o terreno e a coragem para executar com precisão.</p>
 `,
 
 videoID: "z1nW3rmNeEI"
