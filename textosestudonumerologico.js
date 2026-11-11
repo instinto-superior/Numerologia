@@ -1286,7 +1286,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>A sua verdadeira força não reside na agressividade, mas na persuasão suave e na capacidade de unir pessoas em torno de um objetivo comum. Você produz resultados brilhantes quando está em parceria, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e seu talento brilha intensamente quando existe harmonia ao seu redor para que sua intuição seja ouvida.</p>
     <p>Você acaba se tornando o suporte emocional de muitos, possuindo uma empatia que acolhe e traz segurança para quem caminha ao seu lado. Existe em seu interior um apreço profundo pela beleza e pelo equilíbrio, refletindo uma alma que busca a paz em cada detalhe do cotidiano.</p>
     <p>O seu aprendizado, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é fortalecer a autoconfiança para que você não dependa tanto da aprovação dos outros. Quando você une sua sensibilidade com a firmeza nas decisões, você se torna uma peça fundamental e indispensável para o sucesso de qualquer estrutura.</p>`,
-   videoID: " "
+   videoID: " MkJRYTA3cWVkUzA"
     },
     3: {
      conteudo:` <h3>Carismático - Dia 3</h3>
@@ -1294,7 +1294,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>O otimismo é a sua marca registrada, e você tem o talento de elevar o espírito de quem está por perto. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a vida precisa de expressão; sua mente está sempre criando conexões e descobrindo novas formas de tornar o dia a dia mais vibrante e interessante.</p>
     <p>Você possui uma alma jovem que detesta o tédio. Sua presença costuma ser o ponto alto de qualquer encontro, pois você traz uma vibração de leveza e uma inteligência rápida que cativa as pessoas em apenas alguns minutos de conversa.</p>
     <p>O cuidado que você deve ter é com a dispersão de energia; por ter tantos talentos, você pode sentir dificuldade em concluir o que começa. Ao focar sua expressão em objetivos claros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você ganha o poder de influenciar multidões e espalhar entusiasmo por onde passar.</p>`,
-   videoID: " "
+   videoID: "OXZSN2JlUDBTREk "
     },
     4: {
      conteudo:` <h3>Disciplinado - Dia 4</h3>
@@ -1302,7 +1302,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua abordagem da vida é prática e realista. Você valoriza o trabalho bem feito e entende que o sucesso verdadeiro é construído tijolo por tijolo. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a segurança da sua família e a estabilidade material são prioridades que você defende com unhas e dentes.</p>
     <p>Você é alguém em quem as pessoas confiam de olhos fechados, pois sua palavra tem valor e sua lealdade é inabalável. Existe um prazer em saber que cada esforço que você faz hoje está garantindo uma colheita segura e tranquila para o seu futuro.</p>
     <p>O desafio para você é não permitir que a mente se torne rígida demais. Ao unir sua incrível persistência com um pouco mais de flexibilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você torna suas conquistas absolutamente inabaláveis e ganha a admiração de todos que buscam segurança em você.</p>`,
-   videoID: " "
+   videoID: " WWtLNEJhV3lTQlk"
     },
     5: {
      conteudo:` <h3>Independente - Dia 5</h3>
@@ -1310,7 +1310,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua energia é magnética e você aprende as coisas com uma rapidez impressionante, vivendo a vida com intensidade. Você tem aversão à rotina pesada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois sua mente precisa de estímulos constantes e de liberdade total para descobrir o que o mundo tem a oferecer além do óbvio.</p>
     <p>Você é uma pessoa de pensamento progressista, sempre buscando o que há de mais moderno e eficiente. Sua versatilidade permite que você transite entre mundos completamente diferentes com uma facilidade que muitos invejam em você.</p>
     <p>O seu aprendizado é desenvolver o foco, para que sua busca por liberdade não se torne uma instabilidade. Quando você canaliza essa inteligência rápida para um propósito maior, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna alguém brilhante e capaz de realizar transformações profundas ao seu redor.</p>`,
-   videoID: " "
+   videoID: "VlVJaThVbXN4Skk "
     },
     6: {
      conteudo:` <h3>Zeloso - Dia 6</h3>
@@ -1318,7 +1318,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua sensibilidade estética é marcante; você tem o dom de tornar tudo mais belo e acolhedor. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a realização pessoal está ligada à sua capacidade de ajudar e resolver conflitos através da compreensão e do carinho genuíno.</p>
     <p>Você possui uma natureza protetora rara. Existe um compromisso interno com a ética que guia cada um dos seus passos, fazendo com que sua presença transmita paz para quem atravessa momentos de dificuldade.</p>
     <p>O seu desafio, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é não se sobrecarregar com os problemas dos outros. Ao aprender a cuidar de si com a mesma dedicação que oferece ao próximo, você atinge uma plenitude emocional que irradia luz e conforto para o mundo inteiro.</p>`,
-   videoID: " "
+   videoID: "Y1dLR0Y0eEJyYVE "
     },
     7: {
      conteudo:` <h3>Perfeccionista - Dia 7</h3>
@@ -1326,7 +1326,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua natureza é mais introspectiva e você valoriza o silêncio como uma ferramenta essencial para recarregar suas energias. Você possui um "radar" natural para detectar falsidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e raramente aceita explicações superficiais sobre os assuntos que realmente importam para você.</p>
     <p>Você busca a perfeição em tudo o que executa, tornando-se uma autoridade no que faz. Existe uma elegância e uma discrição no seu comportamento que impõe respeito e desperta a curiosidade de quem deseja conhecer a sua mente brilhante.</p>
     <p>O desafio para você é não se isolar excessivamente do mundo. Ao compartilhar a sua sabedoria e as suas descobertas com as pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma figura de orientação e um guia de grande profundidade para todos nós.</p>`,
-   videoID: " "
+   videoID: "RHZaNUI5dFFiSXc "
     },
     8: {
      conteudo:` <h3>Original - Dia 8</h3>
@@ -1334,7 +1334,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua determinação é impressionante e você encara desafios com uma seriedade que impõe autoridade imediata. Para você, o sucesso é o resultado direto do seu esforço disciplinado e da sua capacidade de manter o foco inabalável nos resultados práticos, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Você tem a habilidade única de transformar ideias abstratas em lucros e estruturas sólidas. Existe em você um desejo de prosperidade que vai além do ganho individual; você busca construir segurança para todos que estão sob sua proteção.</p>
     <p>O seu aprendizado, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é entender que o poder é uma ferramenta para o bem. Quando você une sua ambição com a ética e a generosidade, você constrói um império de abundância que beneficia a sua vida e a de todos ao seu redor.</p>`,
-   videoID: " "
+   videoID: " Z19RRERRTDVvSVE"
     },
     9: {
      conteudo:` <h3>Universalista - Dia 9</h3>
