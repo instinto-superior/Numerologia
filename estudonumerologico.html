@@ -991,6 +991,38 @@ input[type="text"], select {
     /* Esconde o container travado por padrão, evita que ele apareça antes do tempo */
     #container-travado { display: none; }
 
+
+
+ /* --- ESTILOS DA CENTRAL DE VÍDEOS PERSONALIZADA --- */
+
+#grid-videos-centralizado {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.video-card-central {
+    background: #1a1a1a;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-card-central:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+.video-card-central img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}   
+
 /* ===================================================
    OCULTAR TEXTOS NA TELA E EXIBIR APENAS NO PDF
    =================================================== */
