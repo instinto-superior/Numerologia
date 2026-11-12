@@ -3785,28 +3785,43 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
 
 
 function montarBlocoUnicoDeVideos(res) {
-    // Procura o container onde o bloco de vídeos será injetado (certifique-se de ter um elemento com esse ID no seu HTML final)
     const container = document.getElementById("grid-videos-centralizado");
     if (!container) return;
     
     container.innerHTML = ""; // Limpa antes de preencher
 
-    // Mapeamento dos pilares que possuem vídeos no seu textos.js
+    // Mapeamento exato com base nas chaves do seu objeto 'textos'
     const itensParaGaleria = [
         { titulo: "Dia de Nascimento", valor: res.dia, objeto: textos.dia },
         { titulo: "Essência", valor: res.essencia, objeto: textos.essencia },
-        { titulo: "Caminho de Vida", valor: res.CaminhodeVida, objeto: textos.caminhodevida || textos.CaminhodeVida },
+        { titulo: "Caminho de Vida", valor: res.CaminhodeVida, objeto: textos.CaminhodeVida },
         { titulo: "Personalidade", valor: res.Personalidade, objeto: textos.Personalidade },
-        { titulo: "Motivação", valor: res.motivacao, objeto: textos.motivacao },
         { titulo: "Influência", valor: res.influencia, objeto: textos.influencia },
-        { titulo: "Talento Oculto", valor: res.talento, objeto: textos.talento }
+        { titulo: "Propósito", valor: res.Propósito, objeto: textos.Propósito }
     ];
 
     itensParaGaleria.forEach(item => {
         if (item.objeto && item.objeto[item.valor]) {
             const entrada = item.objeto[item.valor];
-            const videoEmbaralhado = (typeof entrada === 'object' && entrada !== null) ? entrada.videoID : null;
-            const videoID = videoEmbaralhado ? atob(videoEmbaralhado) : null;
+            let videoID = null;
+
+            if (typeof entrada === 'object' && entrada !== null && entrada.videoID) {
+                let bruto = entrada.videoID.trim();
+                if (bruto !== "") {
+                    // Se for URL completa do YouTube, extrai o ID; senão, usa o texto direto ou o atob
+                    if (bruto.includes("youtube.com") || bruto.includes("youtu.be")) {
+                        const match = bruto.match(/(?:v=|\/)([0-9A-Za-z_-]{11})/);
+                        videoID = match ? match[1] : null;
+                    } else {
+                        // Tenta decodificar via atob, se falhar (porque já está limpo), usa o texto puro
+                        try {
+                            videoID = atob(bruto);
+                        } catch (e) {
+                            videoID = bruto;
+                        }
+                    }
+                }
+            }
 
             if (videoID) {
                 const urlYouTube = `https://www.youtube.com/watch?v=${videoID}`;
@@ -3830,7 +3845,6 @@ function montarBlocoUnicoDeVideos(res) {
         }
     });
 }
-
         
         
         
