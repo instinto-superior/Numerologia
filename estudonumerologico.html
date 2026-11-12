@@ -3784,7 +3784,52 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
 }
 
 
+function montarBlocoUnicoDeVideos(res) {
+    // Procura o container onde o bloco de vídeos será injetado (certifique-se de ter um elemento com esse ID no seu HTML final)
+    const container = document.getElementById("grid-videos-centralizado");
+    if (!container) return;
+    
+    container.innerHTML = ""; // Limpa antes de preencher
 
+    // Mapeamento dos pilares que possuem vídeos no seu textos.js
+    const itensParaGaleria = [
+        { titulo: "Dia de Nascimento", valor: res.dia, objeto: textos.dia },
+        { titulo: "Essência", valor: res.essencia, objeto: textos.essencia },
+        { titulo: "Caminho de Vida", valor: res.CaminhodeVida, objeto: textos.caminhodevida || textos.CaminhodeVida },
+        { titulo: "Personalidade", valor: res.Personalidade, objeto: textos.Personalidade },
+        { titulo: "Motivação", valor: res.motivacao, objeto: textos.motivacao },
+        { titulo: "Influência", valor: res.influencia, objeto: textos.influencia },
+        { titulo: "Talento Oculto", valor: res.talento, objeto: textos.talento }
+    ];
+
+    itensParaGaleria.forEach(item => {
+        if (item.objeto && item.objeto[item.valor]) {
+            const entrada = item.objeto[item.valor];
+            const videoEmbaralhado = (typeof entrada === 'object' && entrada !== null) ? entrada.videoID : null;
+            const videoID = videoEmbaralhado ? atob(videoEmbaralhado) : null;
+
+            if (videoID) {
+                const urlYouTube = `https://www.youtube.com/watch?v=${videoID}`;
+                const imagemThumb = `https://img.youtube.com/vi/${videoID}/hqdefault.jpg`;
+
+                container.innerHTML += `
+                    <div class="video-card-central" onclick="window.open('${urlYouTube}', '_blank')" style="background: #1a1a1a; border: 2px solid #d4af37; border-radius: 10px; overflow: hidden; cursor: pointer; transition: transform 0.2s;">
+                        <div style="position: relative;">
+                            <img src="${imagemThumb}" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;">
+                                <div style="font-size: 40px; color: white; background: rgba(0,0,0,0.6); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">▶</div>
+                            </div>
+                        </div>
+                        <div style="padding: 15px; text-align: center;">
+                            <h3 style="color: #d4af37; font-size: 16px; margin: 0 0 5px 0;">${item.titulo} (${item.valor})</h3>
+                            <p style="color: #ccc; font-size: 12px; margin: 0;">Clique para assistir à análise</p>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+    });
+}
 
         
         
@@ -4116,6 +4161,12 @@ const datasFases = {
 const piramideVida = gerarPiramide(nomeRaw);
 const regenteVida = piramideVida.at(-1)[0];
 const dadosNegativas = detectarNegativas(piramideVida);
+    // ... (todo o restante do seu código de cálculo da pirâmide, res, etc.)
+
+    // --- ADICIONE ESTA LINHA NO FINAL DA SUA FUNÇÃO gerarMapaCompleto ---
+    montarBlocoUnicoDeVideos(res);
+
+} // Fim da função gerarMapaCompleto
 // ... logo após o fechamento do objeto 'res' (linha 194 aproximadamente)
 
 
@@ -4163,6 +4214,7 @@ html += `<div class="menu-abas">
     
     <button onclick="abrirAba('tela-introducao')" style="width:100%; margin-bottom:5px; font-size: 22px;">Introdução: Instinto Superior e Numerologia</button>
      <button onclick="abrirAba('tela-resultado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Resultado Numerológico</button>
+     <button onclick="abrirAba('tela-videos-exclusivos')" style="width:100%; margin-bottom:5px; font-size: 22px;">📺 Seus Vídeos Exclusivos</button>
 
     <button onclick="abrirAba('tela-parte2')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 1: Essência e Identidade</button>
     <button onclick="abrirAba('tela-parte1')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 2: Performance dos Pilares do Instinto Natural</button>
@@ -5194,8 +5246,18 @@ ${listaItensSintese.map(item => {
 html += '</div>';
 
 
-
-
+html += `<div id="tela-videos-exclusivos" class="conteudo-aba" style="padding: 20px; background: #000; color: #fff;">
+    <div class="separador-luxo">
+        <div class="caixa-interna">
+            <h2>Central de Vídeos Personalizada</h2>
+        </div>
+    </div>
+    <p style="text-align: center; color: #d4af37; margin-bottom: 20px;">Todos os vídeos do seu mapa reunidos em um só lugar:</p>
+    
+    <!-- Onde os cards serão injetados automaticamente -->
+    <div id="grid-videos-centralizado" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;"></div>
+</div>`,
+html += '</div>';
     
 html += '<div id="tela-social" class="conteudo-aba">';
 
