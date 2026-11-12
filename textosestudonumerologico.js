@@ -1342,7 +1342,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua intuição é fortíssima e você carrega uma sabedoria que parece vir de muito tempo. Você é capaz de grandes gestos por causas nobres, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e possui um carisma que atrai pessoas de todas as origens, pois todos sentem que podem confiar na sua integridade.</p>
     <p>Você vive em uma vibração de compreensão total. Sua mente não se prende a detalhes pequenos ou mesquinhos; você enxerga o quadro geral e busca a evolução espiritual e o auxílio ao próximo como metas principais da sua existência.</p>
     <p>O desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é aprender a se desapegar do passado. Ao focar sua energia no serviço desinteressado e no agora, você atinge um estado de paz interior que é a verdadeira recompensa da sua história de vida.</p>`,
-   videoID: "F8bg1CTQ9HI"
+   videoID: "a1hHLS0zQldBUWc"
     },
     10: {
      conteudo:` <h3>Ambicioso - Dia 10</h3>
@@ -1351,7 +1351,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Você possui a força do número 1 potencializada, o que indica um destino de brilho individual. Sua mente é rápida para identificar oportunidades e você não hesita em agir quando percebe que o caminho está livre para a sua ascensão pessoal.</p>
     <p>O cuidado que você deve ter, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é com a impulsividade. Ao aprender a ouvir sua intuição e planejar cada passo com sabedoria, você se torna uma força imparável, capaz de construir uma história de vida absolutamente brilhante e inspiradora.</p>`,
    
-     videoID: " "
+     videoID: "c3NNNGlzWnBJN2c "
     },
 11: {
      conteudo:` <h3>Idealista - Dia 11</h3>
@@ -1359,7 +1359,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua presença é magnética, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e você tem o dom de iluminar a vida das pessoas com palavras que tocam a alma. No entanto, por ser uma vibração de "alta voltagem", você pode sentir uma tensão interna constante ou uma cobrança própria muito forte para realizar algo grandioso, o que exige que você aprenda a ter momentos de pausa e recolhimento.</p>
     <p>Você possui uma mente visionária que capta verdades antes de todos os outros. Existe um compromisso no seu espírito com a evolução da consciência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tornando sua trajetória uma referência de sabedoria para quem busca orientação em tempos de incerteza.</p>
     <p>O seu desafio é manter os pés no chão e confiar na sua voz interior sem se deixar levar pela ansiedade. Quando você equilibra essa mente brilhante com a ação prática, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma liderança capaz de transformar profundamente a realidade de todos ao seu redor.</p>`,
-   videoID: " "
+   videoID: "TlZFSjV6eGl5VDQ "
     },
     12: {
      conteudo:` <h3>Comunicador - Dia 12</h3>
@@ -1367,7 +1367,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua mente é fértil e você tem a capacidade de analisar problemas sob diversos ângulos ao mesmo tempo, o que faz de você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma pessoa cujo conselho é sempre muito requisitado. Você valoriza as conexões sociais e possui um magnetismo que atrai pessoas interessadas na sua inteligência e no seu modo refinado de observar a vida.</p>
     <p>Existe em você um desejo profundo de ser útil e trazer harmonia para onde quer que vá. Sua natureza é diplomática e você sabe usar seu charme pessoal para abrir portas que outros considerariam trancadas. Sua versatilidade é sua maior ferramenta de sucesso, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O cuidado que você deve ter é para não se sacrificar demais pelos desejos dos outros e acabar esquecendo os seus próprios sonhos. Ao aprender a colocar limites saudáveis, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma pessoa multifacetada e profundamente admirada por seu talento e integridade.</p>`,
-   videoID: " "
+   videoID: "ZTJ0Z3huc011cDg "
     },
     13: {
      conteudo:` <h3>Prático - Dia 13</h3>
