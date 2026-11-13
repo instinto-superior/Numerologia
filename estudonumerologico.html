@@ -3833,7 +3833,9 @@ function montarBlocoUnicoDeVideos(res) {
         { titulo: "Comportamento", valor: res.comportamento, objeto: textos.comportamento },
         { titulo: "Relacionamento", valor: res.Relacionamento, objeto: textos.Relacionamento },
         { titulo: "Talento Oculto", valor: res.talento, objeto: textos.talento },
-        { titulo: "Propósito", valor: res.Propósito, objeto: textos.proposito || {} }
+        { titulo: "Propósito", valor: res.Propósito, objeto: textos.proposito || {} },
+        { titulo: "Maturidade", valor: res.Maturidade, objeto: textos.Maturidade || {} }
+        
     ];
 
     itensParaGaleria.forEach(item => {
