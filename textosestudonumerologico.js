@@ -1353,6 +1353,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
    
      videoID: "c3NNNGlzWnBJN2c "
     },
+  
 11: {
      conteudo:` <h3>Idealista - Dia 11</h3>
    <p>O dia 11 traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a vibração de um Número Mestre. Isso confere a você uma intuição extraordinária e uma sensibilidade que está muito acima da média. Você funciona como um verdadeiro canal de inspiração para o mundo, possuindo ideais elevados e uma capacidade única de enxergar além das aparências materiais.</p>
@@ -1375,7 +1376,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Você é alguém que não teme o trabalho árduo e possui um talento natural para organizar estratégias e colocar ordem em situações caóticas. Sua vida é marcada por ciclos de renovação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, onde você aprende a deixar o que é velho para trás para construir algo muito mais forte e duradouro no lugar.</p>
     <p>Sua força de vontade é inabalável e existe um senso de dever que guia cada passo seu. Você busca a eficiência, sendo a fundação sólida sobre a qual projetos ambiciosos podem ser construídos com total segurança por você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua persistência é a chave mestra do seu sucesso.</p>
     <p>O seu desafio é aprender a expressar seus sentimentos de forma mais aberta, evitando a rigidez mental. Quando você aceita as mudanças da vida com naturalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma força realizadora imparável, capaz de alcançar o topo através da sua disciplina fora do comum.</p>`,
-   videoID: " "
+   videoID: " cjlyUHVKemtVQ0U"
     },
     14: {
      conteudo:` <h3>Aventureiro - Dia 14</h3>
@@ -1383,7 +1384,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua natureza é inquieta e você se adapta com extrema facilidade a novos ambientes e situações imprevistas. Você detém o dom da persuasão, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e consegue transmitir conceitos com uma clareza impressionante, pois as pessoas confiam naturalmente na sua energia vibrante e na sua visão progressista.</p>
     <p>Você busca a liberdade acima de tudo, mas possui a inteligência para entender que a verdadeira autonomia vem da autodisciplina. Você tem a habilidade de transformar contatos sociais em oportunidades valiosas de crescimento, sempre agindo com muito tato, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O aprendizado para você é buscar o equilíbrio, evitando a impulsividade quando bater o tédio. Ao canalizar essa energia vibrante para objetivos claros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna um profissional de destaque e uma pessoa que vive experiências ricas e repletas de significado.</p>`,
-   videoID: " "
+   videoID: " ZUZXRnhETkRGenc"
     },
     15: {
      conteudo:` <h3>Sedutor - Dia 15</h3>
@@ -1391,7 +1392,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua sensibilidade artística é muito aguçada e você possui o dom de atrair os recursos necessários para viver com conforto e harmonia. Você é uma presença carismática, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e as pessoas buscam sua companhia por se sentirem seguras e ouvidas ao seu lado, o que reforça sua liderança natural.</p>
     <p>Existe em você uma forte ligação com o cuidado com o lar, mas sua mente é aberta o suficiente para entender as mudanças do mundo. Sua força vem do amor, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e você tem a capacidade de curar ambientes tensos apenas com sua presença tranquila e sabedoria emocional.</p>
     <p>O desafio para você é não se deixar levar pelo desejo de controlar excessivamente a vida alheia por excesso de zelo. Ao usar seu magnetismo para elevar as pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge um nível de prosperidade que é fruto direto da nobreza do seu coração.</p>`,
-   videoID: " "
+   videoID: "MXFLM3J1SXR2RVE "
     },
     16: {
      conteudo:` <h3>Extremista - Dia 16</h3>
@@ -1399,7 +1400,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Você tem o talento de enxergar através das máscaras sociais e possui um discernimento infalível para detectar qualquer falsidade. Embora você possa parecer uma pessoa reservada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua profundidade de pensamento é o que te torna excelente em estratégia, pesquisa ou orientação em temas complexos.</p>
     <p>Sua jornada é de constante aperfeiçoamento da alma. Você busca respostas para os grandes mistérios e não descansa enquanto não encontra a lógica por trás dos fatos. Essa busca faz com que você desenvolva uma resiliência única, sendo capaz de se reconstruir após qualquer desafio, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O desafio para você é lidar com mudanças bruscas como chances de evoluir, sem se fechar em um isolamento defensivo. Quando você entende que o desapego é o caminho para o verdadeiro poder, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna alguém inabalável e detentor de um conhecimento que ilumina a todos.</p>`,
-   videoID: " "
+   videoID: "N2NQMTBoaGViclU "
     },
     17: {
      conteudo:` <h3>Orgulhoso - Dia 17</h3>
@@ -1407,7 +1408,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua mente é organizada e você possui uma visão de longo alcance para os negócios e para a estruturação da sua vida. Você impõe respeito pela competência e pela forma justa como conduz seus projetos, agindo com uma autoridade natural que vem do seu conhecimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Existe um magnetismo de "estrela" em você, atraindo oportunidades de crescimento material que parecem surgir no momento exato. Você sabe planejar com precisão, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e sua ambição é equilibrada por um senso de responsabilidade que garante conquistas sólidas e respeitadas.</p>
     <p>O aprendizado para você é manter a conexão com seu propósito interior enquanto sobe os degraus do sucesso, evitando a frieza emocional. Quando você usa sua influência para o bem comum, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você brilha como uma das vibrações mais vitoriosas de toda a numerologia.</p>`,
-   videoID: " "
+   videoID: "Q3dHOS1sQ0ZMMzA "
     },
     18: {
      conteudo:` <h3>Contestador - Dia 18</h3>
@@ -1415,7 +1416,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua intuição é muito forte e você possui uma capacidade de superação impressionante, conseguindo transformar crises em vitórias pessoais. Você entende como ninguém os processos de encerramento, o que permite a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, finalizar ciclos com dignidade e iniciar novas etapas com coragem.</p>
     <p>Você tem uma mente aberta para o mundo e não tolera injustiças ao seu redor. Existe em você um magnetismo que atrai pessoas que buscam força e direção em momentos de caos. Sua presença exige respeito, pois você age com a autoridade de quem conhece as dores do mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O seu desafio é controlar as oscilações emocionais e evitar acumular mágoas. Ao focar toda essa sua energia intensa no serviço desinteressado e na cura do ambiente ao seu redor, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você encontra uma paz profunda e o reconhecimento que vem do impacto real que você gera.</p>`,
-   videoID: " "
+   videoID: "VFViM1ROZUhKME0 "
     },
     19: {
      conteudo:` <h3>Individualista - Dia 19</h3>
@@ -1423,7 +1424,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua personalidade é vibrante e você tem o talento de iniciar novos empreendimentos com muito entusiasmo. Você nasceu para ser protagonista da sua própria história, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e possui todas as ferramentas mentais para chegar ao topo, desde que desenvolva a habilidade de ouvir os outros.</p>
     <p>Existe em você uma luz solar que atrai atenção. Sua capacidade de resistência é enorme e você tem a coragem de ser quem realmente é, sem se importar com julgamentos. Quando você decide focar em uma meta, você move montanhas, demonstrando uma autossuficiência inspiradora, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O seu aprendizado central é superar o orgulho e entender que o verdadeiro poder vem da união. Quando você brilha sem apagar a luz alheia e compartilha suas vitórias, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge a realização plena e se torna uma fonte inesgotável de direção para todos.</p>`,
-   videoID: " "
+   videoID: "dHE3N0F6cFhteGs "
     },
     20: {
      conteudo:` <h3>Consciente - Dia 20</h3>
