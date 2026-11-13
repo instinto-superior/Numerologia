@@ -3835,46 +3835,61 @@ function montarBlocoUnicoDeVideos(res) {
         { titulo: "Talento Oculto", valor: res.talento, objeto: textos.talento },
         { titulo: "Propósito", valor: res.Propósito, objeto: textos.proposito || {} },
         { titulo: "Maturidade", valor: res.Maturidade, objeto: textos.Maturidade || {} },
-        { titulo: "Equilíbrio Início", valor: res.equilibrio?.inicio, objeto: textos.equilibrioInicio },
-        { titulo: "Equilíbrio Fim", valor: res.equilibrio?.fim, objeto: textos.equilibrioFim },
+        { titulo: "Como Começa", valor: res.equilibrio?.inicio, objeto: textos.equilibrioInicio },
+        { titulo: "Como Termina", valor: res.equilibrio?.fim, objeto: textos.equilibrioFim },
         { titulo: "Déficit Recorrente", valor: res.deficitRecorrente, objeto: textos.deficitRecorrente },
         { titulo: "Subconsciente", valor: res.subconsciente, objeto: textos.subconsciente },
 
-        // Ciclos de Vida (Exibe o ciclo 1 como exemplo principal na grade)
-        { titulo: "Ciclo de Vida 1", valor: res.ciclos?.[1], objeto: textos.ciclos },
-        { titulo: "Ciclo de Vida 2", valor: res.ciclos?.[2], objeto: textos.ciclos },
-        { titulo: "Ciclo de Vida 3", valor: res.ciclos?.[3], objeto: textos.ciclos },
+        // Ciclos de Vida
+        { titulo: "1° Ciclo de Vida ", valor: res.ciclos?.[1], objeto: textos.ciclos },
+        { titulo: "2° Ciclo de Vida ", valor: res.ciclos?.[2], objeto: textos.ciclos },
+        { titulo: "3° Ciclo de Vida ", valor: res.ciclos?.[3], objeto: textos.ciclos },
 
         // Momentos Decisivos (Pináculos)
-        { titulo: "Momento Decisivo 1", valor: res.momentos?.[1], objeto: textos.momentos },
-        { titulo: "Momento Decisivo 2", valor: res.momentos?.[2], objeto: textos.momentos },
-        { titulo: "Momento Decisivo 3", valor: res.momentos?.[3], objeto: textos.momentos },
-        { titulo: "Momento Decisivo 4", valor: res.momentos?.[4], objeto: textos.momentos },
+        { titulo: "1° Momento Decisivo ", valor: res.momentos?.[1], objeto: textos.momentos },
+        { titulo: "2° Momento Decisivo ", valor: res.momentos?.[2], objeto: textos.momentos },
+        { titulo: "3° Momento Decisivo ", valor: res.momentos?.[3], objeto: textos.momentos },
+        { titulo: "4° Momento Decisivo ", valor: res.momentos?.[4], objeto: textos.momentos },
 
         // Desafios
-        { titulo: "Desafio 1", valor: res.desafios?.[1], objeto: textos.desafios },
-        { titulo: "Desafio 2", valor: res.desafios?.[2], objeto: textos.desafios },
-        { titulo: "Desafio 3", valor: res.desafios?.[3], objeto: textos.desafios },
+        { titulo: "1° Desafio ", valor: res.desafios?.[1], objeto: textos.desafios },
+        { titulo: "2° Desafio ", valor: res.desafios?.[2], objeto: textos.desafios },
+        { titulo: "Desafio Principal", valor: res.desafios?.[3], objeto: textos.desafios },
 
         // Anos Pessoais
         { titulo: "Ano Pessoal", valor: res.anoPessoal, objeto: textos.anoPessoal },
         { titulo: "Próximo Ano Pessoal", valor: res.proximoAnoPessoal, objeto: textos.proximoAnoPessoal },
-        // --- 7. NOVOS: PLANOS, PERFIL, TRÂNSITO E PIRÂMIDE ---
-       
-     // --- 7. NOVOS: PLANOS, PERFIL, TRÂNSITO E PIRÂMIDE (VIA RES) ---
-        { titulo: "Plano Dominante", valor: res.planoDominanteNome, objeto: textos.planos || {} },
-        { titulo: "Perfil Nativo", valor: res.perfilNativoTexto, objeto: textos.perfilNativo || {} },
-        { titulo: "Trânsito Atual", valor: res.transitoFinal, objeto: textos.transitos || {} },
-        { titulo: "Regente da Pirâmide", valor: res.regentePiramide, objeto: textos.regentePiramide || {} }
 
-        
+        // Planos, Perfil, Trânsito e Pirâmide
+        { titulo: "Pilar de dominância Natural", valor: res.planoDominanteNome, objeto: textos.planos || {} },
+        { titulo: "Expressão Nativa Natural", valor: res.perfilNativoTexto, objeto: textos.perfilNativo || {} },
+        { titulo: "Trânsito Atual", valor: res.transitoFinal, objeto: textos.transitos || {} },
+        { titulo: "Regente da Matriz", valor: res.regentePiramide, objeto: textos.regentePiramide || {} }
     ];
+
+    // --- ADICIONANDO AS LISTAS MÚLTIPLAS ---
+    if (res.deficiencias && Array.isArray(res.deficiencias)) {
+        res.deficiencias.forEach((num, idx) => {
+            itensParaGaleria.push({ titulo: `Deficiência ${idx + 1}`, valor: num, objeto: textos.deficiencias || textos.deficitRecorrente });
+        });
+    }
+
+    if (res.deficitsOcultos && Array.isArray(res.deficitsOcultos)) {
+        res.deficitsOcultos.forEach((num, idx) => {
+            itensParaGaleria.push({ titulo: `Déficit Oculto ${idx + 1}`, valor: num, objeto: textos.deficitsOcultos || textos.deficitRecorrente });
+        });
+    }
+
+    if (res.inclinacoes && Array.isArray(res.inclinacoes)) {
+        res.inclinacoes.forEach((num, idx) => {
+            itensParaGaleria.push({ titulo: `Inclinação ${idx + 1}`, valor: num, objeto: textos.inclinacoes || {} });
+        });
+    }
 
     itensParaGaleria.forEach(item => {
         let videoID = null;
         let temVideoReal = false;
 
-        // Tenta buscar o ID se o objeto existir
         if (item.objeto && item.objeto[item.valor]) {
             const entrada = item.objeto[item.valor];
             if (typeof entrada === 'object' && entrada !== null && entrada.videoID) {
@@ -3897,11 +3912,9 @@ function montarBlocoUnicoDeVideos(res) {
             }
         }
 
-        // Se NÃO tem vídeo real cadastrado, usamos um ID padrão ou geramos um visual de "Em Breve"
-        const idParaExibir = temVideoReal ? videoID : "dQw4w9WgXcQ"; // ID coringa apenas para teste de imagem
+        const idParaExibir = temVideoReal ? videoID : "dQw4w9WgXcQ"; 
         const imagemThumb = `https://img.youtube.com/vi/${idParaExibir}/hqdefault.jpg`;
         
-        // Comportamento do card dependendo se tem vídeo ou não
         const acaoCard = temVideoReal 
             ? `window.open('https://www.youtube.com/watch?v=${videoID}', '_blank')` 
             : `alert('Este vídeo ainda está em produção e será lançado em breve!')`;
@@ -3918,7 +3931,7 @@ function montarBlocoUnicoDeVideos(res) {
                     </div>
                 </div>
                 <div style="padding: 15px; text-align: center;">
-                    <h3 style="color: ${temVideoReal ? '#d4af37' : '#aaa'}; font-size: 15px; margin: 0 0 5px 0; text-transform: uppercase;">${item.titulo} (${item.valor})</h3>
+                    <h3 style="color: ${temVideoReal ? '#d4af37' : '#aaa'}; font-size: 15px; margin: 0 0 5px 0; text-transform: uppercase;">${item.titulo} (${item.valor ?? '--'})</h3>
                     <p style="color: #ccc; font-size: 12px; margin: 0;">${textoStatus}</p>
                 </div>
             </div>
