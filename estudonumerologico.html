@@ -4084,6 +4084,43 @@ if (nomesArray && nomesArray.length > 0) {
 }
 
 
+
+// --- CÁLCULOS ANTES DO OBJETO RES (PARA EVITAR ERRO DE ESCOPO) ---
+    const dadosPlanosParaPainel = calcularDadosPlanos(nomeRaw);
+    const nomesAmigaveisPlanos = { fisico: "Físico", mental: "Mental", emocional: "Emocional", intuitivo: "Intuitivo" };
+    
+    const planoChaveDominante = Object.keys(dadosPlanosParaPainel.soma).reduce((a, b) => 
+        dadosPlanosParaPainel.soma[a] > dadosPlanosParaPainel.soma[b] ? a : b
+    );
+    const vPlanoDominanteNome = nomesAmigaveisPlanos[planoChaveDominante];
+
+    const idadeParaTrânsito = idadeCronologica; 
+    const partesDoNome = nomeParaCalculo.toUpperCase().split(/\s+/);
+    let somaTransitoFisico = 0;
+    partesDoNome.forEach(p => {
+        let t = [];
+        for(let l of p) { 
+            let v = calcularValorLetra(l); 
+            for(let i=0; i<v; i++) t.push(l); 
+        }
+        let letraAtiva = t[idadeParaTrânsito % t.length];
+        if(letraAtiva) somaTransitoFisico += calcularValorLetra(letraAtiva);
+    });
+    const vTrânsitoFinal = reduzirPuro(somaTransitoFisico);
+
+    const dadosPlanos = calcularDadosPlanos(nomeRaw); 
+    const perfilChave = dadosPlanos.dominantePerfil; 
+    const vPerfilNomes = {
+        criativo: "CRIATIVIDADE",
+        indeciso: "INDECISÃO",
+        neutro: "NEUTRALIDADE"
+    };
+    const valorPerfilNativoTexto = vPerfilNomes[perfilChave] || "Não Definido";
+
+    const piramideVida = gerarPiramide(nomeRaw);
+    const regenteVida = piramideVida.at(-1)[0];    
+
+
  res = {
     dia: dia,
      mesNascimento: mes, 
