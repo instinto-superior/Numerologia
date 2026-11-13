@@ -4214,9 +4214,7 @@ const nomeParaTalento = nomeRaw.split(' ')[0];
 // Exemplo de uso:
 
 // --- CÁLCULO DO PLANO DOMINANTE PARA O PAINEL ---
-// --- SEU BLOCO DE CÁLCULO ATUALIZADO COM CORES ---
-const dadosPlanosParaPainel = calcularDadosPlanos(nomeRaw);
-const nomesAmigaveisPlanos = { fisico: "Físico", mental: "Mental", emocional: "Emocional", intuitivo: "Intuitivo" };
+
 
 // Mapa de cores seguindo o padrão do seu relatório
 const coresPlanosDinamicas = {
@@ -4226,28 +4224,13 @@ const coresPlanosDinamicas = {
     intuitivo: "#b8860b"  // Dourado/Gold
 };
 
-const planoChaveDominante = Object.keys(dadosPlanosParaPainel.soma).reduce((a, b) => 
-    dadosPlanosParaPainel.soma[a] > dadosPlanosParaPainel.soma[b] ? a : b
-);
 
-const vPlanoDominanteNome = nomesAmigaveisPlanos[planoChaveDominante];
+
+
 const vCorPlanoDominante = coresPlanosDinamicas[planoChaveDominante]; // <--- NOVA VARIÁVEL DE COR
 
 // --- 2. CÁLCULO DO TRÂNSITO (EXTRAÇÃO MANUAL RÁPIDA) ---
-// Precisamos dessa lógica aqui para o valor aparecer no painel lá no topo
-const idadeParaTrânsito = idadeCronologica; 
-const partesDoNome = nomeParaCalculo.toUpperCase().split(/\s+/);
-let somaTransitoFisico = 0;
-partesDoNome.forEach(p => {
-    let t = [];
-    for(let l of p) { 
-        let v = calcularValorLetra(l); 
-        for(let i=0; i<v; i++) t.push(l); 
-    }
-    let letraAtiva = t[idadeParaTrânsito % t.length];
-    if(letraAtiva) somaTransitoFisico += calcularValorLetra(letraAtiva);
-});
-const vTrânsitoFinal = reduzirPuro(somaTransitoFisico); // Simplificado para o painel
+
 
 // --- 3. PREPARAÇÃO DE TEXTOS PARA O PAINEL ---
 let vDeficitFinal = [res.deficitRecorrente, ...(res.deficitsOcultos || [])].filter(x => x).join(" · ") || "--";
@@ -4256,16 +4239,7 @@ let vDesejoFinal = (dadosDesejoObj && dadosDesejoObj.numero) ? dadosDesejoObj.nu
 // Executa o cálculo dos planos para obter o Perfil Nativo
 
 
-// 1. Cálculos do Plano e Perfil (Corrigido para não dar erro de 'not defined')
-const dadosPlanos = calcularDadosPlanos(nome.value || nome); // Mudei para 'dadosPlanos'
-const perfilChave = dadosPlanos.dominantePerfil; 
 
-// Objeto com os nomes traduzidos para exibição
-const vPerfilNomes = {
-    criativo: "CRIATIVIDADE",
-    indeciso: "INDECISÃO",
-    neutro: "NEUTRALIDADE"
-};
 
 // Configuração Visual do Perfil (Cores e Textos)
 const vTextosPerfil = {
@@ -4314,8 +4288,7 @@ const datasFases = {
     }
 };
 // 1. PRIMEIRO: CALCULA TUDO DA PIRÂMIDE (PARA A LINHA 517 NÃO DAR ERRO)
-const piramideVida = gerarPiramide(nomeRaw);
-const regenteVida = piramideVida.at(-1)[0];
+
 const dadosNegativas = detectarNegativas(piramideVida);
     // ... (todo o restante do seu código de cálculo da pirâmide, res, etc.)
 
