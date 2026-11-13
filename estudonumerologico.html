@@ -3834,7 +3834,32 @@ function montarBlocoUnicoDeVideos(res) {
         { titulo: "Relacionamento", valor: res.Relacionamento, objeto: textos.Relacionamento },
         { titulo: "Talento Oculto", valor: res.talento, objeto: textos.talento },
         { titulo: "Propósito", valor: res.Propósito, objeto: textos.proposito || {} },
-        { titulo: "Maturidade", valor: res.Maturidade, objeto: textos.Maturidade || {} }
+        { titulo: "Maturidade", valor: res.Maturidade, objeto: textos.Maturidade || {} },
+        { titulo: "Equilíbrio Início", valor: res.equilibrio?.inicio, objeto: textos.equilibrioInicio },
+        { titulo: "Equilíbrio Fim", valor: res.equilibrio?.fim, objeto: textos.equilibrioFim },
+        { titulo: "Déficit Recorrente", valor: res.deficitRecorrente, objeto: textos.deficitRecorrente },
+        { titulo: "Subconsciente", valor: res.subconsciente, objeto: textos.subconsciente },
+
+        // Ciclos de Vida (Exibe o ciclo 1 como exemplo principal na grade)
+        { titulo: "Ciclo de Vida 1", valor: res.ciclos?.[1], objeto: textos.ciclos },
+        { titulo: "Ciclo de Vida 2", valor: res.ciclos?.[2], objeto: textos.ciclos },
+        { titulo: "Ciclo de Vida 3", valor: res.ciclos?.[3], objeto: textos.ciclos },
+
+        // Momentos Decisivos (Pináculos)
+        { titulo: "Momento Decisivo 1", valor: res.momentos?.[1], objeto: textos.momentos },
+        { titulo: "Momento Decisivo 2", valor: res.momentos?.[2], objeto: textos.momentos },
+        { titulo: "Momento Decisivo 3", valor: res.momentos?.[3], objeto: textos.momentos },
+        { titulo: "Momento Decisivo 4", valor: res.momentos?.[4], objeto: textos.momentos },
+
+        // Desafios
+        { titulo: "Desafio 1", valor: res.desafios?.[1], objeto: textos.desafios },
+        { titulo: "Desafio 2", valor: res.desafios?.[2], objeto: textos.desafios },
+        { titulo: "Desafio 3", valor: res.desafios?.[3], objeto: textos.desafios },
+
+        // Anos Pessoais
+        { titulo: "Ano Pessoal", valor: res.anoPessoal, objeto: textos.anoPessoal },
+        { titulo: "Próximo Ano Pessoal", valor: res.proximoAnoPessoal, objeto: textos.proximoAnoPessoal }
+
         
     ];
 
