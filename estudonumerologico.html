@@ -3861,9 +3861,11 @@ function montarBlocoUnicoDeVideos(res) {
         { titulo: "Próximo Ano Pessoal", valor: res.proximoAnoPessoal, objeto: textos.proximoAnoPessoal },
         // --- 7. NOVOS: PLANOS, PERFIL, TRÂNSITO E PIRÂMIDE ---
        
-       
-       
-        { titulo: "Regente da Pirâmide", valor: regenteVida, objeto: textos.RegenteVida || {} }
+     // --- 7. NOVOS: PLANOS, PERFIL, TRÂNSITO E PIRÂMIDE (VIA RES) ---
+        { titulo: "Plano Dominante", valor: res.planoDominanteNome, objeto: textos.planos || {} },
+        { titulo: "Perfil Nativo", valor: res.perfilNativoTexto, objeto: textos.perfilNativo || {} },
+        { titulo: "Trânsito Atual", valor: res.transitoFinal, objeto: textos.transitos || {} },
+        { titulo: "Regente da Pirâmide", valor: res.regentePiramide, objeto: textos.regentePiramide || {} }
 
         
     ];
@@ -4131,7 +4133,13 @@ desafios: {
     3: Math.abs(Math.abs(reduzirPuro(dia) - reduzirPuro(mes)) - Math.abs(reduzirPuro(dia) - reduzirPuro(ano)))
 },
  anoPessoal: resultadoAnoPessoal,
- proximoAnoPessoal: reduzir(resultadoAnoPessoal + 1) 
+ proximoAnoPessoal: reduzir(resultadoAnoPessoal + 1),
+
+ // --- COLE ESTES NOVOS AQUI DENTRO DO RES ---
+    planoDominanteNome: vPlanoDominanteNome,
+    perfilNativoTexto: valorPerfilNativoTexto,
+    transitoFinal: vTrânsitoFinal,
+    regentePiramide: regenteVida    
 };
 
     // ADICIONE ESTAS DUAS LINHAS ABAIXO:
