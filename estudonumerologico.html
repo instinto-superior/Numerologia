@@ -3858,7 +3858,12 @@ function montarBlocoUnicoDeVideos(res) {
 
         // Anos Pessoais
         { titulo: "Ano Pessoal", valor: res.anoPessoal, objeto: textos.anoPessoal },
-        { titulo: "Próximo Ano Pessoal", valor: res.proximoAnoPessoal, objeto: textos.proximoAnoPessoal }
+        { titulo: "Próximo Ano Pessoal", valor: res.proximoAnoPessoal, objeto: textos.proximoAnoPessoal },
+        // --- 7. NOVOS: PLANOS, PERFIL, TRÂNSITO E PIRÂMIDE ---
+        { titulo: "Plano Dominante", valor: vPlanoDominanteNome, objeto: textos.planos || {} },
+        { titulo: "Perfil Nativo", valor: valorPerfilNativoTexto, objeto: textos.perfilNativo || {} },
+        { titulo: "Trânsito Atual", valor: vTrânsitoFinal, objeto: textos.transitos || {} },
+        { titulo: "Regente da Pirâmide", valor: regenteVida, objeto: textos.regentePiramide || {} }
 
         
     ];
