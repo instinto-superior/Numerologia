@@ -3870,19 +3870,19 @@ function montarBlocoUnicoDeVideos(res) {
     // --- ADICIONANDO AS LISTAS MÚLTIPLAS ---
     if (res.deficiencias && Array.isArray(res.deficiencias)) {
         res.deficiencias.forEach((num, idx) => {
-            itensParaGaleria.push({ titulo: `Deficiência ${idx + 1}`, valor: num, objeto: textos.deficiencias || textos.deficitRecorrente });
+            itensParaGaleria.push({ titulo: `Fraqueza`, valor: num, objeto: textos.deficiencias || textos.deficitRecorrente });
         });
     }
 
     if (res.deficitsOcultos && Array.isArray(res.deficitsOcultos)) {
         res.deficitsOcultos.forEach((num, idx) => {
-            itensParaGaleria.push({ titulo: `Déficit Oculto ${idx + 1}`, valor: num, objeto: textos.deficitsOcultos || textos.deficitRecorrente });
+            itensParaGaleria.push({ titulo: `Déficit Oculto`, valor: num, objeto: textos.deficitsOcultos || textos.deficitRecorrente });
         });
     }
 
     if (res.inclinacoes && Array.isArray(res.inclinacoes)) {
         res.inclinacoes.forEach((num, idx) => {
-            itensParaGaleria.push({ titulo: `Inclinação ${idx + 1}`, valor: num, objeto: textos.inclinacoes || {} });
+            itensParaGaleria.push({ titulo: `Inclinação`, valor: num, objeto: textos.inclinacoes || {} });
         });
     }
 
