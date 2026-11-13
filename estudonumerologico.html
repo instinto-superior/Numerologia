@@ -3878,6 +3878,24 @@ function montarBlocoUnicoDeVideos(res) {
     });
 }
         
+
+function abrirAba(idAba) {
+    // 1. Esconde todas as abas (sua lógica atual)
+    const abas = document.querySelectorAll('.conteudo-aba');
+    abas.forEach(aba => aba.style.display = 'none');
+
+    // 2. Mostra apenas a aba clicada
+    const abaAlvo = document.getElementById(idAba);
+    if (abaAlvo) {
+        abaAlvo.style.display = 'block';
+    }
+
+    // --- O GATILHO AUTOMÁTICO DA CENTRAL DE VÍDEOS ---
+    // Se a aba aberta for a de vídeos e o objeto 'res' já existir, monta os vídeos na hora!
+    if (idAba === 'tela-videos-exclusivos' && typeof res !== 'undefined') {
+        montarBlocoUnicoDeVideos(res);
+    }
+}
         
         
 function gerarMapaCompleto(generoAtual) {
