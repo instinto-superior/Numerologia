@@ -1441,7 +1441,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua mente é criativa e versátil, <strong>MASCULINO-FEMININO-NEUTRO</strong>, permitindo que você se destaque em tudo o que envolva o público ou as artes. Você tem o dom de transformar palavras em pontes para o sucesso, possuindo uma habilidade única de expressar seus desejos de forma clara e encantadora em qualquer círculo social.</p>
     <p>Você é alguém que busca a realização pessoal, mas sabe que a vida deve ser desfrutada no processo. Existe um equilíbrio em você entre a ambição e o prazer de viver, o que te torna uma companhia muito querida. Sua presença, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é sinônimo de boas notícias e de uma visão otimista que abre portas valiosas.</p>
     <p>O seu desafio é evitar a dispersão de talentos por querer fazer tudo ao mesmo tempo. Quando você foca sua energia em um objetivo central e mantém a persistência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma colheita de reconhecimento e prosperidade que flui de forma natural para a sua vida.</p>`,
-   videoID: " "
+   videoID: " QXdld3lzSUVUYUk"
     },
     22: {
      conteudo:` <h3>Sonhador - Dia 22</h3>
@@ -1449,7 +1449,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua visão de mundo é ampla e eu sei que você sente que nasceu para deixar um legado duradouro para a humanidade. Você tem um talento natural para organizar grandes sistemas ou movimentos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo com uma responsabilidade e ética que inspiram confiança absoluta em todos que trabalham com você.</p>
     <p>Você possui uma força de trabalho inesgotável e uma mente capaz de coordenar detalhes complexos sem perder o alvo final de vista. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a realização material é um meio de servir ao bem comum e estruturar um futuro mais seguro para as próximas gerações.</p>
     <p>O grande aprendizado para você é aprender a lidar com a imensa pressão que essa capacidade de realização gera na sua vida pessoal. Ao manter o equilíbrio emocional, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma força inigualável, capaz de mudar a estrutura do mundo ao seu redor para muito melhor.</p>`,
-   videoID: " "
+   videoID: "NWdNX1p0WDRxRGM "
     },
     23: {
      conteudo:` <h3>Versátil - Dia 23</h3>
@@ -1457,7 +1457,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua natureza é curiosa e amante da liberdade. Você se adapta a mudanças com uma agilidade que impressiona a todos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você brilha em ambientes dinâmicos onde pode usar sua criatividade para resolver problemas de forma inovadora, buscando sempre expandir seus horizontes.</p>
     <p>Existe em você um magnetismo que atrai viagens, novas amizades e experiências diversificadas. Você detesta a estagnação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e sua mente está sempre um passo à frente, antecipando tendências. Sua versatilidade é, sem dúvida, sua maior aliada para o sucesso em múltiplas áreas da vida.</p>
     <p>O cuidado que você deve ter é para não perder a paciência com quem possui um ritmo mais lento que o seu. Ao cultivar a persistência em projetos de longo prazo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você transforma sua agilidade mental em uma carreira de sucesso sólido e conquistas memoráveis.</p>`,
-   videoID: " "
+   videoID: "M3VuSy1OTjJxeGM "
     },
     24: {
      conteudo:` <h3>Prestativo - Dia 24</h3>
@@ -1465,7 +1465,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua energia é voltada para a criação de equilíbrio. Você se sente em plenitude quando pode zelar pelo bem-estar de quem ama, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo sempre com uma doçura que protege uma força interior imensa e uma determinação inabalável para manter a segurança de todos.</p>
     <p>Você valoriza a integridade acima de tudo. Existe um compromisso profundo com a verdade nas suas responsabilidades, o que te torna a pessoa ideal para gerir projetos que exijam confiança total. Sua vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é pautada pelo afeto e pela construção de laços profundos.</p>
     <p>O desafio para você é não se anular ou se sobrecarregar tentando carregar o mundo nas costas. Ao aprender a cuidar de você com a mesma dedicação que oferece aos outros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você alcança uma estabilidade que se torna o alicerce inabalável da sua jornada.</p>`,
-   videoID: " "
+   videoID: "NDI2YzVIU081Tjg "
     },
     25: {
      conteudo:` <h3>Inconformado - Dia 25</h3>
@@ -1473,7 +1473,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua natureza é mais reservada e você valoriza o conhecimento profundo como a base para cada decisão tomada. Você tem o dom da observação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e raramente se engana sobre o caráter das pessoas, agindo com uma cautela que te protege de erros impulsivos.</p>
     <p>Existe em seu interior um desejo de perfeição que te leva a ser especialista na sua área. Você prefere a qualidade à quantidade e busca o silêncio para processar seus pensamentos. Sua sabedoria, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é construída através da reflexão, tornando sua opinião extremamente respeitada.</p>
     <p>O aprendizado para você é confiar mais na sua intuição do que apenas na lógica fria. Quando você une sua capacidade analítica com a sabedoria do coração, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma referência absoluta no seu campo e conquista uma profunda paz interior.</p>`,
-   videoID: " "
+   videoID: " SG04N3RoTFJ5cFU"
     },
     26: {
      conteudo:` <h3>Controlador - Dia 26</h3>
@@ -1481,7 +1481,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua capacidade de organização é aliada a um forte senso de justiça. Você sabe como atrair a prosperidade e gerir recursos com eficiência, sendo frequentemente o pilar de sustentação para quem está ao seu redor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua autoridade é respeitada porque vem da sua competência.</p>
     <p>Você entende as leis do mundo material e sabe que o sucesso exige cooperação. Sua liderança é firme, porém justa. Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um talento raro para transformar crises em oportunidades de estabilidade para todos os envolvidos nos seus projetos.</p>
     <p>O desafio para você é equilibrar a busca pelo sucesso material com as necessidades da sua vida emocional. Ao manter o foco no propósito e não apenas nos números, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você constrói uma trajetória de prestígio e um legado de abundância que atravessa o tempo.</p>`,
-   videoID: " "
+   videoID: " ZXN1SmxnQUZHSTg"
     },
     27: {
      conteudo:` <h3>Político - Dia 27</h3>
@@ -1489,7 +1489,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua visão de mundo é espiritualizada e você sente necessidade de se envolver em causas que tragam progresso real. Você é uma pessoa de carisma e inspiração, <strong>MASCULINO-FEMININO-NEUTRO</strong>, cuja integridade e sabedoria atraem a admiração de pessoas de todas as origens e níveis de conhecimento.</p>
     <p>Existe em você uma conexão profunda com o conhecimento universal. Você é capaz de grandes atos de desapego em nome de um ideal, possuindo uma intuição que te ajuda a enxergar soluções onde outros veem apenas problemas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua jornada é marcada pelo serviço ao próximo.</p>
     <p>O aprendizado para você é lidar com a sua sensibilidade sem deixar que os problemas do mundo te abatam. Ao focar na sua imensa capacidade de ensinar e auxiliar, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você encontra a realização plena e deixa um rastro de luz por onde passa.</p>`,
-   videoID: " "
+   videoID: "UEU1TW5ONkFVelU "
     },
     28: {
      conteudo:` <h3>Obstinado - Dia 28</h3>
@@ -1497,7 +1497,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua determinação é mesclada com uma intuição aguçada sobre o potencial das outras pessoas. Você é alguém de realização que busca o topo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas entende que a união de forças é o caminho mais seguro para o sucesso, agindo sempre com uma coragem inteligente.</p>
     <p>Você possui a força do pioneirismo temperada pelo tato social. Existe um magnetismo de sucesso na sua trajetória, pois você sabe como motivar as pessoas a darem o melhor de si em prol de um objetivo comum, mantendo o comando com muita elegância, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O desafio para você é não cair na teimosia de querer fazer tudo do seu jeito. Ao usar seu poder para empoderar sua equipe ou família, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma liderança inesquecível e alcança uma prosperidade sólida e muito merecida.</p>`,
-   videoID: " "
+   videoID: "b1phbW82TDQ4Q3M "
     },
     29: {
      conteudo:` <h3>Instintivo - Dia 29</h3>
@@ -1505,7 +1505,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua vida é marcada por uma intensidade emocional profunda e você tem o dom de inspirar as pessoas através da sua fé ou das suas ideias inovadoras. Você atrai situações intensas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e deve aprender a navegar entre sua rica vida interior e as exigências do mundo material com equilíbrio.</p>
     <p>Existe em você uma força de transformação que talvez você mesma ainda desconheça totalmente. Sua presença é capaz de alterar a vibração de um ambiente e sua palavra tem o poder de despertar potencias adormecidos em quem te escuta, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O aprendizado para você é a busca pela estabilidade emocional. Ao ancorar sua intuição em ações concretas e manter a confiança na sua própria força, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma figura poderosa, capaz de realizar mudanças positivas na sociedade.</p>`,
-   videoID: " "
+   videoID: " Qnk4NllYUkdpckU"
     },
     30: {
      conteudo:` <h3>Teimoso - Dia 30</h3>
@@ -1513,7 +1513,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua mente é brilhante e você possui um magnetismo que faz com que as pessoas queiram estar perto de você para absorver sua energia, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você tem o dom de tornar leves as situações pesadas e de encontrar saídas criativas onde outros veem apenas becos sem saída.</p>
     <p>Você é uma figura social por excelência, que entende que a felicidade é um ingrediente essencial para o sucesso. Sua comunicação é sua maior ferramenta de realização pessoal, permitindo que você conquiste aliados através do seu carisma, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O desafio para você é evitar a dispersão de energia em coisas superficiais. Ao usar sua comunicação para elevar e motivar o próximo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma realização imensa e se torna uma figura querida e central em qualquer grupo.</p>`,
-   videoID: " "
+   videoID: "Nkg1Y2VrSjFOelk "
     },
     31: {
      conteudo:` <h3>Tradicionalista - Dia 31</h3>
@@ -1521,7 +1521,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua natureza é persistente e você valoriza a honestidade, mas está sempre com a mente aberta para ideias que melhorem sua eficiência. Você possui um talento natural para estruturar bases familiares e profissionais sólidas e muito prósperas, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Você sabe que o sucesso vem do mérito e valoriza cada conquista. Existe em você uma força silenciosa que transmite segurança a todos ao redor. Sua capacidade de planejar é admirável, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tornando você a pessoa ideal para liderar projetos que exijam visão e pés no chão.</p>
     <p>O aprendizado para você é aprender a relaxar e aproveitar os frutos do seu esforço com mais leveza. Ao equilibrar sua disciplina com momentos de prazer, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você constrói uma vida de sucesso estável, prestígio e muita satisfação pessoal.</p>`,
-   videoID: " "
+   videoID: "MzVyWnNrWC1EMVE "
     },
      
    },
