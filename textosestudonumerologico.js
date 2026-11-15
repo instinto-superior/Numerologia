@@ -74,7 +74,7 @@ introducoes: {
      conteudo: `<p><strong>Fundamento e Origem:</strong> Extraído diretamente do dia cronológico do nascimento (de 1 a 31), este número funciona como o marco temporal de partida. Na numerologia de identidade, o dia base opera como um reflexo estatístico e estrutural, agrupando indivíduos sob o mesmo padrão de reatividade primária.</p>
 
 <p><strong>Perfil e Comportamento Estático:</strong> O Dia Natalício representa o seu "sistema operacional nativo" — a camada mais espontânea da personalidade que acompanha o indivíduo por toda a vida. Ele revela o hardware de fábrica: talentos inatos, reflexos automáticos e a forma genuína como o organismo processa estímulos e toma decisões sob pressão, antes da ação dos condicionamentos sociais.</p>`,
-       videoID: "DLgLx7Mg6yA"
+       videoID: "RExnTHg3TWc2eUE"
     },
         comportamento: {
      conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da redução matemática do Dia de Nascimento a um único dígito (de 1 a 9). Como engloba diferentes dias sob uma mesma raiz reduzida, este número mapeia padrões comportamentais compartilhados por grandes grupos populacionais.</p>
