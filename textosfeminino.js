@@ -85,74 +85,55 @@ introducoes: {
        videoID: "TGJMdkJfYWxGV3M"
     },
         comportamento: {
-     conteudo:`O Número do Comportamento revela como são as qualidades psíquicas que influenciam nas escolhas pessoais. As pessoas experimentam diferentes respostas internas aos desafios da vida. Alguns se retiram de situações difíceis para pensar sobre elas; outros se afastam de suas emoções, para tentar evitar sentir as emoções. Outros se apegam aos seus sentimentos e sentem dificuldade em deixar as coisas irem.
-  
-Muitas vezes, essas são respostas condicionadas ou emocionais surgem sem pensamento ou análise. A maturidade e o autodesenvolvimento nos ajudam a aprender novos e mais eficazes métodos de lidar com nosso mundo e os problemas que enfrentamos. O número do comportamento fornece orientação 
-sobre a melhor forma de lidar com situações difíceis ou ameaçadoras, pois que reflete certos padrões interiores comuns a grupos de pessoas nascidas em dias comuns entre si.`,
+     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da redução matemática do Dia de Nascimento a um único dígito (de 1 a 9). Como engloba diferentes dias sob uma mesma raiz reduzida, este número mapeia padrões comportamentais compartilhados por grandes grupos populacionais.</p>
+
+<p><strong>Perfil e Comportamento Estático:</strong> O Número do Comportamento revela o mecanismo automático de resposta ativado sob pressão ou estresse. Trata-se de um reflexo inconsciente que molda a tomada de decisão antes que a razão atue, funcionando como um diagnóstico estrutural dos seus reflexos interiores permanentes.</p>`,
      videoID: "z1nW3rmNeEI"
     },
 
         
         essencia: {
-     conteudo:`<p>Diante dos desafios da existência, cada indivíduo manifesta uma resposta interna singular. Existem pessoas que optam pelo distanciamento momentâneo das dificuldades para estruturar um plano de ação estratégico, enquanto outras buscam o recolhimento como uma forma de proteção contra emoções e sentimentos indesejados.</p>
+     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma e redução matemática das primeiras letras (iniciais) de todos os nomes e sobrenomes do indivíduo a um único dígito (de 1 a 9). Este cálculo extrai a assinatura estrutural primária da identidade nominal.</p>
 
-<p>Em contrapartida, há quem reaja de maneira intensa e imediata, deixando-se levar pelo ímpeto do momento, mas permitindo que essa energia se dissipe com rapidez. Outros, no entanto, prolongam esses estados emocionais, mantendo o sentimento ativo por longos períodos. Essas reações costumam ser respostas condicionadas que surgem de forma impensada e automática.</p>
-
-<p>O caminho da maturidade e do autodesenvolvimento oferece a oportunidade de adotar posturas mais práticas e conscientes perante o inesperado. Ao compreender a própria essência, torna-se possível lidar com situações críticas de forma mais eficaz, alcançando resultados satisfatórios e reduzindo drasticamente os conflitos internos e externos.</p>`,
+<p><strong>Perfil e Identidade Estática:</strong> A Essência representa o padrão de ressonância interna e o ponto de equilíbrio emocional diante das pressões da vida. Ela atua como o fator de balanceamento estrutural — a frequência estabilizadora fixa que harmoniza as tendências nativas da personalidade, indicando como o indivíduo processa estímulos e neutraliza extremos sem depender de esforço consciente.</p>`,
      videoID: "z1nW3rmNeEI"
     },
 
         
-        equilibrio: `<p>O Universo rege-se pelo princípio da harmonia, e o mesmo se aplica aos seus números pessoais. Qualquer excesso identificado em sua estrutura numerológica merece uma análise criteriosa, pois essas intensidades podem revelar tanto talentos excepcionais quanto pontos que demandam superação e ajuste.</p>
+        equilibrio: `<p><strong>Fundamento e Origem:</strong> Obtido a partir da análise das letras extremas da assinatura nominal. A primeira letra do nome completo define o padrão de iniciação (como a pessoa aborda oportunidades e dá o primeiro passo em novos projetos), enquanto a última letra do nome completo revela o padrão de conclusão (como a pessoa fecha ciclos e finaliza o que começa).</p>
 
-<p>Muitas vezes, as reações diante da vida são respostas condicionadas ou puramente emocionais, que surgem de forma automática. O processo de maturidade e autodesenvolvimento permite a adoção de métodos mais eficazes para interagir com o mundo. Nesse contexto, o seu Número de Equilíbrio atua como um guia estratégico, orientando sobre a melhor postura a ser adotada em situações desafiadoras ou de alta pressão.</p>
-
-<p>Cada letra do nome de nascimento carrega uma característica específica, mas certos pontos merecem atenção redobrada. A letra inicial do seu primeiro nome traduz suas inclinações primárias, revelando como você aborda oportunidades e obstáculos logo no primeiro contato. É a sua assinatura de atitude inicial perante o novo.</p>
-
-<p>Já a última letra do seu primeiro nome reflete a persistência e a capacidade de concluir projetos. Juntas, essas letras fornecem um panorama completo sobre o seu potencial para iniciar e finalizar ciclos com sucesso. O equilíbrio entre o impulso de começar e a disciplina de terminar é o que define a eficácia de suas realizações.</p>
-
-<p>Ao longo da existência, diversas vibrações influenciam a trajetória humana. Enquanto algumas promovem harmonia, outras trazem desafios necessários ao crescimento. Assim como as letras extremas do seu nome indicam tendências, a letra de maior recorrência em seu nome completo destaca habilidades específicas ou excessos que moldam sua personalidade de forma única.</p>`,
+<p><strong>Perfil e Identidade Estática:</strong> O Número de Equilíbrio atua como um guia estratégico para momentos de alta pressão ou desafios. O balanço entre o impulso de começar e a disciplina de terminar define a eficácia das realizações, servindo como uma ferramenta de ajuste para equilibrar excessos e otimizar a postura diante de situações complexas.</p>`,
      
         
         
         talento: {
-     conteudo:`
-    <p>O talento é frequentemente compreendido como a habilidade de realizar determinadas tarefas com excelência e o mínimo de esforço consciente. Muitas vezes, essas capacidades permanecem latentes na mente, operando de forma automática sem que haja uma percepção clara de sua existência. O Talento Oculto representa essas habilidades especiais que, quando identificadas e desenvolvidas, permitem que o indivíduo se sobressaia em atividades específicas, utilizando inclinações naturais a seu favor.</p>
+     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma e redução matemática do número da Motivação com o número da Personalidade a um único dígito (de 1 a 9). Este cálculo une o impulso interno de desejos à forma como o indivíduo se projeta e atua no mundo, revelando uma aptidão nata.</p>
+  <p><strong>Perfil e Identidade Estática:</strong>O talento é frequentemente compreendido como a habilidade de realizar determinadas tarefas com excelência e o mínimo de esforço consciente. Muitas vezes, essas capacidades permanecem latentes na mente, operando de forma automática sem que haja uma percepção clara de sua existência. O Talento Oculto representa essas habilidades especiais que, quando identificadas e desenvolvidas, permitem que o indivíduo se sobressaia em atividades específicas, utilizando inclinações naturais a seu favor.</p>
     <p>Mesmo sem o conhecimento técnico dessas predisposições, é comum que a utilização ocorra de maneira inconsciente no cotidiano. A identificação desse número revela ferramentas internas que podem ser potencializadas para gerar resultados extraordinários com fluidez e naturalidade.</p>`,
      videoID: "z1nW3rmNeEI"
     },
 
         
         motivacao: {
-     conteudo:`A motivação mostra seus sonhos e desejo mais profundo. É um impulso natural que faz com que alguém aja para atingir seus objetivos e expressa a intenção que está por trás suas ações. Ele influencia as escolhas que você faz na vida, e é a principal característica responsável por iniciar, direcionar e manter comportamentos relacionados com o cumprimento de seus objetivos. 
-  
-Sua influência está em praticamente todas as suas escolhas; da de sua carreira a amizades, relacionamentos até seu modo de vida. É esta característica natural também que faz com que você dê o melhor de si e faça o possível para conquistar o que deseja. É ela também que muitas vezes, faz com que algumas pessoas acabem até mesmo “passando por cima” de outras para obter aquilo que desejam.
-  
-Mostra seus impulsos ocultos, o que verdadeiramente lhe motiva, e como suas ações influenciam nas suas decisões; revela quais são suas ambições, seus gostos pessoais, suas aversões, necessidades e vontades. Os motivos que estão por trás de cada decisão que alguém toma em sua vida e mesmo não sendo normalmente aparente, é este número que informa suas decisões.
-A motivação é um elemento essencial para o desenvolvimento do ser humano. Sem ela seria muito mais difícil cumprir a maior parte de suas intenções; por isso é uma vibração muito importante na numerologia e deve ser muito bem compreendida.`,
+     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma de todas as vogais do nome completo. O resultado é reduzido a um único dígito (de 1 a 9), preservando-se as somas que geram números de potencial ampliado (como 11, 22, etc.), que indicam frequências de maior intensidade na estrutura nominal.</p>
+
+<p><strong>Perfil e Identidade Estática:</strong> A Motivação revela os sonhos e os desejos mais profundos, funcionando como o impulso natural que direciona e mantém os comportamentos em busca de objetivos. Ela opera em praticamente todas as escolhas vitais — da carreira aos relacionamentos —, expressando ambições, gostos, aversões e as intenções ocultas que orientam as decisões cotidianas.</p>`,
   videoID: "z1nW3rmNeEI"
     },
         
         influencia: {
-     conteudo:`<p>O Número de Influência revela a forma como o mundo externo percebe sua presença; é a impressão imediata e a essência da imagem que você projeta. Ele define o impacto inicial que sua figura exerce sobre as pessoas e os julgamentos automáticos que elas formulam ao interagirem com você.</p>
+     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma de todas as consoantes do nome completo. O resultado é reduzido a um único dígito (de 1 a 9), preservando-se os números iguais de potencial ampliado (como 11, 22, etc.), que indicam maior intensidade na projeção externa da assinatura nominal.</p>
 
-<p>Este indicador fornece detalhes sobre a face que você deseja apresentar à sociedade e o nível de confiança empregado ao se comunicar. Ele delimita a acessibilidade em seus relacionamentos, funcionando como um termômetro de quão profundamente você permite que os outros se aproximem.</p>
-
-<p>Além da estética externa, este número reflete a estrutura do seu pensamento e como as informações são processadas internamente. Ele traduz o que é prioritário em sua mente e como esses valores se manifestam na realidade prática, revelando o grau de maturidade alcançado para lidar com o convívio social.</p>
-
-<p>O Número de Influência também expõe as barreiras mentais, estereótipos ou resistências que podem dificultar a entrega de informações autênticas sobre si para o universo. É comum que até as pessoas mais próximas tenham dificuldade em descrever sua essência, pois, somente com o tempo e o estabelecimento de confiança, as camadas mais profundas da sua natureza são reveladas.</p>
-
-<p>Atuando como um dispositivo de censura, este número filtra tanto a imagem transmitida quanto os temas que você aceita abordar. Ele serve como um escudo que afasta situações indesejadas, ao mesmo tempo em que preserva os aspectos mais íntimos da sua personalidade. Essa primeira imagem é decisiva: ela pode tanto despertar uma curiosidade magnética quanto fazer com que o interesse alheio se dissipe rapidamente.</p>`,
+<p><strong>Perfil e Identidade Estática:</strong> O Número de Influência revela a forma como o ambiente externo percebe sua presença, definindo o impacto inicial, a postura comunicativa e a imagem que você projeta socialmente. Ele atua como um filtro natural de acessibilidade — delimitando o quanto você permite que os outros se aproximem e funcionando como uma camada de proteção que resguarda seus traços mais íntimos.</p>
+`,
   videoID: "z1nW3rmNeEI"
     },
         
         Personalidade: {
-     conteudo:`<p>O Número da Personalidade revela a maneira como você age, reage e se comporta diante da vida. Ele representa a expressão prática do seu ser, a forma como suas intenções se transformam em atitudes e como você se manifesta no mundo em diferentes circunstâncias.</p>
-<p>Este número descreve o padrão habitual do seu comportamento. Ele mostra suas reações repetidas, seus hábitos emocionais e mentais, e a forma como você tende a pensar, sentir e agir diante das experiências da vida. É através da personalidade que suas ideias, desejos e convicções ganham forma concreta.</p>
-<p>A personalidade representa o conjunto das características marcantes que moldam seus relacionamentos e sua forma de interagir com o ambiente. Ela define como você se posiciona socialmente, como responde aos desafios e como estabelece vínculos com as pessoas.</p>
-<p>O Número da Personalidade revela como você percebe a realidade e como reage a ela. Mostra suas tendências naturais de atração ou rejeição, suas convicções e a forma como expressa sentimentos e opiniões. Ele é um dos principais instrumentos para desenvolver uma forma eficiente, confortável e criativa de comunicação.</p>
-<p>Cada pessoa possui uma maneira única de agir e se expressar. Para aqueles que consideram a reencarnação como filosofia, a soma do nome completo representa a síntese de experiências, talentos e aprendizados acumulados ao longo de muitas existências.</p>
-<p>Compreender este número permite reconhecer talentos naturais, desafios comportamentais e padrões emocionais que influenciam diretamente a forma como sua vida se desenvolve.</p>`,
+     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma total de todas as letras (vogais e consoantes) do nome completo. O resultado é reduzido a um único dígito (de 1 a 9), preservando-se os números iguais de potencial ampliado (como 11, 22, etc.), que representam a síntese estrutural da identidade nominal.</p>
+
+<p><strong>Perfil e Identidade Estática:</strong> O Número da Personalidade revela a expressão prática do indivíduo — a maneira habitual como suas ideias, intenções e convicções se transformam em atitudes concretas diante da vida. Ele mapeia seus padrões recorrentes de pensamento, ação e interação social, definindo a postura natural com que você se posiciona no ambiente e responde aos desafios cotidianos.</p>
+`,
           videoID: "z1nW3rmNeEI"
     },
      
