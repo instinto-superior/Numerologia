@@ -88,7 +88,7 @@ introducoes: {
      conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma e redução matemática das primeiras letras (iniciais) de todos os nomes e sobrenomes do indivíduo a um único dígito (de 1 a 9). Este cálculo extrai a assinatura estrutural primária da identidade nominal.</p>
 
 <p><strong>Perfil e Identidade Estática:</strong> A Essência representa o padrão de ressonância interna e o ponto de equilíbrio emocional diante das pressões da vida. Ela atua como o fator de balanceamento estrutural — a frequência estabilizadora fixa que harmoniza as tendências nativas da personalidade, indicando como o indivíduo processa estímulos e neutraliza extremos sem depender de esforço consciente.</p>`,
-     videoID: "z1nW3rmNeEI"
+     videoID: "RUNiR0ZGRGpDcVE"
     },
 
         
