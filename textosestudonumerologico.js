@@ -99,7 +99,7 @@ introducoes: {
         
         
         talento: {
-     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma e redução matemática do número da Motivação com o número da Personalidade a um único dígito (de 1 a 99). Este cálculo une o impulso interno de desejos à forma como o indivíduo se projeta e atua no mundo, revelando uma aptidão nata.</p>
+     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma e redução matemática do número da Motivação com o número da Personalidade a um único dígito (de 1 a 9 E os números iguais que possuem um potencial maior de 11 a 99). Este cálculo une o impulso interno de desejos à forma como o indivíduo se projeta e atua no mundo, revelando uma aptidão nata.</p>
   <p><strong>Perfil e Identidade Estática:</strong>O talento é frequentemente compreendido como a habilidade de realizar determinadas tarefas com excelência e o mínimo de esforço consciente. Muitas vezes, essas capacidades permanecem latentes na mente, operando de forma automática sem que haja uma percepção clara de sua existência. O Talento Oculto representa essas habilidades especiais que, quando identificadas e desenvolvidas, permitem que o indivíduo se sobressaia em atividades específicas, utilizando inclinações naturais a seu favor.</p>
     <p>Mesmo sem o conhecimento técnico dessas predisposições, é comum que a utilização ocorra de maneira inconsciente no cotidiano. A identificação desse número revela ferramentas internas que podem ser potencializadas para gerar resultados extraordinários com fluidez e naturalidade.</p>`,
      videoID: "z1nW3rmNeEI"
