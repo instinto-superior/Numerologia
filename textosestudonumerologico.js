@@ -6022,74 +6022,61 @@ essencia: {
      conteudo:`<h3>Reação de Liderança e Controle - Essência 1</h3>
     <p>A sua reação interna primária, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por um impulso avassalador de autonomia, coragem e autoconfiança. Diante do inesperado, o desejo de assumir as rédeas do destino surge de forma quase instantânea em seu íntimo, impulsionando ações rápidas, decididas e originais para solucionar qualquer impasse com total independência e vigor.</p>
     <p>O grande desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está em não permitir que essa força bruta se transforme em uma postura autoritária ou impaciente no calor do momento. A verdadeira maestria da sua alma acontece quando você equilibra o entusiasmo do começo com uma escuta atenta aos detalhes. Ao fazer isso, você transforma a impulsividade inicial em uma autoridade natural, respeitada e estrategicamente eficiente, capaz de fundar novos impérios.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "X3JHSTdsRmZJb3M"
     },
     2: {
      conteudo:`<h3>Reação de Diplomacia e Sensibilidade - Essência 2</h3>
     <p>A sua resposta interna, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma natureza profundamente diplomática, receptiva e cooperativa. Ao enfrentar qualquer dificuldade, sua primeira tendência de alma é buscar o equilíbrio e considerar cuidadosamente os sentimentos de todos os envolvidos, evitando ao máximo qualquer tipo de ruptura brusca ou confronto direto que possa ferir a harmonia do ambiente.</p>
     <p>A maturidade espiritual ensina você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a não transformar essa busca por paz em uma anulação dos seus próprios desejos. O equilíbrio real ocorre quando você utiliza sua sensibilidade aguçada para mediar a situação com firmeza gentil, sem permitir que a indecisão ou a dependência da aprovação alheia paralisem sua capacidade de agir. Sua alma brilha através da união e da força silenciosa da parceria.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "cWt6dnFfWGxpQUE"
     },
     3: {
      conteudo:`<h3>Reação de Criatividade e Otimismo - Essência 3</h3>
     <p>A reação imediata da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é pautada por uma criatividade efervescente e por uma comunicação que flui naturalmente. Existe em você um otimismo nato que busca encontrar saídas alegres e originais para os problemas, utilizando seu pensamento rápido e carismático para desarmar tensões e transformar crises em oportunidades brilhantes de expressão e brilho pessoal.</p>
     <p>O cuidado vital para você é evitar que essa agitação mental constante gere dispersão de energia. Quando a sua criatividade inicial é canalizada com foco e disciplina, os resultados são nada menos que extraordinários; do contrário, a tendência de você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode ser a de gastar seu precioso potencial com superficialidades ou distrações que não resolvem o cerne da questão. Sua alma quer criar; ensine-a a concluir.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "VG1yWjE1aUpTVWs"
     },
     4: {
      conteudo:`<h3>Reação de Pragmatismo e Estrutura - Essência 4</h3>
     <p>Internamente, a sua resposta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é sempre pragmática e fundamentada em uma busca inegociável por segurança e ordem. Diante de imprevistos, sua alma busca se ancorar imediatamente em métodos comprovados e na organização meticulosa, preferindo a estabilidade duradoura do "passo a passo" à inovação arriscada ou sem fundamentos sólidos.</p>
     <p>A rigidez mental pode ser o maior obstáculo interno para você em momentos de mudança global. O seu desenvolvimento pessoal auxilia você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a manter a estrutura necessária, mas injetando a flexibilidade suficiente para aceitar o imprevisto como parte do plano. Sua eficiência máxima surge da união entre o seu método impecável e uma nova capacidade de adaptação, tornando-o(a) o alicerce de qualquer projeto de sucesso.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "VldkbGEtZHlWa3M"
     },
     5: {
      conteudo:`<h3>Reação de Agilidade e Adaptabilidade - Essência 5</h3>
     <p>A sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, vibra na frequência da rapidez e da versatilidade absoluta. Sua resposta interna a qualquer desafio é a curiosidade renovada e o movimento dinâmico, buscando soluções fora do comum e agindo com uma agilidade mental que costuma surpreender e até desorientar os ritmos mais lentos ao seu redor.</p>
     <p>A impulsividade, contudo, pode levar você a escolhas precipitadas das quais pode se arrepender. O segredo do seu equilíbrio reside em usar essa versatilidade de forma estratégica, aprendendo a dar uma pausa consciente antes de agir. Assim, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua liberdade de escolha será sempre produtiva e direcionada ao progresso real, permitindo que você mude o mundo sem se perder no caminho.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "eU1Val9JVjVpYWs"
     },
     6: {
      conteudo:`<h3>Reação de Proteção e Responsabilidade - Essência 6</h3>
     <p>Diante de conflitos ou dores, a sua reação interna, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de proteção paternal/maternal e cuidado imediato. O seu instinto de preservar as pessoas estimadas e o ambiente doméstico ou profissional sobressai a qualquer interesse egoísta, fazendo com que você tome as responsabilidades coletivas como se fossem estritamente próprias, buscando restaurar a paz social.</p>
     <p>É preciso um cuidado especial para que esse seu zelo profundo não se torne um controle excessivo ou uma interferência intrusiva na vida alheia. A verdadeira eficácia da sua essência aparece quando você apoia o próximo sem anular a autonomia dele, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Mantenha seu equilíbrio emocional e entenda que servir com amor também significa saber a hora de soltar as mãos dos outros para que eles cresçam sozinhos.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "WFZSSHdzSWNvQWc"
     },
     7: {
      conteudo:`<h3>Reação de Análise e Introspecção - Essência 7</h3>
     <p>A primeira resposta da sua alma diante do mundo é o recolhimento analítico e o processamento interno silencioso. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tende a se afastar do ruído externo para avaliar os fatos sob a ótica da razão e da intuição técnica, buscando uma compreensão profunda e absoluta antes de manifestar qualquer opinião ou ação definitiva.</p>
     <p>O seu desafio é não permitir que esse afastamento necessário se torne um isolamento frio, sarcástico ou melancólico. Ao decidir compartilhar suas conclusões de forma clara e acessível, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transforma seu vasto conhecimento em uma ferramenta poderosa para resolver problemas complexos com uma precisão cirúrgica que poucos possuem. Sua essência busca a verdade; deixe que essa luz também ilumine os outros.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "VS0wRUJfaHpWSHc"
     },
     8: {
      conteudo:`<h3>Reação de Autoridade e Objetividade - Essência 8</h3>
     <p>A sua reação interna, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de autoridade natural, ambição elevada e um foco prático implacável. Diante de qualquer obstáculo, sua mente processa imediatamente a melhor estratégia executiva para vencer, agindo com uma objetividade que prioriza resultados materiais, justiça e eficiência de alto nível.</p>
     <p>No calor do momento, sua sede de controle e comando pode gerar tensões desnecessárias com quem possui um ritmo diferente. O autodesenvolvimento permite que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, lidere com ética e generosidade, garantindo que o sucesso financeiro e o prestígio sejam alcançados sem ferir a integridade das pessoas. Sua alma nasceu para realizar grandes feitos; faça isso com a mão de ferro de um líder e o coração de um sábio.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "Mm5LLXpNWlRaUDQ"
     },
     9: {
      conteudo:`<h3>Reação de Humanitarismo e Sabedoria - Essência 9</h3>
     <p>A sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, responde aos desafios da vida com uma visão ampla, generosa e profundamente humanitária. Existe em você uma tendência natural ao desprendimento e à compreensão de que tudo faz parte de um ciclo universal maior, o que lhe confere uma sabedoria instintiva e uma calma admirável mesmo diante de crises profundas.</p>
     <p>O risco para você é cair em um idealismo excessivamente abstrato quando a realidade material se mostra dura ou injusta. A maturidade ensina você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a usar essa compaixão universal de forma prática, transformando sua sabedoria interna em ações concretas que beneficiam tanto o seu crescimento pessoal quanto o coletivo. Sua alma é o fim de um ciclo; brilhe com a luz de quem já compreendeu o valor do desapego e do amor incondicional.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "T0FKX19ZMjFjb2s"
     },
-    11: {
-     conteudo:`<h3>Reação de Intuição Visionária - Essência 11</h3>
-    <p>A Essência 11 indica que o cerne da sua individualidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é puramente intuitivo, vibrante e sutil. Diante de qualquer estímulo externo, você emite uma vibração de sabedoria nata e originalidade radical, agindo como um farol de ideias revolucionárias que transcendem completamente a lógica comum e o senso médio.</p>
-    <p>Sua reação interna busca sempre o significado espiritual, ético ou elevado por trás de cada fato cotidiano. O seu grande desafio é aterrar essa percepção aguçada no mundo material, transformando o seu idealismo visionário em uma força inspiradora real. <strong>MASCULINO-FEMININO-NEUTRO</strong>, quando você confia no seu canal intuitivo, você guia os outros não por palavras, mas pelo exemplo de uma integridade superior e de uma percepção que enxerga além do tempo presente.</p>`,
-  videoID: "F8bg1CTQ9HI"
-    },
-    22: {
-     conteudo:`<h3>Reação de Maestria Realizadora - Essência 22</h3>
-    <p>A Essência 22 revela um núcleo de imenso poder realizador e um pragmatismo operando em larga escala dentro de você. A base da sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é voltada para a construção de algo sólido, grandioso e transformador; você possui a semente de um "mestre construtor" operando em cada resposta interna que dá ao mundo.</p>
-    <p>Ao enfrentar desafios, sua mente organiza recursos, pessoas e projeta estruturas duradouras de forma quase automática e genial. O objetivo central da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é materializar sonhos elevados em realidades concretas que beneficiem a humanidade, unindo uma visão de longo alcance à competência técnica absoluta. Você não nasceu para o pequeno; sua alma exige que você construa legados que permaneçam muito depois de você.</p>`,
-     
- videoID: "F8bg1CTQ9HI"
-    },
-     },
 
 
 
 
+}
 
 
 };  
