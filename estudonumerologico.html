@@ -1421,11 +1421,11 @@ const nomesExibicao = {
       "Conclusao": "Conclusão"   
 };
 
-function calcularNumerologia(valor, aceitaMestre = true) {
-    let num = parseInt(valor);
+//function calcularNumerologia(valor, aceitaMestre = true) {
+  /*  let num = parseInt(valor);
     if (isNaN(num)) return 0;
 
-    // Criamos um array com todos os potenciais que você deseja preservar
+     Criamos um array com todos os potenciais que você deseja preservar
     const mestresSoberanos = [11, 22, 33, 44, 55, 66, 77, 88, 99];
 
     while (num > 9) {
@@ -1436,7 +1436,7 @@ function calcularNumerologia(valor, aceitaMestre = true) {
         num = String(num).split('').reduce((acc, curr) => acc + parseInt(curr), 0);
     }
     return num;
-}
+} */
         
  // 1. Função que soma a data dígito por dígito (Linear)
 function calcularCVLinear(dia, mes, ano) {
@@ -1449,7 +1449,7 @@ function calcularCVLinear(dia, mes, ano) {
     return reduzirRespeitandoMestres(somaTotal);
 }
 
-function reduzirRespeitandoMestres(num) {
+/*function reduzirRespeitandoMestres(num) {
     const mestresSoberanos = [11, 22, 33, 44, 55, 66, 77, 88, 99];
     
     // Enquanto for maior que 9 e não for um dos nossos números de intensidade
@@ -1457,7 +1457,7 @@ function reduzirRespeitandoMestres(num) {
         num = num.toString().split('').reduce((acc, curr) => acc + parseInt(curr), 0);
     }
     return num;
-}
+}*/
         
     function reduzir(n) {
     if (!n || n === 0) return 0;
