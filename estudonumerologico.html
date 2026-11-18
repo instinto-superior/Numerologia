@@ -3962,7 +3962,6 @@ if (typeof salvarTravaPerfil === 'function' && !salvarTravaPerfil()) return;
     
     const nomeRaw = document.getElementById("nome").value.trim();
     const dataRaw = document.getElementById("data").value; // Agora vem como DD/MM/AAAA
-// IMPLEMENTAÇÃO APENAS:
 
     if (!nomeRaw || !dataRaw) return alert("Por favor, preencha todos os dados.");
 
@@ -3973,129 +3972,109 @@ if (typeof salvarTravaPerfil === 'function' && !salvarTravaPerfil()) return;
     var dia = parseInt(partes[0], 10);
     var mes = parseInt(partes[1], 10);
     var ano = parseInt(partes[2], 10);
-// --- CÁLCULO DE IDADE CRONOLÓGICA (ALINHAMENTO PREMIUM) ---
-const agora = new Date();
-const dtNasci = new Date(ano, mes - 1, dia); // Usa as variáveis que você já criou
 
-let idadeCronologica = agora.getFullYear() - dtNasci.getFullYear();
-if (agora < new Date(agora.getFullYear(), dtNasci.getMonth(), dtNasci.getDate())) {
-    idadeCronologica--; // Ainda não fez aniversário este ano
-}
-// ---------------------------------------------------------
-    // Agora o celular aceita QUALQUER dia (25, 26, 31...) porque é apenas TEXTO.
+    // --- CÁLCULO DE IDADE CRONOLÓGICA (ALINHAMENTO PREMIUM) ---
+    const agora = new Date();
+    const dtNasci = new Date(ano, mes - 1, dia); 
+
+    let idadeCronologica = agora.getFullYear() - dtNasci.getFullYear();
+    if (agora < new Date(agora.getFullYear(), dtNasci.getMonth(), dtNasci.getDate())) {
+        idadeCronologica--; 
+    }
     
-var diaRed = reduzirPuro(dia);
-var mesRed = reduzirPuro(mes);
-var anoRed = reduzirPuro(ano);
+    var diaRed = reduzirPuro(dia);
+    var mesRed = reduzirPuro(mes);
+    var anoRed = reduzirPuro(ano);
 
     let nomesArray = nomeRaw.toUpperCase().split(/\s+/);
 
-    // Variáveis de soma (Sua lógica original)
     let sV = 0, sC = 0, sE = 0;
     let contagem = {1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0};
     let usados = new Set();
     
-    // O resto do seu código segue igual...
-// IMPLEMENTAÇÃO APENAS:
-const nomeParaCalculo = tratarNomeParaCalculo(nomeRaw);
+    const nomeParaCalculo = tratarNomeParaCalculo(nomeRaw);
         
-          // Adicione o toUpperCase() aqui também para a tabela reconhecer as letras!
-nomesArray = nomeParaCalculo.toUpperCase().split(/\s+/);
-            // Essência: 1ª letra de cada nome
-            nomesArray.forEach(n => { sE += calcularValorLetra(n[0]); });
-// COLE ESTE NOVO BLOCO:
-const radicaisWConsoante = ["WAGN", "WALD", "WAND", "WALT", "WALP", "WERNER", "WOLN", "WALM", "WALY"];
-const nomeBaseParaW = nomeRaw.toUpperCase().trim();
+    nomesArray = nomeParaCalculo.toUpperCase().split(/\s+/);
+    nomesArray.forEach(n => { sE += calcularValorLetra(n[0]); });
 
-for (let l of nomeRaw.toUpperCase()) {
-    const v = calcularValorLetra(l);
-    if (v > 0) {
-        const base = l.normalize("NFD")[0];
-        
-        if(tabela[base]) { 
-            contagem[tabela[base]]++; 
-            usados.add(tabela[base]); 
-        }
+    const radicaisWConsoante = ["WAGN", "WALD", "WAND", "WALT", "WALP", "WERNER", "WOLN", "WALM", "WALY"];
+    const nomeBaseParaW = nomeRaw.toUpperCase().trim();
 
-        let ehVogal = false;
-        if (vogais.includes(base)) {
-            ehVogal = true;
-        } 
-        else if (base === 'W') {
-            const temSomDeV = radicaisWConsoante.some(rad => nomeBaseParaW.startsWith(rad));
-            ehVogal = !temSomDeV; 
-        }
+    for (let l of nomeRaw.toUpperCase()) {
+        const v = calcularValorLetra(l);
+        if (v > 0) {
+            const base = l.normalize("NFD")[0];
+            
+            if(tabela[base]) { 
+                contagem[tabela[base]]++; 
+                usados.add(tabela[base]); 
+            }
 
-        if (ehVogal) {
-            sV += v;
-        } else {
-            sC += v;
+            let ehVogal = false;
+            if (vogais.includes(base)) {
+                ehVogal = true;
+            } 
+            else if (base === 'W') {
+                const temSomDeV = radicaisWConsoante.some(rad => nomeBaseParaW.startsWith(rad));
+                ehVogal = !temSomDeV; 
+            }
+
+            if (ehVogal) {
+                sV += v;
+            } else {
+                sC += v;
+            }
         }
     }
-}
 
-// Substituído para não chamar a função comentada:
-const exp = reduzir(sV + sC);
+    // Ajustado para usar reduzirPuro:
+    const exp = reduzirPuro(sV + sC);
+    const mot = reduzirPuro(sV);
+    const faltantes = Object.keys(contagem).filter(k => contagem[k] === 0);
 
-// Substituído para não chamar a função comentada:
-const mot = reduzir(sV);
-            const faltantes = Object.keys(contagem).filter(k => contagem[k] === 0);
+    // --- NOVO CÁLCULO DE DÉFICIT DE COMPORTAMENTO ---
+    const diaReduzido = reduzirPuro(dia); 
+    const cvCalculado = calcularCVLinear(dia, mes, ano);
 
-// --- NOVO CÁLCULO DE DÉFICIT DE COMPORTAMENTO ---
-const diaReduzido = reduzir(dia); 
-// Onde era: const cvCalculado = reduzir(dia + mes + ano);
-const cvCalculado = calcularCVLinear(dia, mes, ano);
+    // Ajustado para usar reduzirPuro:
+    const propCalculado = reduzirPuro(cvCalculado + exp);
 
-// Substituído para não chamar a função comentada:
-const propCalculado = reduzir(cvCalculado + exp);
+    const pilaresOcultos = [propCalculado, cvCalculado, exp, mot];
+    let deficitsOcultos = [];
 
-// Usamos as variáveis locais porque o objeto 'res' ainda vai ser criado abaixo
-const pilaresOcultos = [propCalculado, cvCalculado, exp, mot];
-let deficitsOcultos = [];
+    pilaresOcultos.forEach((num, index) => {
+        if (pilaresOcultos.indexOf(num) !== index && !deficitsOcultos.includes(num)) {
+            deficitsOcultos.push(num);
+        }
+    });
 
-pilaresOcultos.forEach((num, index) => {
-    if (pilaresOcultos.indexOf(num) !== index && !deficitsOcultos.includes(num)) {
-        deficitsOcultos.push(num);
+    let diaR = reduzirPuro(dia);
+    let mesR = reduzirPuro(mes);
+    let anoReferencia = (agora < new Date(agora.getFullYear(), mes - 1, dia)) ? agora.getFullYear() - 1 : agora.getFullYear();
+    let resultadoAnoPessoal = reduzirPuro(diaR + mesR + reduzirPuro(anoReferencia));
+    let vTransitoCalculado = "--";   
+
+    let numInicio = 0; 
+    let numFim = 0;
+    let txtFinalInic = "";
+    let txtFinalConc = "";
+
+    if (nomesArray && nomesArray.length > 0) {
+        const letraInicio = nomesArray[0][0]; 
+        const letraFim = nomesArray[nomesArray.length - 1].slice(-1); 
+
+        const chaveInic = obterChaveMestra(letraInicio);
+        const chaveConc = obterChaveMestra(letraFim);
+
+        numInicio = calcularValorCabalisticoCompleto(letraInicio);
+        numFim = calcularValorCabalisticoCompleto(letraFim);
+
+        if(typeof bancoEquilibrioUnificado !== 'undefined'){
+            txtFinalInic = bancoEquilibrioUnificado.inicio[chaveInic] || "Texto não encontrado para: " + chaveInic;
+            txtFinalConc = bancoEquilibrioUnificado.conclusao[chaveConc] || "Texto não encontrado para: " + chaveConc;
+        }
     }
-});
 
-let diaR = reduzir(dia);
-let mesR = reduzir(mes);
-// O Ano de referência para o Ano Pessoal depende se o aniversário já passou
-let anoReferencia = (agora < new Date(agora.getFullYear(), mes - 1, dia)) ? agora.getFullYear() - 1 : agora.getFullYear();
-let resultadoAnoPessoal = reduzir(diaR + mesR + reduzir(anoReferencia));
- let vTransitoCalculado = "--";   
-
-
-
-// --- DENTRO DA gerarMapaCompleto ---
-let numInicio = 0; 
-let numFim = 0;
-let txtFinalInic = "";
-let txtFinalConc = "";
-
-if (nomesArray && nomesArray.length > 0) {
-    const letraInicio = nomesArray[0][0]; 
-    const letraFim = nomesArray[nomesArray.length - 1].slice(-1); 
-
-    // Pega as chaves completas: ex "3_intuitivo_neutro"
-    const chaveInic = obterChaveMestra(letraInicio);
-    const chaveConc = obterChaveMestra(letraFim);
-
-    numInicio = calcularValorCabalisticoCompleto(letraInicio);
-    numFim = calcularValorCabalisticoCompleto(letraFim);
-
-
-
-    if(typeof bancoEquilibrioUnificado !== 'undefined'){
-        txtFinalInic = bancoEquilibrioUnificado.inicio[chaveInic] || "Texto não encontrado para: " + chaveInic;
-        txtFinalConc = bancoEquilibrioUnificado.conclusao[chaveConc] || "Texto não encontrado para: " + chaveConc;
-    }
-}
-
-
-
-// --- CÁLCULOS ANTES DO OBJETO RES (PARA EVITAR ERRO DE ESCOPO) ---
     const dadosPlanosParaPainel = calcularDadosPlanos(nomeRaw);
     const nomesAmigaveisPlanos = { fisico: "Físico", mental: "Mental", emocional: "Emocional", intuitivo: "Intuitivo" };
     
@@ -4130,154 +4109,130 @@ if (nomesArray && nomesArray.length > 0) {
     const piramideVida = gerarPiramide(nomeRaw);
     const regenteVida = piramideVida.at(-1)[0];    
 
+    res = {
+        dia: dia,
+        mesNascimento: mes, 
+        motivacao: mot, 
+        influencia: reduzirPuro(sC), 
+        Personalidade: exp, 
+        comportamento: reduzirPuro(dia), 
+        CaminhodeVida: cvCalculado, 
+        "Propósito": propCalculado, 
+        Maturidade: propCalculado, 
+        Relacionamento: reduzirPuro(propCalculado), 
+        essencia: reduzirPuro(sE), 
+        talento: reduzirPuro(mot + exp), 
+        equilibrio: {  inicio: numInicio,  fim: numFim,   txtFinalInic: txtFinalInic,   txtFinalConc: txtFinalConc  },
+        
+        deficiencias: faltantes.map(d => reduzirPuro(d)), 
+        deficitRecorrente: reduzirPuro(dia), 
+        deficitsOcultos: deficitsOcultos.map(d => reduzirPuro(d)), 
+        inclinacoes: Object.keys(contagem).filter(num => contagem[num] >= 3).map(Number).sort((a, b) => a - b),
+        subconsciente: 9 - faltantes.length,
+        
+        ciclos: {
+            1: reduzirPuro(mes), 
+            2: reduzirPuro(dia), 
+            3: reduzirPuro(ano)
+        },
+        
+        momentos: {
+            1: reduzirPuro(dia + mes), 
+            2: reduzirPuro(dia + ano), 
+            3: reduzirPuro(reduzirPuro(dia + mes) + reduzirPuro(dia + ano)), 
+            4: reduzirPuro(mes + ano)
+        },
+        
+        desafios: {
+            1: Math.abs(reduzirPuro(dia) - reduzirPuro(mes)), 
+            2: Math.abs(reduzirPuro(dia) - reduzirPuro(ano)), 
+            3: Math.abs(Math.abs(reduzirPuro(dia) - reduzirPuro(mes)) - Math.abs(reduzirPuro(dia) - reduzirPuro(ano)))
+        },
+        anoPessoal: resultadoAnoPessoal,
+        proximoAnoPessoal: reduzirPuro(resultadoAnoPessoal + 1),
 
- res = {
-    dia: dia,
-     mesNascimento: mes, 
-    motivacao: mot, 
-    influencia: reduzir(sC), 
-    Personalidade: exp, 
-    comportamento: reduzir(dia), 
-    CaminhodeVida: cvCalculado, 
-    "Propósito": propCalculado, 
-    Maturidade: propCalculado, 
-    Relacionamento: reduzir(propCalculado), 
-    essencia: reduzir(sE), 
-    talento: reduzir(mot + exp), 
-    equilibrio: {  inicio: numInicio,  fim: numFim,   txtFinalInic: txtFinalInic,   txtFinalConc: txtFinalConc  },
-    
+        planoDominanteNome: vPlanoDominanteNome,
+        perfilNativoTexto: valorPerfilNativoTexto,
+        transitoFinal: vTrânsitoFinal,
+        regentePiramide: regenteVida    
+    };
 
-    deficiencias: faltantes.map(d => reduzirPuro(d)), 
-    deficitRecorrente: reduzir(dia), 
-    deficitsOcultos: deficitsOcultos.map(d => reduzirPuro(d)), 
-    inclinacoes: Object.keys(contagem).filter(num => contagem[num] >= 3).map(Number).sort((a, b) => a - b),
-    subconsciente: 9 - faltantes.length,
-    
-    // CICLOS: Geralmente 1 a 9
-    ciclos: {
-        1: reduzir(mes), 
-        2: reduzir(dia), 
-        3: reduzir(ano)
-    },
-    
-    // MOMENTOS DECISIVOS (Pináculos)
-    momentos: {
-        1: reduzir(dia + mes), 
-        2: reduzir(dia + ano), 
-        3: reduzir(reduzir(dia + mes) + reduzir(dia + ano)), 
-        4: reduzir(mes + ano)
-    },
-    
-// Cálculo dos Desafios (Garantindo resultado de 0 a 8)
-desafios: {
-    // Desafio 1: Diferença entre Dia e Mês (Reduzidos a 1-9)
-    1: Math.abs(reduzirPuro(dia) - reduzirPuro(mes)), 
+    res.numEquilibrioInicio = numInicio; 
+    res.numEquilibrioFim = numFim;
 
-    // Desafio 2: Diferença entre Dia e Ano (Reduzidos a 1-9)
-    2: Math.abs(reduzirPuro(dia) - reduzirPuro(ano)), 
+    const dadosCientificos = calcularHabilidadeEspecialCientifica(nomeRaw);
 
-    // Desafio 3: Diferença entre os resultados acima (Sempre 0 a 8)
-    3: Math.abs(Math.abs(reduzirPuro(dia) - reduzirPuro(mes)) - Math.abs(reduzirPuro(dia) - reduzirPuro(ano)))
-},
- anoPessoal: resultadoAnoPessoal,
- proximoAnoPessoal: reduzir(resultadoAnoPessoal + 1),
-
- // --- COLE ESTES NOVOS AQUI DENTRO DO RES ---
-    planoDominanteNome: vPlanoDominanteNome,
-    perfilNativoTexto: valorPerfilNativoTexto,
-    transitoFinal: vTrânsitoFinal,
-    regentePiramide: regenteVida    
-};
-
-    // ADICIONE ESTAS DUAS LINHAS ABAIXO:
-res.numEquilibrioInicio = numInicio; 
-res.numEquilibrioFim = numFim;
-
-
-// --- 1. PRIMEIRO: Calcula a Habilidade/Deficiência Científica ---
-const dadosCientificos = calcularHabilidadeEspecialCientifica(nomeRaw);
-
-// Criamos a variável vHabDefFinal que a lista está pedindo
-let vHabDefFinal = "Equilibrado"; 
-
-if (dadosCientificos) {
-    // IMPORTANTE: Use crases (backticks) para que o ${} funcione corretamente
-    vHabDefFinal = `${dadosCientificos.letraOriginal} (${dadosCientificos.numero})`;
-}
-const introProfissionalTexto = `
-    <div style="margin-bottom: 15px; text-align: justify; line-height: 1.3;">
-​<p>A verdadeira realização profissional não acontece por acaso, mas através do alinhamento preciso entre sua <strong>Engenharia de Personalidade</strong> e as demandas concretas do mundo material. Muitas vezes, a sensação de estagnação, o cansaço excessivo ou a invisibilidade no mercado são apenas os resultados diretos de atuar em frequências que não pertencem ao seu código original. Para que a prosperidade se manifeste, é indispensável que a sua ocupação seja o reflexo externo da sua estrutura numérica interna, permitindo que o trabalho deixe de ser um esforço de resistência e se torne um fluxo natural de expansão.</p>
-​<p>Nesta seção, decodificamos os pontos de convergência do seu mapa para identificar o seu <strong>"Locus de Potência"</strong>. O cálculo realizado não é genérico; ele cruza a força da sua Motivação, o propósito do seu Caminho de Vida, a capacidade de entrega da sua Expressão e, fundamentalmente, a <strong>Vibração do seu Dia de Nascimento</strong>. Este último elemento atua como o seu talento inato, a ferramenta prática que você trouxe para manejar a realidade. Ao unificar esses pilares, revelamos as áreas de atuação onde você encontrará o caminho de menor resistência para atingir o reconhecimento e a estabilidade financeira.</p>
-​<p>Apresentamos a seguir um mapeamento estratégico dividido em quatro eixos fundamentais: a sua <strong>Zona de Sucesso Absoluto</strong>, com as 30 profissões de maior ressonância com seu gráfico; o <strong>Guia de Formação Recomendada</strong>, indicando os caminhos acadêmicos ou técnicos mais eficazes; as opções de <strong>Entrada Imediata via CLT</strong>, para quem busca segurança e inserção rápida; e o seu <strong>Campo de Afinidade Cotidiana</strong>, que descreve as atividades onde sua energia melhor se adapta no dia a dia. Cada sugestão foi filtrada para garantir que sua base concreta de talentos esteja a serviço de resultados palpáveis.</p>
-​<p style="font-style: italic; color: #666;">Utilize este diagnóstico como uma bússola técnica para suas próximas escolhas de carreira, novos empreendimentos ou transições estratégicas, garantindo que cada passo esteja fundamentado em sua real matriz de sucesso.</p>
-    </div>
-`;
-// --- LOGICA DAS PROFISSÕES ---
-const aptidao = calcularAptidaoProfissional(res); 
-
-const blocoProfissionalHTML = calcularAptidaoProfissional(res);
-const htmlProfissao = calcularAptidaoProfissional(res);
-// --- 1. CÁLCULOS DE APOIO (RODANDO ANTES DO PAINEL) ---
-const dadosDesejoObj = calcularDesejoOculto(nomeRaw);
-const nomeParaTalento = nomeRaw.split(' ')[0];
-   
-// Mapa de cores seguindo o padrão do seu relatório
-const coresPlanosDinamicas = {
-    fisico: "#e74c3c",    // Vermelho
-    mental: "#3498db",    // Azul
-    emocional: "#2ecc71", // Verde
-    intuitivo: "#b8860b"  // Dourado/Gold
-};
-
-const vCorPlanoDominante = coresPlanosDinamicas[planoChaveDominante]; 
-
-// --- 3. PREPARAÇÃO DE TEXTOS PARA O PAINEL ---
-let vDeficitFinal = [res.deficitRecorrente, ...(res.deficitsOcultos || [])].filter(x => x).join(" · ") || "--";
-let vDesejoFinal = (dadosDesejoObj && dadosDesejoObj.numero) ? dadosDesejoObj.numero : "--";
-
-// Configuração Visual do Perfil (Cores e Textos)
-const vTextosPerfil = {
-    criativo: ` <p>"Sua mente possui mais Criatividade"</p>`,
-    indeciso: ` <p>"A indecisão toma conta da sua expressão"</p>`,
-    neutro: ` <p>"Sua essência possui equilíbrio nas decisões"</p>`
-};
-
-const vCoresPerfil = {
-    criativo: "#827108", // Dourado 
-    indeciso: "#e74c3c", // Vermelho
-    neutro: "#7f8c8d"    // Cinza
-};
-
-const vCorDoPerfilAtivo = vCoresPerfil[perfilChave] || "#d97a1e";
-const vTextoDescritivoAtivo = vTextosPerfil[perfilChave] || "";
-            
-// --- LÓGICA DE DATAS, IDADES E PERÍODOS ---
-const anoNasc = ano; 
-const cv = res.CaminhodeVida;
-
-const fim1 = 37 - reduzirPuro(res.CaminhodeVida);
-const fim2 = fim1 + 27; 
-
-const datasFases = {
-    ciclos: {
-        1: { idade: `0 a ${fim1} anos`, anos: `${anoNasc} a ${anoNasc + fim1}` },
-        2: { idade: `${fim1 + 1} a ${fim2} anos`, anos: `${anoNasc + fim1 + 1} a ${anoNasc + fim2}` },
-        3: { idade: `após ${fim2} anos`, anos: `de ${anoNasc + fim2} em diante` }
-    },
-    momentos: {
-        1: { idade: `0 a ${fim1} anos`, anos: `${anoNasc} a ${anoNasc + fim1}` },
-        2: { idade: `${fim1 + 1} a ${fim1 + 9} anos`, anos: `${anoNasc + fim1 + 1} a ${anoNasc + fim1 + 9}` },
-        3: { idade: `${fim1 + 10} a ${fim1 + 18} anos`, anos: `${anoNasc + fim1 + 10} a ${anoNasc + fim1 + 18}` },
-        4: { idade: `após ${fim1 + 18} anos`, anos: `de ${anoNasc + fim1 + 18} em diante` }
-    },
-    desafios: {
-        1: { idade: `0 a ${fim1} anos`, anos: `${anoNasc} a ${anoNasc + fim1}` },
-        2: { idade: `${fim1 + 1} a ${fim2} anos`, anos: `${anoNasc + fim1 + 1} a ${anoNasc + fim2}` },
-        3: { idade: ``, anos: `Acompanha toda a Vida` }
+    let vHabDefFinal = "Equilibrado"; 
+    if (dadosCientificos) {
+        vHabDefFinal = `${dadosCientificos.letraOriginal} (${dadosCientificos.numero})`;
     }
-};
 
-const dadosNegativas = detectarNegativas(piramideVida);
+    const introProfissionalTexto = `
+        <div style="margin-bottom: 15px; text-align: justify; line-height: 1.3;">
+            <p>A verdadeira realização profissional não acontece por acaso, mas através do alinhamento preciso entre sua <strong>Engenharia de Personalidade</strong> e as demandas concretas do mundo material...</p>
+        </div>
+    `;
+
+    const aptidao = calcularAptidaoProfissional(res); 
+    const blocoProfissionalHTML = calcularAptidaoProfissional(res);
+    const htmlProfissao = calcularAptidaoProfissional(res);
+
+    const dadosDesejoObj = calcularDesejoOculto(nomeRaw);
+    const nomeParaTalento = nomeRaw.split(' ')[0];
+   
+    const coresPlanosDinamicas = {
+        fisico: "#e74c3c",    
+        mental: "#3498db",    
+        emocional: "#2ecc71", 
+        intuitivo: "#b8860b"  
+    };
+
+    const vCorPlanoDominante = coresPlanosDinamicas[planoChaveDominante]; 
+
+    let vDeficitFinal = [res.deficitRecorrente, ...(res.deficitsOcultos || [])].filter(x => x).join(" · ") || "--";
+    let vDesejoFinal = (dadosDesejoObj && dadosDesejoObj.numero) ? dadosDesejoObj.numero : "--";
+
+    const vTextosPerfil = {
+        criativo: ` <p>"Sua mente possui mais Criatividade"</p>`,
+        indeciso: ` <p>"A indecisão toma conta da sua expressão"</p>`,
+        neutro: ` <p>"Sua essência possui equilíbrio nas decisões"</p>`
+    };
+
+    const vCoresPerfil = {
+        criativo: "#827108", 
+        indeciso: "#e74c3c", 
+        neutro: "#7f8c8d"    
+    };
+
+    const vCorDoPerfilAtivo = vCoresPerfil[perfilChave] || "#d97a1e";
+    const vTextoDescritivoAtivo = vTextosPerfil[perfilChave] || "";
+            
+    const anoNasc = ano; 
+    const cv = res.CaminhodeVida;
+
+    const fim1 = 37 - reduzirPuro(res.CaminhodeVida);
+    const fim2 = fim1 + 27; 
+
+    const datasFases = {
+        ciclos: {
+            1: { idade: `0 a ${fim1} anos`, anos: `${anoNasc} a ${anoNasc + fim1}` },
+            2: { idade: `${fim1 + 1} a ${fim2} anos`, anos: `${anoNasc + fim1 + 1} a ${anoNasc + fim2}` },
+            3: { idade: `após ${fim2} anos`, anos: `de ${anoNasc + fim2} em diante` }
+        },
+        momentos: {
+            1: { idade: `0 a ${fim1} anos`, anos: `${anoNasc} a ${anoNasc + fim1}` },
+            2: { idade: `${fim1 + 1} a ${fim1 + 9} anos`, anos: `${anoNasc + fim1 + 1} a ${anoNasc + fim1 + 9}` },
+            3: { idade: `${fim1 + 10} a ${fim1 + 18} anos`, anos: `${anoNasc + fim1 + 10} a ${anoNasc + fim1 + 18}` },
+            4: { idade: `após ${fim1 + 18} anos`, anos: `de ${anoNasc + fim1 + 18} em diante` }
+        },
+        desafios: {
+            1: { idade: `0 a ${fim1} anos`, anos: `${anoNasc} a ${anoNasc + fim1}` },
+            2: { idade: `${fim1 + 1} a ${fim2} anos`, anos: `${anoNasc + fim1 + 1} a ${anoNasc + fim2}` },
+            3: { idade: ``, anos: `Acompanha toda a Vida` }
+        }
+    };
+
+    const dadosNegativas = detectarNegativas(piramideVida);
 
     if (typeof res !== 'undefined') {
         setTimeout(() => {
