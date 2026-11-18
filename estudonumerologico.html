@@ -1459,15 +1459,14 @@ function calcularCVLinear(dia, mes, ano) {
     return num;
 }*/
         
-    function reduzir(n) {
+function reduzirPuro(n) {
     if (!n || n === 0) return 0;
     
     // Converte para string e remove sinais ou pontos
     let num = n.toString().replace(/\D/g, "");
     
-    // Enquanto o número for maior que 9 e NÃO for um Número Mestre (11, 22)
-    // Se você NÃO quiser usar números mestres, remova: && num != "11" && num != "22"
-    while (num.length > 1 && num !== "11" && num !== "22") {
+    // Reduz sempre até sobrar apenas um dígito (sem exceção para 11 ou 22)
+    while (num.length > 1) {
         num = num.split("")
                  .reduce((acc, curr) => acc + parseInt(curr), 0)
                  .toString();
