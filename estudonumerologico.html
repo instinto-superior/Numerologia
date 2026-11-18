@@ -4036,7 +4036,7 @@ for (let l of nomeRaw.toUpperCase()) {
 }
 
            // Onde era: const exp = reduzir(sV + sC);
-const exp = calcularNumerologia(sV + sC, true); // Aceita Mestre
+const exp = calcularNumerologia(sV + sC, false); // Aceita Mestre
 
 // Onde era: const mot = reduzir(sV);
 const mot = calcularNumerologia(sV, true); // Aceita Mestre
@@ -4048,7 +4048,7 @@ const diaReduzido = reduzir(dia);
 const cvCalculado = calcularCVLinear(dia, mes, ano);
 
 // Onde era: const propCalculado = reduzir(cvCalculado + exp);
-const propCalculado = calcularNumerologia(cvCalculado + exp, true); // Aceita Mestre
+const propCalculado = calcularNumerologia(cvCalculado + exp, false); // Aceita Mestre
 
 // Usamos as variáveis locais porque o objeto 'res' ainda vai ser criado abaixo
 const pilaresOcultos = [propCalculado, cvCalculado, exp, mot];
@@ -4136,15 +4136,15 @@ if (nomesArray && nomesArray.length > 0) {
     dia: dia,
      mesNascimento: mes, 
     motivacao: mot, // Já calculado com Mestre
-    influencia: calcularNumerologia(sC, true), // Influência aceita Mestre
+    influencia: calcularNumerologia(sC, false), // Influência aceita Mestre
     Personalidade: exp, // Já calculado com Mestre
     comportamento: calcularNumerologia(dia, false), // Comportamento reduz para 1-9
     CaminhodeVida: cvCalculado, // Já calculado com Mestre
     "Propósito": propCalculado, // Já calculado com Mestre
     Maturidade: propCalculado, 
     Relacionamento: calcularNumerologia(propCalculado, false), // Relacionamento SEMPRE reduz (1-9)
-    essencia: calcularNumerologia(sE, true), // Essência aceita Mestre
-    talento: calcularNumerologia(mot + exp, true), // Talento Oculto aceita Mestre
+    essencia: calcularNumerologia(sE, false), // Essência aceita Mestre
+    talento: calcularNumerologia(mot + exp, false), // Talento Oculto aceita Mestre
    equilibrio: {  inicio: numInicio,  fim: numFim,   txtFinalInic: txtFinalInic,   txtFinalConc: txtFinalConc  },
     
 
@@ -4163,10 +4163,10 @@ if (nomesArray && nomesArray.length > 0) {
     
     // MOMENTOS DECISIVOS (Pináculos): ACEITAM 11 e 22
     momentos: {
-        1: calcularNumerologia(dia + mes, true), 
-        2: calcularNumerologia(dia + ano, true), 
-        3: calcularNumerologia(calcularNumerologia(dia + mes, true) + calcularNumerologia(dia + ano, true), true), 
-        4: calcularNumerologia(mes + ano, true)
+        1: calcularNumerologia(dia + mes, false), 
+        2: calcularNumerologia(dia + ano, false), 
+        3: calcularNumerologia(calcularNumerologia(dia + mes, true) + calcularNumerologia(dia + ano, true), false), 
+        4: calcularNumerologia(mes + ano, false)
     },
     
 // Cálculo dos Desafios (Garantindo resultado de 0 a 8)
