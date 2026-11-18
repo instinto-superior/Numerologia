@@ -1446,7 +1446,7 @@ function calcularCVLinear(dia, mes, ano) {
         let digito = parseInt(dataCompleta[i]);
         if (!isNaN(digito)) somaTotal += digito;
     }
-    return reduzirRespeitandoMestres(somaTotal);
+    return reduzir(somaTotal);
 }
 
 /*function reduzirRespeitandoMestres(num) {
