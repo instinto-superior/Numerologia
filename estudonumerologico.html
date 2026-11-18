@@ -4035,11 +4035,11 @@ for (let l of nomeRaw.toUpperCase()) {
     }
 }
 
-           // Onde era: const exp = reduzir(sV + sC);
-const exp = calcularNumerologia(sV + sC, false); // Aceita Mestre
+// Substituído para não chamar a função comentada:
+const exp = reduzir(sV + sC);
 
-// Onde era: const mot = reduzir(sV);
-const mot = calcularNumerologia(sV, true); // Aceita Mestre
+// Substituído para não chamar a função comentada:
+const mot = reduzir(sV);
             const faltantes = Object.keys(contagem).filter(k => contagem[k] === 0);
 
 // --- NOVO CÁLCULO DE DÉFICIT DE COMPORTAMENTO ---
@@ -4047,8 +4047,8 @@ const diaReduzido = reduzir(dia);
 // Onde era: const cvCalculado = reduzir(dia + mes + ano);
 const cvCalculado = calcularCVLinear(dia, mes, ano);
 
-// Onde era: const propCalculado = reduzir(cvCalculado + exp);
-const propCalculado = calcularNumerologia(cvCalculado + exp, false); // Aceita Mestre
+// Substituído para não chamar a função comentada:
+const propCalculado = reduzir(cvCalculado + exp);
 
 // Usamos as variáveis locais porque o objeto 'res' ainda vai ser criado abaixo
 const pilaresOcultos = [propCalculado, cvCalculado, exp, mot];
@@ -4135,38 +4135,38 @@ if (nomesArray && nomesArray.length > 0) {
  res = {
     dia: dia,
      mesNascimento: mes, 
-    motivacao: mot, // Já calculado com Mestre
-    influencia: calcularNumerologia(sC, false), // Influência aceita Mestre
-    Personalidade: exp, // Já calculado com Mestre
-    comportamento: calcularNumerologia(dia, false), // Comportamento reduz para 1-9
-    CaminhodeVida: cvCalculado, // Já calculado com Mestre
-    "Propósito": propCalculado, // Já calculado com Mestre
+    motivacao: mot, 
+    influencia: reduzir(sC), 
+    Personalidade: exp, 
+    comportamento: reduzir(dia), 
+    CaminhodeVida: cvCalculado, 
+    "Propósito": propCalculado, 
     Maturidade: propCalculado, 
-    Relacionamento: calcularNumerologia(propCalculado, false), // Relacionamento SEMPRE reduz (1-9)
-    essencia: calcularNumerologia(sE, false), // Essência aceita Mestre
-    talento: calcularNumerologia(mot + exp, false), // Talento Oculto aceita Mestre
-   equilibrio: {  inicio: numInicio,  fim: numFim,   txtFinalInic: txtFinalInic,   txtFinalConc: txtFinalConc  },
+    Relacionamento: reduzir(propCalculado), 
+    essencia: reduzir(sE), 
+    talento: reduzir(mot + exp), 
+    equilibrio: {  inicio: numInicio,  fim: numFim,   txtFinalInic: txtFinalInic,   txtFinalConc: txtFinalConc  },
     
 
     deficiencias: faltantes.map(d => reduzirPuro(d)), 
-    deficitRecorrente: calcularNumerologia(dia, false), 
+    deficitRecorrente: reduzir(dia), 
     deficitsOcultos: deficitsOcultos.map(d => reduzirPuro(d)), 
     inclinacoes: Object.keys(contagem).filter(num => contagem[num] >= 3).map(Number).sort((a, b) => a - b),
     subconsciente: 9 - faltantes.length,
     
     // CICLOS: Geralmente 1 a 9
     ciclos: {
-        1: calcularNumerologia(mes, false), 
-        2: calcularNumerologia(dia, false), 
-        3: calcularNumerologia(ano, false)
+        1: reduzir(mes), 
+        2: reduzir(dia), 
+        3: reduzir(ano)
     },
     
-    // MOMENTOS DECISIVOS (Pináculos): ACEITAM 11 e 22
+    // MOMENTOS DECISIVOS (Pináculos)
     momentos: {
-        1: calcularNumerologia(dia + mes, false), 
-        2: calcularNumerologia(dia + ano, false), 
-        3: calcularNumerologia(calcularNumerologia(dia + mes, true) + calcularNumerologia(dia + ano, true), false), 
-        4: calcularNumerologia(mes + ano, false)
+        1: reduzir(dia + mes), 
+        2: reduzir(dia + ano), 
+        3: reduzir(reduzir(dia + mes) + reduzir(dia + ano)), 
+        4: reduzir(mes + ano)
     },
     
 // Cálculo dos Desafios (Garantindo resultado de 0 a 8)
@@ -4213,8 +4213,8 @@ const introProfissionalTexto = `
 ​<p style="font-style: italic; color: #666;">Utilize este diagnóstico como uma bússola técnica para suas próximas escolhas de carreira, novos empreendimentos ou transições estratégicas, garantindo que cada passo esteja fundamentado em sua real matriz de sucesso.</p>
     </div>
 `;
-// --- LOGICA DAS PROFISSÕES (ADICIONE ISSO LOGO APÓS O OBJETO 'res') ---
-const aptidao = calcularAptidaoProfissional(res); // Aqui calculamos os números repetidos
+// --- LOGICA DAS PROFISSÕES ---
+const aptidao = calcularAptidaoProfissional(res); 
 
 const blocoProfissionalHTML = calcularAptidaoProfissional(res);
 const htmlProfissao = calcularAptidaoProfissional(res);
@@ -4222,11 +4222,6 @@ const htmlProfissao = calcularAptidaoProfissional(res);
 const dadosDesejoObj = calcularDesejoOculto(nomeRaw);
 const nomeParaTalento = nomeRaw.split(' ')[0];
    
-// Exemplo de uso:
-
-// --- CÁLCULO DO PLANO DOMINANTE PARA O PAINEL ---
-
-
 // Mapa de cores seguindo o padrão do seu relatório
 const coresPlanosDinamicas = {
     fisico: "#e74c3c",    // Vermelho
@@ -4235,22 +4230,11 @@ const coresPlanosDinamicas = {
     intuitivo: "#b8860b"  // Dourado/Gold
 };
 
-
-
-
-const vCorPlanoDominante = coresPlanosDinamicas[planoChaveDominante]; // <--- NOVA VARIÁVEL DE COR
-
-// --- 2. CÁLCULO DO TRÂNSITO (EXTRAÇÃO MANUAL RÁPIDA) ---
-
+const vCorPlanoDominante = coresPlanosDinamicas[planoChaveDominante]; 
 
 // --- 3. PREPARAÇÃO DE TEXTOS PARA O PAINEL ---
 let vDeficitFinal = [res.deficitRecorrente, ...(res.deficitsOcultos || [])].filter(x => x).join(" · ") || "--";
 let vDesejoFinal = (dadosDesejoObj && dadosDesejoObj.numero) ? dadosDesejoObj.numero : "--";
-
-// Executa o cálculo dos planos para obter o Perfil Nativo
-
-
-
 
 // Configuração Visual do Perfil (Cores e Textos)
 const vTextosPerfil = {
@@ -4265,20 +4249,15 @@ const vCoresPerfil = {
     neutro: "#7f8c8d"    // Cinza
 };
 
-// AQUI ESTAVA O ERRO: Mudei para usar 'vPerfilNomes' que acabamos de criar acima
-
 const vCorDoPerfilAtivo = vCoresPerfil[perfilChave] || "#d97a1e";
 const vTextoDescritivoAtivo = vTextosPerfil[perfilChave] || "";
-    
             
-// --- LÓGICA DE DATAS, IDADES E PERÍODOS (ESPELHADO NO ANTIGO) ---
-const anoNasc = ano; // Variável 'ano' que vem do split da data
-const cv = res. CaminhodeVida;
+// --- LÓGICA DE DATAS, IDADES E PERÍODOS ---
+const anoNasc = ano; 
+const cv = res.CaminhodeVida;
 
-// A idade de mudança principal (Maturidade)
-// O cálculo correto para travar a idade de transição:
 const fim1 = 37 - reduzirPuro(res.CaminhodeVida);
-const fim2 = fim1 + 27; // Ciclo 2 dura 27 anos
+const fim2 = fim1 + 27; 
 
 const datasFases = {
     ciclos: {
@@ -4298,18 +4277,15 @@ const datasFases = {
         3: { idade: ``, anos: `Acompanha toda a Vida` }
     }
 };
-// 1. PRIMEIRO: CALCULA TUDO DA PIRÂMIDE (PARA A LINHA 517 NÃO DAR ERRO)
 
 const dadosNegativas = detectarNegativas(piramideVida);
-    // ... (todo o restante do seu código de cálculo da pirâmide, res, etc.)
 
-    // --- ADICIONE ESTA LINHA NO FINAL DA SUA FUNÇÃO gerarMapaCompleto ---
- // No finalzinho da sua função gerarMapaCompleto(generoAtual):
     if (typeof res !== 'undefined') {
         setTimeout(() => {
             montarBlocoUnicoDeVideos(res);
         }, 100);
     }
+}
 
 
 
