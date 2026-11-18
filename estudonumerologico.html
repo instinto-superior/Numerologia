@@ -2408,7 +2408,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         let dominanteMomento = Object.keys(contPerfilMomento).reduce((a, b) => contPerfilMomento[a] >= contPerfilMomento[b] ? a : b);
         const nomesAmigaveis = { fisico: "Físico", mental: "Mental", emocional: "Emocional", intuitivo: "Intuitivo" };
         const planosOrdenados = Object.entries(somaMomento)
-            .map(([chave, valor]) => ({ chave, valor, vib: reduzir(valor) }))
+            .map(([chave, valor]) => ({ chave, valor, vib: reduzirPuro(valor) }))
             .sort((a, b) => b.valor - a.valor);
 
         const _p1 = planosOrdenados[0];
