@@ -2184,7 +2184,7 @@ function montarHtmlPlanosNatural(nome) {
     const nomesAmigaveis = { fisico: "Físico", mental: "Mental", emocional: "Emocional", intuitivo: "Intuitivo" };
     
     const planosOrdenados = Object.entries(dados.soma)
-        .map(([chave, valor]) => ({ chave, valor, vib: reduzir(valor) }))
+        .map(([chave, valor]) => ({ chave, valor, vib: reduzirPuro(valor) }))
         .sort((a, b) => b.valor - a.valor);
 
     const _p1 = planosOrdenados[0];
