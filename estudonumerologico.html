@@ -7650,20 +7650,18 @@ const emailLimpo = userEmail;
     
 async function inicializarSeguranca() {
     try {
-        const res = await fetch(`${DB_URL}vendas.json`);
-        const todasVendas = await res.json();
-
-        let dados = todasVendas[userEmail];
-        let emailLimpo = userEmail; 
+        const userKey = encodeURIComponent(userEmail);
+        const res = await fetch(`${DB_URL}vendas/${userKey}.json`);
+        const dados = await res.json();
 
         if (!dados) {
-             alert("Acesso não encontrado.");
-             window.location.href = "index.html";
-             return;
+            alert("Acesso não encontrado.");
+            window.location.href = "index.html";
+            return;
         }
 
-        // --- BLOCO DE RENOVAÇÃO / COMPRA NOVA QUE COLOCAMOS ---
-        const dataInicioFirebase = dados.data_inicio; 
+        // --- BLOCO DE RENOVAÇÃO / COMPRA NOVA ---
+        const dataInicioFirebase = dados.data_inicio;
         const dataInicioSalvoBrowser = localStorage.getItem('mapa_data_inicio_token');
 
         if (dataInicioSalvoBrowser && dataInicioSalvoBrowser !== dataInicioFirebase) {
@@ -7674,23 +7672,23 @@ async function inicializarSeguranca() {
             localStorage.removeItem('mapa_data_inicio_token');
         }
         localStorage.setItem('mapa_data_inicio_token', dataInicioFirebase);
-        // -----------------------------------------------------
+        // -----------------------------------------
 
         let diffDiasTotal = 0;
-        
+
         // 2. Verifica se o prazo de 30 dias venceu
         if (dados.data_inicio) {
             const dataInicio = new Date(dados.data_inicio).getTime();
             const agora = new Date().getTime();
             diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
-            
+
             setTimeout(() => {
                 verificarLiberacaoMenu(diffDiasTotal);
-            }, 500); 
+            }, 500);
 
             const diasRestantes = 38 - diffDiasTotal;
-            window.diasRestantesGlobais = 38 - diffDiasTotal; 
-            
+            window.diasRestantesGlobais = 38 - diffDiasTotal;
+
             const aviso = document.getElementById("aviso-expiracao-total");
             if (aviso) {
                 aviso.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
@@ -7711,10 +7709,10 @@ async function inicializarSeguranca() {
         }
 
         // 5. CARREGAMENTO DO RELATÓRIO
-        dadosGlobais = dados; 
+        dadosGlobais = dados;
         const dataReferencia = dados.data_inicio ? new Date(dados.data_inicio) : new Date();
         const dataExpiracaoPDF = new Date(dataReferencia);
-        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 8); 
+        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 8);
 
         iniciarTimer(dataExpiracaoPDF);
         verificarLiberacaoPDF(dados);
