@@ -3836,158 +3836,6 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
 }
 
 
-function montarBlocoUnicoDeVideos(res) {
-
-
-const videosIntro = [
-        // Exemplo: coloque aqui os objetos de vídeo de introdução que você quer exibir
-         //{ titulo: "Introdução - Engenharia da Vida", videoIDDireto: "bmFOdmhBYmhncFk" }
-    ];
-    
-
-    // Lista completa com todos os pilares do seu mapa
- const videosResultados = [
-        { titulo: "Dia de Nascimento", valor: res.dia, objeto: textos.dia },
-        { titulo: "Essência", valor: res.essencia, objeto: textos.essencia },
-        { titulo: "Caminho de Vida", valor: res.CaminhodeVida, objeto: textos.CaminhodeVida || textos.caminhodevida },
-        { titulo: "Personalidade", valor: res.Personalidade, objeto: textos.Personalidade },
-        { titulo: "Motivação", valor: res.motivacao, objeto: textos.motivacao },
-        { titulo: "Influência", valor: res.influencia, objeto: textos.influencia },
-        { titulo: "Comportamento", valor: res.comportamento, objeto: textos.comportamento },
-        { titulo: "Relacionamento", valor: res.Relacionamento, objeto: textos.Relacionamento },
-        { titulo: "Talento Oculto", valor: res.talento, objeto: textos.talento },
-        { titulo: "Propósito", valor: res.Propósito, objeto: textos.proposito || {} },
-        { titulo: "Maturidade", valor: res.Maturidade, objeto: textos.Maturidade || {} },
-        { titulo: "Como Começa", valor: res.equilibrio?.inicio, objeto: textos.equilibrioInicio },
-        { titulo: "Como Termina", valor: res.equilibrio?.fim, objeto: textos.equilibrioFim },
-        { titulo: "Déficit Recorrente", valor: res.deficitRecorrente, objeto: textos.deficitRecorrente },
-        { titulo: "Subconsciente", valor: res.subconsciente, objeto: textos.subconsciente },
-
-        // Ciclos de Vida
-        { titulo: "1° Ciclo de Vida ", valor: res.ciclos?.[1], objeto: textos.ciclos },
-        { titulo: "2° Ciclo de Vida ", valor: res.ciclos?.[2], objeto: textos.ciclos },
-        { titulo: "3° Ciclo de Vida ", valor: res.ciclos?.[3], objeto: textos.ciclos },
-
-        // Momentos Decisivos (Pináculos)
-        { titulo: "1° Momento Decisivo ", valor: res.momentos?.[1], objeto: textos.momentos },
-        { titulo: "2° Momento Decisivo ", valor: res.momentos?.[2], objeto: textos.momentos },
-        { titulo: "3° Momento Decisivo ", valor: res.momentos?.[3], objeto: textos.momentos },
-        { titulo: "4° Momento Decisivo ", valor: res.momentos?.[4], objeto: textos.momentos },
-
-        // Desafios
-        { titulo: "1° Desafio ", valor: res.desafios?.[1], objeto: textos.desafios },
-        { titulo: "2° Desafio ", valor: res.desafios?.[2], objeto: textos.desafios },
-        { titulo: "Desafio Principal", valor: res.desafios?.[3], objeto: textos.desafios },
-
-        // Anos Pessoais
-        { titulo: "Ano Pessoal", valor: res.anoPessoal, objeto: textos.anoPessoal },
-        { titulo: "Próximo Ano Pessoal", valor: res.proximoAnoPessoal, objeto: textos.proximoAnoPessoal },
-
-        // Planos, Perfil, Trânsito e Pirâmide
-        { titulo: "Pilar de dominância Natural", valor: res.planoDominanteNome, objeto: textos.planos || {} },
-        { titulo: "Expressão Nativa Natural", valor: res.perfilNativoTexto, objeto: textos.perfilNativo || {} },
-        { titulo: "Trânsito Atual", valor: res.transitoFinal, objeto: textos.transitos || {} },
-        { titulo: "Regente da Matriz", valor: res.regentePiramide, objeto: textos.regentePiramide || {} }
-    ];
-
-    // --- ADICIONANDO AS LISTAS MÚLTIPLAS ---
-    if (res.deficiencias && Array.isArray(res.deficiencias)) {
-        res.deficiencias.forEach((num, idx) => {
-            itensParaGaleria.push({ titulo: `Fraqueza`, valor: num, objeto: textos.deficiencias || textos.deficitRecorrente });
-        });
-    }
-
-    if (res.deficitsOcultos && Array.isArray(res.deficitsOcultos)) {
-        res.deficitsOcultos.forEach((num, idx) => {
-            itensParaGaleria.push({ titulo: `Déficit Oculto`, valor: num, objeto: textos.deficitsOcultos || textos.deficitRecorrente });
-        });
-    }
-
-    if (res.inclinacoes && Array.isArray(res.inclinacoes)) {
-        res.inclinacoes.forEach((num, idx) => {
-            itensParaGaleria.push({ titulo: `Inclinação`, valor: num, objeto: textos.inclinacoes || {} });
-        });
-    }
-    
-const videosClipes = [
-        // Exemplo: adicione seus clipes aqui
-        // { titulo: "Clipe - Instinto Superior", videoIDDireto: "CQ1bcGIcX_w" }
-    ];
-
-    renderizarCardsEmGrid(videosIntro, "grid-videos-intro");
-    renderizarCardsEmGrid(videosResultados, "grid-videos-resultados");
-    renderizarCardsEmGrid(videosClipes, "grid-videos-clipes");
-
-        
-itensParaGaleria.forEach(item => {
-        let videoID = null;
-        let temVideoReal = false;
-
-        if (item.objeto && item.objeto[item.valor]) {
-            const entrada = item.objeto[item.valor];
-            if (typeof entrada === 'object' && entrada !== null && entrada.videoID) {
-                let bruto = String(entrada.videoID).trim();
-                if (bruto !== "" && bruto !== "undefined") {
-                    if (bruto.includes("youtube.com") || bruto.includes("youtu.be")) {
-                        const match = bruto.match(/(?:v=|\/)([0-9A-Za-z_-]{11})/);
-                        videoID = match ? match[1] : null;
-                    } else {
-                        try {
-                            videoID = atob(bruto);
-                        } catch (e) {
-                            videoID = bruto;
-                        }
-                    }
-                    if (videoID && videoID.length >= 10) {
-                        temVideoReal = true;
-                    }
-                }
-            }
-        }
-
-        const idParaExibir = temVideoReal ? videoID : "dQw4w9WgXcQ"; 
-        const imagemThumb = `https://img.youtube.com/vi/${idParaExibir}/hqdefault.jpg`;
-        
-        // URL de destino para o link nativo do HTML
-        const urlDestino = temVideoReal ? `https://www.youtube.com/watch?v=${videoID}` : `#`;
-        const estiloOpacidade = temVideoReal ? 'opacity: 1;' : 'opacity: 0.6; filter: grayscale(50%);';
-        const textoStatus = temVideoReal ? 'Clique para assistir à análise' : '⏳ Em breve';
-
-        // Conteúdo interno do card (o desenho do card em si)
-        const conteudoCard = `
-            <div style="position: relative;">
-                <img src="${imagemThumb}" style="width: 100%; height: 160px; object-fit: cover; display: block;">
-                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center;">
-                    <div style="font-size: 35px; color: white; background: rgba(0,0,0,0.6); width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">${temVideoReal ? '▶' : '🔒'}</div>
-                </div>
-            </div>
-            <div style="padding: 15px; text-align: center;">
-                <h3 style="color: ${temVideoReal ? '#d4af37' : '#aaa'}; font-size: 15px; margin: 0 0 5px 0; text-transform: uppercase;">${item.titulo} (${item.valor ?? '--'})</h3>
-                <p style="color: #ccc; font-size: 12px; margin: 0;">${textoStatus}</p>
-            </div>
-        `;
-
-        // Se tem vídeo real, criamos um link (<a href>) nativo que o gerador de PDF reconhece e torna clicável.
-        // Se não tem, criamos apenas uma div comum com um alerta ao clicar no site.
-        if (temVideoReal) {
-            container.innerHTML += `
-                <a href="${urlDestino}" target="_blank" class="video-card-central" style="display: block; text-decoration: none; background: #1a1a1a; border: 2px solid #d4af37; border-radius: 10px; overflow: hidden; transition: transform 0.2s; ${estiloOpacidade}">
-                    ${conteudoCard}
-                </a>
-            `;
-        } else {
-            container.innerHTML += `
-                <div onclick="alert('Este vídeo ainda está em produção e será lançado em breve!')" class="video-card-central" style="background: #1a1a1a; border: 2px solid #666; border-radius: 10px; overflow: hidden; cursor: pointer; transition: transform 0.2s; ${estiloOpacidade}">
-                    ${conteudoCard}
-                </div>
-            `;
-        }
-    });
-}
-
-
-
-
 function renderizarCardsEmGrid(listaItens, idGrid) {
     const container = document.getElementById(idGrid);
     if (!container) return;
@@ -3997,7 +3845,6 @@ function renderizarCardsEmGrid(listaItens, idGrid) {
         let videoID = null;
         let temVideoReal = false;
 
-        // Permite passar videoID direto (ex: nos clipes) ou buscar dentro de item.objeto[item.valor]
         if (item.videoIDDireto) {
             videoID = String(item.videoIDDireto).trim();
             temVideoReal = videoID.length >= 10;
@@ -4056,6 +3903,68 @@ function renderizarCardsEmGrid(listaItens, idGrid) {
             `;
         }
     });
+}
+
+function montarBlocoUnicoDeVideos(res) {
+    if (!res) return;
+
+    const videosIntro = [];
+
+    const videosResultados = [
+        { titulo: "Dia de Nascimento", valor: res.dia, objeto: textos.dia },
+        { titulo: "Essência", valor: res.essencia, objeto: textos.essencia },
+        { titulo: "Caminho de Vida", valor: res.CaminhodeVida, objeto: textos.CaminhodeVida || textos.caminhodevida },
+        { titulo: "Personalidade", valor: res.Personalidade, objeto: textos.Personalidade },
+        { titulo: "Motivação", valor: res.motivacao, objeto: textos.motivacao },
+        { titulo: "Influência", valor: res.influencia, objeto: textos.influencia },
+        { titulo: "Comportamento", valor: res.comportamento, objeto: textos.comportamento },
+        { titulo: "Relacionamento", valor: res.Relacionamento, objeto: textos.Relacionamento },
+        { titulo: "Talento Oculto", valor: res.talento, objeto: textos.talento },
+        { titulo: "Propósito", valor: res.Propósito, objeto: textos.proposito || {} },
+        { titulo: "Maturidade", valor: res.Maturidade, objeto: textos.Maturidade || {} },
+        { titulo: "Como Começa", valor: res.equilibrio?.inicio, objeto: textos.equilibrioInicio },
+        { titulo: "Como Termina", valor: res.equilibrio?.fim, objeto: textos.equilibrioFim },
+        { titulo: "Déficit Recorrente", valor: res.deficitRecorrente, objeto: textos.deficitRecorrente },
+        { titulo: "Subconsciente", valor: res.subconsciente, objeto: textos.subconsciente },
+        { titulo: "1° Ciclo de Vida", valor: res.ciclos?.[1], objeto: textos.ciclos },
+        { titulo: "2° Ciclo de Vida", valor: res.ciclos?.[2], objeto: textos.ciclos },
+        { titulo: "3° Ciclo de Vida", valor: res.ciclos?.[3], objeto: textos.ciclos },
+        { titulo: "1° Momento Decisivo", valor: res.momentos?.[1], objeto: textos.momentos },
+        { titulo: "2° Momento Decisivo", valor: res.momentos?.[2], objeto: textos.momentos },
+        { titulo: "3° Momento Decisivo", valor: res.momentos?.[3], objeto: textos.momentos },
+        { titulo: "4° Momento Decisivo", valor: res.momentos?.[4], objeto: textos.momentos },
+        { titulo: "1° Desafio", valor: res.desafios?.[1], objeto: textos.desafios },
+        { titulo: "2° Desafio", valor: res.desafios?.[2], objeto: textos.desafios },
+        { titulo: "Desafio Principal", valor: res.desafios?.[3], objeto: textos.desafios },
+        { titulo: "Ano Pessoal", valor: res.anoPessoal, objeto: textos.anoPessoal },
+        { titulo: "Próximo Ano Pessoal", valor: res.proximoAnoPessoal, objeto: textos.proximoAnoPessoal },
+        { titulo: "Pilar de dominância Natural", valor: res.planoDominanteNome, objeto: textos.planos || {} },
+        { titulo: "Expressão Nativa Natural", valor: res.perfilNativoTexto, objeto: textos.perfilNativo || {} },
+        { titulo: "Trânsito Atual", valor: res.transitoFinal, objeto: textos.transitos || {} },
+        { titulo: "Regente da Matriz", valor: res.regentePiramide, objeto: textos.regentePiramide || {} }
+    ];
+
+    if (Array.isArray(res.deficiencias)) {
+        res.deficiencias.forEach(num => {
+            videosResultados.push({ titulo: "Fraqueza", valor: num, objeto: textos.deficiencias || textos.deficitRecorrente });
+        });
+    }
+    if (Array.isArray(res.deficitsOcultos)) {
+        res.deficitsOcultos.forEach(num => {
+            videosResultados.push({ titulo: "Déficit Oculto", valor: num, objeto: textos.deficitsOcultos || textos.deficitRecorrente });
+        });
+    }
+    if (Array.isArray(res.inclinacoes)) {
+        res.inclinacoes.forEach(num => {
+            videosResultados.push({ titulo: "Inclinação", valor: num, objeto: textos.inclinacoes || {} });
+        });
+    }
+
+    const videosClipes = [];
+
+    renderizarCardsEmGrid(videosIntro, "grid-videos-intro");
+    renderizarCardsEmGrid(videosResultados, "grid-videos-resultados");
+    renderizarCardsEmGrid(videosClipes, "grid-videos-clipes");
 }
 
         
