@@ -3996,7 +3996,71 @@ function abrirAba(idAba) {
 }
 
 
+const VIDEOS_SUMARIO = {
+  parte1: "bmFOdmhBYmhncFk",
+  parte2: "bmFOdmhBYmhncFk",
+  parte3: "bmFOdmhBYmhncFk",
+  parte4: "bmFOdmhBYmhncFk",
+  parte5: "bmFOdmhBYmhncFk",
+  parte6: "bmFOdmhBYmhncFk",
+  parte7: "bmFOdmhBYmhncFk",
+  parte8: "bmFOdmhBYmhncFk",
+  parte9: "bmFOdmhBYmhncFk",
+  parte10: "bmFOdmhBYmhncFk",
+  nomesIdentidade: "bmFOdmhBYmhncFk"
+};
 
+function alternarVideoSumario(idContainer, idVideo, tituloBotao, btnToggle) {
+  const box = document.getElementById(idContainer);
+  if (!box) return;
+
+  const estaAberto = box.style.display === "block";
+
+  if (estaAberto) {
+    box.style.display = "none";
+    box.innerHTML = "";
+    btnToggle.textContent = "▶ Assistir vídeo introdutório (importante ouvir antes)";
+  } else {
+    box.style.display = "block";
+    box.innerHTML = `
+      <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #111; margin-top: 6px;">
+        <iframe
+          src="https://www.youtube.com/embed/${idVideo}?rel=0&autoplay=1"
+          title="${tituloBotao}"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    `;
+    btnToggle.textContent = "▲ Esconder vídeo introdutório";
+  }
+}
+
+function renderizarBotaoComVideo(tituloBotao, idTela, idVideo) {
+  const idBox = `box-video-${idTela}-${Math.random().toString(36).slice(2, 7)}`;
+
+  return `
+    <div class="item-menu-video" style="margin-bottom: 14px; width: 100%;">
+      <button onclick="abrirAba('${idTela}')" style="width:100%; margin-bottom:5px; font-size: 22px;">
+        ${tituloBotao}
+      </button>
+
+      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 8px;">
+        <p style="margin: 0 0 6px 0; font-size: 13px; line-height: 1.35; opacity: 0.9;">
+          ⚠️ Importante assistir ao vídeo introdutório abaixo antes de avançar para esta parte. É muito importante ouvir com atenção.
+        </p>
+        <button
+          type="button"
+          onclick="event.stopPropagation(); alternarVideoSumario('${idBox}', '${idVideo}', '${tituloBotao}', this);"
+          style="width: 100%; padding: 8px 10px; font-size: 14px; cursor: pointer;">
+          ▶ Assistir vídeo introdutório (importante ouvir antes)
+        </button>
+        <div id="${idBox}" style="display: none;"></div>
+      </div>
+    </div>
+  `;
+}
         
         
 function gerarMapaCompleto(generoAtual) {
@@ -4319,49 +4383,43 @@ let html = `
     
 
 html += `<div class="menu-abas">
-  <button onclick="abrirAba('tela-Capa')" style="width:100%; margin-bottom:5px; font-size: 22px;">Capa</button>
-    <button onclick="abrirAba('tela-sumario')" style="width:100%; margin-bottom:5px; font-size: 22px;">Sumário</button>
-      <button onclick="abrirAba('tela-resultado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Resultado Numerológico</button>
-     <button onclick="abrirAba('tela-videos-exclusivos')" style="width:100%; margin-bottom:5px; font-size: 22px;">📺 Seus Vídeos Exclusivos</button>
+
+  <button onclick="abrirAba('tela-Capa')" style="width:100%; margin-bottom:5px; font-size: 22px;">Capa</button> 
   
-    
-    <button onclick="abrirAba('tela-introducao')" style="width:100%; margin-bottom:5px; font-size: 22px;">Introdução: Instinto Superior e Numerologia</button>
-   
-    
-
-    <button onclick="abrirAba('tela-parte2')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 1: Essência e Identidade</button>
-    <button onclick="abrirAba('tela-parte1')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 2: Performance dos Pilares do Instinto Natural</button>
-
-    <button onclick="abrirAba('tela-parte3')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 3: Alinhamento e Desafios</button>
-
-    <button onclick="abrirAba('tela-parte4')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 4: Finalidade e Realização</button>
-
-
-    <button onclick="abrirAba('tela-parte5')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 5: Ciclos de Vida</button>
-
-    <button onclick="abrirAba('tela-parte6')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 6:  Ano Pessoal e seus Meses</button>
+  <button onclick="abrirAba('tela-sumario')" style="width:100%; margin-bottom:5px; font-size: 22px;">Sumário</button>
   
-    <button onclick="abrirAba('tela-parte7')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 7: Influências de Momento (Trânsito e Pilares) </button>
-
-    <button onclick="abrirAba('tela-parte9')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 8: A Grande Matriz </button>
+  <button onclick="abrirAba('tela-resultado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Resultado Numerológico</button>
   
-
-    
-    <button onclick="abrirAba('tela-parte8')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 9: Complementares</button>
-    <button onclick="abrirAba('tela-parte10')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 10: Filosofia e Numerologia</button>
-            <button onclick="abrirAba('tela-social')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome Social</button>
-     <button onclick="abrirAba('tela-assinatura')" style="width:100%; margin-bottom:5px; font-size: 22px;">Assinatura</button>
-     <button onclick="abrirAba('tela-casado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome de Casamento(Cartório) (se houver)</button>
-  <div id="container-travado">
-       </div>
-
-    <div id="aviso-trava-menu" class="aviso-trava">
-        🔒 AS PARTES 5, 6, 7 E 8 SERÃO LIBERADAS APÓS O PERÍODO DE GARANTIA
-    </div>
-
+  <button onclick="abrirAba('tela-videos-exclusivos')" style="width:100%; margin-bottom:5px; font-size: 22px;">📺 Seus Vídeos Exclusivos</button>
   
+  <button onclick="abrirAba('tela-introducao')" style="width:100%; margin-bottom:5px; font-size: 22px;">Introdução: Instinto Superior e Numerologia</button>`;
+
+html += renderizarBotaoComVideo("Parte 1: Essência e Identidade", "tela-parte2", VIDEOS_SUMARIO.parte1);
+html += renderizarBotaoComVideo("Parte 2: Performance dos Pilares do Instinto Natural", "tela-parte1", VIDEOS_SUMARIO.parte2);
+html += renderizarBotaoComVideo("Parte 3: Alinhamento e Desafios", "tela-parte3", VIDEOS_SUMARIO.parte3);
+html += renderizarBotaoComVideo("Parte 4: Finalidade e Realização", "tela-parte4", VIDEOS_SUMARIO.parte4);
+html += renderizarBotaoComVideo("Parte 5: Ciclos de Vida", "tela-parte5", VIDEOS_SUMARIO.parte5);
+html += renderizarBotaoComVideo("Parte 6: Ano Pessoal e seus Meses", "tela-parte6", VIDEOS_SUMARIO.parte6);
+html += renderizarBotaoComVideo("Parte 7: Influências de Momento (Trânsito e Pilares)", "tela-parte7", VIDEOS_SUMARIO.parte7);
+html += renderizarBotaoComVideo("Parte 8: A Grande Matriz", "tela-parte9", VIDEOS_SUMARIO.parte8);
+html += renderizarBotaoComVideo("Parte 9: Complementares", "tela-parte8", VIDEOS_SUMARIO.parte9);
+html += renderizarBotaoComVideo("Parte 10: Filosofia e Numerologia", "tela-parte10", VIDEOS_SUMARIO.parte10);
+
+// Botão único agrupando Nome Social, Assinatura e Nome de Casamento
+html += renderizarBotaoComVideo(
+  "Nome Social, Assinatura e Nome de Casamento (Cartório)",
+  "tela-social",
+  VIDEOS_SUMARIO.nomesIdentidade
+);
+
+html += `
+  <div id="container-travado"></div>
+
+  <div id="aviso-trava-menu" class="aviso-trava">
+      🔒 AS PARTES 5, 6, 7 E 8 SERÃO LIBERADAS APÓS O PERÍODO DE GARANTIA
+  </div>
+
 </div>`;
-
 
     
 
