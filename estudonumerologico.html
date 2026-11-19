@@ -5778,9 +5778,8 @@ html += `
 
     
     
-
- primeiroNome = extrairPrimeiroNome(nomeRaw);
-const dadosHabilidade = calcularHabilidadeEspecialCientifica(primeiroNome);
+const primeiroNomeHabilidade = extrairPrimeiroNome(nomeRaw);
+const dadosHabilidade = calcularHabilidadeEspecialCientifica(primeiroNomeHabilidade);
 
 let idVideoTalento = dadosHabilidade ? buscarVideoID("talentosEspeciais", dadosHabilidade.numero, generoAtual) : null;
 const idVideoIntrohabilidadeEmbaralhado = "Q1ExYmNHSWNYX3c=";
