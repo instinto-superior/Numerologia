@@ -5652,37 +5652,46 @@ html += `
 // ==========================================
 // BLOCO INDIVIDUAL: INCLINAÇÕES (inclinacoes)
 // ==========================================
-tituloBonito = "Inclinações"; 
+tituloBonito = "Inclinacoes";
 let conteudoInclinacoes = "";
 
 if (res.inclinacoes && res.inclinacoes.length > 0) {
-    res.inclinacoes.forEach(num => {
-        // Busca os dados do texto/vídeo da inclinação específica
+    // Se 'contagem' existir no escopo, filtra apenas o(s) de maior frequencia entre res.inclinacoes
+    let inclinacoesFiltradas = res.inclinacoes;
+
+    if (typeof contagem === "object" && contagem !== null) {
+        const frequenciasCandidatos = res.inclinacoes.map(num => Number(contagem[num] || 0));
+        const maiorFrequencia = Math.max(...frequenciasCandidatos);
+
+        if (maiorFrequencia > 0) {
+            inclinacoesFiltradas = res.inclinacoes.filter(num => Number(contagem[num] || 0) === maiorFrequencia);
+        }
+    }
+
+    inclinacoesFiltradas.forEach(num => {
         const dadosInc = textos.inclinacoes ? textos.inclinacoes[num] : null;
-        
-        // --- DESEMBARALHA O VÍDEO DA INCLINAÇÃO ESPECÍFICA ---
+
         const videoIncEmbaralhado = (typeof dadosInc === 'object' && dadosInc !== null) ? dadosInc.videoID : null;
         const idVideoInc = videoIncEmbaralhado ? atob(videoIncEmbaralhado) : null;
-        
+
         conteudoInclinacoes += `
         <div class="evitar-corte texto-res">
             ${aplicarFiltroTexto(dadosInc ? dadosInc.conteudo : "")}
-         
             <hr style="border:0; border-top:1px dotted #ffffff; margin: 15px 0;">
-        </div>`;   // ${idVideoInc ? gerarPlayerYouTube(idVideoInc) : ""}
+        </div>`;
     });
 } else {
-    conteudoInclinacoes = "<p>Nenhuma inclinação específica detectada.</p>";
+    conteudoInclinacoes = "<p>Nenhuma inclinacao especifica detectada.</p>";
 }
 
-// --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
+// --- APLICACAO DO PADRAO PARA A INTRODUCAO (textos.js) ---
 const dadosIntroInc = textos.introducoes ? textos.introducoes.inclinacoes : "";
 const conteudoIntroInc = (typeof dadosIntroInc === 'object' && dadosIntroInc !== null) ? dadosIntroInc.conteudo : dadosIntroInc;
 
-// --- DESEMBARALHA O VÍDEO DA INTRODUÇÃO DAS INCLINAÇÕES ---
+// --- DESEMBARALHA O VIDEO DA INTRODUCAO DAS INCLINACOES ---
 const videoIntroIncEmbaralhado = (typeof dadosIntroInc === 'object' && dadosIntroInc !== null) ? dadosIntroInc.videoID : null;
 const videoIntroInc = videoIntroIncEmbaralhado ? atob(videoIntroIncEmbaralhado) : null;
-    
+
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
