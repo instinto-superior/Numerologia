@@ -3923,9 +3923,24 @@ function montarBlocoUnicoDeVideos(res) {
             videosResultados.push({ titulo: "Déficit Oculto", valor: num, objeto: textos.deficitsOcultos || textos.deficitRecorrente });
         });
     }
-    if (Array.isArray(res.inclinacoes)) {
-        res.inclinacoes.forEach(num => {
-            videosResultados.push({ titulo: "Inclinação", valor: num, objeto: textos.inclinacoes || {} });
+    
+if (Array.isArray(res.inclinacoes) && res.inclinacoes.length > 0) {
+        let inclinacoesParaVideos = res.inclinacoes;
+
+        // Usa res.contagem se existir, ou a variável global 'contagem' caso exista
+        const mapaContagem = res.contagem || (typeof contagem !== "undefined" ? contagem : null);
+
+        if (mapaContagem && typeof mapaContagem === "object") {
+            const frequencias = res.inclinacoes.map(num => Number(mapaContagem[num] || 0));
+            const maiorFreq = Math.max(...frequencias);
+
+            if (maiorFreq > 0) {
+                inclinacoesParaVideos = res.inclinacoes.filter(num => Number(mapaContagem[num] || 0) === maiorFreq);
+            }
+        }
+
+        inclinacoesParaVideos.forEach(num => {
+            videosResultados.push({ titulo: "Inclinacao", valor: num, objeto: textos.inclinacoes || {} });
         });
     }
 
