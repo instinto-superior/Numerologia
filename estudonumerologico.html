@@ -1023,6 +1023,29 @@ input[type="text"], select {
     display: block;
 }   
 
+
+
+.secao-videos {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.secao-videos h3 {
+    color: #d4af37;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+    padding-bottom: 6px;
+}
+
+.grid-videos-secao {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+    
+
 /* ===================================================
    OCULTAR TEXTOS NA TELA E EXIBIR APENAS NO PDF
    =================================================== */
@@ -3819,6 +3842,12 @@ function montarBlocoUnicoDeVideos(res) {
     
     container.innerHTML = ""; // Limpa antes de preencher
 
+const videosIntro = [
+        // Exemplo: coloque aqui os objetos de vídeo de introdução que você quer exibir
+         { titulo: "Introdução - Engenharia da Vida", videoIDDireto: "bmFOdmhBYmhncFk" }
+    ];
+    
+
     // Lista completa com todos os pilares do seu mapa
     const itensParaGaleria = [
         { titulo: "Dia de Nascimento", valor: res.dia, objeto: textos.dia },
@@ -3882,7 +3911,17 @@ function montarBlocoUnicoDeVideos(res) {
             itensParaGaleria.push({ titulo: `Inclinação`, valor: num, objeto: textos.inclinacoes || {} });
         });
     }
+    
+const videosClipes = [
+        // Exemplo: adicione seus clipes aqui
+         { titulo: "Clipe - Instinto Superior", videoIDDireto: "CQ1bcGIcX_w" }
+    ];
 
+    renderizarCardsEmGrid(videosIntro, "grid-videos-intro");
+    renderizarCardsEmGrid(videosResultados, "grid-videos-resultados");
+    renderizarCardsEmGrid(videosClipes, "grid-videos-clipes");
+}
+        
 itensParaGaleria.forEach(item => {
         let videoID = null;
         let temVideoReal = false;
@@ -3949,6 +3988,81 @@ itensParaGaleria.forEach(item => {
     });
 }
 
+
+
+
+function renderizarCardsEmGrid(listaItens, idGrid) {
+    const container = document.getElementById(idGrid);
+    if (!container) return;
+    container.innerHTML = "";
+
+    listaItens.forEach(item => {
+        let videoID = null;
+        let temVideoReal = false;
+
+        // Permite passar videoID direto (ex: nos clipes) ou buscar dentro de item.objeto[item.valor]
+        if (item.videoIDDireto) {
+            videoID = String(item.videoIDDireto).trim();
+            temVideoReal = videoID.length >= 10;
+        } else if (item.objeto && item.objeto[item.valor]) {
+            const entrada = item.objeto[item.valor];
+            if (typeof entrada === "object" && entrada !== null && entrada.videoID) {
+                let bruto = String(entrada.videoID).trim();
+                if (bruto !== "" && bruto !== "undefined") {
+                    if (bruto.includes("youtube.com") || bruto.includes("youtu.be")) {
+                        const match = bruto.match(/(?:v=|\/)([0-9A-Za-z_-]{11})/);
+                        videoID = match ? match[1] : null;
+                    } else {
+                        try {
+                            videoID = atob(bruto);
+                        } catch (e) {
+                            videoID = bruto;
+                        }
+                    }
+                    if (videoID && videoID.length >= 10) {
+                        temVideoReal = true;
+                    }
+                }
+            }
+        }
+
+        const idParaExibir = temVideoReal ? videoID : "dQw4w9WgXcQ";
+        const imagemThumb = `https://img.youtube.com/vi/${idParaExibir}/hqdefault.jpg`;
+        const urlDestino = temVideoReal ? `https://www.youtube.com/watch?v=${videoID}` : `#`;
+        const estiloOpacidade = temVideoReal ? "opacity: 1;" : "opacity: 0.6; filter: grayscale(50%);";
+        const textoStatus = temVideoReal ? "Clique para assistir à análise" : "⏳ Em breve";
+
+        const conteudoCard = `
+            <div style="position: relative;">
+                <img src="${imagemThumb}" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center;">
+                    <div style="font-size: 35px; color: white; background: rgba(0,0,0,0.6); width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">${temVideoReal ? "▶" : "🔒"}</div>
+                </div>
+            </div>
+            <div style="padding: 15px; text-align: center;">
+                <h3 style="color: ${temVideoReal ? "#d4af37" : "#aaa"}; font-size: 15px; margin: 0 0 5px 0; text-transform: uppercase;">${item.titulo}${item.valor !== undefined && item.valor !== null ? ` (${item.valor})` : ""}</h3>
+                <p style="color: #ccc; font-size: 12px; margin: 0;">${textoStatus}</p>
+            </div>
+        `;
+
+        if (temVideoReal) {
+            container.innerHTML += `
+                <a href="${urlDestino}" target="_blank" class="video-card-central" style="display: block; text-decoration: none; background: #1a1a1a; border: 2px solid #d4af37; border-radius: 10px; overflow: hidden; transition: transform 0.2s; ${estiloOpacidade}">
+                    ${conteudoCard}
+                </a>
+            `;
+        } else {
+            container.innerHTML += `
+                <div onclick="alert('Este vídeo ainda está em produção e será lançado em breve!')" class="video-card-central" style="background: #1a1a1a; border: 2px solid #666; border-radius: 10px; overflow: hidden; cursor: pointer; transition: transform 0.2s; ${estiloOpacidade}">
+                    ${conteudoCard}
+                </div>
+            `;
+        }
+    });
+}
+
+        
+
 function abrirAba(idAba) {
     // 1. Esconde todas as abas
     const abas = document.querySelectorAll('.conteudo-aba');
@@ -3969,6 +4083,10 @@ function abrirAba(idAba) {
         }
     }
 }
+
+
+
+        
         
 function gerarMapaCompleto(generoAtual) {
 if (typeof salvarTravaPerfil === 'function' && !salvarTravaPerfil()) return;
@@ -5334,18 +5452,31 @@ html += '</div>';
 
 
 html += '<div id="tela-videos-exclusivos" class="conteudo-aba" style="padding: 20px; background: #000; color: #fff;">';
-   html += ` <div class="separador-luxo">
+html += `
+    <div class="separador-luxo">
         <div class="caixa-interna">
             <h2>Central de Vídeos Personalizada</h2>
         </div>
     </div>
     <p style="text-align: center; color: #d4af37; margin-bottom: 20px;">Todos os vídeos do seu mapa reunidos em um só lugar:</p>
-    
-    <!-- Onde os cards serão injetados automaticamente -->
-    <div id="grid-videos-centralizado" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;"></div>
-</div>`,
-    
-html += '</div>';
+
+    <div id="central-videos-organizada">
+        <section class="secao-videos">
+            <h3>Vídeos de Introdução</h3>
+            <div id="grid-videos-intro" class="grid-videos-secao"></div>
+        </section>
+
+        <section class="secao-videos">
+            <h3>Vídeos de Resultados</h3>
+            <div id="grid-videos-resultados" class="grid-videos-secao"></div>
+        </section>
+
+        <section class="secao-videos">
+            <h3>Vídeos de Clipes</h3>
+            <div id="grid-videos-clipes" class="grid-videos-secao"></div>
+        </section>
+    </div>
+</div>`;
     
 html += '<div id="tela-social" class="conteudo-aba">';
 
