@@ -3883,7 +3883,7 @@ function montarBlocoUnicoDeVideos(res) {
         });
     }
 
-    itensParaGaleria.forEach(item => {
+itensParaGaleria.forEach(item => {
         let videoID = null;
         let temVideoReal = false;
 
@@ -3912,27 +3912,40 @@ function montarBlocoUnicoDeVideos(res) {
         const idParaExibir = temVideoReal ? videoID : "dQw4w9WgXcQ"; 
         const imagemThumb = `https://img.youtube.com/vi/${idParaExibir}/hqdefault.jpg`;
         
-        const acaoCard = temVideoReal 
-            ? `window.open('https://www.youtube.com/watch?v=${videoID}', '_blank')` 
-            : `alert('Este vídeo ainda está em produção e será lançado em breve!')`;
-
+        // URL de destino para o link nativo do HTML
+        const urlDestino = temVideoReal ? `https://www.youtube.com/watch?v=${videoID}` : `#`;
         const estiloOpacidade = temVideoReal ? 'opacity: 1;' : 'opacity: 0.6; filter: grayscale(50%);';
         const textoStatus = temVideoReal ? 'Clique para assistir à análise' : '⏳ Em breve';
 
-        container.innerHTML += `
-            <div class="video-card-central" onclick="${acaoCard}" style="background: #1a1a1a; border: 2px solid ${temVideoReal ? '#d4af37' : '#666'}; border-radius: 10px; overflow: hidden; cursor: pointer; transition: transform 0.2s; ${estiloOpacidade}">
-                <div style="position: relative;">
-                    <img src="${imagemThumb}" style="width: 100%; height: 160px; object-fit: cover; display: block;">
-                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center;">
-                        <div style="font-size: 35px; color: white; background: rgba(0,0,0,0.6); width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">${temVideoReal ? '▶' : '🔒'}</div>
-                    </div>
-                </div>
-                <div style="padding: 15px; text-align: center;">
-                    <h3 style="color: ${temVideoReal ? '#d4af37' : '#aaa'}; font-size: 15px; margin: 0 0 5px 0; text-transform: uppercase;">${item.titulo} (${item.valor ?? '--'})</h3>
-                    <p style="color: #ccc; font-size: 12px; margin: 0;">${textoStatus}</p>
+        // Conteúdo interno do card (o desenho do card em si)
+        const conteudoCard = `
+            <div style="position: relative;">
+                <img src="${imagemThumb}" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center;">
+                    <div style="font-size: 35px; color: white; background: rgba(0,0,0,0.6); width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">${temVideoReal ? '▶' : '🔒'}</div>
                 </div>
             </div>
+            <div style="padding: 15px; text-align: center;">
+                <h3 style="color: ${temVideoReal ? '#d4af37' : '#aaa'}; font-size: 15px; margin: 0 0 5px 0; text-transform: uppercase;">${item.titulo} (${item.valor ?? '--'})</h3>
+                <p style="color: #ccc; font-size: 12px; margin: 0;">${textoStatus}</p>
+            </div>
         `;
+
+        // Se tem vídeo real, criamos um link (<a href>) nativo que o gerador de PDF reconhece e torna clicável.
+        // Se não tem, criamos apenas uma div comum com um alerta ao clicar no site.
+        if (temVideoReal) {
+            container.innerHTML += `
+                <a href="${urlDestino}" target="_blank" class="video-card-central" style="display: block; text-decoration: none; background: #1a1a1a; border: 2px solid #d4af37; border-radius: 10px; overflow: hidden; transition: transform 0.2s; ${estiloOpacidade}">
+                    ${conteudoCard}
+                </a>
+            `;
+        } else {
+            container.innerHTML += `
+                <div onclick="alert('Este vídeo ainda está em produção e será lançado em breve!')" class="video-card-central" style="background: #1a1a1a; border: 2px solid #666; border-radius: 10px; overflow: hidden; cursor: pointer; transition: transform 0.2s; ${estiloOpacidade}">
+                    ${conteudoCard}
+                </div>
+            `;
+        }
     });
 }
 
