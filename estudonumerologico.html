@@ -3434,90 +3434,65 @@ function obterChaveMestra(letraOriginal) {
 
 
 
-function calcularHabilidadeEspecialCientifica(nomeCompleto) {
-    if (!nomeCompleto) return null;
+function extrairPrimeiroNome(texto) {
+    if (!texto || typeof texto !== "string") return "";
+    return texto.trim().split(/\s+/)[0];
+}
+
+function calcularHabilidadeEspecialCientifica(nomeEntrada) {
+    const primeiroNome = extrairPrimeiroNome(nomeEntrada);
+    if (!primeiroNome) return null;
 
     const contagemLetras = {};
-    const nomeProcessado = nomeCompleto.toUpperCase();
-    
-    // 1. Contagem de frequência absoluta de cada letra/acento
+    const nomeProcessado = primeiroNome.toUpperCase();
+
+    // 1. Contagem de frequencia absoluta de cada letra (sem acentos)
     for (let letra of nomeProcessado) {
-        if (letra.match(/[A-Z\u00C0-\u00FFÇ]/)) {
+        if (/[A-ZÇ]/.test(letra)) {
             contagemLetras[letra] = (contagemLetras[letra] || 0) + 1;
         }
     }
 
     // 2. Ordenar para identificar qual letra aparece MAIS vezes
     const ordenado = Object.entries(contagemLetras).sort((a, b) => b[1] - a[1]);
-    
     if (ordenado.length === 0) return null;
 
-    // A letra campeã é sempre a primeira da lista
     const letraDominante = ordenado[0][0];
     const maiorFreq = ordenado[0][1];
 
-    // 3. Extrair os valores científicos da letra campeã
+    // 3. Valor cabalístico e reducao para 1-9
     const valorCabalistico = calcularValorLetra(letraDominante);
-    
-    // Redução para o índice do banco de textos (1-9)
     const numeroFinal = (valorCabalistico > 9) ? (valorCabalistico % 9 || 9) : valorCabalistico;
-
-    // 4. Identificar Plano e Modo (Baseado na letra base)
-    const letraBase = letraDominante.normalize("NFD")[0].toUpperCase();
-    const modo = tabelaExpressao[letraBase] || 'neutro';
-    
-    let plano = "";
-    for (let p in gruposPlanos) {
-        if (gruposPlanos[p].includes(letraBase)) {
-            plano = p;
-            break;
-        }
-    }
 
     return {
         letraOriginal: letraDominante,
         numero: numeroFinal,
-        plano: plano,
-        modo: modo,
         frequencia: maiorFreq
     };
 }
 
-
-function gerarHTMLHabilidadeEspecial(nomeCompleto) {
-    const dados = calcularHabilidadeEspecialCientifica(nomeCompleto);
+function gerarHTMLHabilidadeEspecial(nomeEntrada) {
+    const primeiroNome = extrairPrimeiroNome(nomeEntrada);
+    const dados = calcularHabilidadeEspecialCientifica(primeiroNome);
     if (!dados) return "";
 
-    // Buscamos os textos nos seus objetos
-    const textoTalento = textos.talentosEspeciais[dados.numero];
-    const textoPlano = textos.planosExpressao[dados.plano].forte; // Usamos a influência forte por ser a letra dominante
-    const textoModo = (dados.modo === "indeciso") ? textos.modosAcao.oscilantes : textos.modosAcao[dados.modo];
+    const textoTalento = textos.talentosEspeciais[dados.numero]?.conteudo || textos.talentosEspeciais[dados.numero] || "";
 
-    let html = `
+    const html = `
     <div class="separador-luxo">
         <div class="caixa-interna">
-            <h2>Habilidade Especiai e Deficiência</h2>
+            <h2>Habilidade Especial e Deficiencia</h2>
         </div>
     </div>
 
     <div class="page">
         <div class="intro-texto">
-            <p>A análise científica do seu nome completo revelou uma dominância vibracional na letra <strong>"${dados.letraOriginal}"</strong>. Esta letra não apenas carrega um valor cabalístico específico, mas dita como suas habilidades se manifestam nos níveis prático e emocional.</p>
+            <p>A analise do seu primeiro nome (<strong>${primeiroNome}</strong>) revelou predominancia na letra <strong>"${dados.letraOriginal}"</strong>, conectada ao numero <strong>${dados.numero}</strong>.</p>
         </div>
 
         <div class="secao-resultado-cientifico">
             <div class="bloco-talento-base">
                 ${textoTalento}
-            </div>
-
-            <div class="bloco-plano-expressao" style="border-left: 4px solid ${coresPlanos[dados.plano]}; padding-left: 20px; margin: 30px 0;">
-                <h3 style="color: ${coresPlanos[dados.plano]}">Campo de Atuação: Plano ${dados.plano.toUpperCase()}</h3>
-                ${textoPlano}
-            </div>
-
-            <div class="bloco-modo-acao" style="background: #f9f9f9; padding: 25px; border-radius: 12px; border: 1px solid #eee;">
-                <h3>Modo de Expressão: ${dados.modo.toUpperCase()}</h3>
-                ${textoModo}
             </div>
         </div>
     </div>
@@ -3526,17 +3501,9 @@ function gerarHTMLHabilidadeEspecial(nomeCompleto) {
     return aplicarFiltroTexto(html);
 }
 
-
-
-// Apague as referências antigas e use apenas esta lógica:
 function montarSecaoHabilidadeEspecial() {
-    // 1. Pega o nome completo que o usuário digitou
     const nomeInput = document.getElementById('nome').value;
-
-    // 2. Chama a função de gerar o HTML (aquela que fizemos no passo anterior)
     const secaoHTML = gerarHTMLHabilidadeEspecial(nomeInput);
-
-    // 3. Insere no seu container principal do mapa
     document.getElementById('resultado-mapa').innerHTML += secaoHTML;
 }
 
@@ -5812,48 +5779,26 @@ html += `
     
     
 
-// 1. PRIMEIRO: Calcule os dados científicos (use o nomeCompleto do seu formulário)
-// 1. PRIMEIRO: Calcule os dados científicos
-const dadosHabilidade = calcularHabilidadeEspecialCientifica(nomeRaw);
+const primeiroNome = extrairPrimeiroNome(nomeRaw);
+const dadosHabilidade = calcularHabilidadeEspecialCientifica(primeiroNome);
 
-// --- CAPTURA DOS IDs BRUTOS (Podem vir embaralhados em Base64) ---
 let idVideoTalento = dadosHabilidade ? buscarVideoID("talentosEspeciais", dadosHabilidade.numero, generoAtual) : null;
+const idVideoIntrohabilidadeEmbaralhado = "Q1ExYmNHSWNYX3c=";
 
-let idVideoHabilidade = (dadosHabilidade && textos.PlanosExpressao && textos.PlanosExpressao[dadosHabilidade.plano]) 
-                        ? (textos.PlanosExpressao[dadosHabilidade.plano].forte?.videoID || textos.PlanosExpressao[dadosHabilidade.plano].forte?.video) 
-                        : null;
-
-let idVideoModo = (dadosHabilidade && textos.modosAcao && textos.modosAcao[dadosHabilidade.modo]) 
-                  ? (textos.modosAcao[dadosHabilidade.modo].videoID || textos.modosAcao[dadosHabilidade.modo].video) 
-                  : null; 
-
-// ID Embaralhado (Base64) do vídeo de Introdução
-const idVideoIntrohabilidadeEmbaralhado = "Q1ExYmNHSWNYX3c="; // "z1nW3rmNeEI" convertido em Base64
-
-// --- PROTEÇÃO COM ATRASO/EMBARALHAMENTO (atob) ---
-// Função auxiliar para desembaralhar com segurança sem quebrar se vier nulo ou já desembaralhado
 const desembaralharID = (idEmbaralhado) => {
     if (!idEmbaralhado) return null;
     try {
-        // Tenta desembaralhar com atob
         return atob(idEmbaralhado);
     } catch (e) {
-        // Se já estiver em texto puro (não Base64), mantém o original
         return idEmbaralhado;
     }
 };
 
-// Desembaralha todos os vídeos do bloco:
 const idVideoIntrohabilidade = desembaralharID(idVideoIntrohabilidadeEmbaralhado);
 idVideoTalento = desembaralharID(idVideoTalento);
-idVideoHabilidade = desembaralharID(idVideoHabilidade);
-idVideoModo = desembaralharID(idVideoModo);
-// ------------------------------------------------
 
-// 2. SEGUNDO: Declare o título
-tituloBonito = "Habilidades Especiais e Deficiências"; 
+tituloBonito = "Habilidades Especiais e Deficiencias";
 
-// 3. TERCEIRO: Inicie a montagem do HTML
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -5862,58 +5807,32 @@ html += `
 </div>
 `;
 
-// --- CONTEÚDO DA PÁGINA ---
 html += `
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
         
         <div class="intro-texto">
             ${(textos.introducoes && textos.introducoes.talentosEspeciais) ? aplicarFiltroTexto(textos.introducoes.talentosEspeciais) : `
-<p><strong>Fundamento e Origem:</strong> Obtido através da contagem e mapeamento de frequência das letras no nome completo de nascimento. A categoria de letras predominante (dividida entre mentais, físicas, intuitivas e emocionais) define simultaneamente a letra dominante, o número correspondente e a característica comportamental associada (classificada entre criativa, indecisa ou neutra), revelando a frequência operacional padrão do indivíduo.</p>
+<p><strong>Fundamento e Origem:</strong> Obtido pela contagem e frequencia das letras apenas no primeiro nome, identificando a letra mais presente e seu valor numerico correspondente.</p>
 
-<p><strong>Perfil e Identidade Estática:</strong> As Habilidades e Deficiências estruturam a capacidade de resposta diante da vida cotidiana, indicando como a pessoa processa a realidade prática — seja por meio de análise mental, vigor físico ou sensibilidade emocional. Enquanto as habilidades traduzem inclinações naturais para resolver situações de forma automática, as deficiências representam pontos cegos ou oscilações que podem gerar indecisão, inércia ou reações impulsivas sob estresse, exigindo gerenciamento consciente para otimizar o desempenho.</p>
-
+<p><strong>Perfil e Identidade Estatica:</strong> As Habilidades e Deficiencias mostram os pontos fortes naturais e os pontos de atencao que pedem gerenciamento no dia a dia.</p>
             `} 
             ${idVideoIntrohabilidade ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoIntrohabilidade)}</div>` : ""}
         </div>
 
-     ${dadosHabilidade ? `
+        ${dadosHabilidade ? `
             <div class="resultado-talento" style="margin-top: 25px;">
                 <div class="evitar-corte texto-res">
-                    ${aplicarFiltroTexto(textos.talentosEspeciais[dadosHabilidade.numero]?.conteudo || textos.talentosEspeciais[dadosHabilidade.numero])}
-                   
-                </div>
-            </div>
-
-            <div class="evitar-corte bloco-cientifico-plano" style="border-left: 4px solid ${coresPlanos[dadosHabilidade.plano] || '#ccc'}; padding-left: 20px; margin: 30px 0;">
-                <h3 style="color: ${coresPlanos[dadosHabilidade.plano] || '#000'}; text-transform: uppercase; font-size: 1.2rem;">
-                    Campo de Atuação: Plano ${dadosHabilidade.plano.toUpperCase()} (Letra ${dadosHabilidade.letraOriginal})
-                </h3>
-                <div class="evitar-corte texto-res">
-                    ${aplicarFiltroTexto(textos.PlanosExpressao[dadosHabilidade.plano]?.forte?.conteudo || textos.PlanosExpressao[dadosHabilidade.plano]?.forte || "Conteúdo não disponível.")}
-                    
-                </div>
-            </div>
-
-            <div class="evitar-corte bloco-cientifico-modo" style="background: rgba(0,0,0,0.03); padding: 20px; border-radius: 10px; border: 1px solid #ddd;">
-                <h3 style="text-transform: uppercase; font-size: 1.1rem; margin-bottom: 10px;">
-                    Modo de Expressão: ${dadosHabilidade.modo.toUpperCase()}
-                </h3>
-                <div class="evitar-corte texto-res">
-                    ${aplicarFiltroTexto(textos.modosAcao[dadosHabilidade.modo]?.conteudo || textos.modosAcao[dadosHabilidade.modo] || "Modo de ação não definido.")}
-                    
+                    ${aplicarFiltroTexto(textos.talentosEspeciais[dadosHabilidade.numero]?.conteudo || textos.talentosEspeciais[dadosHabilidade.numero] || "")}
                 </div>
             </div>
         ` : `
             <div class="alerta-suave" style="margin-top: 20px; padding: 15px; background: #f9f9f9; border-radius: 8px;">
-                <p>Não foi possível detectar uma dominância clara para esta análise.</p>
+                <p>Nao foi possivel detectar uma dominancia clara para este primeiro nome.</p>
             </div>
         `}
     </div>
-`;             //${idVideoHabilidade ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoHabilidade)}</div>` : ""}
-               //${idVideoTalento ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoTalento)}</div>` : ""}
-               //${idVideoModo ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoModo)}</div>` : ""}
-
+`;
 
     
  html += '</div>'; 
