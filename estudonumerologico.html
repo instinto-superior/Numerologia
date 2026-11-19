@@ -3908,7 +3908,9 @@ function renderizarCardsEmGrid(listaItens, idGrid) {
 function montarBlocoUnicoDeVideos(res) {
     if (!res) return;
 
-    const videosIntro = [];
+    const videosIntro = [
+         { titulo: "Introdução - Potenciais do Momento", videoIDDireto: "z1nW3rmNeEI" }
+    ];
 
     const videosResultados = [
         { titulo: "Dia de Nascimento", valor: res.dia, objeto: textos.dia },
@@ -3960,7 +3962,10 @@ function montarBlocoUnicoDeVideos(res) {
         });
     }
 
-    const videosClipes = [];
+    const videosClipes = [
+{ titulo: "Introdução - Potenciais do Momento", videoIDDireto: "bmFOdmhBYmhncFk" }
+        
+    ];
 
     renderizarCardsEmGrid(videosIntro, "grid-videos-intro");
     renderizarCardsEmGrid(videosResultados, "grid-videos-resultados");
