@@ -4197,6 +4197,18 @@ if (typeof salvarTravaPerfil === 'function' && !salvarTravaPerfil()) return;
     const piramideVida = gerarPiramide(nomeRaw);
     const regenteVida = piramideVida.at(-1)[0];    
 
+const candidatosInclinacao = Object.keys(contagem)
+    .filter(num => contagem[num] >= 3)
+    .map(Number);
+
+let inclinacoesPrincipais = [];
+if (candidatosInclinacao.length > 0) {
+    const maiorFreqInclinacao = Math.max(...candidatosInclinacao.map(n => contagem[n] || 0));
+    inclinacoesPrincipais = candidatosInclinacao
+        .filter(n => (contagem[n] || 0) === maiorFreqInclinacao)
+        .sort((a, b) => a - b);
+}
+    
     res = {
         dia: dia,
         mesNascimento: mes, 
@@ -4215,7 +4227,7 @@ if (typeof salvarTravaPerfil === 'function' && !salvarTravaPerfil()) return;
         deficiencias: faltantes.map(d => reduzirPuro(d)), 
         deficitRecorrente: reduzirPuro(dia), 
         deficitsOcultos: deficitsOcultos.map(d => reduzirPuro(d)), 
-        inclinacoes: Object.keys(contagem).filter(num => contagem[num] >= 3).map(Number).sort((a, b) => a - b),
+        inclinacoes: inclinacoesPrincipais,
         subconsciente: 9 - faltantes.length,
         
         ciclos: {
