@@ -5519,13 +5519,13 @@ listaPremium.forEach(chave => {
         
         <div class="evitar-corte texto-res">
             ${aplicarFiltroTexto(conteudo || "")}
-            
+         
         </div>
     </div>
     `;
 });
 
-
+  // ${video ? gerarPlayerYouTube(video) : ""} 
 
 
     
@@ -5575,10 +5575,13 @@ html += `
         </div>
       <div class="texto-res">
         ${aplicarFiltroTexto(textos.desejoOculto[dadosDesejo.numero].conteudo)}
-        ${videoDesejoFinal ? gerarPlayerYouTube(videoDesejoFinal) : ""}
+      
     </div>
 </div>`;
+ // ${videoDesejoFinal ? gerarPlayerYouTube(videoDesejoFinal) : ""}
 
+
+    
 // ==========================================
 // BLOCO INDIVIDUAL: INCLINAÇÕES (inclinacoes)
 // ==========================================
@@ -5597,9 +5600,9 @@ if (res.inclinacoes && res.inclinacoes.length > 0) {
         conteudoInclinacoes += `
         <div class="evitar-corte texto-res">
             ${aplicarFiltroTexto(dadosInc ? dadosInc.conteudo : "")}
-            ${idVideoInc ? gerarPlayerYouTube(idVideoInc) : ""}
+         
             <hr style="border:0; border-top:1px dotted #ffffff; margin: 15px 0;">
-        </div>`;
+        </div>`;   // ${idVideoInc ? gerarPlayerYouTube(idVideoInc) : ""}
     });
 } else {
     conteudoInclinacoes = "<p>Nenhuma inclinação específica detectada.</p>";
@@ -5682,15 +5685,16 @@ htmlEquil = `
         <div class="secao-resultado">
             <h3 style="text-align: center;">COMO VOCÊ INÍCIA (COMEÇO): N° ${numInicio})</h3>
             ${aplicarFiltroTexto(p1.texto)}
-            ${p1.video ? gerarPlayerYouTube(p1.video) : ""}
+         
         </div>
         <div class="secao-resultado">
             <h3 style="text-align: center;">COMO VOCÊ REALIZA (CONCLUSÃO): N° ${numFim})</h3>
             ${aplicarFiltroTexto(p2.texto)}
-            ${p2.video ? gerarPlayerYouTube(p2.video) : ""}
+           
         </div>
     </div>
-`;
+`;  // ${p1.video ? gerarPlayerYouTube(p1.video) : ""}
+     //${p2.video ? gerarPlayerYouTube(p2.video) : ""}
 
 const textoFormatado = aplicarFiltroTexto(htmlEquil);
 
@@ -5777,7 +5781,7 @@ html += `
             <div class="resultado-talento" style="margin-top: 25px;">
                 <div class="evitar-corte texto-res">
                     ${aplicarFiltroTexto(textos.talentosEspeciais[dadosHabilidade.numero]?.conteudo || textos.talentosEspeciais[dadosHabilidade.numero])}
-                    ${idVideoTalento ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoTalento)}</div>` : ""}
+                   
                 </div>
             </div>
 
@@ -5787,7 +5791,7 @@ html += `
                 </h3>
                 <div class="evitar-corte texto-res">
                     ${aplicarFiltroTexto(textos.PlanosExpressao[dadosHabilidade.plano]?.forte?.conteudo || textos.PlanosExpressao[dadosHabilidade.plano]?.forte || "Conteúdo não disponível.")}
-                    ${idVideoHabilidade ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoHabilidade)}</div>` : ""}
+                    
                 </div>
             </div>
 
@@ -5797,7 +5801,7 @@ html += `
                 </h3>
                 <div class="evitar-corte texto-res">
                     ${aplicarFiltroTexto(textos.modosAcao[dadosHabilidade.modo]?.conteudo || textos.modosAcao[dadosHabilidade.modo] || "Modo de ação não definido.")}
-                    ${idVideoModo ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoModo)}</div>` : ""}
+                    
                 </div>
             </div>
         ` : `
@@ -5806,7 +5810,12 @@ html += `
             </div>
         `}
     </div>
-`;
+`;             //${idVideoHabilidade ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoHabilidade)}</div>` : ""}
+               //${idVideoTalento ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoTalento)}</div>` : ""}
+               //${idVideoModo ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoModo)}</div>` : ""}
+
+
+    
  html += '</div>'; 
 
 
@@ -5969,14 +5978,17 @@ if (res.deficiencias && res.deficiencias.length > 0) {
         html += `
         <div class="texto-res" style="margin-top: 20px;"> 
             ${aplicarFiltroTexto(conteudo || "")}
-            ${video ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(video)}</div>` : ""}
+           
             <hr style="border:0; border-top:1px solid #ffffff">
         </div>`;
     });
     html += `</div>`;
 } else { 
     html += `<p style="margin-top:20px;">Nenhuma deficiência encontrada.</p>`; 
-}
+}    
+
+ //${video ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(video)}</div>` : ""}
+    
 html += `</div>`;
 
 
@@ -6006,10 +6018,10 @@ html += `
     </div>
     <div class="evitar-corte texto-res" style="margin-top: 20px;">
         ${conteudoSub ? aplicarFiltroTexto(conteudoSub) : "<p>Dados não localizados.</p>"}
-        ${videoSub ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoSub)}</div>` : ""}
+        
     </div>
 </div>
-`;
+`;   //${videoSub ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoSub)}</div>` : ""}
 
 
 // ==========================================
@@ -6046,10 +6058,10 @@ html += `
         
         <div class="texto-res pula-pagina" style="margin-top: 20px;"> 
             ${aplicarFiltroTexto(conteudoDeficitRec || "")}
-            ${videoDeficitRec ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoDeficitRec)}</div>` : ""}
+           
         </div>
         <hr style="border:0; border-top:1px solid #ffffff">
-`;
+`;  // ${videoDeficitRec ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoDeficitRec)}</div>` : ""}
 
 if (res.deficitsOcultos && res.deficitsOcultos.length > 0) {
     res.deficitsOcultos.forEach(d => {
@@ -6060,12 +6072,12 @@ if (res.deficitsOcultos && res.deficitsOcultos.length > 0) {
 
         html += `<div class="texto-res" style="margin-top: 20px;"> 
             ${aplicarFiltroTexto(cD || "")}
-            ${vD ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(vD)}</div>` : ""}
+            
             <hr style="border:0; border-top:1px solid #ffffff">
         </div>`;
     });
-}
-html += `</div>`;
+}   
+html += `</div>`;   // ${vD ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(vD)}</div>` : ""}
 
 
 // ==========================================
@@ -6109,10 +6121,10 @@ html += `
         
         <div class="evitar-corte texto-res" style="margin-top: 20px;">
             ${conteudoDesafio3 ? aplicarFiltroTexto(conteudoDesafio3) : "<p>Dados não localizados para o desafio.</p>"}
-            ${videoDesafio3 ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoDesafio3)}</div>` : ""}
+           
         </div>
     </div>
-`;
+`;   //${videoDesafio3 ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoDesafio3)}</div>` : ""}
 
    html += '</div>';   
     html += '<div id="tela-parte4" class="conteudo-aba">';   
@@ -6174,10 +6186,10 @@ html += `
     </div>
     <div class="evitar-corte texto-res" style="margin-top: 20px;">
         ${textoCaminho ? aplicarFiltroTexto(textoCaminho) : "<p>Dados não encontrados.</p>"}
-        ${videoCaminho ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoCaminho)}</div>` : ""}
+       
     </div>
 </div>
-`;
+`;   //${videoCaminho ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoCaminho)}</div>` : ""}
 
 
 // ==========================================
@@ -6212,10 +6224,10 @@ html += `
     </div>
     <div class="evitar-corte texto-res" style="margin-top: 20px;">
         ${textoPropósito ? aplicarFiltroTexto(textoPropósito) : "<p>Dados não encontrados.</p>"} 
-        ${videoPropósito ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoPropósito)}</div>` : ""}
+        
     </div>
 </div>
-`;
+`;    //${videoPropósito ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoPropósito)}</div>` : ""}
 
 
 // ==========================================
@@ -6318,9 +6330,9 @@ html += `
     </div>
     <div class="texto-res" style="margin-top: 20px;">
         ${conteudoMaturidade ? aplicarFiltroTexto(conteudoMaturidade) : "<p>Conteúdo de maturidade não encontrado.</p>"}
-        ${videoMaturidade ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoMaturidade)}</div>` : ""}
+       
     </div>
-</div>`;
+</div>`;  //${videoMaturidade ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoMaturidade)}</div>` : ""}
 
 
 // ==========================================
@@ -6374,12 +6386,12 @@ html += `
             
             <div class="texto-res" style="margin-top: 10px;">
                 ${aplicarFiltroTexto(conteudo || "")}
-                ${videoID ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoID)}</div>` : ""}
+               
             </div>
           
             <hr style="border:0; border-top:1px solid #ffffff; margin-top: 15px;">
-        </div>`;
-    }
+        </div>`;    //${videoID ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoID)}</div>` : ""}
+    } 
 
     html += `</div>`; // Fecha a div class="page"
 });
@@ -6507,9 +6519,9 @@ html += `
     </h3>
     <div class="texto-res">
         ${conteudoAnoAtual ? aplicarFiltroTexto(conteudoAnoAtual) : ""}
-        ${videoAnoAtual ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoAnoAtual)}</div>` : ""}
+       
     </div>
-</div>`;
+</div>`;  // ${videoAnoAtual ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoAnoAtual)}</div>` : ""}
 
 // Planejamento Mensal - Ano Atual
 const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesParaCronograma);
@@ -6542,10 +6554,10 @@ html += `
         </h3>
         <div class="texto-res">
             ${conteudoProximoAno ? aplicarFiltroTexto(conteudoProximoAno) : ""}
-            ${videoProximoAno ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoProximoAno)}</div>` : ""}
+            
         </div>
     </div>
-</div>`;
+</div>`;   //${videoProximoAno ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoProximoAno)}</div>` : ""}
 
 // Planejamento Mensal - Próximo Ano
 const cronogramaProximoHTML = gerarCronogramaMensal(proximoAnoPessoal, mesParaCronograma);
@@ -6676,10 +6688,10 @@ html += `
 
     <div class="evitar-corte texto-res" style="margin-top: 20px;">
         ${conteudoRel ? aplicarFiltroTexto(conteudoRel) : "<p>Dados não encontrados.</p>"}
-        ${videoRel ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoRel)}</div>` : ""}
+       
     </div>
 </div>
-`;
+`;    //${videoRel ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoRel)}</div>` : ""}
 
 
 // ==========================================
@@ -6705,7 +6717,7 @@ html += `
         <div style="text-align: center;">
             <span style="display: block; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9em; color: var(--gold); margin-bottom: 15px;">Seus Dias de Ressonância Mensal</span>
             <div class="evitar-corte texto-res" style="margin-top: 20px; text-align: center;">
-                ${idVideoPoder ? gerarPlayerYouTube(idVideoPoder) : ""}
+               
             </div>
             <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
                 ${diasPoder.map(d => `<div style="background: var(--gold); color: #000; width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 10px; font-size: 1.6em; font-weight: bold; box-shadow: 4px 4px 12px rgba(0,0,0,0.3);">${d}</div>`).join('')}
@@ -6718,7 +6730,7 @@ html += `
         </div>
     </div>
     <p style="text-align: center; margin-top: 20px; font-size: 0.85em; color: #888; font-style: italic;">* Sempre que um dia de poder cair em uma ${diaSemanaVib}, você terá um "Dia de Ouro".</p>
-</div>`;
+</div>`;  // ${idVideoPoder ? gerarPlayerYouTube(idVideoPoder) : ""}
 
 
 // ==========================================
@@ -6746,7 +6758,7 @@ html += `
         <p>As cores não são apenas elementos visuais; elas são frequências eletromagnéticas que interagem diretamente com o seu campo áurico e sua <strong>Expressão Pessoal</strong>. Na Numerologia Cabalística, o uso consciente das cores corretas atua como um catalisador vibracional, facilitando a manifestação dos seus talentos e protegendo sua energia de interferências externas. Quando você se veste ou se cerca das cores que harmonizam com sua Personalidade, você reduz o atrito com o ambiente e potencializa seu magnetismo social. Esta prática auxilia na clareza mental e na autoconfiança, permitindo que sua essência brilhe sem bloqueios. Cada tonalidade recomendada abaixo possui uma "assinatura" que se acopla ao seu código numérico, criando uma sinergia que favorece desde reuniões importantes até momentos de introspecção e cura.</p>
     </div>
     <div class="evitar-corte texto-res" style="margin-top: 30px; text-align: center;">
-        ${idVideoCores ? gerarPlayerYouTube(idVideoCores) : ""}
+        
     </div>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 30px;">
         ${itensCores.map(item => {
@@ -6774,7 +6786,7 @@ html += `
             return `<div style="background: ${corHex}; color: ${corTexto}; padding: 12px 25px; border-radius: 5px; border: 2px solid #d4af37; font-weight: bold; text-transform: uppercase; box-shadow: 2px 4px 6px rgba(0,0,0,0.1); min-width: 150px; text-align: center;">${item}</div>`;
         }).join('')}
     </div>
-</div>`; 
+</div>`;  //  ${idVideoCores ? gerarPlayerYouTube(idVideoCores) : ""}
 
     
 // ==========================================
@@ -6799,7 +6811,7 @@ html += `
         <p>Os <strong>Números Harmônicos</strong> representam as chaves de acesso à sua sorte e fluidez no mundo material. Eles são calculados a partir da raiz do seu dia de nascimento e indicam quais frequências numéricas estão em "simbiose" com o seu destino. Você deve utilizar estes números como uma bússola para escolhas estratégicas: desde a numeração de uma casa ou apartamento, a escolha de placas de veículos, até datas para assinaturas de contratos importantes e gincanas de sorte. Ao alinhar seus documentos, senhas e até números de telefone com estas vibrações, você cria um escudo de proteção e um canal de menor resistência para a prosperidade. Estes números não são meras coincidências, mas sim o seu código de acesso pessoal para que o universo reconheça suas intenções e facilite a conquista de prêmios, reconhecimento e sucesso em suas empreitadas.</p>
     </div>
     <div class="evitar-corte texto-res" style="margin-top: 20px;">
-        ${idVideoHarmonicos ? gerarPlayerYouTube(idVideoHarmonicos) : ""}
+        
     </div>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
         ${listaNums.map(n => `
@@ -6814,7 +6826,7 @@ html += `
     <p style="text-align: center; margin-top: 30px; font-style: italic; color: #888;">
         "A sorte é o encontro da preparação com a frequência numérica correta."
     </p>
-</div>`;   
+</div>`;    // ${idVideoHarmonicos ? gerarPlayerYouTube(idVideoHarmonicos) : ""}
 
 
 html += `</div>`;
@@ -6980,9 +6992,9 @@ htmlPiramide += `
 <div class="bloco-regente evitar-corte" style="margin-top: 50px; padding-top: 20px; border-top: 1px inset #fff;">
     <div class="texto-res" style="font-size: 20px; color: #222;">
         ${aplicarFiltroTexto(textos.RegenteVida[regenteVida].conteudo)}
-        ${idVideoRegente ? gerarPlayerYouTube(idVideoRegente) : ""}
+       
     </div>
-</div>`;
+</div>`;   //${idVideoRegente ? gerarPlayerYouTube(idVideoRegente) : ""}
 
 // --- BLOQUEIOS / VULNERABILIDADES ---
 if (dadosNegativas.detalhes.length > 0) {
