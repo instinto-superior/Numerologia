@@ -3876,6 +3876,7 @@ function montarBlocoUnicoDeVideos(res) {
     if (!res) return;
 
     const videosIntro = [
+         { titulo: "Introdução - Potenciais do Momento", videoIDDireto: "naNvhAbhgpY" },
          { titulo: "Introdução - Potenciais do Momento", videoIDDireto: "naNvhAbhgpY" }
     ];
 
@@ -4402,7 +4403,7 @@ html += renderizarBotaoComVideo("Parte 10: Filosofia e Numerologia", "tela-parte
 // Botão único agrupando Nome Social, Assinatura e Nome de Casamento
 html += renderizarBotaoComVideo(
   "Nome Social, Assinatura e Nome de Casamento (Cartório)",
-  "tela-social",
+  "tela-nomes-assinatura",
   VIDEOS_SUMARIO.nomesIdentidade
 );
 
@@ -5441,22 +5442,34 @@ html += `
     </div>
 </div>`;
     
-html += '<div id="tela-social" class="conteudo-aba">';
+html += '<div id="tela-nomes-assinatura" class="conteudo-aba">';
 
+const decodificarBase64Seguro = (str) => {
+    if (!str) return null;
+    try {
+        const ajustada = str.padEnd(str.length + ((4 - (str.length % 4)) % 4), "=");
+        return atob(ajustada);
+    } catch (e) {
+        return str;
+    }
+};
 
+// --- BLOCO 1: NOME SOCIAL ---
+const nomeSocialEl = document.getElementById("nomeSocial");
+const nomeSocialValor = nomeSocialEl ? nomeSocialEl.value.trim() : "";
 
-    
-const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
-// --- PÁGINA 2: NOME SOCIAL (COMPACTADA PARA NÃO PULAR) ---
 if (nomeSocialValor !== "") {
-    if (!res.social) { res.social = calcularNumerosSocial(nomeSocialValor); }
+    if (!res.social) {
+        res.social = calcularNumerosSocial(nomeSocialValor);
+    }
     const tMot = textos.nomeSocial.motivacao[res.social.motivacao];
     const tImp = textos.nomeSocial.impressao[res.social.influencia];
     const tPer = textos.nomeSocial.personalidade[res.social.personalidade];
-    
-const idVideoSocialEmbaralhado = "bmFOdmhBYmhncFk"; 
-const idVideoSocialFinal = idVideoSocialEmbaralhado ? atob(idVideoSocialEmbaralhado) : null; 
-    html +=   renderizarBlocoComVideo(`
+
+    const idVideoSocialEmbaralhado = "bmFOdmhBYmhncFk";
+    const idVideoSocialFinal = decodificarBase64Seguro(idVideoSocialEmbaralhado);
+
+    html += renderizarBlocoComVideo(`
      <div class="page" style="height: 100vh; max-height: 1120px; padding: 20px; box-sizing: border-box; overflow: hidden; page-break-before: always; display: flex; flex-direction: column;">
         <div class="separador-luxo" style="margin-bottom: 10px;">
             <div class="caixa-interna">
@@ -5467,89 +5480,69 @@ const idVideoSocialFinal = idVideoSocialEmbaralhado ? atob(idVideoSocialEmbaralh
         <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
             <div style="text-align: center;">
                 <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 5px; font-size: 20px;">Análise da Frequência Social</h2>
-                      <p>O nome pelo qual escolhemos ser chamados atua como uma "assinatura vibracional". Enquanto o nome de registro contém o projeto original da sua alma, o nome <strong>${nomeSocialValor}</strong> funciona como a interface com a qual você se apresenta ao mundo.</p>
+                <p>O nome pelo qual escolhemos ser chamados atua como uma "assinatura vibracional". Enquanto o nome de registro contém o projeto original da sua alma, o nome <strong>${nomeSocialValor}</strong> funciona como a interface com a qual você se apresenta ao mundo.</p>
                 <p>Esta análise revela como esse apelido ou nome social ajusta sua personalidade, motivação e a impressão que você causa nos outros.</p>
             </div>
 
-       <div style="display: flex; justify-content: center; gap: 15px; margin: 10px 0;">
-    <div style="text-align: center; background: #fdfaf0; padding: 5px 10px; border-radius: 6px; border: 1px solid #e0d5a8; min-width: 80px;">
-        <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Motivação</p>
-        <span style="font-size: 1.2rem; font-weight: bold; display: block; line-height: 1;">${res.social.motivacao}</span>
-    </div>
-    
-    <div style="text-align: center; background: #fffcf5; padding: 5px 10px; border-radius: 6px; border: 1.5px solid var(--gold); min-width: 90px;">
-        <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Personalidade</p>
-        <span style="font-size: 1.4rem; font-weight: bold; display: block; line-height: 1;">${res.social.personalidade}</span>
-    </div>
+            <div style="display: flex; justify-content: center; gap: 15px; margin: 10px 0;">
+                <div style="text-align: center; background: #fdfaf0; padding: 5px 10px; border-radius: 6px; border: 1px solid #e0d5a8; min-width: 80px;">
+                    <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Motivação</p>
+                    <span style="font-size: 1.2rem; font-weight: bold; display: block; line-height: 1;">${res.social.motivacao}</span>
+                </div>
+                
+                <div style="text-align: center; background: #fffcf5; padding: 5px 10px; border-radius: 6px; border: 1.5px solid var(--gold); min-width: 90px;">
+                    <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Personalidade</p>
+                    <span style="font-size: 1.4rem; font-weight: bold; display: block; line-height: 1;">${res.social.personalidade}</span>
+                </div>
 
-    <div style="text-align: center; background: #fdfaf0; padding: 5px 10px; border-radius: 6px; border: 1px solid #e0d5a8; min-width: 80px;">
-        <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Impressão</p>
-        <span style="font-size: 1.2rem; font-weight: bold; display: block; line-height: 1;">${res.social.influencia}</span>
-    </div>
-</div>
+                <div style="text-align: center; background: #fdfaf0; padding: 5px 10px; border-radius: 6px; border: 1px solid #e0d5a8; min-width: 80px;">
+                    <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Impressão</p>
+                    <span style="font-size: 1.2rem; font-weight: bold; display: block; line-height: 1;">${res.social.influencia}</span>
+                </div>
+            </div>
 
-<div style="background: #f9f9f9; padding: 12px; border-radius: 8px; border-left: 4px solid var(--gold); font-size: 18px; margin-top: 5px;">
-    <p style="margin-bottom: 5px;"><strong>Vontade Interna:</strong> ${aplicarFiltroTexto(tMot)}</p><br>
-    <p style="margin: 0;"><strong>Imagem Externa:</strong> ${aplicarFiltroTexto(tImp)}</p>
-</div>
-            
+            <div style="background: #f9f9f9; padding: 12px; border-radius: 8px; border-left: 4px solid var(--gold); font-size: 18px; margin-top: 5px;">
+                <p style="margin-bottom: 5px;"><strong>Vontade Interna:</strong> ${aplicarFiltroTexto(tMot)}</p><br>
+                <p style="margin: 0;"><strong>Imagem Externa:</strong> ${aplicarFiltroTexto(tImp)}</p>
+            </div>
 
             <div style="margin-top: 15px;">
                 <h3 style="text-align: center; color: #827108; font-size: 1.1rem; margin-bottom: 10px;">A Síntese da sua Expressão: ${res.social.personalidade}</h3>
                 <div style="font-size: 18px; line-height: 1; text-align: justify;">
                     ${aplicarFiltroTexto(tPer)}
-                
-              
-            </div>
+                </div>
             </div>
         </div>
     </div>
-    ` ,idVideoNomesFinal);
+    `, idVideoSocialFinal);
 }
 
-html += '</div>';
-// --- BLOCO ÚNICO DE NOVA ASSINATURA ---
-// Apenas estas linhas bastam. Não repita nada disso em outro lugar.
-
-
-
-
-html += '<div id="tela-assinatura" class="conteudo-aba">';
-
-
-    
+// --- BLOCO 2: NOVA ASSINATURA ---
 const campoAssinatura = document.getElementById("input_nova_assinatura");
 
 if (campoAssinatura && campoAssinatura.value.trim() !== "") {
-    // Chamamos a função e já concatenamos direto no seu 'html'
-    // Usamos 'exp' e 'dadosNegativas' que já estão calculados no seu mapa
+    const idVideoAssinaEmbaralhado = "bmFOdmhBYmhncFk";
+    const idVideoAssinaFinal = decodificarBase64Seguro(idVideoAssinaEmbaralhado);
 
-
-        const idVideoAssinaEmbaralhado = "bmFOdmhBYmhncFk"; 
-const idVideoAssinaFinal = idVideoAssinaEmbaralhado ? atob(idVideoAssinaEmbaralhado) : null; 
-    
-    html += renderizarBlocoComVideo(gerarNovaAssinatura(campoAssinatura.value.trim(), exp, dadosNegativas),idVideoAssinaFinal);
+    html += `<div style="margin-top: 30px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.15);">`;
+    html += renderizarBlocoComVideo(
+        gerarNovaAssinatura(campoAssinatura.value.trim(), exp, dadosNegativas),
+        idVideoAssinaFinal
+    );
+    html += `</div>`;
 }
 
-
-    
-
-html += '</div>';
-
-    
-html += '<div id="tela-casado" class="conteudo-aba">';
-// Procure por essa parte no final do seu script principal:
-
-const nomeCasadoInput = document.getElementById("nomeCasado").value.trim();
+// --- BLOCO 3: NOME DE CASADO ---
+const nomeCasadoEl = document.getElementById("nomeCasado");
+const nomeCasadoInput = nomeCasadoEl ? nomeCasadoEl.value.trim() : "";
 
 if (nomeCasadoInput !== "") {
-    // 1. 'exp' é a variável que você calculou lá no início para a Expressão Original
-    // 2. 'DadosNegativas' é o objeto que você usou no código acima (DadosNegativas.detalhes)
-
+    html += `<div style="margin-top: 30px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.15);">`;
     html += gerarAbaNomeCasado(nomeCasadoInput, exp, dadosNegativas);
+    html += `</div>`;
 }
- html += '</div>';   
-    
+
+html += '</div>';
 
 html += '<div id="tela-parte2" class="conteudo-aba">';
 html += `
