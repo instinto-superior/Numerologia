@@ -5908,55 +5908,55 @@ talento: {
      conteudo:`<h3>Liderança Pioneira e Iniciativa Independente - Talento 1</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside na capacidade inata de abrir caminhos onde outros veem apenas obstáculos intransponíveis. Existe uma facilidade natural para tomar decisões rápidas sob pressão e assumir o comando de situações complexas sem qualquer hesitação. Você possui a habilidade rara de criar soluções originais e agir com um pioneirismo que inspira confiança imediata, transformando ideias abstratas em ações concretas com uma coragem que muitas vezes ocorre de forma silenciosa e instintiva em seu cotidiano.</p>
     <p>Este dom indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é um(a) iniciador(a) por excelência. Seu sucesso flui quando você confia no seu "feeling" para novos negócios ou projetos, pois sua mente está programada para detectar tendências antes de todo mundo. Use essa força para liderar movimentos e não tenha medo de ser a primeira pessoa a dar o passo; sua independência é sua maior riqueza.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "dFI1M2VZcVdDaXM"
     },
     2: {
      conteudo:`<h3>Mediação Diplomática e Percepção de Detalhes - Talento 2</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento extraordinário de perceber as nuances, tons de voz e sentimentos sutis que passam completamente despercebidos pela maioria das pessoas. Essa sensibilidade apurada permite que você atue como o ponto de equilíbrio perfeito em qualquer ambiente, resolvendo conflitos antes mesmo que eles estourem através de uma diplomacia impecável e de uma cooperação genuína.</p>
     <p>O seu talento flui com maestria na arte de unir pessoas e na execução de tarefas que exigem minúcia, paciência extrema e um tato social refinado. <strong>MASCULINO-FEMININO-NEUTRO</strong>, você é a "cola" que mantém as equipes unidas. No mundo profissional, sua habilidade para parcerias e suporte estratégico é um diferencial que atrai pessoas influentes e oportunidades que dependem da confiança e do bom relacionamento de longo prazo.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "Z0w5YnVIUWxuZnc"
     },
     3: {
      conteudo:`<h3>Comunicação Criativa e Expressão Cativante - Talento 3</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a facilidade quase mágica de transformar ideias brutas em mensagens envolventes, lúdicas e inspiradoras. Existe em você um dom natural para a comunicação — seja ela falada, escrita ou artística — que magnetiza a atenção de forma espontânea e contagiante. Você consegue injetar leveza e entusiasmo nos projetos mais sérios, utilizando seu carisma para motivar grupos inteiros.</p>
     <p>Essa energia indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem um poder de convencimento único. Seu sucesso está ligado à sua capacidade de dar cor a conceitos que pareciam monótonos ou sem vida. Use essa habilidade para o marketing, para o ensino ou para qualquer área onde a expressão da verdade com criatividade seja necessária. O mundo ouve quando você decide falar, então use sua voz para espalhar brilho e clareza.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "M2VtNHlFMS1icnM"
     },
     4: {
      conteudo:`<h3>Organização Estrutural e Eficiência Prática - Talento 4</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem o talento admirável de trazer ordem ao caos absoluto com uma facilidade impressionante. Essa habilidade se manifesta na sua capacidade superior de planejar, estruturar e executar tarefas com uma precisão técnica que beira a perfeição. Seu talento reside na construção de bases sólidas e na gestão de processos complexos que garantem segurança e resultados duradouros.</p>
     <p>Essa força indica que você é o pilar de qualquer estrutura, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Enquanto outros se perdem na teoria, você foca no que funciona. Sua disciplina parece natural e sem esforço, o que o(a) torna a pessoa ideal para projetos de longo prazo e alta responsabilidade. O seu caminho para a prosperidade está na sua reputação de seriedade e na entrega constante de um trabalho feito para durar gerações.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "TV8tVG9UQUs3aGM"
     },
     5: {
      conteudo:`<h3>Adaptabilidade Veloz e Inovação Dinâmica - Talento 5</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a versatilidade absoluta e a coragem diante das mudanças drásticas. Existe em você uma facilidade incomum para aprender novas habilidades em tempo recorde e se adaptar a diferentes cenários, tecnologias ou culturas sem perder a essência. Você possui o dom da inovação radical, conseguindo promover transformações rápidas que mantêm os projetos em constante evolução.</p>
     <p>Este talento indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é um(a) agente de mudança nato(a). Onde as pessoas veem medo no novo, você vê uma aventura lucrativa. Sua mente é progressista e detesta o estagnação. No mercado atual, sua agilidade mental e facilidade em vender ideias modernas fazem de você uma peça-chave em qualquer setor que precise de renovação e movimento constante.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "d2MyT00xSENjS3c"
     },
     6: {
      conteudo:`<h3>Harmonização de Ambientes e Cuidado Educativo - Talento 6</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento natural de criar uma atmosfera de harmonia, beleza e bem-estar onde quer que esteja presente. Essa habilidade se traduz em uma capacidade superior de aconselhar, cuidar e organizar espaços ou grupos de forma que todos se sintam acolhidos, valorizados e seguros sob sua supervisão. O seu talento flui na responsabilidade afetiva e na busca incessante pela justiça.</p>
     <p>Você atua como um pilar de equilíbrio ético e estético na vida das pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu dom para a mediação familiar e comunitária é poderoso e traz uma autoridade baseada no amor e no respeito. Profissionalmente, você brilha em áreas que lidam com o público, com o ensino ou com a criação de produtos que visam melhorar a qualidade de vida e a harmonia dos lares e das relações humanas.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "LWk0VmZ2ZHNuZHM"
     },
     7: {
      conteudo:`<h3>Análise Profunda e Especialização Técnica - Talento 7</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside em uma mente analítica de elite e na busca incansável pela perfeição intelectual. Existe em você uma facilidade nata para investigar a fundo qualquer tema, detectando falhas lógicas ou verdades ocultas que a maioria ignora. Você possui o dom da observação silenciosa e do estudo especializado, atingindo níveis de compreensão técnica que o(a) tornam uma autoridade natural.</p>
     <p>Sua sabedoria não é superficial, <strong>MASCULINO-FEMININO-NEUTRO</strong>; ela é fruto de uma conexão profunda com o conhecimento. Esse talento indica que você se destaca em qualquer campo que exija pesquisa, tecnologia, perícia ou espiritualidade aplicada. Sua opinião é respeitada porque todos sabem que, se você disse algo, é porque estudou e validou cada detalhe com rigor e inteligência superior.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "UVZuR19NWENFWWs"
     },
     8: {
      conteudo:`<h3>Visão Estratégica e Gestão de Resultados - Talento 8</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem um talento nato para lidar com o poder, as grandes finanças e a administração de recursos em larga escala. Essa habilidade se manifesta em uma visão estratégica privilegiada que permite identificar oportunidades reais de crescimento onde ninguém mais consegue enxergar. O seu talento flui na organização de sistemas produtivos eficientes e na liderança executiva de alto nível.</p>
     <p>Este dom revela uma capacidade de realização material extraordinária, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você sabe como transformar esforços isolados em prosperidade tangível e duradoura. Use esse talento para empreender e gerir negócios, pois você possui a autoridade necessária para comandar grandes equipes e garantir que a justiça e a eficiência caminhem juntas na construção de um legado financeiro sólido.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "SHludU9ZWUZEaTA"
     },
     9: {
      conteudo:`<h3>Visão Humanitária e Compreensão Universal - Talento 9</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a capacidade profunda de compreender as necessidades humanas em uma escala global e empática. Existe em você um dom especial para inspirar o altruísmo, o perdão e a generosidade, transcendendo interesses mesquinhos ou individuais. Você possui a habilidade rara de concluir ciclos complexos com sabedoria e servir como um guia para a transformação positiva do mundo.</p>
     <p>Sua ética abraça toda a existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o que faz de você uma referência espiritual e humanitária. Seu talento brilha em causas sociais, em artes que tocam o coração ou em lideranças que buscam o bem coletivo. Você tem a visão do todo e consegue ensinar aos outros o valor do desapego e do amor universal, transformando qualquer ambiente em um lugar mais consciente e evoluído.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "cXJSY2FOTG5rWlk"
     },
 11: {
      conteudo:`<h3>Intuição Visionária e Inspiração Elevada - Talento 11</h3>
