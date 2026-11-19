@@ -115,14 +115,14 @@ introducoes: {
 
         
         motivacao: {
-     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma de todas as vogais do nome completo. O resultado é reduzido a um único dígito (de 1 a 9), preservando-se as somas que geram números de potencial ampliado (como 11, 22, etc.), que indicam frequências de maior intensidade na estrutura nominal.</p>
+     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma de todas as vogais do nome completo. O resultado é reduzido a um único dígito (de 1 a 9).</p>
 
 <p><strong>Perfil e Identidade Estática:</strong> A Motivação revela os sonhos e os desejos mais profundos, funcionando como o impulso natural que direciona e mantém os comportamentos em busca de objetivos. Ela opera em praticamente todas as escolhas vitais — da carreira aos relacionamentos —, expressando ambições, gostos, aversões e as intenções ocultas que orientam as decisões cotidianas.</p>`,
   videoID: "z1nW3rmNeEI"
     },
         
         influencia: {
-     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma de todas as consoantes do nome completo. O resultado é reduzido a um único dígito (de 1 a 9), preservando-se os números iguais de potencial ampliado (como 11, 22, etc.), que indicam maior intensidade na projeção externa da assinatura nominal.</p>
+     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma de todas as consoantes do nome completo. O resultado é reduzido a um único dígito (de 1 a 9).</p>
 
 <p><strong>Perfil e Identidade Estática:</strong> O Número de Influência revela a forma como o ambiente externo percebe sua presença, definindo o impacto inicial, a postura comunicativa e a imagem que você projeta socialmente. Ele atua como um filtro natural de acessibilidade — delimitando o quanto você permite que os outros se aproximem e funcionando como uma camada de proteção que resguarda seus traços mais íntimos.</p>
 `,
@@ -130,7 +130,7 @@ introducoes: {
     },
         
         Personalidade: {
-     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma total de todas as letras (vogais e consoantes) do nome completo. O resultado é reduzido a um único dígito (de 1 a 9), preservando-se os números iguais de potencial ampliado (como 11, 22, etc.), que representam a síntese estrutural da identidade nominal.</p>
+     conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma total de todas as letras (vogais e consoantes) do nome completo. O resultado é reduzido a um único dígito (de 1 a 9).</p>
 
 <p><strong>Perfil e Identidade Estática:</strong> O Número da Personalidade revela a expressão prática do indivíduo — a maneira habitual como suas ideias, intenções e convicções se transformam em atitudes concretas diante da vida. Ele mapeia seus padrões recorrentes de pensamento, ação e interação social, definindo a postura natural com que você se posiciona no ambiente e responde aos desafios cotidianos.</p>
 `,
