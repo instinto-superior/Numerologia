@@ -110,7 +110,7 @@ introducoes: {
      conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da soma de todas as vogais do nome completo. O resultado é reduzido a um único dígito (de 1 a 9), preservando-se as somas que geram números de potencial ampliado (como 11, 22, etc.), que indicam frequências de maior intensidade na estrutura nominal.</p>
 
 <p><strong>Perfil e Identidade Estática:</strong> A Motivação revela os sonhos e os desejos mais profundos, funcionando como o impulso natural que direciona e mantém os comportamentos em busca de objetivos. Ela opera em praticamente todas as escolhas vitais — da carreira aos relacionamentos —, expressando ambições, gostos, aversões e as intenções ocultas que orientam as decisões cotidianas.</p>`,
-  videoID: "z1nW3rmNeEI"
+  videoID: "bUFkSHhxUUNSM28"
     },
         
         influencia: {
