@@ -1622,63 +1622,63 @@ motivacao: {
     <p>A sua motivação mais profunda, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca incessante pela autonomia total e pelo reconhecimento da sua individualidade. O que realmente faz o seu coração vibrar é a sensação de ser mestre do próprio destino, uma mulher forte, sem amarras ou dependências que não condigam com a sua verdade interior.</p>
     <p>Existe uma urgência dentro de você por destaque e liderança, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Como uma líder nata, você sente um desconforto profundo diante da mediocridade; qualquer cenário que limite a sua liberdade de ação gera uma inquietação que só passa quando você entra em movimento e conquista o seu espaço.</p>
     <p>O seu desejo íntimo é ser uma figura pioneira, a referência máxima em tudo o que se propõe a fazer. O sucesso para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, só tem um significado real se tiver a sua assinatura e for fruto da sua coragem de desafiar o comum para abrir novos caminhos.</p>`,
- videoID: " "
+ videoID: "LURkYTM1TlpBRmM "
     },
     2: {
      conteudo:`<h3>Estar em paz e em harmonia - Motivação 2</h3>
     <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, você é uma mulher de motivação interna sensível, sempre em busca constante pela paz e pela conexão profunda com as pessoas ao seu redor. O que o seu coração mais deseja é viver em uma realidade onde o afeto, a gentileza e a compreensão valham muito mais do que qualquer disputa de ego ou conflito bobo.</p>
     <p>Você sente uma satisfação imensa ao colaborar e ao ser a peça fundamental que une as pessoas em prol de um objetivo comum, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo secreto é ser valorizada pela sua capacidade única de ouvir, acolher e nutrir relacionamentos. Você não busca o palco por vaidade, mas sim pela segurança de construir vínculos sólidos e afetivos.</p>
     <p>A realização da sua alma acontece quando existe união. Ao sentir que o seu jeito cuidadoso e acolhedor trouxe conforto para alguém, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma plenitude interior que justifica todo o seu esforço na busca pelo entendimento entre os seres.</p>`,
- videoID: " "
+ videoID: "Yl80Q1VKZC1lSFU "
     },
     3: {
      conteudo:`<h3>Se divertir e expressar a criatividade - Motivação 3</h3>
     <p>A motivação mais profunda da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a necessidade vital de se expressar e brilhar através do seu carisma. O que realmente impulsiona o seu coração é a oportunidade de transmitir suas ideias e uma alegria contagiante, agindo como uma verdadeira fonte de luz e inspiração para quem está por perto.</p>
     <p>Eu sei que você deseja ser reconhecida pela sua inteligência brilhante e pelo seu bom humor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A repressão da sua criatividade sufoca a sua essência, que precisa de movimento, de arte e de trocas que valorizem o seu talento natural para a comunicação.</p>
     <p>Quando você consegue canalizar esse potencial para projetos que trazem felicidade aos outros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma atinge o ápice da satisfação. O seu sucesso como mulher está diretamente ligado à sua capacidade de transformar o cotidiano em algo extraordinário através do seu riso e da beleza que emana de você.</p>`,
- videoID: " "
+ videoID: " MEctbHBrT0FETUk"
     },
     4: {
      conteudo:`<h3>Ter uma vida estável e organizada - Motivação 4</h3>
     <p>A sua motivação íntima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca pela segurança absoluta e pela construção de algo que dure para sempre. O que realmente impulsiona a sua alma é o desejo de manter os pés no chão e saber que, como uma mulher precavida, construiu uma base sólida, tanto material quanto familiar, que nada pode abalar.</p>
     <p>Você sente uma satisfação profunda no trabalho bem feito e no cumprimento rigoroso dos seus deveres, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo secreto é ser alguém de honra, palavra e eficiência total. Você valoriza a estabilidade e sente que a sua missão é trazer estrutura ao mundo e proteger com unhas e dentes quem depende de você.</p>
     <p>A sua alma atinge a paz quando percebe que todos os pilares da sua vida estão no lugar certo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ver a sua família protegida sob o seu cuidado e o seu patrimônio crescendo de forma honesta é o que dá sentido real à sua existência.</p>`,
- videoID: " "
+ videoID: " RmczLTVPY1JFa00"
     },
     5: {
      conteudo:`<h3>Ter novas e intensas experiências - Motivação 5</h3>
     <p>A motivação mais profunda que guia você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a liberdade absoluta. O que realmente faz a sua alma vibrar é a possibilidade constante de mudança, de explorar novos horizontes e de se permitir contato com experiências que desafiem os seus sentidos e o seu intelecto.</p>
     <p>Você deseja viver intensamente, <strong>MASCULINO-FEMININO-NEUTRO</strong>, desafiando os seus próprios limites. O seu desejo íntimo é ser uma mulher moderna, independente e desimpedida, capaz de se adaptar a qualquer imprevisto com muita jogo de cintura. A monotonia é o seu maior temor; você está sempre pronta para a próxima grande descoberta.</p>
     <p>Ao conseguir conciliar essa sede de aventura com um propósito maior, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge o seu potencial máximo. O seu sucesso é medido pela quantidade de histórias fascinantes que você acumulou e pela sua incrível capacidade de manter o espírito sempre jovem e vibrante.</p>`,
- videoID: " "
+ videoID: " Wnp2WktJdUJDLVU"
     },
     6: {
      conteudo:`<h3>Ajudar e cuidar daqueles que estima - Motivação 6</h3>
     <p>A sua motivação íntima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o desejo sincero de amar, cuidar e ser a grande figura protetora e matriarcal da sua família e comunidade. O que realmente impulsiona o seu coração é a busca pelo bem-estar alheio e a criação de um lar ou ambiente onde reine a harmonia e o conforto emocional.</p>
     <p>Você sente uma plenitude enorme quando assume responsabilidades em favor de quem você estima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo como um porto seguro inabalável. O seu desejo secreto é ser o pilar de sustentação afetiva, aquela mulher sábia em quem todos podem confiar de olhos fechados.</p>
     <p>Quando você percebe que a sua intervenção carinhosa trouxe equilíbrio para uma situação difícil, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sua alma atinge um estado de satisfação plena. Ser a presença pacificadora que embeleza a vida das pessoas é a sua grande missão de dedicação.</p>`,
- videoID: " "
+ videoID: "RmdqTHVzdE42UWM "
     },
     7: {
      conteudo:`<h3>Se destacar pelo conhecimento e verdade - Motivação 7</h3>
     <p>A motivação mais profunda da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca pelo conhecimento oculto e pela perfeição técnica. O que realmente te impulsiona é o desejo de compreender as causas fundamentais da vida e atingir um nível de sabedoria que te coloque acima das futilidades cotidianas.</p>
     <p>Como uma pensadora nata, você deseja silêncio, privacidade e tempo para refletir sobre os mistérios do mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo íntimo é ser uma autoridade respeitada no que faz, reconhecida pela profundidade da sua análise e mente analítica. Você tem um radar apurado para o que é falso e busca a autenticidade pura.</p>
     <p>A sua satisfação total ocorre quando uma peça difícil de um quebra-cabeça mental finalmente se encaixa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao atingir esses patamares de compreensão, você consolida uma jornada de paz interior e integridade intelectual absoluta.</p>`,
- videoID: " "
+ videoID: "eEhYVWJEU1ZNelE "
     },
     8: {
      conteudo:`<h3>Ser reconhecido por realizações e poder - Motivação 8</h3>
     <p>A sua motivação íntima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a conquista do sucesso em grande escala e da autoridade executiva. O que realmente impulsiona o seu coração é o desejo de gerir recursos, liderar pessoas com justiça e se posicionar como uma mulher de influência, comando e vitória reconhecida no mundo prático.</p>
     <p>Você sente uma satisfação profunda ao ver o seu esforço se transformar em prosperidade tangível, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo secreto é ter controle total sobre a sua realidade financeira e colher o reconhecimento social da sua força de comando. Você é determinada e não tem medo do trabalho duro, desde que ele te leve direto ao topo.</p>
     <p>A plenitude da sua alma acontece quando você usa esse sucesso com responsabilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao usar a sua força realizadora para estruturar vidas e promover o crescimento de todos, você se torna uma figura de sucesso amplamente admirada e respeitada por toda a comunidade.</p>`,
- videoID: " "
+ videoID: "cDJxamtVVXhRY2M "
     },
     9: {
      conteudo:`<h3>Ser útil e servir à humanidade - Motivação 9</h3>
     <p>A motivação mais profunda que move você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o desejo sincero de servir à humanidade e deixar um mundo melhor. O que realmente impulsiona a sua alma é a busca pela compaixão e pelo perdão universal, compreendendo as dores humanas com a sensibilidade de quem enxerga além das aparências.</p>
     <p>Você deseja viver uma vida com um propósito humanitário marcante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo íntimo é ser uma fonte de inspiração, acolhimento e cura, sentindo que a sua jornada só faz sentido se você puder aliviar o fardo de alguém. Você busca concluir seus ciclos com dignidade e amor incondicional.</p>
     <p>Ao ver o impacto positivo das suas ações na vida das pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sua alma se expande. A sensação de dever cumprido perante o coletivo traz a você a verdadeira paz, consolidando uma trajetória de luz e desprendimento admiráveis.</p>`,
- videoID: " "
+ videoID: "aGU5VEswYWdOaGc "
     },
     11: {
      conteudo:`<h3>Compreender os mistérios da Vida - Motivação 11</h3>
