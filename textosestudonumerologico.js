@@ -118,7 +118,7 @@ introducoes: {
 
 <p><strong>Perfil e Identidade Estática:</strong> O Número de Influência revela a forma como o ambiente externo percebe sua presença, definindo o impacto inicial, a postura comunicativa e a imagem que você projeta socialmente. Ele atua como um filtro natural de acessibilidade — delimitando o quanto você permite que os outros se aproximem e funcionando como uma camada de proteção que resguarda seus traços mais íntimos.</p>
 `,
-  videoID: "z1nW3rmNeEI"
+  videoID: "Rzl1dHNvUFZQVnM"
     },
         
         Personalidade: {
@@ -1716,63 +1716,63 @@ influencia: {
     <p>A primeira impressão que você transmite ao mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de alguém com uma independência absoluta e uma força de vontade fora do comum. Ao entrar em um ambiente, as pessoas percebem em você uma aura de pioneirismo, vendo uma figura que não fica esperando ordens para agir.</p>
     <p>Essa sua autoconfiança natural acaba atraindo oportunidades que exigem iniciativa e comando, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você é visto como o motor de inovação capaz de desbravar novos caminhos. O mundo enxerga em você a figura do protagonista, alguém que tem a fibra necessária para tomar decisões difíceis com firmeza.</p>
     <p>Você influencia os outros através dessa postura decidida, mostrando que a autonomia é a chave do sucesso. Essa sua imagem de "arranque", <strong>MASCULINO-FEMININO-NEUTRO</strong>, motiva grupos inteiros a saírem da estagnação apenas pela sua presença vigorosa e inspiradora.</p>`,
-   videoID: " "
+   videoID: "bmdvakgtX2tKZHM "
     },
     2: {
      conteudo:`<h3>Influência 2 - Diplomacia, Tato e Cooperação</h3>
     <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma suavidade e um equilíbrio admiráveis. As pessoas te veem como uma presença pacífica e acolhedora, alguém que realmente sabe ouvir e mediar qualquer situação com muita elegância e educação.</p>
     <p>Essa sua aparência diplomática atrai parcerias estratégicas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque você transmite a segurança de quem sabe trabalhar em equipe e valoriza a harmonia. Você influencia os ambientes através da persuasão gentil, sendo o "cimento" que une diferentes peças em uma estrutura sólida.</p>
     <p>O mundo confia na sua capacidade de resolver impasses sem precisar elevar o tom de voz. Essa sua aura de paciência e discrição, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja aquela figura indispensável para manter qualquer engrenagem social funcionando sem atritos.</p>`,
-   videoID: " "
+   videoID: "NjZzamJ2bXVXNnM "
     },
     3: {
      conteudo:`<h3>Influência 3 - Criatividade, Brilho e Entusiasmo</h3>
     <p>A sua aparência para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é vibrante, solar e profundamente comunicativa. As pessoas veem em você um verdadeiro farol de alegria, alguém que traz leveza e uma inspiração imediata para qualquer círculo social onde você esteja presente.</p>
     <p>Esse seu magnetismo atrai oportunidades ligadas à expressão e ao público, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você é visto como uma figura central que sabe encantar e motivar as pessoas com total naturalidade. Você influencia através de um entusiasmo que é simplesmente contagiante.</p>
     <p>O mundo enxerga em você a centelha criativa que transforma o tédio em dinamismo. Essa sua aura de otimismo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que as pessoas busquem a sua companhia para se sentirem revigoradas, reconhecendo em você o talento de dar vida a qualquer ideia.</p>`,
-   videoID: " "
+   videoID: "cUc0ZFNXOE0zdzA "
     },
     4: {
      conteudo:`<h3>Influência 4 - Estabilidade, Ordem e Confiança</h3>
     <p>A imagem que você transmite, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma seriedade, disciplina e integridade impecáveis. O mundo te vê como uma rocha firme, alguém pautado pela ética, pelo trabalho duro e pelo respeito absoluto às regras e compromissos.</p>
     <p>Essa sua aparência de solidez atrai grandes responsabilidades, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque você passa a confiança de que, sob o seu comando, nada sairá dos trilhos. Você influencia pelo exemplo de constância; as pessoas buscam em você um porto seguro em tempos de incerteza.</p>
     <p>Sua palavra é vista como lei, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Esse seu profissionalismo faz com que você seja respeitado como a força construtora essencial para manter a ordem e garantir que o progresso tangível aconteça de verdade na sociedade.</p>`,
-   videoID: " "
+   videoID: "aXBQSlVMaFI0WFU "
     },
     5: {
      conteudo:`<h3>Influência 5 - Liberdade, Versatilidade e Modernidade</h3>
     <p>A primeira impressão que você causa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de alguém magnético, rápido e totalmente aberto às novidades do mundo. As pessoas veem em você um espírito livre e cosmopolita, capaz de se adaptar a qualquer situação com charme e muita inteligência.</p>
     <p>Essa sua imagem versátil atrai trocas intelectuais e inovações, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você é visto como o agente de mudança que desafia o tédio e a rotina. Você influencia através da quebra de padrões antigos, agindo como um radar de tendências que detecta o futuro antes de todos.</p>
     <p>Sua agilidade mental e curiosidade fazem com que você seja procurado para trazer "ar fresco" a ambientes conservadores. Você é a figura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que impulsiona a evolução e mantém tudo em movimento constante.</p>`,
-   videoID: " "
+   videoID: "bE5udklPY0IwblU "
     },
     6: {
      conteudo:`<h3>Influência 6 - Equilíbrio, Justiça e Acolhimento</h3>
     <p>A imagem que você projeta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de harmonia, responsabilidade e um cuidado profundo com o próximo. O mundo vê em você uma autoridade moral benevolente, alguém que valoriza a família, a beleza e o bem-estar de todos ao seu redor.</p>
     <p>Essa sua aparência de integridade atrai confiança imediata, <strong>MASCULINO-FEMININO-NEUTRO</strong>, abrindo portas em áreas de aconselhamento e orientação. Você influencia através do afeto e de um senso de dever muito claro; as pessoas sentem que estão seguras sob a sua supervisão.</p>
     <p>Você é o ponto de equilíbrio que pacifica tensões, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa sua aura de bondade faz com que você construa uma reputação sólida, baseada na lealdade e na sua capacidade única de harmonizar tudo o que você toca.</p>`,
-   videoID: "F8bg1CTQ9HI"
+   videoID: "SWhIZEM5SmdPbVk"
     },
     7: {
      conteudo:`<h3>Influência 7 - Sabedoria, Mistério e Distinção</h3>
     <p>A sua aparência para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de alguém profundo, intelectual e mais reservado. As pessoas percebem em você uma aura de mistério e uma classe silenciosa, vendo uma autoridade técnica que não se deixa levar por conversas superficiais.</p>
     <p>Essa sua imagem de seriedade atrai oportunidades de alta especialização, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você transmite a competência de quem detém conhecimentos complexos. Você influencia pelo discernimento e pela lógica impecável que demonstra em cada fala.</p>
     <p>O mundo respeita o seu silêncio, sabendo que quando você se manifesta, é fruto de muita reflexão. Essa sua aura de dignidade e busca pela verdade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz de você um farol de lucidez para quem precisa enxergar além das aparências materiais.</p>`,
-   videoID: " "
+   videoID: " YUVnUW1UbHdtOUU"
     },
     8: {
      conteudo:`<h3>Influência 8 - Poder, Sucesso e Autoridade Executiva</h3>
     <p>A primeira impressão que você causa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de força, comando e grande capacidade de realização material. O mundo vê em você uma liderança nata, alguém que exala autoconfiança e visão estratégica para lidar com grandes metas.</p>
     <p>Essa sua imagem imponente atrai cargos de direção e grandes negócios, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque você transmite a segurança de quem nasceu para vencer e organizar a realidade. Você influencia pelo pragmatismo; as pessoas confiam em você para tomar decisões difíceis sob pressão.</p>
     <p>Sua postura é o motor que gera progresso e abundância. Essa sua aura de autoridade legítima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja respeitado como uma força vitoriosa, capaz de transformar grandes visões em lucros reais e estruturas que duram.</p>`,
-   videoID: " "
+   videoID: " cDRQOFJwZEhYM2s"
     },
     9: {
      conteudo:`<h3>Influência 9 - Humanitarismo, Sabedoria e Desapego</h3>
     <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é universal, generosa e inspiradora. As pessoas veem em você alguém sem fronteiras, com uma visão de mundo humanitária que vai muito além de interesses puramente pessoais.</p>
     <p>Essa sua aparência de sabedoria e compaixão atrai oportunidades em áreas culturais e filantrópicas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você é visto como um exemplo de amor incondicional. Você influencia através de um carisma altruísta, agindo como quem sabe encerrar ciclos com dignidade.</p>
     <p>O mundo enxerga em você um guia que aponta caminhos de esperança. Essa sua tolerância e compreensão profunda, <strong>MASCULINO-FEMININO-NEUTRO</strong>, atraem o respeito de todos, consolidando a sua imagem como alguém que vive para deixar um impacto positivo na humanidade.</p>`,
-   videoID: " "
+   videoID: "SUVLNGNEYVpyUVE "
     },
     11: {
      conteudo:`<h3>Influência 11 - Inspiração Visionária e Magnetismo Sutil</h3>
