@@ -1555,7 +1555,7 @@ function aplicarFiltroNomeComposto(texto) {
 }
         
 // Função para calcular o Desejo Oculto usando a SUA 'tabela' Cabalística
-function calcularDesejoOculto(nome) {
+/*function calcularDesejoOculto(nome) {
     const contagem = {};
     // Limpa o nome e deixa em maiúsculo para bater com a sua const tabela
     const nomeLimpo = nome.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
@@ -1576,7 +1576,7 @@ function calcularDesejoOculto(nome) {
         }
     }
     return { numero: numeroDesejo, qtd: maxRepeticoes };
-}
+}*/
 
 // Função para Talentos Especiais (Baseado apenas no PRIMEIRO NOME)
 function calcularTalentoEspecial(primeiroNome) {
@@ -3876,20 +3876,46 @@ function montarBlocoUnicoDeVideos(res) {
     if (!res) return;
 
     const videosIntro = [
-         { titulo: "Introdução - Potenciais do Momento", videoIDDireto: "naNvhAbhgpY" },
-         { titulo: "Introdução - Potenciais do Momento", videoIDDireto: "naNvhAbhgpY" }
+        { titulo: "Introdução - Potenciais do Momento", videoIDDireto: "naNvhAbhgpY" },
+        { titulo: "Introdução - Potenciais do Momento", videoIDDireto: "naNvhAbhgpY" }
     ];
 
     const videosResultados = [
         { titulo: "Dia de Nascimento", valor: res.dia, objeto: textos.dia },
         { titulo: "Essência", valor: res.essencia, objeto: textos.essencia },
-        { titulo: "Caminho de Vida", valor: res.CaminhodeVida, objeto: textos.CaminhodeVida || textos.caminhodevida },
-        { titulo: "Personalidade", valor: res.Personalidade, objeto: textos.Personalidade },
+        { titulo: "Talento Oculto", valor: res.talento, objeto: textos.talento },
         { titulo: "Motivação", valor: res.motivacao, objeto: textos.motivacao },
         { titulo: "Influência", valor: res.influencia, objeto: textos.influencia },
         { titulo: "Comportamento", valor: res.comportamento, objeto: textos.comportamento },
+        { titulo: "Personalidade", valor: res.Personalidade, objeto: textos.Personalidade },
+       
+
+        ...(Array.isArray(res.inclinacoes) && res.inclinacoes.length > 0
+            ? (() => {
+                let inclinacoesParaVideos = res.inclinacoes;
+
+                // Usa res.contagem se existir, ou a variável global 'contagem' caso exista
+                const mapaContagem = res.contagem || (typeof contagem !== "undefined" ? contagem : null);
+
+                if (mapaContagem && typeof mapaContagem === "object") {
+                    const frequencias = res.inclinacoes.map(num => Number(mapaContagem[num] || 0));
+                    const maiorFreq = Math.max(...frequencias);
+
+                    if (maiorFreq > 0) {
+                        inclinacoesParaVideos = res.inclinacoes.filter(num => Number(mapaContagem[num] || 0) === maiorFreq);
+                    }
+                }
+
+                return inclinacoesParaVideos.map(num => ({
+                    titulo: "Inclinacao",
+                    valor: num,
+                    objeto: textos.inclinacoes || {}
+                }));
+            })()
+            : []),
+
+        { titulo: "Caminho de Vida", valor: res.CaminhodeVida, objeto: textos.CaminhodeVida || textos.caminhodevida },
         { titulo: "Relacionamento", valor: res.Relacionamento, objeto: textos.Relacionamento },
-        { titulo: "Talento Oculto", valor: res.talento, objeto: textos.talento },
         { titulo: "Propósito", valor: res.Propósito, objeto: textos.proposito || {} },
         { titulo: "Maturidade", valor: res.Maturidade, objeto: textos.Maturidade || {} },
         { titulo: "Como Começa", valor: res.equilibrio?.inicio, objeto: textos.equilibrioInicio },
@@ -3911,43 +3937,27 @@ function montarBlocoUnicoDeVideos(res) {
         { titulo: "Pilar de dominância Natural", valor: res.planoDominanteNome, objeto: textos.planos || {} },
         { titulo: "Expressão Nativa Natural", valor: res.perfilNativoTexto, objeto: textos.perfilNativo || {} },
         { titulo: "Trânsito Atual", valor: res.transitoFinal, objeto: textos.transitos || {} },
-        { titulo: "Regente da Matriz", valor: res.regentePiramide, objeto: textos.regentePiramide || {} }
+        { titulo: "Regente da Matriz", valor: res.regentePiramide, objeto: textos.regentePiramide || {} },
+
+        ...(Array.isArray(res.deficiencias)
+            ? res.deficiencias.map(num => ({
+                titulo: "Fraqueza",
+                valor: num,
+                objeto: textos.deficiencias || textos.deficitRecorrente
+            }))
+            : []),
+
+        ...(Array.isArray(res.deficitsOcultos)
+            ? res.deficitsOcultos.map(num => ({
+                titulo: "Déficit Oculto",
+                valor: num,
+                objeto: textos.deficitsOcultos || textos.deficitRecorrente
+            }))
+            : [])
     ];
 
-    if (Array.isArray(res.deficiencias)) {
-        res.deficiencias.forEach(num => {
-            videosResultados.push({ titulo: "Fraqueza", valor: num, objeto: textos.deficiencias || textos.deficitRecorrente });
-        });
-    }
-    if (Array.isArray(res.deficitsOcultos)) {
-        res.deficitsOcultos.forEach(num => {
-            videosResultados.push({ titulo: "Déficit Oculto", valor: num, objeto: textos.deficitsOcultos || textos.deficitRecorrente });
-        });
-    }
-    
-if (Array.isArray(res.inclinacoes) && res.inclinacoes.length > 0) {
-        let inclinacoesParaVideos = res.inclinacoes;
-
-        // Usa res.contagem se existir, ou a variável global 'contagem' caso exista
-        const mapaContagem = res.contagem || (typeof contagem !== "undefined" ? contagem : null);
-
-        if (mapaContagem && typeof mapaContagem === "object") {
-            const frequencias = res.inclinacoes.map(num => Number(mapaContagem[num] || 0));
-            const maiorFreq = Math.max(...frequencias);
-
-            if (maiorFreq > 0) {
-                inclinacoesParaVideos = res.inclinacoes.filter(num => Number(mapaContagem[num] || 0) === maiorFreq);
-            }
-        }
-
-        inclinacoesParaVideos.forEach(num => {
-            videosResultados.push({ titulo: "Inclinacao", valor: num, objeto: textos.inclinacoes || {} });
-        });
-    }
-
     const videosClipes = [
-{ titulo: "Introdução - Potenciais do Momento", videoIDDireto: "naNvhAbhgpY" }
-        
+        { titulo: "Introdução - Potenciais do Momento", videoIDDireto: "naNvhAbhgpY" }
     ];
 
     renderizarCardsEmGrid(videosIntro, "grid-videos-intro");
@@ -4498,7 +4508,7 @@ html += `
     <div style="width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 25px;">
         ${[
               { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Origem e Numerologia Moderna ✶ Direcionamento da sua Jornada"},
-            { t: "Parte 1: Essência e Identidade", c: "Dia de Nascimento ✶ Essência ✶ Talento Oculta ✶ Motivação ✶ Aparência e Influência ✶ Personalidade ✶ Tendência de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶  Inclinações  ✶  Equilíbrio"},
+            { t: "Parte 1: Essência e Identidade", c: "Dia de Nascimento ✶ Essência ✶ Talento Oculta ✶ Motivação ✶ Aparência e Influência ✶ Personalidade ✶ Tendência de Comportamento ✶  Habilidades Especiais ✶  Inclinações  ✶  Equilíbrio"},
             { t: "Parte 2: Performance Natural", c: "Os 4 Pilares do Instinto Natural ✶ Gráficos de Potenciais"},
             { t: "Parte 3: Alinhamento e Desafios Naturais",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
             { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito  ✶  Direcionamento Profissional"},
@@ -5619,28 +5629,28 @@ listaPremium.forEach(chave => {
 
 // --- INCLUSÃO: DESEJO OCULTO E TALENTOS ESPECIAIS ---
 // --- INCLUSÃO: DESEJO OCULTO E TALENTOS ESPECIAIS ---
-const dadosDesejo = calcularDesejoOculto(nomeRaw);
-const primeiroNome = nomeRaw.split(' ')[0];
+//const dadosDesejo = calcularDesejoOculto(nomeRaw);
+//const primeiroNome = nomeRaw.split(' ')[0];
 
 // --- DESEJO OCULTO ---
 // (Se você estivesse usando o Firebase, seria buscarVideoID, mas como voltamos para o local, 
 // o ID do desejo oculto vem direto do seu objeto ou texto JS)
 // Em vez de olhar em dadosDesejo, nós buscamos dentro do objeto de textos que já possui o seu ID embaralhado:
-const objetoTextoDesejo = textos.desejoOculto ? textos.desejoOculto[dadosDesejo.numero] : null;
+//const objetoTextoDesejo = textos.desejoOculto ? textos.desejoOculto[dadosDesejo.numero] : null;
 
-const idVideoDesejoEmbaralhado = (typeof objetoTextoDesejo === 'object' && objetoTextoDesejo !== null) ? objetoTextoDesejo.videoID : null;
-const videoDesejoFinal = idVideoDesejoEmbaralhado ? atob(idVideoDesejoEmbaralhado) : null;
+//const idVideoDesejoEmbaralhado = (typeof objetoTextoDesejo === 'object' && objetoTextoDesejo !== null) ? objetoTextoDesejo.videoID : null;
+//const videoDesejoFinal = idVideoDesejoEmbaralhado ? atob(idVideoDesejoEmbaralhado) : null;
 
 // Para a introdução que já está com o código embaralhado aí em cima:
-const idVideoIntroDesejoEmbaralhado = "bmFOdmhBYmhncFk";
-const videoIntroDesejoFinal = atob(idVideoIntroDesejoEmbaralhado); // Desembaralha a introdução
+//const idVideoIntroDesejoEmbaralhado = "bmFOdmhBYmhncFk";
+//const videoIntroDesejoFinal = atob(idVideoIntroDesejoEmbaralhado); // Desembaralha a introdução
 
-tituloBonito = "SEU DESEJO OCULTO"; 
+//tituloBonito = "SEU DESEJO OCULTO"; 
 
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
+//html += `
+//<div class="separador-luxo">
+   /* <div class="caixa-interna">
         <h2>${tituloBonito}</h2>
     </div>
 </div>`,
@@ -5665,7 +5675,7 @@ html += `
       
     </div>
 </div>`;
- // ${videoDesejoFinal ? gerarPlayerYouTube(videoDesejoFinal) : ""}
+ // ${videoDesejoFinal ? gerarPlayerYouTube(videoDesejoFinal) : ""} */
 
 
     
