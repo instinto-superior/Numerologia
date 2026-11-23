@@ -88,7 +88,7 @@ introducoes: {
      conteudo:`<p><strong>Fundamento e Origem:</strong> Obtido através da redução matemática do Dia de Nascimento a um único dígito (de 1 a 9). Como engloba diferentes dias sob uma mesma raiz reduzida, este número mapeia padrões comportamentais compartilhados por grandes grupos populacionais.</p>
 
 <p><strong>Perfil e Comportamento Estático:</strong> O Número do Comportamento revela o mecanismo automático de resposta ativado sob pressão ou estresse. Trata-se de um reflexo inconsciente que molda a tomada de decisão antes que a razão atue, funcionando como um diagnóstico estrutural dos seus reflexos interiores permanentes.</p>`,
-     videoID: "z1nW3rmNeEI"
+     videoID: "dnNhQXZFdHNWSkk"
     },
 
         
