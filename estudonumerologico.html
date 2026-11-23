@@ -4055,6 +4055,21 @@ function renderizarBotaoComVideo(tituloBotao, idTela, idVideo) {
   `;
 }
         
+
+
+function renderizarBotaoSimples(titulo, idTela, subtitulo = "Conteúdo em leitura") {
+    return `
+        <div class="item-menu-simples" style="margin-bottom: 18px;">
+            <button onclick="abrirAba('${idTela}')" style="width:100%; margin-bottom:6px; font-size: 22px;">
+                ${titulo}
+            </button>
+            <div class="subtitulo-menu-simples" style="font-size: 14px; opacity: 0.75; padding-left: 4px;">
+                ${subtitulo}
+            </div>
+        </div>
+    `;
+}
+
         
 function gerarMapaCompleto(generoAtual) {
 if (typeof salvarTravaPerfil === 'function' && !salvarTravaPerfil()) return;
@@ -4390,13 +4405,12 @@ let html = `
 html += `<div class="menu-abas">`;
 
 html += renderizarBotaoComVideo("Introdução: Instinto Superior e Numerologia", "tela-introducao", VIDEOS_SUMARIO.introducao);
-html += ("Resultado Numerológico", "tela-resultado");
 
 
+html += renderizarBotaoSimples("Resultado Numerológico", "tela-resultado", "Leitura principal do seu mapa");
+html += renderizarBotaoSimples("📺 Seus Vídeos Exclusivos", "tela-videos-exclusivos", "Acesso à galeria de vídeos");
 
-html += renderizarBotaoComVideo("📺 Seus Vídeos Exclusivos", "tela-videos-exclusivos", VIDEOS_SUMARIO.videosExclusivos);
-
-html += renderizarBotaoComVideo("Sumário", "tela-sumario", VIDEOS_SUMARIO.sumario);
+html += renderizarBotaoSimples("Sumário", "tela-sumario", "Índice completo das seções");    
 html += renderizarBotaoComVideo("Parte 1: Essência e Identidade", "tela-parte2", VIDEOS_SUMARIO.parte1);
 html += renderizarBotaoComVideo("Parte 2: Performance dos Pilares do Instinto Natural", "tela-parte1", VIDEOS_SUMARIO.parte2);
 html += renderizarBotaoComVideo("Parte 3: Alinhamento e Desafios", "tela-parte3", VIDEOS_SUMARIO.parte3);
@@ -4414,7 +4428,7 @@ html += renderizarBotaoComVideo(
   "tela-nomes-assinatura",
   VIDEOS_SUMARIO.nomesIdentidade
 );
-html += renderizarBotaoComVideo("Capa", "tela-Capa", VIDEOS_SUMARIO.capa);
+html += renderizarBotaoSimples("Capa", "tela-Capa", "Visão inicial do estudo");
 html += `
   <div id="container-travado"></div>
 
