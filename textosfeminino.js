@@ -1546,7 +1546,7 @@ comportamento: {
     <p>Sua mente processa o mundo de forma muito direta e intuitiva: você analisa os fatos rapidamente e toma decisões seguras, sem dar espaço para aquelas dúvidas que costumam paralisar as pessoas ao seu redor. Essa sua determinação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja vista como uma liderança nata, aquela mulher forte e plenamente capaz de guiar os outros em momentos de crise, onde a maioria costuma vacilar.</p>
     <p>Por outro lado, eu sei bem que carregar essa postura de comando exige muito da sua energia, <strong>MASCULINO-FEMININO-NEUTRO</strong>, até porque, por ser tão forte, você raramente se permite mostrar vulnerabilidade ou pedir ajuda. Seu instinto acolhedor é sempre o de proteger, cuidar e guiar, agindo como uma verdadeira fortaleza para os seus ideais e para as pessoas que você ama.</p>
     <p>O seu grande talento está na coragem de ser quem você é, com toda a sua autenticidade. Ao longo da sua jornada, esse seu jeito firme de agir vai atrair a admiração de pessoas influentes e abrir portas para cargos de grande responsabilidade, confirmando que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma referência de autonomia, poder e sucesso.</p>`,
- videoID: " "
+ videoID: " a254aHFodGY1Q2c"
     },
     2: {
      conteudo:` <h3>Romântica e Emotiva - Comportamento 2</h3>
@@ -1554,7 +1554,7 @@ comportamento: {
     <p>Como uma pacifista nata, você evita o confronto direto, preferindo resolver qualquer impasse com o poder da sua fala suave e de uma escuta atenta, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente busca sempre o ponto de equilíbrio e união, o que faz de você uma conselheira maravilhosa para mediar conflitos. Para você, a verdadeira força não está em impor vontades, mas sim na doçura, na compreensão e no afeto.</p>
     <p>As pessoas sentem uma confiança imediata em você, porque a sua presença transmite o calor de um abraço e o sossego de um porto seguro. Existe uma preocupação real e maternal em ver quem você ama bem, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o que te torna a parceira e companheira ideal. Sua intuição é a sua bússola mais sagrada; é ela quem guia seus passos em direção a relações sinceras.</p>
     <p>O seu maior aprendizado é entender que você não precisa absorver as dores do mundo e nem se anular para ver os outros felizes. Quando você reconhece o valor sagrado da sua sensibilidade e aprende a dizer 'não' quando necessário, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma fonte inesgotável de paz e equilíbrio para todos os que têm o privilégio de caminhar ao seu lado.</p>`,
- videoID: " "
+ videoID: "RE9iaWhhUVdKTUk "
     },
     3: {
      conteudo:` <h3>Otimista e Despreocupada - Comportamento 3</h3>
@@ -1562,7 +1562,7 @@ comportamento: {
     <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a vida é uma tela em branco para criar e compartilhar histórias e sorrisos. Você tem a alma curiosa de quem ama participar ativamente da vida social e celebrar os momentos bons. Você domina a arte da palavra com uma leveza única, sabendo como motivar uma amiga, um familiar ou sua equipe de trabalho de um jeito alegre, transformando problemas pesados em soluções criativas.</p>
     <p>Sua inteligência é rápida, charmosa e você consegue transitar por conversas e círculos diferentes com muita naturalidade. Eu sei que no fundo o desejo do seu coração é ser fonte de inspiração e alegria para as pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Por isso, quando o desânimo bate na sua família, é você quem traz o entusiasmo de volta.</p>
     <p>Apenas preste atenção para não espalhar sua mente em mil projetos ao mesmo tempo e acabar sobrecarregada. Quando você foca toda essa sua força criativa e esse seu dinamismo em um objetivo central, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua capacidade de realização floresce e seus talentos passam a ser aplaudidos e reconhecidos por onde você passar.</p>`,
- videoID: " "
+ videoID: "aTZPZTRGTlpMdjQ "
     },
     4: {
      conteudo:` <h3>Teimosa e Observadora - Comportamento 4</h3>
@@ -1570,7 +1570,7 @@ comportamento: {
     <p>Sua mente busca bases sólidas para construir o futuro. Por isso, você planeja cada passo da sua vida com cuidado e prefere caminhos estruturados a aventuras incertas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você acaba exercendo o papel de alicerce e porto seguro na vida dos outros, sendo aquela mulher reconhecida pela lealdade inabalável aos seus princípios, à sua palavra e à sua família.</p>
     <p>Você gosta de ver a engrenagem da vida funcionando com eficiência e encontra uma paz profunda na sensação de dever cumprido com perfeição, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Esse seu jeito focado faz com que você se destaque brilhantemente em posições de organização e gestão, onde sua persistência impecável garante que nenhum detalhe seja esquecido.</p>
     <p>O seu grande desafio como mulher é permitir que um pouco de leveza e flexibilidade entrem na sua rotina, deixando as coisas fluírem mais. Ao unir essa sua capacidade fantástica de construção com uma mente aberta para o novo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma mulher invencível, capaz de conquistar as metas mais grandiosas da sua vida.</p>`,
- videoID: " "
+ videoID: "cEtyN3dJTVJRTUk "
     },
     5: {
      conteudo:` <h3>Impulsiva e Imediatista - Comportamento 5</h3>
@@ -1578,7 +1578,7 @@ comportamento: {
     <p>Você se adapta a qualquer reviravolta com uma facilidade linda, atraindo transformações para a sua jornada de forma muito natural, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu pensamento é moderno, livre de preconceitos e está sempre à frente do seu tempo, buscando formas autênticas de viver e de se expressar. Esse seu jeito dinâmico te torna uma figura de grande influência quando o assunto é inovação.</p>
     <p>A liberdade é o oxigênio da sua alma feminina, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você valoriza demais o aprendizado que vem da pele, da experiência prática e da troca com culturas e mentes diferentes. Seu comportamento social é fascinante, porque você sempre tem uma visão inovadora ou uma história inspiradora para contar, tirando qualquer um da zona de conforto.</p>
     <p>O seu grande aprendizado é acolher a mente e aprender a lidar com a impaciência ou com a ansiedade pelo amanhã. Quando você canaliza toda essa energia vibrante e apaixonada para um propósito claro, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma força de transformação avassaladora e uma referência de vitalidade para todos.</p>`,
- videoID: " "
+ videoID: "SU54WlhicUFEQlE "
     },
     6: {
      conteudo:` <h3>Protecionista e Sentimental - Comportamento 6</h3>
@@ -1586,7 +1586,7 @@ comportamento: {
     <p>Você sente uma necessidade real e muito bonita de ser útil, estendendo a mão e oferecendo colo ou conselhos sábios para quem está passando por momentos difíceis, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu jeito é acolhedor e profundamente ligado ao feminino; você valoriza o aconchego do lar, os laços familiares e a estabilidade do amor. As pessoas buscam naturalmente o equilíbrio que só a sua presença consegue transmitir.</p>
     <p>Sua dedicação é um exemplo de amor puro. Você assume responsabilidades de cabeça erguida e com prazer quando sabe que isso trará paz para quem você estima, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Para você, o sucesso não faz sentido se for uma conquista solitária; ele só tem valor se a sua mesa estiver cheia e todos os seus estiverem protegidos e felizes.</p>
     <p>Seu desafio é dosar esse amor para não acabar se tornando excessivamente controladora ou zelosa demais com o destino alheio, esquecendo-se de si mesma. Ao entender que cada pessoa tem o próprio aprendizado, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se eleva como uma figura matriarcal inspiradora, um exemplo vivo de sabedoria e amor universal.</p>`,
- videoID: " "
+ videoID: "MWN0bVoyTGE0WGs "
     },
     7: {
      conteudo:` <h3>Temperamental e Questionadora - Comportamento 7</h3>
@@ -1594,7 +1594,7 @@ comportamento: {
     <p>Para você, o autoconhecimento, o estudo e a busca pela verdade são as grandes riquezas da vida. Esse seu jeito revela uma mulher sábia que sabe aproveitar a própria companhia para crescer internamente e evoluir, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua intuição feminina funciona como um radar natural para detectar mentiras ou falsidades, o que torna praticamente impossível alguém te enganar.</p>
     <p>A profundidade do seu pensamento impõe um respeito silencioso. Você prefere selecionar poucas e verdadeiras amizades para partilhar a vida do que se perder na futilidade de conversas vazias, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Esse seu lado mais reservado protege um universo interno riquíssimo e sagrado, que você só revela para quem ganha sua total confiança.</p>
     <p>O cuidado que você deve ter é para não se isolar em demasia no seu mundo ou se tornar exigente demais com as imperfeições humanas. Ao compartilhar suas percepções e sua sabedoria de forma generosa com o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna um farol de luz e discernimento para quem busca compreender o real sentido da vida.</p>`,
- videoID: " "
+ videoID: "UEc1UGxDaXplZjQ "
     },
     8: {
      conteudo:` <h3>Determinada e Competitiva - Comportamento 8</h3>
@@ -1602,7 +1602,7 @@ comportamento: {
     <p>Você não recua diante de desafios gigantescos e o seu jeito seguro de se posicionar impõe um respeito natural em qualquer ambiente, sem que você precise fazer o menor esforço para isso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente é brilhante para gerir recursos, tempo e metas. Para você, a vida é uma colheita justa: quem planta dedicação e disciplina tem o direito de vencer e prosperar.</p>
     <p>O mundo percebe a sua liderança pela sua competência inabalável e pela firmeza das suas escolhas. Como uma mulher realizadora, você quer construir um legado duradouro, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e por isso investe tanta energia nos seus projetos profissionais. Essa eficiência te torna a figura perfeita para comandar grandes negócios ou reestruturar situações complexas.</p>
     <p>O seu caminho de evolução é equilibrar todo esse magnetismo de poder com momentos de afeto, sensibilidade e compaixão. Quando você usa a sua força monumental para erguer os outros e ajudar o coletivo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a abundância flui de forma inesgotável e você se torna uma líder profundamente amada e admirada.</p>`,
- videoID: " "
+ videoID: "RHBHbExNdC1hdEk "
     },
     9: {
      conteudo:` <h3>Inquieta e Inconformada - Comportamento 9</h3>
@@ -1610,7 +1610,7 @@ comportamento: {
     <p>Sua jornada é conectada a causas maiores, ao idealismo e à evolução espiritual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu jeito acolhedor é o de quem está sempre pronta para perdoar, acolher e buscar a expansão da consciência acima de qualquer vaidade ou ganho puramente material. Existe um carisma universal em você que atrai pessoas de todos os caminhos para perto da sua luz protetora.</p>
     <p>Sua mente é ampla, livre de preconceitos e cheia de tolerância. Você atua como uma verdadeira curadora e fonte de inspiração para as mulheres e pessoas que estão atravessando transições difíceis na vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Para você, o sucesso só faz sentido se você estiver transformando o mundo em um lugar melhor.</p>
     <p>O seu grande desafio é proteger sua própria energia para que o sofrimento alheio não apague a sua alegria de viver ou te perca em utopias. Ao manter o pé no chão e o foco na sua missão prática de educar, acolher e guiar, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você conquista uma paz de espírito inabalável e se torna um exemplo vivo de amor incondicional.</p>`,
- videoID: " "
+ videoID: "bFNINzNaNG96ZlU "
     },
      
 },
