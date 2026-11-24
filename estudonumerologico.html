@@ -1578,18 +1578,20 @@ function aplicarFiltroNomeComposto(texto) {
     return { numero: numeroDesejo, qtd: maxRepeticoes };
 }*/
 
-// Função para Talentos Especiais (Baseado apenas no PRIMEIRO NOME)
-function calcularTalentoEspecial(primeiroNome) {
+// Função para Talentos Especiais (Baseado no NOME COMPLETO)
+function calcularTalentoEspecial(nomeCompleto) {
+    if (!nomeCompleto || typeof nomeCompleto !== "string") return null;
+
     const contagem = {};
-    const nomeLimpo = primeiroNome.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
-    
+    const nomeLimpo = nomeCompleto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
+
     for (let letra of nomeLimpo) {
-        if (tabela[letra]) { // AQUI: Usando o nome exato da sua constante
+        if (tabela[letra]) { // Espaços, números ou símbolos não entram e não quebram a contagem
             const num = tabela[letra];
             contagem[num] = (contagem[num] || 0) + 1;
         }
     }
-    
+
     const frequencias = Object.values(contagem).sort((a, b) => b - a);
     const maior = frequencias[0] || 0;
     const segundaMaior = frequencias[1] || 0;
@@ -1600,7 +1602,6 @@ function calcularTalentoEspecial(primeiroNome) {
     }
     return null;
 }
-
 
         
 function calcularIntensidadeAtributo(nums, resultados, faltantes, nomeRaw, d3, regenteMatriz, negativasMatriz, vibPlano, statusPlano, dominantePerfil, planoAtual,desejoOculto) {
@@ -5829,8 +5830,7 @@ html += `
 
     
     
-const primeiroNomeHabilidade = extrairPrimeiroNome(nomeRaw);
-const dadosHabilidade = calcularHabilidadeEspecialCientifica(primeiroNomeHabilidade);
+const dadosHabilidade = calcularHabilidadeEspecialCientifica(nomeRaw);
 
 let idVideoTalento = dadosHabilidade ? buscarVideoID("talentosEspeciais", dadosHabilidade.numero, generoAtual) : null;
 const idVideoIntrohabilidadeEmbaralhado = "Q1ExYmNHSWNYX3c=";
