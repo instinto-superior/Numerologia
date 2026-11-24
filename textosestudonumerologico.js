@@ -5611,64 +5611,7 @@ talentosEspeciais: {
   
     },
  
- PlanosExpressao: {
-    fisico: {
-        forte:{
-     conteudo:`<h4>Campo de Atuação: Físico (Execução e Realidade)</h4>
-                <p>Sua habilidade se manifesta primordialmente através da ação concreta e da praticidade. Você possui uma natureza voltada para o mundo material, onde o saber lidar com as situações cotidianas exige agilidade, esforço físico e a capacidade de transformar ideias em resultados visíveis e tangíveis.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-    },
-      
-   
-    mental: {
-        forte: {
-     conteudo:`<h4>Campo de Atuação: Mental (Lógica e Estratégia)</h4>
-                <p>Sua habilidade opera no campo do raciocínio, onde a clareza de pensamento e a análise são suas principais ferramentas. Você lida com a vida de forma lógica, buscando compreender a estrutura dos problemas para encontrar soluções inteligentes, priorizando a organização das ideias antes de qualquer tomada de decisão.</p>`,
-          videoID: "Q1ExYmNHSWNYX3c="
-    },
-    },
-   
-    emocional: {
-        forte: {
-     conteudo:`<h4>Campo de Atuação: Emocional (Sentimento e Interação)</h4>
-                <p>Sua atuação é guiada pela sensibilidade e pela capacidade de sentir o ambiente e as pessoas ao seu redor. Sua habilidade cotidiana reside na empatia e na inteligência emocional, permitindo que você navegue por situações da vida através dos vínculos, dos valores humanos e da harmonia nas relações.</p>`,
-   
-        videoID: "F8bg1CTQ9HI"
-    },
-    },
-    intuitivo: {
-        forte:  {
-     conteudo:`<h4>Campo de Atuação: Intuitivo (Instinto e Percepção)</h4>
-                <p>Sua habilidade de lidar com a vida vem de uma percepção aguçada que vai além do óbvio. Você atua através do instinto e de uma sabedoria interior silenciosa, sendo capaz de captar intenções e direções que não são explicadas pela lógica, confiando na sua conexão interna para se guiar no dia a dia.</p>`,
-         
-         videoID: "F8bg1CTQ9HI"
-    },
-    },
-           
-    },
 
-
-modosAcao: {
-    criativo: {
-     conteudo:`<h4>Modo de Expressão: Criativo (Inovação e Originalidade)</h4>
-               <p>Sua forma de lidar com a vida é marcada pela inventividade e pela busca por soluções fora do comum. Você possui a habilidade de enxergar a realidade por ângulos que a maioria ignora, agindo com espontaneidade e otimismo para transformar imprevistos em oportunidades. Sua mente não se prende ao tradicionalismo, preferindo sempre criar caminhos novos e originais para resolver qualquer desafio cotidiano.</p>`,
-         videoID: "Q1ExYmNHSWNYX3c="
-    },
-   
-    oscilantes:{
-     conteudo: `<h4>Modo de Expressão: Oscilante (Sensibilidade e Adaptação)</h4>
-                <p>Seu comportamento é guiado por uma alta sensibilidade emocional, o que faz com que suas reações variem de acordo com o ambiente e as pessoas ao redor. Essa característica indica uma habilidade para captar nuances sutis, mas pode gerar indecisão em momentos de pressão. No dia a dia, você pode alternar entre grandes picos de energia e momentos de recolhimento, agindo muitas vezes movido pelo impulso ou pela necessidade de acolhimento.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-  
-    neutro: {
-     conteudo:`<h4>Modo de Expressão: Neutro (Equilíbrio e Observação)</h4>
-             <p>Você opera através da imparcialidade e da prudência, preferindo observar todos os lados de uma situação antes de se posicionar. Sua grande habilidade é manter o controle em meio ao caos, evitando conflitos desnecessários e agindo com um alto nível de confiança interna. Como alguém fácil de conviver e adaptar-se, você prioriza a harmonia e a segurança, raramente perdendo o equilíbrio ou saindo de sua zona de estabilidade.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-
-},
 
 desejoOculto: {
  
@@ -5790,61 +5733,60 @@ deficits: {
      
 inclinacoes: {
     1: {
-     conteudo:`<h3>Controlador e Individualista - Inclinação Oculta 1</h3>
-        <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta uma autoconfiança inabalável e uma busca incessante pela perfeição, alimentada por um espírito competitivo que o(a) impele a liderar em todas as esferas. Essa força motriz, contudo, é uma faca de dois gumes: se não for vigiada, pode transparecer como uma tendência à manipulação sutil para atingir objetivos específicos, colocando seus interesses acima do bem-estar coletivo.</p>
-        <p>Há um risco latente de você se inclinar ao individualismo radical e ao egocentrismo, permitindo que atitudes prepotentes ou autoritárias dominem suas relações profissionais e pessoais. Quando essa energia entra em desequilíbrio, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode parecer arrogante e pouco permeável a novas ideias, dificultando a colaboração e a empatia necessárias para grandes feitos. Seu desafio é entender que a verdadeira liderança não precisa sufocar os outros para brilhar; aprenda a delegar e a valorizar o gênio alheio tanto quanto o seu.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Repetição do Individualismo e Controle - Inclinação 1</h3>
+        <p>Quando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, não presta atenção ao próprio impulso de tomar a frente de tudo, a inclinação do número 1 tende a se repetir como imposição, teimosia e centralização de decisões. Em vez de construir junto, o padrão volta a aparecer quando você acha que só o seu jeito resolve e atropela o ritmo ou a opinião de quem está ao redor.</p>
+        <p>Se esse comportamento não for percebido na prática, o ciclo se fecha em atritos desnecessários, desgaste nos relacionamentos e sensação de carregar tudo sozinho. Observar esse movimento logo no início ajuda você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a frear o impulso de mandar ou competir onde não precisa e a testar escuta real antes de reagir.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     2: {
-     conteudo:`<h3>Dependente e Indeciso - Inclinação Oculta 2</h3>
-        <p>Sua natureza fundamental, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de um(a) mediador(a) nato(a), capaz de harmonizar os conflitos mais ásperos e buscar o ponto de equilíbrio entre partes divergentes. No entanto, essa busca quase obsessiva por agradar a todos ao seu redor pode mascarar uma insegurança profunda, manifestando--se como uma timidez excessiva ou uma falta de iniciativa que trava seu progresso.</p>
-        <p>Existe uma inclinação perigosa à indecisão e à dependência emocional de terceiros, o que abre margem para comportamentos dissimulados ou atitudes mesquinhas por medo de ser rejeitado(a). O grande desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é não permitir que o desânimo ou a passividade tomem conta diante dos obstáculos. Aprenda a sustentar sua própria opinião mesmo que ela cause desconforto inicial, pois sua voz é essencial para que o equilíbrio que você tanto busca seja real e não apenas uma fachada de conveniência.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Repetição da Indecisão e Dependência - Inclinação 2</h3>
+        <p>Sem atenção consciente, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a inclinação do número 2 costuma se repetir na forma de hesitação constante, medo de desagradar e adiamento de escolhas simples. Em vez de se posicionar com clareza, o padrão volta quando você engole o que pensa para manter a paz aparente ou espera que os outros decidam por você.</p>
+        <p>Quando esse ciclo se repete, você acumula ressentimento silencioso e perde espaço nas próprias decisões. Perceber o momento em que está cedendo só por receio de conflito permite que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, treine dizer "não" ou expor seu ponto de vista de forma direta e honesta.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     3: {
-     conteudo:`<h3>Exibicionismo e Superficialidade - Inclinação Oculta 3</h3>
-        <p>Você possui o dom divino de motivar e encantar as pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas frequentemente sofre com uma dispersão mental que drena sua energia vital. O desejo por entretenimento, prazer imediato e gratificação social pode acabar se sobrepondo às suas responsabilidades reais, levando a uma vida de muitos começos e poucas conclusões concretas.</p>
-        <p>A preocupação excessiva com as aparências e o julgamento baseado na superfície das coisas são marcas fortes desta inclinação. Essa vaidade, somada a um estado de agitação constante, pode resultar em um grande desperdício do seu tempo em questões fúteis ou puramente estéticas que não alimentam sua alma a longo prazo. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu caminho de evolução exige que você desenvolva o foco e a profundidade; use seu carisma para construir algo que tenha substância e não apenas brilho momentâneo.</p>`,
-  videoID: "tLrR4tsM4as"
+        conteudo: `<h3>Repetição da Dispersão e Superficialidade - Inclinação 3</h3>
+        <p>Quando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, deixa a atenção solta, a inclinação do número 3 tende a se repetir como dispersão, troca constante de foco e prioridade excessiva no que é rápido, leve ou chamativo em detrimento do que exige constância. O ciclo aparece toda vez que você começa vários movimentos com empolgação e abandona no meio quando o trabalho pede rotina.</p>
+        <p>Se não houver correção de rota, esse padrão se repete como tempo perdido, promessas incompletas e impressão de movimento sem resultado sólido. Notar quando a distração está puxando você para fora do essencial ajuda, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a fechar um ciclo de cada vez antes de abrir outro.</p>`,
+        videoID: "tLrR4tsM4as"
     },
     4: {
-     conteudo:`<h3>Intolerância e Rigidez - Inclinação Oculta 4</h3>
-        <p>A organização meticulosa e a preparação para imprevistos são seus pilares de sobrevivência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Porém, essa estrutura pode facilmente se transformar em uma prisão de rigidez mental, onde você se torna escravo(a) das próprias convicções. Você tende a exercer um autoritarismo técnico que pode sufocar a criatividade e a liberdade das pessoas que convivem com você.</p>
-        <p>O seu perfeccionismo exagerado gera uma insatisfação crônica, onde nada — nem o seu trabalho, nem o dos outros — parece atingir o nível "ideal". Essa obsessão pelo controle total e a teimosia em não aceitar perspectivas diferentes criam um ambiente de tensão constante. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o aprendizado é soltar as rédeas e permitir que a vida flua com suas imperfeições naturais. Entenda que o caos, às vezes, é o fertilizante necessário para o crescimento que a rigidez impede.</p>`,
-  videoID: "k375lfJCLcA"
+        conteudo: `<h3>Repetição da Rigidez e Exigência Excessiva - Inclinação 4</h3>
+        <p>Sem vigilância, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a inclinação do número 4 volta a se manifestar como rigidez mental, cobrança dura e dificuldade de lidar com imprevistos ou desvios do plano. O padrão se repete quando você endurece diante de qualquer falha, trava processos por buscar um padrão perfeito ou exige o mesmo nível de controle de outras pessoas.</p>
+        <p>Quando esse ciclo continua rodando, o ambiente fica pesado, o cansaço aumenta e pequenas mudanças viram grandes problemas. Reconhecer o instante em que a regra virou prisão permite que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, ajuste o plano sem perder o rumo e aceite margens realistas de execução.</p>`,
+        videoID: "k375lfJCLcA"
     },
     5: {
-     conteudo:`<h3>Abusos e Desmotivação - Inclinação Oculta 5</h3>
-        <p>Sua curiosidade é insaciável e seu desejo de vivenciar o mundo em sua plenitude é um motor poderoso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Todavia, essa busca incessante pode conduzir a comportamentos impulsivos, onde você acaba explorando as fraquezas alheias para obter vantagens rápidas ou satisfação momentânea, agindo sem medir as consequências futuras das suas ações.</p>
-        <p>A necessidade constante de adrenalina e estímulos inéditos frequentemente resulta em uma desmotivação profunda assim que a novidade passa, dificultando o estabelecimento de vínculos duradouros. Essa sede de sensações pode levar a excessos que mascaram um vazio interno persistente. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua lição é encontrar a aventura dentro da estabilidade. Aprenda que a verdadeira liberdade não vem de fugir das responsabilidades, mas de ter o domínio sobre seus próprios desejos e impulsos.</p>`,
-  videoID: "z1nW3rmNeEI"
+        conteudo: `<h3>Repetição da Impulsividade e Inconstância - Inclinação 5</h3>
+        <p>Quando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, não freia a busca imediata por novidade ou estímulo, a inclinação do número 5 tende a se repetir como impulsividade, impaciência e perda rápida de interesse assim que a fase inicial passa. O comportamento reaparece quando você age no impulso sem medir o impacto seguinte ou troca de direção só para fugir da monotonia.</p>
+        <p>Se isso se repete sem filtro, o resultado costuma ser instabilidade, decisões precipitadas e dificuldade de sustentar compromissos no médio prazo. Observar esse impulso antes de agir ajuda você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a separar vontade passageira de escolha consciente.</p>`,
+        videoID: "z1nW3rmNeEI"
     },
     6: {
-     conteudo:`<h3>Controlador e Autoritário - Inclinação Oculta 6</h3>
-        <p>Embora você nutra um cuidado genuíno e quase protetor pelas pessoas ao seu redor, essa atenção pode facilmente cruzar a linha e se tornar uma interferência controladora e invasiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua visão idealista da vida faz com que você exija uma perfeição absoluta de quem você ama, gerando cobranças desmedidas que sufocam o afeto.</p>
-        <p>O apego rígido a padrões sociais, morais e familiares pode torná-lo(a) uma pessoa teimosa e, por vezes, ingrata quando as coisas não saem exatamente como você planejou. Quando suas expectativas não são atendidas, você tende ao julgamento severo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu desafio de alma é aceitar as imperfeições humanas como parte da beleza da vida. Aprenda a amar as pessoas pelo que elas são, e não pelo papel que você gostaria que elas desempenhassem no seu roteiro ideal.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Repetição do Controle e Cobrança - Inclinação 6</h3>
+        <p>Sem atenção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a inclinação do número 6 tende a se repetir como intromissão, cobrança excessiva e expectativa rígida sobre como as pessoas deveriam agir ou corresponder. O padrão volta quando o desejo de ajudar ou organizar a vida dos outros vira fiscalização, censura ou mágoa por ninguém atender exatamente ao seu roteiro.</p>
+        <p>Quando esse ciclo se repete, gera-se desgaste emocional, resistência de quem está por perto e frustração recorrente. Perceber quando o cuidado está virando controle permite que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faça a sua parte sem assumir o papel de juiz ou responsável único pelo comportamento alheio.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     7: {
-     conteudo:`<h3>Insatisfação e Melancolia - Inclinação Oculta 7</h3>
-        <p>Como um(a) intelectual nato(a), você habita um mundo complexo de ideias e análises profundas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Entretanto, essa mente brilhante pode se tornar excessivamente crítica e cética, especialmente com o que não pode ser provado pela lógica fria. Isso acaba gerando um isolamento defensivo, onde você se afasta do mundo para não ser "contaminado(a)" pela mediocridade.</p>
-        <p>A dificuldade em processar e expressar emoções de forma aberta pode resultar em sentimentos de melancolia e incompreensão. Há uma inclinação à frustração persistente, onde nenhuma conquista material parece ser suficiente para preencher seu padrão de exigência. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua cura está em equilibrar a razão com a intuição e o sentimento. Não se perca em mundos imaginários ou dependências escapistas; aprenda a encontrar o sagrado e o belo na simplicidade do cotidiano.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Repetição do Isolamento e Ceticismo - Inclinação 7</h3>
+        <p>Quando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, não observa a tendência de se fechar na própria cabeça, a inclinação do número 7 se repete como afastamento, desconfiança excessiva e postura crítica diante de tudo que parece simples ou pouco lógico. O ciclo aparece quando você se recolhe para não lidar com ruído externo, mas acaba se distanciando também de trocas úteis e conversas diretas.</p>
+        <p>Se esse padrão persiste sem atenção, a distância aumenta e a insatisfação silenciosa vira um hábito difícil de quebrar. Notar quando a análise virou barreira ajuda você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a manter diálogo claro e a não transformar cautela em isolamento automático.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     8: {
-     conteudo:`<h3>Ganância e Obstinação - Inclinação Oculta 8</h3>
-        <p>Sua ambição é uma força da natureza voltada para o sucesso, o poder e o prestígio material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você acredita, com razão, no seu direito de ter o melhor, mas essa determinação pode se degenerar em um apego materialista cego e em uma sede insaciável de controle sobre tudo e todos ao seu redor.</p>
-        <p>O medo inconsciente da escassez pode corromper sua conduta, levando a comportamentos avarentos ou à participação em situações eticamente cinzentas para garantir sua segurança financeira. Sua obstinação pelo poder, se não for temperada pela generosidade real, pode torná-lo(a) escravo(a) das suas próprias posses. <strong>MASCULINO-FEMININO-NEUTRO</strong>, entenda que o dinheiro é um fluxo: quanto mais você o usa para elevar o mundo, mais ele retorna para você de forma limpa e multiplicada.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Repetição da Pressão por Poder e Retorno - Inclinação 8</h3>
+        <p>Sem cuidado consciente, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a inclinação do número 8 tende a se repetir como foco estreito em ganho, posição ou domínio da situação, deixando em segundo plano acordos equilibrados e limites saudáveis. O padrão volta quando a pressão por resultado endurece o trato, aumenta o receio de perder vantagem ou leva a disputas de força desnecessárias.</p>
+        <p>Quando esse ciclo se repete, o custo aparece na tensão constante, na desconfiança alheia e na sensação de que nunca é o bastante. Observar onde a ambição está forçando a barra permite que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, conduza metas com firmeza sem perder clareza e proporção.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     9: {
-     conteudo:`<h3>Carência de Afeto - Inclinação Oculta 9</h3>
-        <p>Sua natureza é profundamente empática e voltada ao serviço humanitário, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Porém, essa dedicação heróica ao próximo muitas vezes esconde uma negligência severa com as suas próprias dores e carências. Você tende a "salvar" os outros como uma estratégia inconsciente para evitar olhar para o seu próprio espelho interior.</p>
-        <p>Essa inclinação revela uma carência afetiva latente, que se manifesta na busca incessante por aprovação e reconhecimento através da utilidade. O desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é equilibrar a doação ao mundo com o autorespeito radical. Não se torne um(a) mártir das necessidades alheias apenas para se sentir amado(a). A verdadeira compaixão começa em casa: aprenda a nutrir a si mesmo(a) com a mesma intensidade que dedica aos outros.</p>`,
-      videoID: "F8bg1CTQ9HI"
-    } 
-    
-    },
+        conteudo: `<h3>Repetição da Sobrecarga e Autonegligência - Inclinação 9</h3>
+        <p>Quando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, não vigia o próprio limite, a inclinação do número 9 tende a se repetir como sobrecarga por abraçar demandas de todo mundo e deixar as suas próprias necessidades por último. O ciclo se repete quando você diz "sim" para não desapontar, acumula tarefas alheias e depois cobra reconhecimento que ninguém combinou dar.</p>
+        <p>Se esse comportamento continua se repetindo, o esgotamento vem junto com o ressentimento por ter se doado além da conta. Perceber o sinal de cansaço antes de estourar ajuda você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a colocar limites concretos e a cuidar do que é seu sem culpa.</p>`,
+        videoID: "F8bg1CTQ9HI"
+    }
+},
         
 subconsciente: {
        1: {
