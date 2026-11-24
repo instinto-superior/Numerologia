@@ -5811,12 +5811,12 @@ const htmlEquil = `
     ${txtIntroEquil}
     <div class="grupo-respostas-bloco pula-pagina">
         <div class="secao-resultado">
-            <h3 style="text-align: center;">COMBINAÇÃO DE INÍCIO E REALIZAÇÃO: ${nInicio} → ${nFim}</h3>
+           
             ${aplicarFiltroTexto(blocoCombinado.texto)}
             ${idVideoCombinacao ? gerarPlayerYouTube(idVideoCombinacao) : ""}
         </div>
     </div>
-`;
+`;   //<h3 style="text-align: center;">COMBINAÇÃO DE INÍCIO E REALIZAÇÃO: ${nInicio} → ${nFim}</h3>
 
 const textoFormatado = aplicarFiltroTexto(htmlEquil);
 
