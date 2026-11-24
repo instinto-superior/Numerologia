@@ -242,16 +242,14 @@ Mesmo que não esteja consciente, você constrói esse caminho ao longo da vida 
 Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização pessoal.`,         videoID: "Q1ExYmNHSWNYX3c"
     },
         
-        inclinacoes: {
-     conteudo:`<p>Esta característica possui uma força intrínseca capaz de moldar sua trajetória, gerando um desejo profundo de desenvolver e manifestar essa habilidade específica em sua jornada. É um chamado da sua própria essência que busca expressão e reconhecimento.</p>
+inclinacoes: {
+     conteudo:`<p>Uma inclinação que se repete atua como um padrão recorrente no seu dia a dia, moldando reações e escolhas de maneira quase imperceptível quando você não está atento a ela.</p>
 
-<p>A existência desse talento exige que ele seja exteriorizado. Vivenciar essa faceta é, em última análise, permitir-se viver em total harmonia com sua verdadeira natureza. Assim, a Inclinação Oculta atua como um guia silencioso, esculpindo sua personalidade e direcionando suas escolhas de maneira quase imperceptível, mas extremamente poderosa.</p>
+<p>Por exercer influência constante, esse ponto exige observação direta. Ele mostra comportamentos que tendem a voltar ciclicamente: se o padrão atual não for percebido e ajustado de forma consciente, você pode se ver diante das mesmas situações repetidas vezes, como um eco das suas próprias tendências automáticas.</p>
 
-<p>Por exercer tamanha influência, este ponto demanda atenção redobrada. Ele representa padrões de comportamento que tendem a se repetir ciclicamente. Se o modelo atual não for transformado conscientemente, você poderá se ver diante das mesmas situações repetidas vezes, como um eco de suas próprias tendências internas.</p>
+<p>Esses comportamentos repetitivos são inclinações naturais que, quando passam despercebidas, estreitam a forma como você lê e reage ao que acontece. Impulsionadas por reações automáticas ou falta de pausa para avaliar, essas repetições costumam dar a impressão de que tudo acontece fora do seu controle ou por culpa apenas de fatores externos.</p>
 
-<p>Esses "vícios de comportamento" são inclinações naturais que, quando não observadas, limitam a forma como experimentamos a realidade. Agravados pela impulsividade ou por reações automáticas, esses padrões podem criar a ilusão de que os eventos da vida estão fora de nosso controle ou que são causados por fatores externos.</p>
-
-<p>Compreender essas tendências é o primeiro passo para quebrar o círculo vicioso. Ao assumir a maestria sobre essas inclinações, você deixa de ser refém de comportamentos repetitivos e passa a conduzir sua vida com intenção, ética e clareza, transformando potenciais limitações em ferramentas de evolução.</p>`,
+<p>Perceber esses padrões antes de reagir é o que permite quebrar o ciclo. Ao assumir o controle consciente sobre essas inclinações repetitivas, você deixa de reagir no automático e passa a conduzir suas escolhas com mais clareza, critério e firmeza.</p>`,
  videoID: "z1nW3rmNeEI"
     },
         
