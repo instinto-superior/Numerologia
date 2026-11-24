@@ -5787,7 +5787,6 @@ const dadosCombinacao = (typeof window.bancoEquilibrioUnificado !== "undefined" 
 
 const blocoCombinado = extrairDadosEquilibrio(dadosCombinacao);
 
-// Helper seguro para IDs em Base64 (evita quebra se o ID não for Base64 válido)
 const decodificarVideoID = (idValor) => {
     if (!idValor) return null;
     try {
@@ -5797,8 +5796,10 @@ const decodificarVideoID = (idValor) => {
     }
 };
 
+// Se tiver o ID em Base64 do vídeo de introdução, coloque a string aqui dentro; se ainda não tiver, deixe null
+const idVideoIntroequilEmbaralhado = "bmFOdmhBYmhncFk";
 const idVideoIntroequil = decodificarVideoID(idVideoIntroequilEmbaralhado);
-const idVideoCombinacao = decodificarVideoID(blocoCombinado.video);
+const idVideoCombinacao = decodificarVideoID(blocoCombinado && blocoCombinado.video);
 
 const txtIntroEquil = renderizarBlocoComVideo(`
 <p><strong>Fundamento e Origem:</strong> A primeira letra do seu nome completo mostra suas inclinações e a atitude inicial — como você aborda oportunidades e obstáculos ao começar algo. A última letra do seu nome revela sua atitude e capacidade para concluir seus projetos.</p>
