@@ -134,7 +134,7 @@ introducoes: {
 
 <p><strong>Perfil e Identidade Estática:</strong> O Número da Personalidade revela a expressão prática do indivíduo — a maneira habitual como suas ideias, intenções e convicções se transformam em atitudes concretas diante da vida. Ele mapeia seus padrões recorrentes de pensamento, ação e interação social, definindo a postura natural com que você se posiciona no ambiente e responde aos desafios cotidianos.</p>
 `,
-          videoID: "z1nW3rmNeEI"
+          videoID: "UFNzaWNTUnVRbW8"
     },
      
         Relacionamento: {
