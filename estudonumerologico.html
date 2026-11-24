@@ -4266,7 +4266,15 @@ if (candidatosInclinacao.length > 0) {
         Relacionamento: reduzirPuro(propCalculado), 
         essencia: reduzirPuro(sE), 
         talento: reduzirPuro(mot + exp), 
-        equilibrio: {  inicio: numInicio,  fim: numFim,   txtFinalInic: txtFinalInic,   txtFinalConc: txtFinalConc  },
+        equilibrio: {
+            inicio: numInicio,
+            fim: numFim,
+            chave: chaveCombinacao,
+            txtFinalInic: txtFinalInic,
+            txtFinalConc: txtFinalConc,
+            conteudo: combinacaoEquilibrio ? combinacaoEquilibrio.conteudo : "",
+            videoID: combinacaoEquilibrio ? combinacaoEquilibrio.videoID : ""
+        },
         
         deficiencias: faltantes.map(d => reduzirPuro(d)), 
         deficitRecorrente: reduzirPuro(dia), 
