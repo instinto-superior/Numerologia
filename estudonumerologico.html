@@ -4176,8 +4176,9 @@ if (typeof salvarTravaPerfil === 'function' && !salvarTravaPerfil()) return;
     let resultadoAnoPessoal = reduzirPuro(diaR + mesR + reduzirPuro(anoReferencia));
     let vTransitoCalculado = "--";   
 
-    let numInicio = 0; 
+let numInicio = 0; 
     let numFim = 0;
+    let chaveCombinacao = "";
     let txtFinalInic = "";
     let txtFinalConc = "";
 
@@ -4185,18 +4186,26 @@ if (typeof salvarTravaPerfil === 'function' && !salvarTravaPerfil()) return;
         const letraInicio = nomesArray[0][0]; 
         const letraFim = nomesArray[nomesArray.length - 1].slice(-1); 
 
-        const chaveInic = obterChaveMestra(letraInicio);
-        const chaveConc = obterChaveMestra(letraFim);
+        numInicio = reduzirPuro(calcularValorCabalisticoCompleto(letraInicio));
+        numFim = reduzirPuro(calcularValorCabalisticoCompleto(letraFim));
+        chaveCombinacao = `${numInicio}-${numFim}`;
 
-        numInicio = calcularValorCabalisticoCompleto(letraInicio);
-        numFim = calcularValorCabalisticoCompleto(letraFim);
+        if (typeof bancoEquilibrioUnificado !== 'undefined' && bancoEquilibrioUnificado) {
+            const mapaInicio = bancoEquilibrioUnificado.inicio;
+            const mapaConclusao = bancoEquilibrioUnificado.conclusao;
 
-        if(typeof bancoEquilibrioUnificado !== 'undefined'){
-            txtFinalInic = bancoEquilibrioUnificado.inicio[chaveInic] || "Texto não encontrado para: " + chaveInic;
-            txtFinalConc = bancoEquilibrioUnificado.conclusao[chaveConc] || "Texto não encontrado para: " + chaveConc;
+            txtFinalInic = (mapaInicio && mapaInicio[numInicio])
+                ? mapaInicio[numInicio]
+                : "Texto inicial não encontrado para: " + numInicio;
+
+            txtFinalConc = (mapaConclusao && mapaConclusao[numFim])
+                ? mapaConclusao[numFim]
+                : "Texto de conclusão não encontrado para: " + numFim;
         }
     }
 
+
+    
     const dadosPlanosParaPainel = calcularDadosPlanos(nomeRaw);
     const nomesAmigaveisPlanos = { fisico: "Físico", mental: "Mental", emocional: "Emocional", intuitivo: "Intuitivo" };
     
