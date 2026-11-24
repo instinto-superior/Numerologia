@@ -4179,6 +4179,7 @@ if (typeof salvarTravaPerfil === 'function' && !salvarTravaPerfil()) return;
 let numInicio = 0; 
     let numFim = 0;
     let chaveCombinacao = "";
+    let combinacaoEquilibrio = null;
     let txtFinalInic = "";
     let txtFinalConc = "";
 
@@ -4190,17 +4191,17 @@ let numInicio = 0;
         numFim = reduzirPuro(calcularValorCabalisticoCompleto(letraFim));
         chaveCombinacao = `${numInicio}-${numFim}`;
 
-        if (typeof bancoEquilibrioUnificado !== 'undefined' && bancoEquilibrioUnificado) {
-            const mapaInicio = bancoEquilibrioUnificado.inicio;
-            const mapaConclusao = bancoEquilibrioUnificado.conclusao;
+        const mapaCombinacoes = (typeof bancoEquilibrioUnificado !== "undefined" && bancoEquilibrioUnificado)
+            ? bancoEquilibrioUnificado.combinacoes
+            : null;
 
-            txtFinalInic = (mapaInicio && mapaInicio[numInicio])
-                ? mapaInicio[numInicio]
-                : "Texto inicial não encontrado para: " + numInicio;
-
-            txtFinalConc = (mapaConclusao && mapaConclusao[numFim])
-                ? mapaConclusao[numFim]
-                : "Texto de conclusão não encontrado para: " + numFim;
+        if (mapaCombinacoes && mapaCombinacoes[chaveCombinacao]) {
+            combinacaoEquilibrio = mapaCombinacoes[chaveCombinacao];
+            txtFinalInic = combinacaoEquilibrio.conteudo || "";
+            txtFinalConc = combinacaoEquilibrio.conteudo || "";
+        } else {
+            txtFinalInic = "Combinação não encontrada para: " + chaveCombinacao;
+            txtFinalConc = "Combinação não encontrada para: " + chaveCombinacao;
         }
     }
 
