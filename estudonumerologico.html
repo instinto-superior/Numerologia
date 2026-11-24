@@ -5759,68 +5759,45 @@ html += `
 // ==========================================
 
 
-// --- INÍCIO DO BLOCO DO EQUILÍBRIO ADAPTADO ---
-const nInicio = res.equilibrio.inicio; 
-const nFim = res.equilibrio.fim;    
+const nInicio = res.equilibrio.inicio;
+const nFim = res.equilibrio.fim;
+const chaveCombinada = `${nInicio}-${nFim}`;
 
-const letraInicio = nomesArray[0][0]; 
-const letraFim = nomesArray[nomesArray.length - 1].slice(-1); 
+const dadosCombinacao = (typeof window.bancoEquilibrioUnificado !== "undefined" && window.bancoEquilibrioUnificado.combinacoes)
+    ? window.bancoEquilibrioUnificado.combinacoes[chaveCombinada]
+    : null;
 
-numInicio = calcularValorCabalisticoCompleto(letraInicio);
-numFim = calcularValorCabalisticoCompleto(letraFim);
+const blocoCombinado = extrairDadosEquilibrio(dadosCombinacao);
 
-// 2. BUSCANDO OS DADOS NO BANCO
-const chaveInic = obterChaveMestra(letraInicio); 
-const chaveConc = obterChaveMestra(letraFim);
+// Helper seguro para IDs em Base64 (evita quebra se o ID não for Base64 válido)
+const decodificarVideoID = (idValor) => {
+    if (!idValor) return null;
+    try {
+        return atob(idValor);
+    } catch (e) {
+        return idValor;
+    }
+};
 
-const dadosIniciais = (typeof window.bancoEquilibrioUnificado !== 'undefined') ? window.bancoEquilibrioUnificado.inicio[chaveInic] : null;
-const dadosConclusao = (typeof window.bancoEquilibrioUnificado !== 'undefined') ? window.bancoEquilibrioUnificado.conclusao[chaveConc] : null;
+const idVideoIntroequil = decodificarVideoID(idVideoIntroequilEmbaralhado);
+const idVideoCombinacao = decodificarVideoID(blocoCombinado.video);
 
-// 3. EXTRAÇÃO INTELIGENTE
-const p1 = extrairDadosEquilibrio(dadosIniciais); 
-const p2 = extrairDadosEquilibrio(dadosConclusao);
-
-// --- PROTEÇÃO COM ATRASO/EMBARALHAMENTO (atob) ---
-// 1. Desembaralha o vídeo da introdução do equilíbrio
-const idVideoIntroequilEmbaralhado = "z1nW3rmNeEI"; // Cole aqui o seu código embaralhado da intro
-const idVideoIntroequil = idVideoIntroequilEmbaralhado ? atob(idVideoIntroequilEmbaralhado) : null;
-
-// 2. Desembaralha o vídeo da parte 1 (Início), se ele vier do banco em formato embaralhado
-if (p1 && p1.video) {
-    p1.video = atob(p1.video);
-}
-
-// 3. Desembaralha o vídeo da parte 2 (Conclusão), se ele vier do banco em formato embaralhado
-if (p2 && p2.video) {
-    p2.video = atob(p2.video);
-}
-// ------------------------------------------------
-
-// 2. Introdução Corrigida
 const txtIntroEquil = renderizarBlocoComVideo(`
-<p><strong>Fundamento e Origem:</strong> Obtido a partir da análise das letras extremas da assinatura nominal. A primeira letra do nome completo define o padrão de iniciação (como a pessoa aborda oportunidades e dá o primeiro passo em novos projetos), enquanto a última letra do nome completo revela o padrão de conclusão (como a pessoa fecha ciclos e finaliza o que começa).</p>
+<p><strong>Fundamento e Origem:</strong> A primeira letra do seu nome completo mostra suas inclinações e a atitude inicial — como você aborda oportunidades e obstáculos ao começar algo. A última letra do seu nome revela sua atitude e capacidade para concluir seus projetos.</p>
 
-<p><strong>Perfil e Identidade Estática:</strong> O Número de Equilíbrio atua como um guia estratégico para momentos de alta pressão ou desafios. O balanço entre o impulso de começar e a disciplina de terminar define a eficácia das realizações, servindo como uma ferramenta de ajuste para equilibrar excessos e otimizar a postura diante de situações complexas.</p>
-
+<p><strong>Perfil e Identidade Estática:</strong> Juntas, essas duas referências orientam sobre a relação entre iniciar e concluir na prática, reunindo em uma leitura única a forma como você começa e como você realiza.</p>
 `, idVideoIntroequil);
 
-// 3. Montagem do HTML unificado
-htmlEquil = `
+const htmlEquil = `
     ${txtIntroEquil}
     <div class="grupo-respostas-bloco pula-pagina">
         <div class="secao-resultado">
-            <h3 style="text-align: center;">COMO VOCÊ INÍCIA (COMEÇO): N° ${numInicio})</h3>
-            ${aplicarFiltroTexto(p1.texto)}
-         
-        </div>
-        <div class="secao-resultado">
-            <h3 style="text-align: center;">COMO VOCÊ REALIZA (CONCLUSÃO): N° ${numFim})</h3>
-            ${aplicarFiltroTexto(p2.texto)}
-           
+            <h3 style="text-align: center;">COMBINAÇÃO DE INÍCIO E REALIZAÇÃO: ${nInicio} → ${nFim}</h3>
+            ${aplicarFiltroTexto(blocoCombinado.texto)}
+            ${idVideoCombinacao ? gerarPlayerYouTube(idVideoCombinacao) : ""}
         </div>
     </div>
-`;  // ${p1.video ? gerarPlayerYouTube(p1.video) : ""}
-     //${p2.video ? gerarPlayerYouTube(p2.video) : ""}
+`;
 
 const textoFormatado = aplicarFiltroTexto(htmlEquil);
 
@@ -5833,7 +5810,6 @@ html += `
         <div class="texto-res">${textoFormatado}</div>
     </div>
 `;
-
 
     
     
