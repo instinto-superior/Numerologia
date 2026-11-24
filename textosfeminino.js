@@ -5985,1116 +5985,508 @@ essencia: {
 
 };  
 window.bancoEquilibrioUnificado = {
-    inicio: {
-        // --- NÚMERO 1 (Liderança, Início, Independência) ---
-        
-        // FÍSICO (Ação, Corpo, Prática)
-        "1_fisico_criativo": {
-     conteudo:`<h3>Liderança Prática e Criativa</h3>
-            <p>Sua primeira inclinação é marcada por uma autonomia voltada para a ação imediata. Por ser uma expressão <strong>Física e Criativa</strong>, você não espera ordens; você visualiza a solução e coloca as mãos na massa com uma originalidade impressionante. Sua atitude é de quem constrói o caminho enquanto caminha, liderando pelo exemplo prático.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_fisico_indeciso": {
-     conteudo:`<h3>Iniciativa Física sob Cautela</h3>
-            <p>Você possui o instinto de liderança do número 1, mas sua expressão <strong>Física e Indecisa</strong> faz com que você sinta uma hesitação corporal antes de agir. Você deseja assumir as rédeas, mas prefere testar o terreno fisicamente antes de se lançar totalmente, buscando segurança na execução para não perder o controle do projeto.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_fisico_neutro": {
-     conteudo:`<h3>Autonomia Estável e Direta</h3>
-            <p>Sua atitude inicial é de um pioneirismo sólido e constante. No plano <strong>Físico Neutro</strong>, você aborda oportunidades com uma seriedade prática, sem grandes oscilações emocionais. Você assume o comando de forma natural e mantém o ritmo de trabalho estável até que as bases do início estejam bem fixadas.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Estratégia, Lógica, Pensamento)
-        "1_mental_criativo": {
-     conteudo:`<h3>Pioneirismo Intelectual e Inovador</h3>
-            <p>Sua inclinação inicial é a de um arquiteto de ideias. No plano <strong>Mental Criativo</strong>, você lidera através de conceitos novos e visões estratégicas. Antes mesmo de agir, sua mente já criou o mapa completo. Você rompe obstáculos usando a inteligência e convence os outros através da lógica brilhante de seus projetos.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_mental_indeciso": {
-     conteudo:`<h3>Liderança Analítica e Reflexiva</h3>
-            <p>Sua força de vontade (1) é filtrada por uma mente que processa todas as variáveis possíveis. Por ser <strong>Mental e Indecisa</strong>, sua atitude inicial é de cautela intelectual. Você assume o controle, mas pode demorar a dar o primeiro passo por estar analisando riscos. Uma vez decidido, sua liderança é extremamente fundamentada.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_mental_neutro": {
-     conteudo:`<h3>Comando Lógico e Objetivo</h3>
-            <p>Você aborda o novo com uma clareza mental absoluta. No plano <strong>Mental Neutro</strong>, sua liderança inicial é desprovida de impulsividade. Você analisa a oportunidade friamente e define a estratégia com autoridade. É a inclinação de quem governa através da razão e da organização impecável.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "1_emocional_criativo": {
-     conteudo:`<h3>Liderança Inspirada e Magnética</h3>
-            <p>Sua primeira atitude é carregar os outros através do entusiasmo. No plano <strong>Emocional Criativo</strong>, sua liderança (1) é vibrante e apaixonada. Você inicia ciclos criando conexões fortes e usando seu magnetismo pessoal para abrir portas. Sua coragem vem do que você sente e acredita.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_emocional_indeciso":{
-     conteudo: `<h3>Iniciativa Sensível e Reativa</h3>
-            <p>Sua inclinação para o comando é influenciada pelas suas flutuações sentimentais. Sendo <strong>Emocional e Indeciso</strong>, você pode começar um projeto com muita força em um dia e hesitar no outro por causa do ambiente. Você lidera melhor quando se sente emocionalmente seguro e acolhido no início da jornada.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "1_intuitivo_criativo":{
-     conteudo: `<h3>Visão Visionária e Instintiva</h3>
-            <p>Sua atitude inicial transcende a lógica; você "sente" o caminho. No plano <strong>Intuitivo Criativo</strong>, você assume a liderança baseando-se em lampejos de inspiração. Sua inclinação é pioneira e espiritualizada, agindo como um canal para soluções que outros ainda não conseguem enxergar.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_intuitivo_indeciso": {
-     conteudo:`<h3>Percepção Pioneira sob Dúvida</h3>
-            <p>Você capta a necessidade de agir (1) através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> cria uma névoa de dúvida sobre seus pressentimentos. Sua inclinação inicial é a de quem busca um sinal ou uma confirmação interna antes de exercer sua autoridade total sobre a situação.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_intuitivo_neutro":{
-     conteudo: `<h3>Liderança Silenciosa e Perceptiva</h3>
-            <p>Sua abordagem inicial é calma e profundamente conectada com o ambiente. No plano <strong>Intuitivo Neutro</strong>, você assume as rédeas sem precisar de barulho. Você simplesmente sabe o que deve ser feito e inicia o movimento com uma confiança silenciosa que transmite segurança a todos.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-     // --- NÚMERO 2 (Diplomacia, Cooperação, Sensibilidade) ---
-        
-        // FÍSICO (Ação, Corpo, Prática)
-        "2_fisico_criativo": {
-     conteudo:`<h3>Cooperação Prática e Inventiva</h3>
-            <p>Sua inclinação inicial (2) é a de quem busca harmonia através da ação. Por ser <strong>Física e Criativa</strong>, sua atitude inicial é ajudar a construir as bases de forma colaborativa, trazendo soluções manuais ou práticas para que o grupo avance. Você inicia projetos sendo o braço direito que todos desejam ter.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_fisico_indeciso": {
-     conteudo:`<h3>Apoio Físico sob Hesitação</h3>
-            <p>Você tem o desejo natural de cooperar, mas sua expressão <strong>Física e Indecisa</strong> faz com que você espere o movimento do outro antes de agir. Sua inclinação é de suporte, mas você pode se sentir "travado" corporalmente se o ambiente não for seguro o suficiente para sua primeira ação prática.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_fisico_neutro": {
-     conteudo:`<h3>Auxílio Estável e Concreto</h3>
-            <p>Sua abordagem é a da paciência física. No plano <strong>Físico Neutro</strong>, você se coloca à disposição de forma constante e silenciosa. Sua atitude inicial é de quem organiza o espaço e as ferramentas, garantindo que a parceria comece com bases sólidas e sem sobressaltos.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Estratégia, Lógica, Pensamento)
-        "2_mental_criativo":{
-     conteudo: `<h3>Diplomacia Estratégica e Brilhante</h3>
-            <p>Sua inclinação inicial é a mediação intelectual. No plano <strong>Mental Criativo</strong>, você usa sua inteligência para unir ideias opostas e criar pontes. Sua atitude é a de quem ouve todos os lados e propõe uma saída lógica e inovadora que beneficie a todos no início do processo.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_mental_indeciso": {
-     conteudo:`<h3>Análise Dual e Reflexiva</h3>
-            <p>Sua sensibilidade (2) é filtrada por uma mente que vê os dois lados de tudo simultaneamente. Por ser <strong>Mental e Indecisa</strong>, sua atitude inicial pode ser de muita dúvida; você pensa tanto nas consequências para os outros que acaba demorando a se posicionar, buscando a perfeição no trato interpessoal.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_mental_neutro": {
-     conteudo:`<h3>Mediação Objetiva e Lógica</h3>
-            <p>Você aborda o novo com um olhar de equilíbrio racional. No plano <strong>Mental Neutro</strong>, sua inclinação é observar as regras e os contratos sociais com clareza. Você inicia parcerias definindo termos justos e mantendo uma comunicação impessoal, porém extremamente eficiente e harmoniosa.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "2_emocional_criativo":{
-     conteudo: `<h3>Empatia Magnética e Acolhedora</h3>
-            <p>Sua primeira atitude é criar um laço afetivo. No plano <strong>Emocional Criativo</strong>, sua inclinação é envolver as pessoas com doçura e imaginação. Você inicia ciclos através da conquista pelo coração, tornando o ambiente leve e inspirador para que todos se sintam parte de algo maior.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_emocional_indeciso":{
-     conteudo: `<h3>Sensibilidade Reativa e Cuidada</h3>
-            <p>Sua inclinação para a parceria é totalmente guiada pelo clima emocional. Sendo <strong>Emocional e Indeciso</strong>, você é como uma "esponja" que absorve o humor dos outros no início. Sua atitude depende muito do acolhimento que recebe; se houver tensão, você tende a se retrair antes de colaborar.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "2_intuitivo_criativo":{
-     conteudo: `<h3>Conexão Visionária e Sutil</h3>
-            <p>Sua atitude inicial é captar o que não foi dito. No plano <strong>Intuitivo Criativo</strong>, você se une aos outros através de uma percepção espiritualizada. Sua inclinação é de quem antecipa conflitos antes que eles ocorram, agindo como um pacificador que usa a intuição para harmonizar o começo de tudo.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_intuitivo_indeciso": {
-     conteudo:`<h3>Percepção Sutil sob Incerteza</h3>
-            <p>Você sente a necessidade de colaborar através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma insegurança sobre seus próprios pressentimentos. Sua inclinação inicial é a de quem busca aprovação externa ou um sinal espiritual para ter certeza de que está se unindo à pessoa certa.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_intuitivo_neutro": {
-     conteudo:`<h3>Parceria Silenciosa e Perceptiva</h3>
-            <p>Sua abordagem inicial é a do silêncio que observa. No plano <strong>Intuitivo Neutro</strong>, você se torna o observador equilibrado que entende a dinâmica do grupo sem precisar falar. Sua presença é harmonizadora por natureza, transmitindo uma paz que estabiliza o início de qualquer projeto coletivo.</p>`,
-      videoID: "F8bg1CTQ9HI"
-    },
-  // --- NÚMERO 3 (Comunicação, Expansão, Criatividade) ---
-        
-        // FÍSICO (Ação, Corpo, Prática)
-        "3_fisico_criativo": {
-     conteudo:`<h3>Expressão Prática e Vibrante</h3>
-            <p>Sua inclinação inicial (3) é marcada por uma vitalidade contagiante que se traduz em movimento. Por ser <strong>Física e Criativa</strong>, sua atitude inicial é de "dar show" através da ação. Você inicia projetos trazendo soluções visíveis e estéticas, usando sua habilidade manual ou presença física para atrair recursos e atenção logo de cara.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_fisico_indeciso": {
-     conteudo:`<h3>Entusiasmo Prático com Hesitação</h3>
-            <p>Você possui o desejo de se expressar e expandir, mas sua expressão <strong>Física e Indecisa</strong> faz com que você sinta uma certa timidez corporal no início. Sua atitude é de quem quer brilhar e interagir, mas espera um convite ou um ambiente seguro para soltar sua energia prática e mostrar seu valor.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_fisico_neutro": {
-     conteudo:`<h3>Comunicação Objetiva e Concreta</h3>
-            <p>Sua abordagem inicial é a de uma expansão controlada e realista. No plano <strong>Físico Neutro</strong>, você usa sua criatividade para organizar e apresentar o que é prático. Sua atitude é a de quem comunica através de resultados concretos, garantindo que o início do projeto seja tão funcional quanto atraente.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Estratégia, Lógica, Pensamento)
-        "3_mental_criativo": {
-     conteudo:`<h3>Criatividade Intelectual e Eloquência</h3>
-            <p>Sua inclinação inicial é o brilho das ideias. No plano <strong>Mental Criativo</strong>, você é uma fonte inesgotável de conceitos originais. Sua atitude é a de quem convence pela inteligência e pela oratória. Você inicia ciclos propondo visões inovadoras que encantam a mente dos outros, sendo o grande estrategista da comunicação.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_mental_indeciso": {
-     conteudo:`<h3>Expansão Mental e Reflexiva</h3>
-            <p>Sua necessidade de se expressar (3) é filtrada por uma mente que busca a palavra perfeita. Por ser <strong>Mental e Indecisa</strong>, você pode hesitar antes de falar ou apresentar uma ideia, com medo de não ser claro o suficiente. No entanto, sua inclinação é de quem busca a perfeição lógica para que seu brilho inicial seja inquestionável.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_mental_neutro":{
-     conteudo: `<h3>Comunicação Lógica e Estruturada</h3>
-            <p>Você aborda o novo com uma clareza de pensamento que organiza o caos. No plano <strong>Mental Neutro</strong>, sua criatividade é direcionada para a síntese. Sua atitude inicial é a de quem explica, ensina e estrutura as ideias de forma que todos compreendam, liderando pelo intelecto equilibrado e comunicativo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "3_emocional_criativo":{
-     conteudo: `<h3>Magnetismo Afetivo e Inspirador</h3>
-            <p>Sua primeira atitude é envolver a todos com o seu carisma. No plano <strong>Emocional Criativo</strong>, sua inclinação (3) é pura alegria e imaginação. Você inicia ciclos criando uma atmosfera de festa e acolhimento, onde as pessoas se sentem inspiradas a colaborar. Sua força inicial vem do coração e da sua capacidade de encantar.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_emocional_indeciso":{
-     conteudo: `<h3>Autoexpressão Sensível e Reativa</h3>
-            <p>Sua inclinação para a expansão depende inteiramente do seu estado emocional. Sendo <strong>Emocional e Indeciso</strong>, você brilha intensamente quando se sente amado, mas pode se calar se sentir desaprovação no ar. Sua atitude inicial é de quem busca conexão emocional antes de soltar sua criatividade plena.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "3_intuitivo_criativo": {
-     conteudo:`<h3>Inspiração Visionária e Espontânea</h3>
-            <p>Sua atitude inicial é captar a "cor" do momento de forma mística. No plano <strong>Intuitivo Criativo</strong>, você se expressa através de lampejos de genialidade. Sua inclinação é de quem traz mensagens ou ideias que parecem vir de outra dimensão, iluminando o início do projeto com uma criatividade espiritualizada e única.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_intuitivo_indeciso":{
-     conteudo: `<h3>Percepção Criativa sob Dúvida</h3>
-            <p>Você sente o impulso de criar e falar (3) através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma insegurança sobre se deve ou não compartilhar seu "insight". Sua atitude inicial é a de quem tateia o ambiente em busca de uma confirmação espiritual para liberar seu brilho interno.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_intuitivo_neutro": {
-     conteudo:`<h3>Expansão Silenciosa e Perceptiva</h3>
-            <p>Sua abordagem inicial é a do brilho que não precisa de alarde. No plano <strong>Intuitivo Neutro</strong>, você comunica sua criatividade através da sua presença e do seu olhar. Sua atitude é a de quem harmoniza o ambiente apenas existindo, trazendo uma expansão serena e uma sabedoria intuitiva que acalma e motiva o início de qualquer jornada.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-     // --- NÚMERO 4 (Estabilidade, Trabalho, Organização) ---
-        
-        // FÍSICO (Ação, Corpo, Prática)
-        "4_fisico_criativo":{
-     conteudo: `<h3>Estrutura Prática e Eficiente</h3>
-            <p>Sua inclinação inicial (4) é fundamentar os projetos com as próprias mãos. Por ser uma expressão <strong>Física e Criativa</strong>, você não apenas organiza, mas inventa métodos práticos para que o trabalho flua melhor. Sua atitude é a de quem constrói o alicerce de forma inovadora, garantindo que o início tenha uma solidez inabalável.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_fisico_indeciso": {
-     conteudo:`<h3>Construção Cautelosa e Lenta</h3>
-            <p>Você busca a segurança do número 4, mas sua expressão <strong>Física e Indecisa</strong> faz com que você demore a agir fisicamente. Sua inclinação inicial é a de quem revisa as ferramentas e o terreno repetidamente. Você só começa o trabalho quando tem certeza absoluta de que não haverá erros na execução manual.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_fisico_neutro": {
-     conteudo:`<h3>Ordem Prática e Resiliente</h3>
-            <p>Sua abordagem inicial é a do trabalhador incansável. No plano <strong>Físico Neutro</strong>, você estabelece uma rotina clara desde o primeiro minuto. Sua atitude é pragmática e desprovida de excessos; você organiza o espaço de forma lógica para garantir que a produtividade seja a prioridade absoluta deste começo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Estratégia, Lógica, Pensamento)
-        "4_mental_criativo": {
-     conteudo:`<h3>Organização Intelectual e Planejamento</h3>
-            <p>Sua inclinação inicial é a do estrategista de processos. No plano <strong>Mental Criativo</strong>, você desenha sistemas e cronogramas com uma clareza impressionante. Sua atitude é a de quem organiza o pensamento antes de qualquer ação, criando métodos mentais inovadores para que o início do projeto seja livre de falhas.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_mental_indeciso": {
-     conteudo:`<h3>Análise Sistêmica e Prevenção</h3>
-            <p>Sua necessidade de ordem (4) é filtrada por uma mente que prevê todos os problemas possíveis. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial é de extrema cautela intelectual. Você pode se perder nos detalhes do planejamento por medo de perder a segurança, buscando uma perfeição que garanta o controle total.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_mental_neutro": {
-     conteudo:`<h3>Lógica Estrutural e Objetiva</h3>
-            <p>Você aborda o novo com uma mente disciplinada e focada. No plano <strong>Mental Neutro</strong>, sua inclinação é aplicar as regras com precisão. Você inicia ciclos definindo limites e responsabilidades com objetividade, garantindo que a estrutura mental do projeto seja o pilar de sustentação para todos.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "4_emocional_criativo": {
-     conteudo:`<h3>Segurança Afetiva e Lealdade</h3>
-            <p>Sua primeira atitude é estabelecer laços de confiança e proteção. No plano <strong>Emocional Criativo</strong>, sua inclinação (4) é criar uma "família" ou um ambiente acolhedor e seguro. Você inicia projetos cuidando do bem-estar emocional do grupo, acreditando que a base do sucesso é o compromisso mútuo e a lealdade.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_emocional_indeciso": {
-     conteudo:`<h3>Estabilidade Sensível e Reativa</h3>
-            <p>Sua busca por segurança depende do quanto você se sente emocionalmente estável. Sendo <strong>Emocional e Indeciso</strong>, qualquer instabilidade no ambiente pode travar seu início. Você precisa de rotina e previsibilidade emocional para conseguir exercer sua capacidade de organização e trabalho.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "4_intuitivo_criativo": {
-     conteudo:`<h3>Fundamentação Intuitiva e Ética</h3>
-            <p>Sua atitude inicial é baseada em valores morais e instintivos profundos. No plano <strong>Intuitivo Criativo</strong>, você constrói a estrutura (4) seguindo sua bússola interna. Sua inclinação é pioneira e ética, iniciando o projeto com uma base espiritual que garante que tudo o que for construído tenha um propósito maior e duradouro.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_intuitivo_indeciso": {
-     conteudo:`<h3>Percepção Estrutural sob Cautela</h3>
-            <p>Você sente a necessidade de organizar e fundamentar através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre qual pilar levantar primeiro. Sua atitude inicial é a de quem busca uma confirmação interior ou um sinal de que a fundação espiritual do projeto está correta.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_intuitivo_neutro": {
-     conteudo:`<h3>Ordem Silenciosa e Presença</h3>
-            <p>Sua abordagem inicial é a da disciplina que não precisa ser dita. No plano <strong>Intuitivo Neutro</strong>, você estabelece a ordem através da sua simples presença e exemplo. Sua atitude é de quem harmoniza o caos inicial apenas estando presente, trazendo uma estabilidade serena que ancora o início de tudo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-     // --- NÚMERO 5 (Liberdade, Mudança, Versatilidade, Magnetismo) ---
-        
-        // FÍSICO (Ação, Corpo, Prática)
-        "5_fisico_criativo": {
-     conteudo:`<h3>Agilidade Prática e Renovadora</h3>
-            <p>Sua inclinação inicial (5) é marcada por um dinamismo físico constante. Por ser <strong>Física e Criativa</strong>, sua primeira atitude é de movimento e experimentação. Você não aguenta processos lentos; sua mente quer ver a mudança acontecer agora. Você inicia projetos trazendo soluções rápidas, adaptando-se a qualquer terreno com uma habilidade manual invejável.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_fisico_indeciso": {
-     conteudo:`<h3>Desejo de Mudança com Hesitação Prática</h3>
-            <p>Você sente o impulso renovador do número 5, mas sua expressão <strong>Física e Indecisa</strong> cria uma inquietude corporal. Você quer mudar e agir, mas hesita no momento do primeiro passo físico, como se estivesse testando o vento antes de saltar. Sua atitude inicial é de quem busca liberdade, mas precisa de um empurrão externo para começar o movimento.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_fisico_neutro": {
-     conteudo:`<h3>Versatilidade Direta e Adaptável</h3>
-            <p>Sua abordagem inicial é a da adaptação inteligente. No plano <strong>Físico Neutro</strong>, você entra em novas situações com uma presença física equilibrada e pronta para o que der e vier. Sua atitude é pragmática: se algo não funciona, você muda o curso sem drama. Você inicia ciclos com uma agilidade focada em resultados práticos e imediatos.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Estratégia, Lógica, Pensamento)
-        "5_mental_criativo": {
-     conteudo:`<h3>Curiosidade Intelectual e Inovação</h3>
-            <p>Sua inclinação inicial é a de um explorador mental. No plano <strong>Mental Criativo</strong>, você aborda o novo com uma sede insaciável de conhecimento. Sua atitude é a de quem questiona o status quo e propõe ideias revolucionárias. Você inicia ciclos desbravando novos conceitos e convencendo os outros através de uma lógica rápida e brilhante.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_mental_indeciso":{
-     conteudo: `<h3>Análise Multidirecional e Curiosidade</h3>
-            <p>Sua necessidade de mudança (5) é filtrada por uma mente que vê mil possibilidades ao mesmo tempo. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial é marcada por uma ansiedade intelectual. Você quer experimentar tudo, mas a dúvida sobre qual caminho mental é o mais eficiente pode gerar bloqueios temporários no início da jornada.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_mental_neutro":{
-     conteudo: `<h3>Estratégia Ágil e Objetiva</h3>
-            <p>Você aborda o novo com uma mente veloz, porém estável. No plano <strong>Mental Neutro</strong>, sua inclinação é buscar a eficiência através da mudança lógica. Você inicia ciclos cortando o que é desnecessário e focando na inovação que realmente funciona. Sua comunicação inicial é clara, direta e voltada para a expansão inteligente.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "5_emocional_criativo": {
-     conteudo:`<h3>Magnetismo Social e Aventura</h3>
-            <p>Sua primeira atitude é envolver as pessoas através da sua energia contagiante. No plano <strong>Emocional Criativo</strong>, sua inclinação (5) é de puro magnetismo e busca por prazer. Você inicia projetos criando conexões estimulantes e trazendo um ar de novidade que encanta a todos. Sua coragem vem da emoção de viver algo novo.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_emocional_indeciso":{
-     conteudo: `<h3>Inquietude Sensível e Reativa</h3>
-            <p>Sua inclinação para a mudança depende do quanto você se sente emocionalmente livre. Sendo <strong>Emocional e Indeciso</strong>, você pode ser instável no início: empolgado num momento e retraído no outro. Você busca a liberdade (5), mas precisa que o ambiente emocional seja flexível para que sua criatividade floresça.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "5_intuitivo_criativo":{
-     conteudo: `<h3>Percepção Progressista e Instinto</h3>
-            <p>Sua atitude inicial é baseada em lampejos de visão sobre o futuro. No plano <strong>Intuitivo Criativo</strong>, você capta as tendências antes de todos. Sua inclinação é pioneira e quase profética, iniciando o projeto com uma base espiritual que desafia o tradicional. Você segue seu instinto para romper barreiras e buscar novos horizontes.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_intuitivo_indeciso": {
-     conteudo:`<h3>Intuição Veloz sob Incerteza</h3>
-            <p>Você sente a urgência da mudança através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre se deve confiar nessa pressa interna. Sua atitude inicial é a de quem capta sinais de transformação, mas busca uma validação espiritual antes de mergulhar de cabeça no desconhecido.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_intuitivo_neutro": {
-     conteudo:`<h3>Adaptabilidade Silenciosa e Perceptiva</h3>
-            <p>Sua abordagem inicial é a da mudança que acontece de dentro para fora. No plano <strong>Intuitivo Neutro</strong>, você se adapta ao novo sem esforço aparente. Sua atitude é de quem harmoniza o ambiente através de uma percepção sutil das correntes de mudança, trazendo uma liberdade serena que inspira o início de qualquer ciclo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-     // --- NÚMERO 6 (Responsabilidade, Harmonia, Família, Equilíbrio) ---
-        
-        // FÍSICO (Ação, Corpo, Prática)
-        "6_fisico_criativo": {
-     conteudo:`<h3>Cuidado Prático e Estético</h3>
-            <p>Sua inclinação inicial (6) é marcada pelo desejo de servir e harmonizar o ambiente físico. Por ser <strong>Física e Criativa</strong>, sua primeira atitude é organizar o espaço de forma bela e funcional. Você inicia projetos cuidando dos detalhes práticos que trazem conforto aos outros, unindo eficiência com um senso estético apurado.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_fisico_indeciso":{
-     conteudo: `<h3>Serviço Físico sob Hesitação</h3>
-            <p>Você sente o chamado da responsabilidade do número 6, mas sua expressão <strong>Física e Indecisa</strong> gera uma preocupação excessiva com o julgamento alheio. Sua atitude inicial é de quem quer ajudar e colocar a mão na massa, mas hesita por medo de não fazer "perfeito" ou de não agradar a todos os envolvidos no início.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_fisico_neutro": {
-     conteudo:`<h3>Responsabilidade Sólida e Estável</h3>
-            <p>Sua abordagem inicial é a do suporte inabalável. No plano <strong>Físico Neutro</strong>, você assume suas obrigações com uma presença física constante e serena. Sua atitude é pragmática: você garante que as necessidades básicas do projeto e das pessoas sejam atendidas sem alarde, estabelecendo uma base de confiança imediata.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Estratégia, Lógica, Pensamento)
-        "6_mental_criativo": {
-     conteudo:`<h3>Idealismo Intelectual e Ajuste</h3>
-            <p>Sua inclinação inicial é a de buscar soluções justas e equilibradas para todos. No plano <strong>Mental Criativo</strong>, você usa sua inteligência para planejar um início que seja harmonioso. Sua atitude é a de quem aconselha e projeta caminhos onde a ética e a lógica caminham juntas, resolvendo impasses mentais com criatividade.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_mental_indeciso": {
-     conteudo:`<h3>Análise Conciliadora e Dúvida</h3>
-            <p>Sua necessidade de harmonia (6) é filtrada por uma mente que busca a perfeição nas decisões. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial pode ser marcada por um conflito interno entre várias opções "certas". Você quer ser justo, e essa busca pela escolha ideal para o grupo pode atrasar sua tomada de posição inicial.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_mental_neutro": {
-     conteudo:`<h3>Lógica Equilibrada e Protetora</h3>
-            <p>Você aborda o novo com uma mente voltada para o dever e para a ordem social. No plano <strong>Mental Neutro</strong>, sua inclinação é aplicar a justiça de forma objetiva. Você inicia ciclos definindo regras claras que protejam o coletivo, comunicando-se de forma equilibrada e transmitindo uma segurança intelectual necessária.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "6_emocional_criativo": {
-     conteudo:`<h3>Acolhimento Afetivo e Artístico</h3>
-            <p>Sua primeira atitude é envolver as pessoas em uma atmosfera de carinho e beleza. No plano <strong>Emocional Criativo</strong>, sua inclinação (6) é de puro amor ao próximo e busca pelo belo. Você inicia projetos cuidando dos laços afetivos e trazendo uma visão artística que sensibiliza e une todos ao seu redor.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_emocional_indeciso": {
-     conteudo:`<h3>Sensibilidade Protetora e Reativa</h3>
-            <p>Sua inclinação para cuidar depende do equilíbrio emocional do ambiente. Sendo <strong>Emocional e Indeciso</strong>, você pode se sentir sobrecarregado pelas necessidades dos outros no início. Sua atitude é de entrega, mas você precisa se sentir amado e seguro para não se perder na indecisão de quem quer agradar demais.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "6_intuitivo_criativo": {
-     conteudo:`<h3>Percepção Harmônica e Instinto</h3>
-            <p>Sua atitude inicial é baseada em um senso de justiça espiritual e intuitivo. No plano <strong>Intuitivo Criativo</strong>, você capta as necessidades da alma das pessoas ao seu redor. Sua inclinação é de um conselheiro nato, iniciando o projeto com uma base ética profunda que visa curar ou equilibrar situações de forma instintiva.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_intuitivo_indeciso":{
-     conteudo: `<h3>Intuição Protetora sob Cautela</h3>
-            <p>Você sente a necessidade de harmonizar e cuidar através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre se o seu conselho é o melhor. Sua atitude inicial é a de quem percebe as tensões sutis, mas busca uma confirmação interior antes de intervir para equilibrar o ambiente.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_intuitivo_neutro": {
-     conteudo:`<h3>Equilíbrio Silencioso e Presença</h3>
-            <p>Sua abordagem inicial é a da paz que emana da sua presença. No plano <strong>Intuitivo Neutro</strong>, você harmoniza o início de qualquer ciclo sem precisar de palavras. Sua atitude é de quem estabiliza o caos através de uma percepção sutil do que é justo, trazendo uma segurança espiritual que acalma a todos.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-     // --- NÚMERO 7 (Análise, Especialização, Introspecção, Sabedoria) ---
-        
-        // FÍSICO (Ação, Corpo, Prática)
-        "7_fisico_criativo":{
-     conteudo: `<h3>Perfeccionismo Prático e Técnico</h3>
-            <p>Sua inclinação inicial (7) é marcada por uma exigência técnica muito alta sobre a execução. Por ser <strong>Física e Criativa</strong>, sua primeira atitude é observar o funcionamento de tudo para tentar aprimorar o processo. Você inicia projetos buscando a excelência manual, preferindo fazer pouco, mas com uma qualidade e originalidade que beiram a perfeição.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_fisico_indeciso": {
-     conteudo:`<h3>Ação Cautelosa e Observadora</h3>
-            <p>Você sente a necessidade de entender profundamente o que está fazendo, mas sua expressão <strong>Física e Indecisa</strong> gera uma lentidão no início. Sua atitude inicial é de quem estuda as ferramentas e o ambiente repetidamente; você quer agir, mas o medo de falhar tecnicamente faz com que você tateie o terreno com extrema prudência.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_fisico_neutro": {
-     conteudo:`<h3>Especialização Prática e Silenciosa</h3>
-            <p>Sua abordagem inicial é a do observador técnico. No plano <strong>Físico Neutro</strong>, você entra em novas situações de forma discreta, focando apenas no que é essencial e funcional. Sua atitude é pragmática e solitária: você prefere organizar suas tarefas sozinho, garantindo que a base física do projeto seja executada com um rigor quase científico.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Estratégia, Lógica, Pensamento)
-        "7_mental_criativo": {
-     conteudo:`<h3>Análise Intelectual e Genialidade</h3>
-            <p>Sua inclinação inicial é a busca por respostas profundas. No plano <strong>Mental Criativo</strong>, você é o estrategista que enxerga o que ninguém mais vê. Sua atitude é a de quem questiona, investiga e propõe soluções mentais brilhantes. Você inicia ciclos com um silêncio reflexivo que precede ideias capazes de revolucionar o projeto.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_mental_indeciso": {
-     conteudo:`<h3>Reflexão Profunda e Ceticismo</h3>
-            <p>Sua necessidade de verdade (7) é filtrada por uma mente que duvida de tudo até provar por si mesma. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial é marcada por uma análise exaustiva. Você pode demorar a começar porque está tentando eliminar todas as incertezas lógicas, buscando uma segurança intelectual absoluta.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_mental_neutro": {
-     conteudo:`<h3>Lógica Analítica e Objetiva</h3>
-            <p>Você aborda o novo com uma mente altamente especializada e fria. No plano <strong>Mental Neutro</strong>, sua inclinação é o estudo sistemático das regras e dados. Você inicia ciclos definindo estratégias baseadas em fatos, comunicando-se de forma breve e precisa, transmitindo uma autoridade intelectual que não aceita superficialidades.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "7_emocional_criativo": {
-     conteudo:`<h3>Sensibilidade Introspectiva e Intuição</h3>
-            <p>Sua primeira atitude é de reserva emocional. No plano <strong>Emocional Criativo</strong>, sua inclinação (7) é buscar uma conexão profunda e espiritual com o que faz. Você inicia projetos de forma silenciosa, filtrando suas emoções através da análise, e só se abre quando sente que há uma sintonia verdadeira e significativa no ambiente.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_emocional_indeciso":{
-     conteudo: `<h3>Reserva Sensível e Reatividade</h3>
-            <p>Sua inclinação para a análise depende de quão confortável você se sente emocionalmente. Sendo <strong>Emocional e Indeciso</strong>, você pode parecer distante ou frio no início, mas é apenas uma defesa. Você busca a perfeição (7), mas a insegurança sentimental pode fazer com que você se retraia antes de mostrar sua sabedoria.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "7_intuitivo_criativo":{
-     conteudo: `<h3>Sabedoria Mística e Percepção</h3>
-            <p>Sua atitude inicial é puramente intuitiva e voltada para o mistério. No plano <strong>Intuitivo Criativo</strong>, você capta as energias sutis antes de qualquer lógica. Sua inclinação é de um buscador espiritual, iniciando o projeto com uma base de "certeza interna" que dispensa explicações, guiando-se por um instinto refinado e profético.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_intuitivo_indeciso": {
-     conteudo:`<h3>Percepção Sutil sob Dúvida</h3>
-            <p>Você sente a profundidade das situações através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma desconfiança sobre seus próprios "insights". Sua atitude inicial é de quem percebe o invisível, mas busca isolamento para meditar e ter certeza de que sua intuição não é apenas um desejo mental.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_intuitivo_neutro": {
-     conteudo:`<h3>Silêncio Perceptivo e Presença</h3>
-            <p>Sua abordagem inicial é a do sábio silencioso. No plano <strong>Intuitivo Neutro</strong>, você estabelece sua autoridade apenas observando. Sua atitude é de quem harmoniza o início do projeto através de uma percepção clara e estável das leis ocultas, trazendo uma serenidade espiritual que impõe respeito sem esforço.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
+    combinacoes: {
+"1-1": {
+            conteudo: `<h3>Início Direto e Conclusão Independente (1 → 1)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com iniciativa própria, tomando a frente logo no primeiro passo e encarando desafios com autonomia. Sua atitude inicial é direta e decidida, sem esperar que outras pessoas puxem o movimento para você começar.</p>
+            <p>Para concluir o que inicia, você mantém a mesma independência e firmeza, preferindo conduzir os fechamentos no seu próprio comando. Esse padrão favorece entregas rápidas e decisões autônomas, pedindo apenas atenção para não fechar portas a boas parcerias quando o fechamento exigir troca.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "1-2": {
+            conteudo: `<h3>Início Decidido e Conclusão Ajustada (1 → 2)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra nas oportunidades com impulso próprio e atitude firme diante de obstáculos, assumindo a partida com clareza de direção. O primeiro passo costuma ser rápido e determinado, marcando o tom de quem não fica parada esperando o cenário se resolver sozinho.</p>
+            <p>Na hora de concluir, porém, sua atitude ganha escuta, sensibilidade e ajuste fino com pessoas ou detalhes que precisam de acordo. A combinação funciona bem quando você usa a iniciativa do 1 para abrir caminho e a cooperação do 2 para alinhar os últimos passos sem perder o ritmo de fechamento.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "1-3": {
+            conteudo: `<h3>Início Firme e Conclusão Expressiva (1 → 3)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas frentes com postura ativa e objetiva, buscando abrir espaço e vencer obstáculos logo na largada. Sua inclinação inicial é de quem assume o movimento com praticidade e não teme dar o primeiro passo.</p>
+            <p>Para concluir o que começa, você tende a buscar soluções criativas, comunicação clara e adaptabilidade para resolver as etapas finais. Esse cruzamento dá agilidade e fôlego para finalizar projetos, pedindo apenas foco no encerramento prático para não dispersar antes do ponto final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "1-4": {
+            conteudo: `<h3>Início Impulsionado e Conclusão Metódica (1 → 4)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com iniciativa e coragem para romper a inércia inicial, reagindo aos obstáculos com atitude de quem quer fazer acontecer. O começo costuma ter impulso rápido e determinação para colocar o projeto em marcha.</p>
+            <p>Já na conclusão, sua capacidade se apoia em ordem, rotina, disciplina e cuidado prático com os detalhes que sustentam o resultado. É uma dinâmica forte para tirar ideias do papel e levá-las até o fim com consistência, desde que você não trave a partida por exigir controle excessivo logo no início.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "1-5": {
+            conteudo: `<h3>Início Resoluto e Conclusão Adaptável (1 → 5)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, parte para o ataque ao ver uma oportunidade, mostrando iniciativa e disposição para enfrentar obstáculos de frente no primeiro momento. Sua inclinação inicial é dinâmica e voltada à ação direta.</p>
+            <p>Ao concluir, você se destaca pela capacidade de ajustar a rota, lidar com imprevistos e resolver pendências com agilidade prática. Esse padrão favorece fechamentos rápidos e flexíveis, exigindo apenas constância suficiente para não perder o interesse logo antes da última etapa.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "1-6": {
+            conteudo: `<h3>Início Autônomo e Conclusão Comprometida (1 → 6)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, assume a iniciativa ao abordar oportunidades e encara obstáculos com firmeza pessoal, definindo sua própria posição desde o começo. A atitude inicial carrega autonomia e disposição para agir sem depender de terceiros.</p>
+            <p>Na conclusão, você tende a ser responsável, cuidadosa e fiel ao compromisso assumido, buscando entregar algo bem estruturado e confiável para quem depende do resultado. Esse equilíbrio une coragem para começar e senso de dever para fechar, pedindo apenas que você não carregue sozinha exigências além do necessário.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "1-7": {
+            conteudo: `<h3>Início Ativo e Conclusão Analítica (1 → 7)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, demonstra atitude de partida clara diante de oportunidades e não recua facilmente quando surgem os primeiros obstáculos. Sua inclinação inicial é de quem dá o passo com decisão e postura própria.</p>
+            <p>Para concluir o projeto, você costuma exigir critério, revisão técnica e coerência antes de dar a entrega por encerrada. Essa combinação junta ação inicial com rigor no fechamento, pedindo apenas atenção para não alongar demais a análise na reta final quando a execução já está pronta.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "1-8": {
+            conteudo: `<h3>Início Pioneiro e Conclusão Estratégica (1 → 8)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com iniciativa firme e encara obstáculos com determinação para abrir espaço e assumir o comando inicial. O primeiro passo costuma ser objetivo e voltado à ação concreta.</p>
+            <p>Na hora de concluir, sua capacidade se fortalece na organização de recursos, na visão de resultado e na firmeza para fechar o ciclo com solidez. É um padrão forte para começar e realizar com peso prático, pedindo apenas medida na pressão sobre si mesma e sobre os outros durante a finalização.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "1-9": {
+            conteudo: `<h3>Início Determinado e Conclusão Abrangente (1 → 9)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, toma a iniciativa diante de novas possibilidades e enfrenta os obstáculos iniciais com firmeza e autonomia. Sua atitude de partida é direta, buscando movimentar o cenário sem hesitação.</p>
+            <p>Ao concluir, você tende a enxergar o quadro mais amplo, encerrando ciclos com visão madura e atenção ao impacto maior daquilo que foi realizado. Essa combinação une impulso próprio para começar e amplitude para fechar, pedindo apenas clareza de limite para não assumir mais peso do que o escopo exige no fim.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
 
-     // --- NÚMERO 8 (Poder, Autoridade, Execução, Justiça Material) ---
-        
-        // FÍSICO (Ação, Corpo, Prática)
-        "8_fisico_criativo": {
-     conteudo:`<h3>Liderança Executiva e Realização</h3>
-            <p>Sua inclinação inicial (8) é marcada por uma força realizadora impressionante. Por ser <strong>Física e Criativa</strong>, sua primeira atitude é assumir o controle dos recursos e ferramentas para garantir a eficiência. Você inicia projetos com uma postura de comando, usando sua habilidade prática para construir resultados rápidos e inovadores que geram valor imediato.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_fisico_indeciso": {
-     conteudo:`<h3>Gestão Prática sob Cautela</h3>
-            <p>Você sente o impulso de autoridade do número 8, mas sua expressão <strong>Física e Indecisa</strong> faz com que você avalie os riscos financeiros e materiais exaustivamente antes de agir. Sua atitude inicial é a de um gestor prudente: você quer o sucesso, mas só coloca a mão na massa quando sente que o investimento de energia é seguro.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_fisico_neutro": {
-     conteudo:`<h3>Autoridade Sólida e Estável</h3>
-            <p>Sua abordagem inicial é a do administrador nato. No plano <strong>Físico Neutro</strong>, você entra em novas situações com uma presença imponente e pragmática. Sua atitude é de quem organiza a estrutura e os processos sem hesitar, estabelecendo uma hierarquia clara e garantindo que o início do ciclo seja pautado pela produtividade.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Estratégia, Lógica, Pensamento)
-        "8_mental_criativo": {
-     conteudo:`<h3>Estratégia de Poder e Visão</h3>
-            <p>Sua inclinação inicial é o planejamento de grande escala. No plano <strong>Mental Criativo</strong>, você visualiza o topo da montanha antes de dar o primeiro passo. Sua atitude é a de quem desenha planos de negócios e estratégias complexas com facilidade, iniciando o projeto com uma lógica de expansão e conquista intelectualmente brilhante.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_mental_indeciso": {
-     conteudo:`<h3>Análise Executiva e Ponderação</h3>
-            <p>Sua necessidade de controle (8) é filtrada por uma mente que busca a justiça perfeita. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial pode ser de muita deliberação. Você analisa todos os prós e contras financeiros e éticos, buscando uma estratégia que não tenha falhas lógicas antes de exercer sua autoridade total.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_mental_neutro": {
-     conteudo:`<h3>Lógica Administrativa e Foco</h3>
-            <p>Você aborda o novo com uma mente focada em resultados e eficiência. No plano <strong>Mental Neutro</strong>, sua inclinação é a aplicação rigorosa da competência. Você inicia ciclos definindo metas e metas objetivas, comunicando-se com autoridade técnica e garantindo que a mente de todos esteja alinhada com o sucesso material.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "8_emocional_criativo": {
-     conteudo:`<h3>Magnetismo de Poder e Paixão</h3>
-            <p>Sua primeira atitude é liderar através da força da sua personalidade. No plano <strong>Emocional Criativo</strong>, sua inclinação (8) é de quem inspira confiança e ambição nos outros. Você inicia projetos com um entusiasmo realizador, usando seu carisma para atrair apoio e investimentos, movido por uma fé emocional no sucesso.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_emocional_indeciso": {
-     conteudo:`<h3>Autoridade Sensível e Reativa</h3>
-            <p>Sua inclinação para o comando depende de quão seguro você se sente emocionalmente. Sendo <strong>Emocional e Indeciso</strong>, você pode oscilar entre a dureza e a vulnerabilidade no início. Você busca o poder (8), mas precisa de um ambiente que respeite sua sensibilidade para que sua capacidade de gestão floresça plenamente.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "8_intuitivo_criativo": {
-     conteudo:`<h3>Visão Executiva e Instinto</h3>
-            <p>Sua atitude inicial é baseada em uma percepção aguçada das oportunidades de mercado. No plano <strong>Intuitivo Criativo</strong>, você "sente" onde está o dinheiro ou o poder. Sua inclinação é de um visionário pragmático, iniciando o projeto com uma base instintiva que antecipa lucros e parcerias estratégicas de sucesso.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_intuitivo_indeciso": {
-     conteudo:`<h3>Percepção de Valor sob Dúvida</h3>
-            <p>Você capta a necessidade de exercer autoridade através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma incerteza sobre se o momento é o certo para investir. Sua atitude inicial é a de quem percebe o potencial de grandeza, mas busca uma confirmação espiritual antes de assinar os contratos.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_intuitivo_neutro": {
-     conteudo:`<h3>Comando Silencioso e Perceptivo</h3>
-            <p>Sua abordagem inicial é a da autoridade que não precisa de palavras para ser sentida. No plano <strong>Intuitivo Neutro</strong>, você estabelece a ordem através de uma percepção estável da justiça e do mérito. Sua presença é respeitada imediatamente, trazendo uma segurança espiritual que ancora o sucesso material deste começo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-     // --- NÚMERO 9 (Humanitarismo, Universalismo, Sabedoria, Finalização) ---
-        
-        // FÍSICO (Ação, Corpo, Prática)
-        "9_fisico_criativo": {
-     conteudo:`<h3>Ação Humanitária e Criativa</h3>
-            <p>Sua inclinação inicial (9) é marcada por uma vontade prática de ajudar e transformar o meio. Por ser <strong>Física e Criativa</strong>, sua primeira atitude é colocar as mãos na massa em projetos que tenham um propósito maior. Você inicia ciclos com uma energia realizadora que busca soluções originais para o bem comum, agindo com generosidade e agilidade física.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_fisico_indeciso": {
-     conteudo:`<h3>Serviço Prático sob Reflexão</h3>
-            <p>Você sente o chamado do número 9 para servir, mas sua expressão <strong>Física e Indecisa</strong> gera uma cautela no movimento inicial. Sua atitude é a de quem quer se entregar a uma causa, mas hesita fisicamente por medo de não ser útil o suficiente ou de se desgastar demais. Você busca um sinal prático de que sua ação será realmente transformadora.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_fisico_neutro": {
-     conteudo:`<h3>Comprometimento Sólido e Compassivo</h3>
-            <p>Sua abordagem inicial é a da doação constante e silenciosa. No plano <strong>Físico Neutro</strong>, você assume suas tarefas com uma presença física estável e desprovida de ego. Sua atitude é pragmática: você garante que o básico seja feito para todos, estabelecendo uma base de confiança baseada na sua integridade e persistência física.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Estratégia, Lógica, Pensamento)
-        "9_mental_criativo": {
-     conteudo:`<h3>Sabedoria Intelectual e Idealismo</h3>
-            <p>Sua inclinação inicial é a busca por conceitos que elevem a consciência. No plano <strong>Mental Criativo</strong>, você é o pensador que projeta soluções globais. Sua atitude é a de quem compartilha conhecimento de forma generosa, iniciando ciclos com ideias brilhantes que visam a evolução coletiva e o entendimento mútuo.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_mental_indeciso": {
-     conteudo:`<h3>Análise Universal e Ponderação</h3>
-            <p>Sua necessidade de ajudar (9) é filtrada por uma mente que tenta abraçar o mundo todo de uma vez. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial pode ser marcada por uma sobrecarga mental. Você pensa tanto nas consequências globais das suas escolhas que pode demorar a definir o primeiro passo lógico da jornada.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_mental_neutro": {
-     conteudo:`<h3>Lógica Compreensiva e Objetiva</h3>
-            <p>Você aborda o novo com uma mente sábia e focada no essencial. No plano <strong>Mental Neutro</strong>, sua inclinação é a aplicação da verdade de forma impessoal. Você inicia ciclos com uma comunicação clara e tolerante, transmitindo uma autoridade intelectual que acalma os outros e foca no que é realmente importante para o todo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "9_emocional_criativo":{
-     conteudo: `<h3>Empatia Magnética e Inspiração</h3>
-            <p>Sua primeira atitude é envolver as pessoas através de uma grande afeição universal. No plano <strong>Emocional Criativo</strong>, sua inclinação (9) é de pura entrega e carisma. Você inicia projetos criando uma atmosfera de inspiração e sonho, usando sua sensibilidade artística para tocar o coração dos outros e motivar a união.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_emocional_indeciso": {
-     conteudo:`<h3>Sensibilidade Profunda e Reativa</h3>
-            <p>Sua inclinação para o desprendimento depende da harmonia emocional ao seu redor. Sendo <strong>Emocional e Indeciso</strong>, você pode se sentir vulnerável às dores do mundo no início. Sua atitude é de entrega, mas você precisa se sentir emocionalmente compreendido para que sua sabedoria e compaixão fluam sem medo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "9_intuitivo_criativo": {
-     conteudo:`<h3>Percepção Espiritual e Profecia</h3>
-            <p>Sua atitude inicial é baseada em lampejos de sabedoria ancestral. No plano <strong>Intuitivo Criativo</strong>, você capta o propósito espiritual de cada início. Sua inclinação é de um guia nato, iniciando o projeto com uma base de intuição pura que antecipa o fim antes mesmo do começo, guiando-se por uma luz interna generosa.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_intuitivo_indeciso": {
-     conteudo:`<h3>Intuição Universal sob Dúvida</h3>
-            <p>Você sente a necessidade de se doar através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma incerteza sobre se a sua percepção é real ou apenas um desejo de ajudar. Sua atitude inicial é de quem capta sinais do universo, mas busca um momento de isolamento para ter certeza da sua missão.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_intuitivo_neutro": {
-     conteudo:`<h3>Presença Sábia e Silenciosa</h3>
-            <p>Sua abordagem inicial é a da paz que emana de quem já viveu muito. No plano <strong>Intuitivo Neutro</strong>, você harmoniza o início de qualquer ciclo apenas observando com tolerância. Sua presença é curadora por natureza, trazendo uma segurança espiritual que permite que todos ao seu redor cresçam com liberdade.</p>`
- },},
- conclusao: {
-        // --- NÚMERO 1 (Finalização com Autonomia, Vitória e Originalidade) ---
-        
-        // FÍSICO (Entrega prática, tangível)
-        "1_fisico_criativo": {
-     conteudo:`<h3>Realização Independente e Prática</h3>
-            <p>Sua capacidade de entrega final é marcada por uma execução impecável e solitária. Sendo uma expressão <strong>Física e Criativa</strong>, você conclui seus projetos de forma inovadora, deixando sua marca pessoal em cada detalhe. Você realiza entregando resultados concretos que demonstram sua total autonomia e competência técnica.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_fisico_indeciso": {
-     conteudo:`<h3>Conclusão Prática sob Validação</h3>
-            <p>Você realiza suas tarefas com foco na perfeição, mas sua expressão <strong>Física e Indecisa</strong> faz com que você revise o resultado final diversas vezes antes de dar por encerrado. Sua capacidade de entrega é alta, porém você busca uma confirmação externa de que sua execução física atingiu o padrão de excelência esperado.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_fisico_neutro": {
-     conteudo:`<h3>Entrega Sólida e Eficiente</h3>
-            <p>Sua realização é direta e sem rodeios. No plano <strong>Físico Neutro</strong>, você encerra ciclos de forma pragmática e funcional. Sua capacidade de entrega é constante: você finaliza o que começou com uma estabilidade física impressionante, garantindo que o resultado seja útil, resistente e organizado.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Entrega estratégica, intelectual)
-        "1_mental_criativo":{
-     conteudo: `<h3>Finalização Estratégica e Brilhante</h3>
-            <p>Você conclui seus projetos apresentando soluções intelectuais que ninguém previu. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em relatórios, estratégias ou conceitos originais. Você entrega um desfecho que prova sua superioridade lógica e sua visão pioneira sobre o tema.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_mental_indeciso": {
-     conteudo:`<h3>Realização Intelectual Analítica</h3>
-            <p>Sua entrega final é fruto de um longo processo de refinamento mental. Sendo <strong>Mental e Indecisa</strong>, sua capacidade de realização é profunda, mas você pode sentir que "sempre falta algo" para concluir. Quando finalmente entrega, o resultado é uma peça de lógica extremamente detalhada e blindada contra falhas.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_mental_neutro": {
-     conteudo:`<h3>Conclusão Lógica e Objetiva</h3>
-            <p>Você realiza seus objetivos através da clareza e da ordem. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na verdade dos fatos. Você encerra processos de forma fria e eficiente, entregando resultados que falam por si só devido à sua estrutura lógica impecável e autoridade intelectual.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "1_emocional_criativo":{
-     conteudo: `<h3>Realização Apaixonada e Única</h3>
-            <p>Você conclui suas metas colocando toda a sua alma no resultado. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é magnética e inspiradora. Você realiza grandes feitos motivado pelo prazer de vencer, entregando resultados que brilham e emocionam aqueles que os recebem.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_emocional_indeciso": {
-     conteudo:`<h3>Entrega Sensível e Reativa</h3>
-            <p>Sua capacidade de finalizar tarefas está ligada ao seu estado de ânimo final. Sendo <strong>Emocional e Indeciso</strong>, você pode hesitar em entregar o resultado por medo da crítica. Sua realização é potente, mas você precisa se sentir seguro emocionalmente para "assinar" sua obra e mostrar sua independência ao mundo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "1_intuitivo_criativo":{
-     conteudo: `<h3>Realização Visionária e Instintiva</h3>
-            <p>Você entrega resultados que parecem estar à frente do seu tempo. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma certeza interna. Você conclui ciclos manifestando algo que começou como um pressentimento e se tornou uma vitória concreta e inovadora.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_intuitivo_indeciso":{
-     conteudo: `<h3>Conclusão Intuitiva sob Ponderação</h3>
-            <p>Você realiza seus objetivos seguindo sua bússola interna, mas sua expressão <strong>Intuitiva e Indecisa</strong> faz com que você busque sinais antes de dar o passo final. Sua capacidade de entrega é profunda, manifestando uma independência que foi amadurecida no silêncio e na observação dos pressentimentos.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "1_intuitivo_neutro":{
-     conteudo: `<h3>Entrega Silenciosa e Plena</h3>
-            <p>Sua realização acontece de forma natural e sem alarde. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma paz de espírito que transmite autoridade. Sua capacidade de entrega é sutil, mas absoluta; você finaliza o que é necessário com uma sabedoria instintiva que não precisa de explicações.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
 
-  // --- NÚMERO 2 (Finalização com Diplomacia, Detalhe e Apoio) ---
-        
-        // FÍSICO (Entrega prática, tangível)
-        "2_fisico_criativo": {
-     conteudo:`<h3>Realização Cooperativa e Eficiente</h3>
-            <p>Sua capacidade de entrega final é marcada por um suporte prático impecável. Sendo <strong>Física e Criativa</strong>, você conclui tarefas trazendo soluções que facilitam a vida de todos. Você realiza seus objetivos garantindo que a execução técnica seja feita com suavidade e uma inventividade que resolve problemas de forma discreta.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_fisico_indeciso": {
-     conteudo:`<h3>Conclusão Detalhada sob Apoio</h3>
-            <p>Você realiza suas tarefas com um cuidado extremo nos detalhes, mas sua expressão <strong>Física e Indecisa</strong> faz com que você prefira entregar o resultado final em parceria. Sua capacidade de realização é alta, mas você se sente mais seguro quando alguém valida o acabamento físico do que você produziu.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_fisico_neutro":{
-     conteudo: `<h3>Entrega Estável e Auxiliadora</h3>
-            <p>Sua realização é constante e confiável. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que todas as engrenagens estejam lubrificadas. Sua capacidade de entrega é silenciosa: você finaliza o que começou de forma útil e paciente, sendo o alicerce que permite que o resultado final seja duradouro.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Entrega estratégica, intelectual)
-        "2_mental_criativo":{
-     conteudo: `<h3>Finalização Mediadora e Inteligente</h3>
-            <p>Você conclui seus projetos apresentando sínteses que unem diferentes pontos de vista. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em acordos, revisões ou planejamentos equilibrados. Você entrega um desfecho que prova sua habilidade de ajustar ideias para que o resultado seja justo para todos.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_mental_indeciso": {
-     conteudo:`<h3>Realização Intelectual Ponderada</h3>
-            <p>Sua entrega final é fruto de uma análise minuciosa de todas as partes envolvidas. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com uma profundidade que evita conflitos. No entanto, pode demorar a fechar o ciclo por estar pesando cada palavra ou dado, buscando um equilíbrio mental perfeito.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_mental_neutro": {
-     conteudo:`<h3>Conclusão Lógica e Harmoniosa</h3>
-            <p>Você realiza seus objetivos através da organização dos fatos e das relações. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é pautada pela imparcialidade. Você encerra processos entregando resultados claros, objetivos e que respeitam as normas, garantindo uma finalização intelectualmente coerente.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "2_emocional_criativo": {
-     conteudo:`<h3>Realização Sensível e Encantadora</h3>
-            <p>Você conclui suas metas através do toque pessoal e da empatia. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é suave e acolhedora. Você realiza seus feitos motivado pela harmonia do ambiente, entregando resultados que geram bem-estar e que são apreciados pela beleza e pelo sentimento aplicado.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_emocional_indeciso":{
-     conteudo: `<h3>Entrega Reativa e Cuidadosa</h3>
-            <p>Sua capacidade de finalizar tarefas depende diretamente do clima emocional ao seu redor. Sendo <strong>Emocional e Indeciso</strong>, você realiza com excelência se houver incentivo. Sua conclusão é marcada por uma sensibilidade que busca não ferir ninguém, entregando o resultado com uma cautela afetiva admirável.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "2_intuitivo_creativo":{
-     conteudo: `<h3>Realização Intuitiva e Pacificadora</h3>
-            <p>Você entrega resultados que captam as necessidades ocultas das pessoas. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma percepção sutil. Você conclui ciclos manifestando soluções que trazem paz e equilíbrio espiritual para o grupo ou projeto.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_intuitivo_indeciso": {
-     conteudo:`<h3>Conclusão Perceptiva sob Sintonização</h3>
-            <p>Você realiza seus objetivos sentindo o "timing" das situações, mas sua expressão <strong>Intuitiva e Indecisa</strong> faz com que você espere por um sinal de harmonia antes de concluir. Sua capacidade de entrega é profunda, manifestando uma cooperação que foi gestada na sua sensibilidade intuitiva.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "2_intuitivo_neutro": {
-     conteudo:`<h3>Entrega Silenciosa e Equilibrada</h3>
-            <p>Sua realização acontece através da sua presença harmonizadora. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que acalma os outros. Sua capacidade de entrega é discreta; você finaliza o necessário com uma sabedoria que sabe exatamente como equilibrar as forças no final de um ciclo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-  // --- NÚMERO 3 (Finalização com Expressão, Criatividade e Entusiasmo) ---
-        
-        // FÍSICO (Entrega prática, tangível)
-        "3_fisico_criativo": {
-     conteudo:`<h3>Realização Criativa e Visível</h3>
-            <p>Sua capacidade de entrega final é marcada pela estética e pelo impacto visual. Sendo <strong>Física e Criativa</strong>, você conclui tarefas de forma que elas sejam notadas por todos. Você realiza seus objetivos trazendo soluções práticas que são, ao mesmo tempo, belas e funcionais, garantindo que o resultado final tenha uma "assinatura" vibrante.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_fisico_indeciso": {
-     conteudo:`<h3>Conclusão Prática com Toque Social</h3>
-            <p>Você realiza suas tarefas com o desejo de agradar e comunicar, mas sua expressão <strong>Física e Indecisa</strong> faz com que você busque aprovação sobre a aparência do resultado final. Sua capacidade de realização é alta, especialmente quando você sente que seu esforço físico será reconhecido e elogiado pelo grupo.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_fisico_neutro": {
-     conteudo:`<h3>Entrega Funcional e Comunicativa</h3>
-            <p>Sua realização é direta, mas sempre acompanhada de uma boa explicação. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que o resultado seja compreensível para todos. Sua capacidade de entrega é constante: você finaliza o que começou de forma organizada, mas com um toque de leveza que torna o trabalho final agradável.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Entrega estratégica, intelectual)
-        "3_mental_criativo": {
-     conteudo:`<h3>Finalização Eloquente e Brilhante</h3>
-            <p>Você conclui seus projetos através da força da sua oratória ou escrita. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em ideias que se espalham rapidamente. Você entrega um desfecho que prova sua inteligência comunicativa, criando argumentos que encantam e convencem a mente alheia.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_mental_indeciso": {
-     conteudo:`<h3>Realização Intelectual e Expressiva</h3>
-            <p>Sua entrega final é fruto de um desejo de ser perfeitamente entendido. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos polindo sua comunicação até o último segundo. Quando finalmente conclui, o resultado é uma peça de lógica apresentada de forma criativa, buscando evitar qualquer mal-entendido intelectual.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_mental_neutro":{
-     conteudo: `<h3>Conclusão Lógica e Didática</h3>
-            <p>Você realiza seus objetivos organizando a informação para o público. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na clareza. Você encerra processos entregando resultados que educam e informam, garantindo que a finalização intelectual seja estruturada, mas muito fácil de ser absorvida.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "3_emocional_criativo":{
-     conteudo: `<h3>Realização Magnética e Festiva</h3>
-            <p>Você conclui suas metas celebrando o resultado com entusiasmo. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é pura inspiração. Você realiza seus feitos motivado pela alegria do compartilhamento, entregando resultados que elevam o moral das pessoas e trazem um ar de renovação e felicidade.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_emocional_indeciso": {
-     conteudo:`<h3>Entrega Sensível e Comunicativa</h3>
-            <p>Sua capacidade de finalizar tarefas está ligada à resposta emocional que você espera receber. Sendo <strong>Emocional e Indeciso</strong>, você realiza com brilho, mas pode hesitar em concluir se sentir que o clima não está propício para sua expressão. Sua conclusão busca sempre criar um vínculo de simpatia e aprovação.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "3_intuitivo_criativo":{
-     conteudo: `<h3>Realização Inspirada e Visionária</h3>
-            <p>Você entrega resultados que trazem uma mensagem espiritual ou intuitiva. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por lampejos de alegria interna. Você conclui ciclos manifestando algo que inspira os outros a verem o lado luminoso da vida, unindo intuição e expressão criativa.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_intuitivo_indeciso": {
-     conteudo:`<h3>Conclusão Perceptiva e Espontânea</h3>
-            <p>Você realiza seus objetivos seguindo o que sua intuição diz ser "divertido" ou "correto", mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre o momento certo de falar. Sua capacidade de entrega amadurece quando você confia no seu "feeling" para encerrar as situações com leveza.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "3_intuitivo_neutro": {
-     conteudo:`<h3>Entrega Silenciosa e Harmônica</h3>
-            <p>Sua realização acontece de forma que a sua simples presença comunica o sucesso. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma paz que irradia otimismo. Sua capacidade de entrega é sutil; você finaliza o necessário com uma sabedoria que sabe que a alegria é o melhor desfecho para qualquer esforço.</p>`,
+     "2-1": {
+            conteudo: `<h3>Início Cauteloso e Conclusão Independente (2 → 1)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com observação, sensibilidade e leitura do ambiente antes de dar o primeiro passo. Sua atitude inicial costuma avaliar o contexto e buscar sintonia, evitando avançar no escuro logo na largada.</p>
+            <p>Na hora de concluir, porém, você assume autonomia, firmeza e decisão própria para fechar o ciclo com independência. Essa dinâmica ajuda quando você não deixa a cautela inicial adiar a partida e usa a firmeza final para encerrar o projeto por conta própria.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "2-2": {
+            conteudo: `<h3>Início Sensível e Conclusão Ajustada (2 → 2)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas oportunidades e obstáculos com atenção ao contexto, escuta e busca de equilíbrio antes de agir. Sua inclinação inicial prefere entender o cenário e alinhar forças antes de acelerar.</p>
+            <p>Para concluir o que inicia, você mantém o mesmo cuidado com acordos, detalhes e harmonia entre as partes envolvidas. Esse padrão favorece fechamentos bem alinhados, pedindo apenas que você decida com clareza sem adiar a conclusão por receio de desagradar.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "2-3": {
+            conteudo: `<h3>Início Observador e Conclusão Expressiva (2 → 3)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com cautela e leitura prévia, medindo o terreno antes de se expor no primeiro passo. Sua atitude inicial tende a ser mais receptiva e cuidadosa do que impulsiva.</p>
+            <p>Já para concluir, você ganha facilidade de expressão, soluções criativas e agilidade para destravar e apresentar o resultado final. É uma combinação útil quando a leitura inicial do 2 dá base para a realização comunicativa do 3 fechar o ciclo com fluidez.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "2-4": {
+            conteudo: `<h3>Início Receptivo e Conclusão Metódica (2 → 4)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas situações com atenção ao entorno, avaliando nuances e possíveis atritos antes de avançar. Sua atitude inicial busca entendimento e estabilidade antes de assumir compromissos maiores.</p>
+            <p>Na conclusão, sua capacidade se apoia em método, ordem prática e disciplina para estruturar e entregar o que foi iniciado. Esse cruzamento junta sensibilidade de partida com consistência no fechamento, pedindo apenas firmeza para começar sem esperar todas as garantias.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "2-5": {
+            conteudo: `<h3>Início Cuidadoso e Conclusão Adaptável (2 → 5)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com tato e observação inicial, procurando compreender o cenário antes de se movimentar. O primeiro passo costuma ser ponderado e atento às reações ao redor.</p>
+            <p>Ao concluir, você se mostra ágil para ajustar o plano, lidar com mudanças de última hora e resolver etapas práticas com rapidez. Essa combinação equilibra uma partida cautelosa com um encerramento flexível, pedindo apenas constância para não mudar o rumo no meio do fechamento.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "2-6": {
+            conteudo: `<h3>Início Cooperativo e Conclusão Comprometida (2 → 6)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara oportunidades e obstáculos com sensibilidade, escuta e disposição para avaliar como cada parte se encaixa no início. Sua atitude inicial costuma priorizar alinhamento e cautela diante de conflitos.</p>
+            <p>Na hora de concluir, você assume responsabilidade, cuidado com os detalhes e compromisso firme com o resultado entregue. Esse padrão favorece conclusões confiáveis e cuidadosas, pedindo apenas que você não adie decisões finais por excesso de preocupação com o agrado alheio.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "2-7": {
+            conteudo: `<h3>Início Ponderado e Conclusão Analítica (2 → 7)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda novas frentes com observação e cautela, buscando ler o cenário e evitar atritos desnecessários ao dar o primeiro passo. Sua inclinação inicial prefere avaliar antes de reagir.</p>
+            <p>Para concluir o projeto, você tende a aplicar critério, análise detalhada e verificação técnica para garantir que o fechamento esteja consistente. É uma dinâmica que une cautela de início e rigor na conclusão, pedindo apenas decisão prática na hora de encerrar sem prolongar indefinidamente a revisão.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "2-8": {
+            conteudo: `<h3>Início Sensível e Conclusão Estratégica (2 → 8)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra nas oportunidades com atenção ao contexto e leitura cuidadosa dos obstáculos, medindo o ambiente antes de avançar. Sua atitude inicial costuma ser mais cautelosa e receptiva.</p>
+            <p>Na conclusão, porém, você ganha firmeza prática, visão de resultado e capacidade de organizar o encerramento com autoridade e foco. Esse cruzamento funciona bem quando a leitura atenta do 2 prepara o terreno para a realização objetiva do 8 fechar o ciclo.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "2-9": {
+            conteudo: `<h3>Início Atento e Conclusão Abrangente (2 → 9)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com sensibilidade e escuta, procurando compreender o cenário e as pessoas envolvidas logo no começo. Sua atitude inicial valoriza equilíbrio antes de tomar impulso.</p>
+            <p>Ao concluir, você tende a fechar o ciclo com visão mais ampla, senso de conjunto e capacidade de consolidar o que foi construído. Essa combinação junta tato na partida e amplitude na realização, pedindo apenas clareza de limites para encerrar sem absorver peso excessivo.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
 
-   videoID: "F8bg1CTQ9HI"
-    },
-   // --- NÚMERO 4 (Finalização com Disciplina, Método e Estabilidade) ---
-        
-        // FÍSICO (Entrega prática, tangível)
-        "4_fisico_criativo": {
-     conteudo:`<h3>Realização Sólida e Inovadora</h3>
-            <p>Sua capacidade de entrega final é marcada pela construção de bases inabaláveis. Sendo <strong>Física e Criativa</strong>, você conclui tarefas criando métodos que tornam o trabalho futuro mais fácil para todos. Você realiza seus objetivos entregando algo concreto, duradouro e com um toque de engenhosidade técnica que resolve problemas estruturais.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_fisico_indeciso": {
-     conteudo:`<h3>Conclusão Prática sob Revisão</h3>
-            <p>Você realiza suas tarefas com um rigoroso padrão de qualidade, mas sua expressão <strong>Física e Indecisa</strong> faz com que você verifique o resultado final obsessivamente. Sua capacidade de realização é altíssima, porém o medo de uma falha estrutural faz com que você demore a entregar, buscando a perfeição absoluta na execução.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_fisico_neutro": {
-     conteudo:`<h3>Entrega Pragmática e Resistente</h3>
-            <p>Sua realização é a definição de confiabilidade. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que nada saia do lugar. Sua capacidade de entrega é silenciosa e poderosa: você finaliza o que começou com uma disciplina exemplar, entregando resultados que suportam qualquer pressão e tempo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Entrega estratégica, intelectual)
-        "4_mental_criativo": {
-     conteudo:`<h3>Finalização Estruturada e Lógica</h3>
-            <p>Você conclui seus projetos apresentando sistemas e normas impecáveis. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em planejamentos que funcionam como um relógio. Você entrega um desfecho que prova sua competência em organizar o caos e transformar ideias em processos mentais sólidos.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_mental_indeciso": {
-     conteudo:`<h3>Realização Intelectual e Detalhista</h3>
-            <p>Sua entrega final é fruto de uma análise profunda de riscos e normas. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com um cuidado extremo para não cometer erros de julgamento. Sua conclusão é uma peça de lógica blindada, onde cada detalhe foi pesado para garantir a segurança intelectual do projeto.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_mental_neutro":{
-     conteudo: `<h3>Conclusão Objetiva e Disciplinada</h3>
-            <p>Você realiza seus objetivos através da aplicação rigorosa da ordem. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na eficiência e no dever. Você encerra processos entregando resultados limpos, diretos e extremamente organizados, onde a lógica e a utilidade são as prioridades finais.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "4_emocional_criativo": {
-     conteudo:`<h3>Realização Leal e Protetora</h3>
-            <p>Você conclui suas metas garantindo a segurança e o bem-estar de quem está ao seu redor. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é movida pela dedicação. Você realiza seus feitos entregando resultados que trazem estabilidade emocional e conforto, consolidando laços de confiança através do seu trabalho duro.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_emocional_indeciso": {
-     conteudo:`<h3>Entrega Sensível sob Rotina</h3>
-            <p>Sua capacidade de finalizar tarefas depende da previsibilidade do ambiente. Sendo <strong>Emocional e Indeciso</strong>, você realiza com excelência quando se sente seguro. Sua conclusão busca sempre evitar conflitos, entregando um resultado que é, antes de tudo, um porto seguro para as emoções de todos os envolvidos.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "4_intuitivo_criativo":{
-     conteudo: `<h3>Realização Ética e Inspirada</h3>
-            <p>Você entrega resultados que possuem um forte alicerce moral e espiritual. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por valores profundos. Você conclui ciclos manifestando algo que não apenas funciona na prática, mas que é o reflexo de uma integridade espiritual inegociável.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_intuitivo_indeciso": {
-     conteudo:`<h3>Conclusão Perceptiva sob Prudência</h3>
-            <p>Você realiza seus objetivos sentindo a necessidade de ser justo e correto, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre a solidez dos seus pressentimentos. Sua capacidade de entrega amadurece quando você aceita que sua intuição é o pilar que sustenta sua realização material.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "4_intuitivo_neutro":{
-     conteudo: `<h3>Entrega Silenciosa e Firme</h3>
-            <p>Sua realização acontece através de uma presença que impõe ordem sem precisar de esforço. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que ancora os outros. Sua capacidade de entrega é discreta; você finaliza o necessário com uma sabedoria que sabe que o silêncio é a base de toda construção real.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-  
- // --- NÚMERO 5 (Finalização com Versatilidade, Agilidade e Inovação) ---
-        
-        // FÍSICO (Entrega prática, tangível)
-        "5_fisico_criativo": {
-     conteudo:`<h3>Realização Dinâmica e Adaptável</h3>
-            <p>Sua capacidade de entrega final é marcada pela rapidez e pela originalidade técnica. Sendo <strong>Física e Criativa</strong>, você conclui tarefas encontrando atalhos inteligentes e soluções inovadoras. Você realiza seus objetivos entregando resultados que surpreendem pela versatilidade e pela capacidade de funcionar bem em diferentes cenários.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_fisico_indeciso": {
-     conteudo:`<h3>Conclusão Ágil sob Ajuste</h3>
-            <p>Você realiza suas tarefas com uma energia intensa, mas sua expressão <strong>Física e Indecisa</strong> faz com que você queira mudar o resultado final até o último segundo. Sua capacidade de entrega é alta, mas a vontade de experimentar "só mais uma opção" pode gerar uma inquietação física antes de dar o projeto por encerrado.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_fisico_neutro": {
-     conteudo:`<h3>Entrega Pragmática e Veloz</h3>
-            <p>Sua realização é direta e extremamente funcional. No plano <strong>Físico Neutro</strong>, você encerra processos focando na eficiência do agora. Sua capacidade de entrega é marcada pela descomplicação: você finaliza o que começou de forma prática, garantindo que o resultado seja adaptável e responda rapidamente às necessidades do momento.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Entrega estratégica, intelectual)
-        "5_mental_criativo": {
-     conteudo:`<h3>Finalização Inventiva e Visionária</h3>
-            <p>Você conclui seus projetos apresentando ideias que expandem horizontes. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em estratégias ousadas e pensamentos fora da caixa. Você entrega um desfecho que prova sua inteligência rápida, convencendo os outros através de uma lógica moderna e renovadora.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_mental_indeciso": {
-     conteudo:`<h3>Realização Intelectual Curiosa</h3>
-            <p>Sua entrega final é fruto de uma mente que explorou todas as possibilidades. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com uma riqueza de informações, mas pode sentir dúvida sobre qual das mil ideias é a melhor para concluir. Quando entrega, o resultado é uma síntese brilhante de tudo o que foi pesquisado.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_mental_neutro":{
-     conteudo: `<h3>Conclusão Lógica e Objetiva</h3>
-            <p>Você realiza seus objetivos através da clareza e da comunicação direta. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada em resolver o problema sem perda de tempo. Você encerra processos entregando resultados que removem burocracias e focam na inovação útil, transmitindo uma autoridade mental ágil.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "5_emocional_criativo": {
-     conteudo:`<h3>Realização Magnética e Inspiradora</h3>
-            <p>Você conclui suas metas injetando uma dose de entusiasmo e aventura no resultado. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é vibrante. Você realiza seus feitos motivado pelo prazer da novidade, entregando resultados que atraem o interesse das pessoas e trazem uma sensação de liberdade e progresso.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_emocional_indeciso": {
-     conteudo:`<h3>Entrega Sensível e Inquieta</h3>
-            <p>Sua capacidade de finalizar tarefas depende do estímulo emocional que o projeto oferece. Sendo <strong>Emocional e Indeciso</strong>, você realiza com brilho quando se sente desafiado. Sua conclusão busca sempre o reconhecimento pela sua versatilidade, entregando um resultado que reflete sua natureza adaptável e sensível.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "5_intuitivo_criativo": {
-     conteudo:`<h3>Realização Instintiva e Progressista</h3>
-            <p>Você entrega resultados que captam as tendências do futuro. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por lampejos de genialidade. Você conclui ciclos manifestando algo que quebra padrões antigos, unindo uma intuição veloz a uma vontade profunda de transformar a realidade.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_intuitivo_indeciso": {
-     conteudo:`<h3>Conclusão Perceptiva sob Movimento</h3>
-            <p>Você realiza seus objetivos sentindo as mudanças de direção antes que elas ocorram, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre o "timing" da entrega. Sua capacidade de realização amadurece quando você confia no seu instinto para soltar o projeto no momento exato da transformação.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "5_intuitivo_neutro": {
-     conteudo:`<h3>Entrega Silenciosa e Versátil</h3>
-            <p>Sua realização acontece através de uma presença que aceita o fluxo da vida sem resistência. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que se adapta a qualquer imprevisto. Sua capacidade de entrega é sutil; você finaliza o necessário com uma sabedoria que sabe que nada é estático.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
 
-  // --- NÚMERO 6 (Finalização com Harmonia, Responsabilidade e Equilíbrio) ---
-        
-        // FÍSICO (Entrega prática, tangível)
-        "6_fisico_criativo": {
-     conteudo:`<h3>Realização Harmoniosa e Funcional</h3>
-            <p>Sua capacidade de entrega final é marcada por um cuidado estético e prático. Sendo <strong>Física e Criativa</strong>, você conclui tarefas garantindo que o resultado seja não apenas útil, mas visualmente agradável. Você realiza seus objetivos entregando algo que traz conforto e beleza, unindo eficiência com um senso de serviço impecável.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_fisico_indeciso":{
-     conteudo: `<h3>Conclusão Prática sob Cuidado</h3>
-            <p>Você realiza suas tarefas com uma grande preocupação em agradar a todos, mas sua expressão <strong>Física e Indecisa</strong> faz com que você revise o acabamento diversas vezes por medo de ser criticado. Sua capacidade de realização é alta, mas você busca uma validação afetiva de que seu trabalho realmente ajudou o grupo.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_fisico_neutro": {
-     conteudo:`<h3>Entrega Estável e Responsável</h3>
-            <p>Sua realização é constante e focada no dever. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que as necessidades básicas de todos sejam atendidas. Sua capacidade de entrega é silenciosa e confiável: você finaliza o que começou com uma disciplina voltada para a preservação do equilíbrio e da ordem prática.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Entrega estratégica, intelectual)
-        "6_mental_criativo":{
-     conteudo: `<h3>Finalização Idealista e Conciliadora</h3>
-            <p>Você conclui seus projetos apresentando soluções que buscam a justiça e o entendimento. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em planos que beneficiam o coletivo. Você entrega um desfecho que prova sua inteligência para mediar conflitos e organizar ideias de forma ética e harmoniosa.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_mental_indeciso":{
-     conteudo: `<h3>Realização Intelectual Ponderada</h3>
-            <p>Sua entrega final é fruto de uma análise sobre o que é "certo" para todos. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com um cuidado extremo para não cometer injustiças. Sua conclusão busca a perfeição no trato interpessoal, entregando um resultado que foi pesado para manter a paz intelectual do projeto.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_mental_neutro": {
-     conteudo:`<h3>Conclusão Lógica e Protetora</h3>
-            <p>Você realiza seus objetivos através da aplicação de normas que protegem o grupo. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na clareza e na responsabilidade social. Você encerra processos entregando resultados objetivos que organizam a vida coletiva, transmitindo uma segurança baseada em princípios éticos.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "6_emocional_criativo": {
-     conteudo:`<h3>Realização Afetiva e Artística</h3>
-            <p>Você conclui suas metas colocando amor e sensibilidade no que faz. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é envolvente. Você realiza seus feitos motivado pela harmonia familiar ou social, entregando resultados que sensibilizam as pessoas e trazem um senso de união e beleza ao ambiente.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_emocional_indeciso": {
-     conteudo:`<h3>Entrega Sensível e Mediadora</h3>
-            <p>Sua capacidade de finalizar tarefas depende do clima de paz ao seu redor. Sendo <strong>Emocional e Indeciso</strong>, você realiza com excelência quando se sente útil e amado. Sua conclusão busca sempre o ajuste emocional, entregando um resultado que reflete sua natureza cuidadosa e sua vontade de ser um ponto de equilíbrio.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "6_intuitivo_criativo": {
-     conteudo:`<h3>Realização Intuitiva e Pacificadora</h3>
-            <p>Você entrega resultados que captam a necessidade de cura ou ajuste do ambiente. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma percepção ética profunda. Você conclui ciclos manifestando soluções que trazem uma harmonia espiritual que vai além da simples organização física.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_intuitivo_indeciso": {
-     conteudo:`<h3>Conclusão Perceptiva sob Sintonização</h3>
-            <p>Você realiza seus objetivos sentindo as tensões dos outros, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre como intervir sem causar conflito. Sua capacidade de realização amadurece quando você confia no seu instinto para entregar o ajuste final que o ambiente tanto precisa.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "6_intuitivo_neutro": {
-     conteudo:`<h3>Entrega Silenciosa e Estável</h3>
-            <p>Sua realização acontece através de uma presença que acalma e organiza o caos. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que transmite proteção. Sua capacidade de entrega é sutil; você finaliza o necessário com uma sabedoria que sabe que o equilíbrio é a maior conquista de qualquer ciclo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
+     "3-1": {
+            conteudo: `<h3>Início Expressivo e Conclusão Independente (3 → 1)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com entusiasmo, criatividade e facilidade de comunicação logo no primeiro contato. Sua atitude inicial costuma gerar ideias rápidas, abrir diálogo e movimentar o cenário com leveza.</p>
+            <p>Na hora de concluir, você assume autonomia, firmeza e decisão própria para fechar o ciclo no seu comando. Essa combinação funciona bem quando o impulso comunicativo do 3 abre caminhos e a objetividade do 1 garante o ponto final sem dispersar na reta de chegada.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "3-2": {
+            conteudo: `<h3>Início Criativo e Conclusão Ajustada (3 → 2)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas frentes com disposição, sociabilidade e facilidade para visualizar possibilidades diante dos obstáculos iniciais. O primeiro passo costuma ser dinâmico, expressivo e aberto à troca.</p>
+            <p>Para concluir o que inicia, você ganha escuta, tato e atenção aos detalhes que mantêm o equilíbrio entre as partes envolvidas. É um cruzamento que une entusiasmo na largada e cuidado no acabamento, pedindo apenas foco prático para não deixar o fechamento lento demais.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "3-3": {
+            conteudo: `<h3>Início Dinâmico e Conclusão Expressiva (3 → 3)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com agilidade mental, criatividade e forte poder de expressão desde o início. Sua inclinação inicial é de quem cria movimento, comunica ideias e busca saídas originais para destravar o começo.</p>
+            <p>Na conclusão, você mantém o mesmo ritmo comunicativo e criativo para apresentar e finalizar entregas com envolvimento. Esse padrão favorece projetos dinâmicos e visíveis, pedindo apenas disciplina para encerrar uma frente antes de abrir várias outras ao mesmo tempo.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "3-4": {
+            conteudo: `<h3>Início Inspirado e Conclusão Metódica (3 → 4)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara oportunidades com entusiasmo e abertura para experimentar ideias, reagindo aos obstáculos iniciais com criatividade e bom humor. Sua atitude de partida é leve, expressiva e voltada a explorar possibilidades.</p>
+            <p>Já na conclusão, sua capacidade se apoia em método, ordem, rotina e cuidado técnico para estruturar o resultado final. Essa combinação equilibra muito bem a criatividade do início com a disciplina do fechamento, transformando boas ideias em entregas concretas.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "3-5": {
+            conteudo: `<h3>Início Expansivo e Conclusão Adaptável (3 → 5)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com curiosidade, comunicação rápida e disposição para movimentar o ambiente logo na largada. Diante de obstáculos iniciais, tende a buscar alternativas criativas em vez de travar.</p>
+            <p>Ao concluir, você se apoia em agilidade prática, flexibilidade e facilidade para ajustar a rota diante de mudanças de última hora. Esse padrão traz muita velocidade entre começar e finalizar, pedindo apenas atenção para manter o foco na entrega até o encerramento.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "3-6": {
+            conteudo: `<h3>Início Comunicativo e Conclusão Comprometida (3 → 6)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas situações com espontaneidade, calor humano e facilidade para engajar pessoas desde o primeiro passo. Sua atitude inicial costuma transformar desafios em trocas produtivas.</p>
+            <p>Na hora de concluir, você assume responsabilidade, cuidado com o acabamento e compromisso sério com quem depende do resultado. Esse cruzamento une leveza na partida e firmeza no dever cumprido, pedindo apenas equilíbrio para não assumir responsabilidades além do combinado.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "3-7": {
+            conteudo: `<h3>Início Criativo e Conclusão Analítica (3 → 7)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com imaginação, expressão clara e abertura para testar caminhos novos no começo. Sua inclinação inicial traz entusiasmo e agilidade para romper a inércia.</p>
+            <p>Para concluir o projeto, você tende a aplicar critério, revisão minuciosa e profundidade técnica antes de considerar o trabalho encerrado. Essa combinação junta criatividade no início e rigor na conclusão, pedindo apenas cuidado para não travar a entrega final por excesso de revisão.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "3-8": {
+            conteudo: `<h3>Início Expressivo e Conclusão Estratégica (3 → 8)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara oportunidades com entusiasmo, poder de comunicação e facilidade para abrir portas logo no início. Diante de obstáculos iniciais, usa criatividade e articulação para ganhar tração.</p>
+            <p>Na conclusão, porém, sua atitude ganha firmeza executiva, organização de recursos e foco direto em resultado concreto. É um padrão forte quando a comunicação do 3 abre o caminho e a capacidade de gestão do 8 consolida o fechamento com peso prático.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "3-9": {
+            conteudo: `<h3>Início Entusiasmado e Conclusão Abrangente (3 → 9)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com expressão aberta, otimismo e facilidade para conectar ideias e pessoas logo na partida. Sua atitude inicial movimenta o ambiente com criatividade e leveza.</p>
+            <p>Ao concluir, você tende a fechar ciclos com visão ampla, maturidade e atenção ao alcance maior daquilo que realizou. Essa combinação une energia comunicativa para começar e amplitude para encerrar, pedindo apenas foco prático para concluir sem dispersar na reta final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
 
-  // --- NÚMERO 7 (Finalização com Perfeccionismo, Especialização e Sabedoria) ---
-        
-        // FÍSICO (Entrega prática, tangível)
-        "7_fisico_criativo": {
-     conteudo:`<h3>Realização Técnica e Refinada</h3>
-            <p>Sua capacidade de entrega final é marcada por um rigoroso padrão de qualidade. Sendo <strong>Física e Criativa</strong>, você conclui tarefas de forma meticulosa, buscando sempre o aprimoramento técnico. Você realiza seus objetivos entregando resultados que impressionam pela precisão e pela originalidade de quem estudou profundamente o processo manual.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_fisico_indeciso": {
-     conteudo:`<h3>Conclusão Prática sob Análise</h3>
-            <p>Você realiza suas tarefas com um perfeccionismo que beira a exaustão. Sua expressão <strong>Física e Indecisa</strong> faz com que você revise o resultado final inúmeras vezes, temendo que algo tenha passado despercebido. Sua capacidade de realização é de altíssimo nível, mas você só entrega quando sente que eliminou toda e qualquer falha física possível.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_fisico_neutro": {
-     conteudo:`<h3>Entrega Especializada e Discreta</h3>
-            <p>Sua realização é focada e solitária. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que a execução seja impecável e sem excessos. Sua capacidade de entrega é silenciosa: você finaliza o que começou com uma disciplina técnica admirável, entregando resultados que são referências de eficiência e organização prática.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Entrega estratégica, intelectual)
-        "7_mental_criativo": {
-     conteudo:`<h3>Finalização Analítica e Brilhante</h3>
-            <p>Você conclui seus projetos apresentando conclusões profundas e inovadoras. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em pesquisas ou estratégias que revelam verdades ocultas. Você entrega um desfecho que prova sua superioridade intelectual e sua capacidade de síntese sobre temas complexos.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_mental_indeciso": {
-     conteudo:`<h3>Realização Intelectual e Cética</h3>
-            <p>Sua entrega final é fruto de uma investigação mental exaustiva. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com uma profundidade que não aceita superficialidades. No entanto, pode demorar a concluir por estar testando cada hipótese, buscando uma segurança lógica que seja absolutamente inquestionável.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_mental_neutro": {
-     conteudo:`<h3>Conclusão Lógica e Especializada</h3>
-            <p>Você realiza seus objetivos através da clareza absoluta e do conhecimento de causa. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na precisão dos dados. Você encerra processos entregando resultados objetivos e técnicos, transmitindo uma autoridade intelectual que vem da especialização e do estudo constante.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "7_emocional_criativo": {
-     conteudo:`<h3>Realização Introspectiva e Significativa</h3>
-            <p>Você conclui suas metas buscando um sentido espiritual ou emocional profundo no resultado. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é reservada, mas poderosa. Você realiza seus feitos entregando resultados que possuem uma alma e uma mensagem, valorizando a qualidade do vínculo em vez da quantidade de aplausos.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_emocional_indeciso": {
-     conteudo:`<h3>Entrega Sensível e Reservada</h3>
-            <p>Sua capacidade de finalizar tarefas depende da sua conexão interna com o projeto. Sendo <strong>Emocional e Indeciso</strong>, você pode hesitar em mostrar sua realização por medo de ser incompreendido. Sua conclusão busca sempre a perfeição emocional, entregando um resultado que reflete sua natureza introspectiva e sua busca por verdade.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "7_intuitivo_criativo":{
-     conteudo: `<h3>Realização Visionária e Mística</h3>
-            <p>Você entrega resultados que captam o invisível. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma sabedoria que parece vir de outra fonte. Você conclui ciclos manifestando algo que inspira respeito e reflexão, unindo uma intuição aguçada a uma execução que beira o sagrado.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_intuitivo_indeciso": {
-     conteudo:`<h3>Conclusão Perceptiva sob Meditação</h3>
-            <p>Você realiza seus objetivos sentindo a profundidade das coisas, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre se a sua percepção é final. Sua capacidade de entrega amadurece quando você aceita o isolamento necessário para ouvir sua própria voz e concluir com a certeza de quem encontrou a sabedoria.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "7_intuitivo_neutro": {
-     conteudo:`<h3>Entrega Silenciosa e Plena</h3>
-            <p>Sua realização acontece através de uma presença que observa e entende tudo sem precisar falar. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que transmite profundidade. Sua capacidade de entrega é sutil; você finaliza o necessário com uma sabedoria instintiva que sabe exatamente onde termina o mistério e começa a realidade.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-  // --- NÚMERO 8 (Finalização com Poder, Autoridade e Eficiência Material) ---
-        
-        // FÍSICO (Entrega prática, tangível)
-        "8_fisico_criativo": {
-     conteudo:`<h3>Realização Executiva e Realizadora</h3>
-            <p>Sua capacidade de entrega final é marcada por uma força de construção impressionante. Sendo <strong>Física e Criativa</strong>, você conclui tarefas de forma a maximizar resultados e produtividade. Você realiza seus objetivos entregando produtos ou projetos robustos, unindo uma habilidade manual vigorosa com soluções inovadoras que geram valor imediato e tangível.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_fisico_indeciso": {
-     conteudo:`<h3>Conclusão Prática sob Avaliação de Risco</h3>
-            <p>Você realiza suas tarefas com um foco obstinado no sucesso, mas sua expressão <strong>Física e Indecisa</strong> faz com que você revise os custos e a durabilidade do resultado final exaustivamente. Sua capacidade de realização é potente, mas você só dá o trabalho por encerrado quando tem certeza absoluta de que o investimento de energia trará o retorno esperado.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_fisico_neutro": {
-     conteudo:`<h3>Entrega Administrativa e Sólida</h3>
-            <p>Sua realização é a definição de competência executiva. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que a estrutura física seja impecável e funcional. Sua capacidade de entrega é constante e autoritária: você finaliza o que começou com uma disciplina pragmática, entregando resultados que servem como padrão de qualidade e organização para os outros.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Entrega estratégica, intelectual)
-        "8_mental_criativo": {
-     conteudo:`<h3>Finalização Estratégica e Visionária</h3>
-            <p>Você conclui seus projetos apresentando planejamentos de grande impacto e visão de mercado. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em sistemas de gestão ou ideias de expansão brilhantes. Você entrega um desfecho que prova sua autoridade intelectual e sua capacidade de transformar conceitos em lucros reais.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_mental_indeciso": {
-     conteudo:`<h3>Realização Intelectual e Ponderada</h3>
-            <p>Sua entrega final é fruto de uma análise profunda sobre justiça material e eficiência. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com um cuidado extremo para que o resultado seja eticamente inquestionável e lucrativo. Sua conclusão é uma peça de lógica estratégica onde cada detalhe foi pesado para garantir o controle total da situação.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_mental_neutro": {
-     conteudo:`<h3>Conclusão Objetiva e Meritocrática</h3>
-            <p>Você realiza seus objetivos através da aplicação rigorosa da competência técnica. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada em metas e resultados claros. Você encerra processos entregando dados precisos e diretrizes diretas, transmitindo uma autoridade mental que foca no que é produtivo e essencial para o sucesso.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "8_emocional_criativo": {
-     conteudo:`<h3>Realização Magnética e Ambiciosa</h3>
-            <p>Você conclui suas metas injetando uma dose de poder e autoconfiança no ambiente. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é apaixonada e motivadora. Você realiza seus feitos motivado pelo prazer da conquista, entregando resultados que elevam o padrão de todos ao redor e celebram o sucesso com intensidade emocional.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_emocional_indeciso": {
-     conteudo:`<h3>Entrega Sensível sob Comando</h3>
-            <p>Sua capacidade de finalizar tarefas está ligada ao reconhecimento do seu valor e da sua autoridade. Sendo <strong>Emocional e Indeciso</strong>, você realiza com excelência se sentir que está no controle. Sua conclusão busca sempre a segurança material e emocional, entregando um resultado que reflete sua força de caráter e sua busca por estabilidade.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "8_intuitivo_criativo": {
-     conteudo:`<h3>Realização Visionária e Justiceira</h3>
-            <p>Você entrega resultados que captam o fluxo da abundância e da justiça. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma percepção aguçada das leis de causa e efeito. Você conclui ciclos manifestando algo que traz equilíbrio material e propósito, unindo uma intuição estratégica a uma execução imponente.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_intuitivo_indeciso": {
-     conteudo:`<h3>Conclusão Perceptiva sob Prudência</h3>
-            <p>Você realiza seus objetivos sentindo o peso das responsabilidades através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre o momento exato de exercer seu poder total. Sua capacidade de entrega amadurece quando você aceita que sua percepção espiritual é o que dá autoridade real às suas conquistas materiais.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "8_intuitivo_neutro": {
-     conteudo:`<h3>Entrega Silenciosa e Respeitosa</h3>
-            <p>Sua realização acontece através de uma presença que impõe respeito sem precisar de alarde. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que transmite segurança e justiça. Sua capacidade de entrega é sutil; você finaliza o necessário com uma sabedoria instintiva que garante que o sucesso seja sustentável e ético.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
+     "4-1": {
+            conteudo: `<h3>Início Estruturado e Conclusão Independente (4 → 1)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com planejamento, cautela prática e necessidade de entender as bases antes de dar o primeiro passo. Sua atitude inicial busca segurança, método e clareza do terreno antes de avançar.</p>
+            <p>Na hora de concluir, porém, você assume decisão própria, autonomia e firmeza para fechar o ciclo no seu comando. Essa combinação funciona muito bem quando a organização inicial do 4 dá sustentação para a objetividade do 1 encerrar o projeto sem hesitação.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "4-2": {
+            conteudo: `<h3>Início Metódico e Conclusão Ajustada (4 → 2)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas oportunidades com seriedade, análise das etapas e atenção aos detalhes práticos logo na largada. Diante de obstáculos iniciais, tende a responder com organização, paciência e passo firme.</p>
+            <p>Para concluir o que inicia, você soma escuta, tato e cuidado com o alinhamento entre pessoas e detalhes envolvidos. É um cruzamento que traz solidez do começo ao fim, pedindo apenas flexibilidade para não travar a partida ou o fechamento quando algo foge do roteiro previsto.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "4-3": {
+            conteudo: `<h3>Início Planejado e Conclusão Expressiva (4 → 3)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com critério e organização, preferindo estruturar o plano antes de se lançar. Sua atitude inicial diante de obstáculos é metódica, buscando estabilidade e regras claras para avançar.</p>
+            <p>Já na conclusão, você ganha desenvoltura, comunicação clara e criatividade para apresentar e finalizar a entrega com leveza. Essa combinação equilibra uma base bem montada no início com um encerramento mais dinâmico e comunicativo na reta final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "4-4": {
+            conteudo: `<h3>Início Disciplinado e Conclusão Metódica (4 → 4)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas frentes com ordem, senso prático e foco na construção passo a passo desde o primeiro momento. Sua inclinação inicial diante de obstáculos é manter constância, rotina e trabalho bem estruturado.</p>
+            <p>Na conclusão, você mantém o mesmo rigor técnico, confiabilidade e atenção ao acabamento para entregar resultados sólidos e duráveis. Esse padrão garante alta consistência entre começar e terminar, pedindo apenas margem de adaptação para não engessar processos diante de imprevistos.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "4-5": {
+            conteudo: `<h3>Início Cauteloso e Conclusão Adaptável (4 → 5)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades avaliando riscos, prazos e estrutura antes de dar o primeiro passo. Sua atitude inicial diante de obstáculos é prudente, buscando firmar o chão antes de acelerar o movimento.</p>
+            <p>Ao concluir, porém, você demonstra agilidade prática, flexibilidade e rapidez para ajustar o plano e encerrar etapas mesmo sob mudança de cenário. É uma combinação útil quando a base firme do 4 evita improvisos no começo e a adaptabilidade do 5 destrava o fechamento.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "4-6": {
+            conteudo: `<h3>Início Organizado e Conclusão Comprometida (4 → 6)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas oportunidades com método, seriedade e atenção às responsabilidades envolvidas logo na partida. Diante de obstáculos iniciais, reage com disciplina e senso de ordem para manter tudo sob controle.</p>
+            <p>Na hora de concluir, você se apoia em comprometimento, zelo pelo detalhe e cuidado com quem depende da entrega final. Esse padrão une estrutura no início e responsabilidade na conclusão, pedindo apenas atenção para não carregar exigências excessivas ao fechar cada etapa.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "4-7": {
+            conteudo: `<h3>Início Prático e Conclusão Analítica (4 → 7)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com planejamento, critério e foco na viabilidade concreta antes de agir. Sua inclinação inicial diante de obstáculos é observar a estrutura e organizar os passos com rigor.</p>
+            <p>Para concluir o projeto, você tende a aprofundar a revisão, validar informações e exigir precisão técnica antes de encerrar. Essa combinação entrega alto padrão de qualidade do início ao fim, pedindo apenas cuidado para não demorar demais tanto para começar quanto para dar o ponto final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "4-8": {
+            conteudo: `<h3>Início Estruturado e Conclusão Estratégica (4 → 8)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas situações com organização, pé no chão e disposição para construir bases firmes desde o primeiro passo. Diante de obstáculos iniciais, responde com método, resistência e foco prático.</p>
+            <p>Na conclusão, sua capacidade se expande para gestão de recursos, visão de resultado e firmeza executiva para fechar o ciclo em nível mais alto. É uma combinação muito consistente para transformar planejamento inicial em realização concreta e bem conduzida.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "4-9": {
+            conteudo: `<h3>Início Metódico e Conclusão Abrangente (4 → 9)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com ordem, cautela e necessidade de entender os passos práticos logo na largada. Sua atitude inicial privilegia estabilidade e construção gradual.</p>
+            <p>Ao concluir, você tende a enxergar o conjunto maior, fechando ciclos com visão ampla, maturidade e atenção ao impacto coletivo do que foi realizado. Essa combinação une disciplina na partida e amplitude no encerramento, pedindo apenas abertura para soltar o controle rígido na reta final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
 
-  // --- NÚMERO 9 (Finalização com Humanitarismo, Sabedoria e Desprendimento) ---
-        
-        // FÍSICO (Entrega prática, tangível)
-        "9_fisico_criativo": {
-     conteudo:`<h3>Realização Generosa e Transformadora</h3>
-            <p>Sua capacidade de entrega final é marcada por uma ação que visa o bem comum. Sendo <strong>Física e Criativa</strong>, você conclui tarefas de forma a beneficiar o maior número possível de pessoas. Você realiza seus objetivos entregando soluções práticas e originais que resolvem problemas reais, unindo uma execução vigorosa a um profundo senso de utilidade social.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_fisico_indeciso": {
-     conteudo:`<h3>Conclusão Prática sob Reflexão Ética</h3>
-            <p>Você realiza suas tarefas com um desejo genuíno de ajudar, mas sua expressão <strong>Física e Indecisa</strong> faz com que você questione se sua entrega é suficiente para causar o impacto desejado. Sua capacidade de realização é elevada, mas você só finaliza o trabalho quando sente que sua ação física está em total harmonia com seus valores humanitários.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_fisico_neutro": {
-     conteudo:`<h3>Entrega Constante e Desinteressada</h3>
-            <p>Sua realização é a definição de serviço altruísta. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que o resultado seja acessível e benéfico para todos. Sua capacidade de entrega é silenciosa e persistente: você finaliza o que começou com uma disciplina exemplar, focando na integridade e na durabilidade do que foi construído para o coletivo.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // MENTAL (Entrega estratégica, intelectual)
-        "9_mental_criativo": {
-     conteudo:`<h3>Finalização Sábia e Idealista</h3>
-            <p>Você conclui seus projetos apresentando conclusões que promovem a evolução intelectual. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em ideias universais e conceitos inspiradores. Você entrega um desfecho que prova sua inteligência compreensiva, oferecendo visões que unem as pessoas e trazem clareza sobre o propósito do trabalho.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_mental_indeciso": {
-     conteudo:`<h3>Realização Intelectual Abrangente</h3>
-            <p>Sua entrega final é fruto de uma análise sobre o impacto global das suas ideias. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com um cuidado extremo para não ser excludente ou injusto. Sua conclusão é uma peça de lógica tolerante e profunda, onde cada detalhe foi pensado para respeitar a diversidade e a verdade universal.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_mental_neutro": {
-     conteudo:`<h3>Conclusão Lógica e Esclarecedora</h3>
-            <p>Você realiza seus objetivos através da comunicação de verdades essenciais. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na objetividade e na justiça. Você encerra processos entregando resultados que educam e simplificam a vida alheia, transmitindo uma autoridade mental que é, acima de tudo, acolhedora e imparcial.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "9_emocional_criativo": {
-     conteudo:`<h3>Realização Inspiradora e Carismática</h3>
-            <p>Você conclui suas metas injetando uma dose de amor universal e entusiasmo no resultado. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é magnética. Você realiza seus feitos motivado pelo impacto emocional positivo que pode causar, entregando resultados que sensibilizam e motivam as pessoas a serem melhores.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_emocional_indeciso": {
-     conteudo:`<h3>Entrega Sensível e Compassiva</h3>
-            <p>Sua capacidade de finalizar tarefas está ligada à sintonia emocional que você estabelece com o projeto. Sendo <strong>Emocional e Indeciso</strong>, você realiza com brilho quando sente que seu trabalho é uma forma de doação. Sua conclusão busca sempre o acolhimento, entregando um resultado que reflete sua natureza sensível e seu desejo de harmonia global.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-        // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "9_intuitivo_criativo": {
-     conteudo:`<h3>Realização Visionária e Espiritual</h3>
-            <p>Você entrega resultados que captam o encerramento de um ciclo com sabedoria. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma conexão espiritual profunda. Você conclui ciclos manifestando algo que serve como um guia para os outros, unindo uma intuição profética a uma entrega cheia de significado e propósito.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_intuitivo_indeciso": {
-     conteudo:`<h3>Conclusão Perceptiva sob Entrega</h3>
-            <p>Você realiza seus objetivos sentindo o "fim" das situações antes que elas ocorram, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre como soltar o projeto. Sua capacidade de entrega amadurece quando você aceita que sua percepção interna já completou a obra, permitindo que você finalize com desprendimento e paz.</p>`,
-         videoID: "F8bg1CTQ9HI"
-    },
-        "9_intuitivo_neutro": {
-     conteudo:`<h3>Entrega Silenciosa e Plena</h3>
-            <p>Sua realização acontece através de uma presença que aceita a finalidade de todas as coisas. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que transmite tolerância e sabedoria. Sua capacidade de entrega é sutil; você finaliza o necessário com a certeza de quem cumpriu sua missão espiritual com integridade.</p>`,
-         
-  
-  videoID: "F8bg1CTQ9HI"
-    },
- 
- }
+
+     "5-1": {
+            conteudo: `<h3>Início Ágil e Conclusão Independente (5 → 1)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com rapidez, curiosidade e disposição para testar caminhos sem ficar parada esperando o cenário ideal. Sua atitude inicial costuma ser dinâmica, aberta a mudanças e atenta ao que está em movimento.</p>
+            <p>Na hora de concluir, porém, você assume decisão própria, autonomia e firmeza para fechar o ciclo no seu comando. Essa combinação funciona bem quando o movimento rápido do 5 abre espaço e a objetividade do 1 garante o encerramento sem perder o rumo.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "5-2": {
+            conteudo: `<h3>Início Flexível e Conclusão Ajustada (5 → 2)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas frentes com agilidade, adaptabilidade e facilidade para contornar obstáculos iniciais sem travar. O primeiro passo costuma ser versátil e atento às mudanças do ambiente.</p>
+            <p>Para concluir o que inicia, você soma escuta, tato e cuidado com o alinhamento entre pessoas e detalhes finais. É um cruzamento que junta mobilidade na partida e ajuste fino no fechamento, pedindo apenas firmeza para não adiar decisões por excesso de acomodação.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "5-3": {
+            conteudo: `<h3>Início Dinâmico e Conclusão Expressiva (5 → 3)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com energia de movimento, curiosidade e facilidade para experimentar novas rotas logo no começo. Sua atitude inicial rejeita a estagnação e busca resposta rápida.</p>
+            <p>Na conclusão, você mantém leveza, expressão clara e criatividade para apresentar e finalizar entregas com envolvimento. Esse padrão dá muita velocidade e fluidez ao processo, pedindo apenas foco suficiente para encerrar o ciclo antes que surja a próxima novidade.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "5-4": {
+            conteudo: `<h3>Início Versátil e Conclusão Metódica (5 → 4)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas situações com agilidade para explorar alternativas e enfrentar obstáculos iniciais com jogo de cintura. Sua inclinação de partida é dinâmica, prática e adaptável.</p>
+            <p>Já na conclusão, sua capacidade se apoia em método, ordem, disciplina e cuidado com os detalhes que sustentam o resultado. Essa combinação equilibra muito bem a abertura rápida do início com a consistência do fechamento, ajudando você a transformar movimento em entrega sólida.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "5-5": {
+            conteudo: `<h3>Início Adaptável e Conclusão Flexível (5 → 5)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com rapidez de reação, curiosidade e facilidade para mudar de estratégia quando o contexto pede. Sua atitude inicial é movida a experiência prática e ajuste em tempo real.</p>
+            <p>Ao concluir, você mantém a mesma flexibilidade e agilidade para resolver pendências e fechar etapas mesmo sob imprevistos. Esse padrão favorece fechamentos rápidos e versáteis, pedindo apenas constância para não trocar o alvo antes de concluir o que começou.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "5-6": {
+            conteudo: `<h3>Início Ágil e Conclusão Comprometida (5 → 6)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara oportunidades com dinamismo, abertura para o novo e facilidade para se movimentar diante dos obstáculos iniciais. O primeiro passo costuma ser rápido e pouco preso a fórmulas rígidas.</p>
+            <p>Na hora de concluir, você assume responsabilidade, zelo pelo acabamento e compromisso sério com o resultado e com quem depende dele. Esse cruzamento une mobilidade na partida e seriedade no fechamento, pedindo apenas cuidado para não assumir peso além da conta na reta final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "5-7": {
+            conteudo: `<h3>Início Explorador e Conclusão Analítica (5 → 7)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda novas frentes com curiosidade, rapidez para testar hipóteses e disposição para encarar obstáculos iniciais sem rigidez. Sua atitude de partida é aberta e investigativa.</p>
+            <p>Para concluir o projeto, você tende a aplicar critério, revisão minuciosa e profundidade técnica antes de dar o trabalho por encerrado. Essa combinação junta dinamismo no início e rigor na conclusão, pedindo apenas equilíbrio para não perder o ritmo prático na hora de fechar.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "5-8": {
+            conteudo: `<h3>Início Rápido e Conclusão Estratégica (5 → 8)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra nas oportunidades com agilidade, leitura rápida do cenário e facilidade para reagir aos obstáculos logo na largada. Sua inclinação inicial é de quem não espera o tempo passar para se mexer.</p>
+            <p>Na conclusão, porém, sua capacidade ganha foco em resultado concreto, organização de recursos e firmeza executiva para fechar o ciclo. É um padrão forte quando a rapidez do 5 abre espaço e a capacidade de realização do 8 consolida a entrega.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "5-9": {
+            conteudo: `<h3>Início Dinâmico e Conclusão Abrangente (5 → 9)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com versatilidade, abertura para novas experiências e rapidez para dar o primeiro passo. Sua atitude inicial costuma ser ágil e pouco engessada.</p>
+            <p>Ao concluir, você tende a enxergar o panorama maior, encerrando ciclos com visão madura e atenção ao impacto mais amplo do que realizou. Essa combinação une mobilidade para começar e amplitude para fechar, pedindo apenas foco prático para concluir sem dispersar no fim.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+
+     "6-1": {
+            conteudo: `<h3>Início Cuidadoso e Conclusão Independente (6 → 1)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com senso de responsabilidade, atenção ao impacto nas pessoas e cuidado com o que está em jogo logo no primeiro passo. Sua atitude inicial costuma avaliar o dever e o vínculo antes de avançar.</p>
+            <p>Na hora de concluir, porém, você assume autonomia, firmeza e decisão própria para fechar o ciclo no seu comando. Essa combinação funciona bem quando o cuidado inicial do 6 organiza o terreno e a objetividade do 1 encerra a entrega com decisão.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "6-2": {
+            conteudo: `<h3>Início Responsável e Conclusão Ajustada (6 → 2)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas frentes com zelo, senso de compromisso e atenção às relações envolvidas desde a largada. Diante de obstáculos iniciais, tende a buscar soluções que preservem a ordem e o respeito mútuo.</p>
+            <p>Para concluir o que inicia, você soma escuta, sensibilidade e sintonia fina nos ajustes finais com quem participa do processo. É um cruzamento cuidadoso e harmonioso, pedindo apenas firmeza para não adiar a conclusão por excesso de cautela ou receio de atrito.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "6-3": {
+            conteudo: `<h3>Início Comprometido e Conclusão Expressiva (6 → 3)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com senso de dever, dedicação e vontade de fazer bem feito desde o início. Sua inclinação inicial carrega seriedade e atenção ao que importa.</p>
+            <p>Já na conclusão, você ganha expressão clara, criatividade e agilidade para apresentar e encerrar o resultado de forma envolvente. Essa combinação equilibra responsabilidade na partida e leveza comunicativa no fechamento, ajudando você a concluir sem rigidez excessiva.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "6-4": {
+            conteudo: `<h3>Início Zeloso e Conclusão Metódica (6 → 4)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas situações com senso de responsabilidade, atenção aos detalhes e postura séria diante dos primeiros obstáculos. Sua atitude inicial busca estabilidade e compromisso claro.</p>
+            <p>Na conclusão, sua capacidade se apoia em método, ordem prática, disciplina e consistência para entregar algo bem acabado e confiável. Esse padrão garante solidez do começo ao fim, pedindo apenas margem de flexibilidade para não engessar o processo por excesso de exigência.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "6-5": {
+            conteudo: `<h3>Início Responsável e Conclusão Adaptável (6 → 5)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com senso de compromisso e cuidado com as consequências logo no primeiro passo. Diante de obstáculos iniciais, procura manter a responsabilidade mesmo quando o cenário exige movimento.</p>
+            <p>Ao concluir, porém, você demonstra agilidade prática, flexibilidade e facilidade para ajustar o plano e encerrar etapas diante de imprevistos. Essa combinação une compromisso na partida e adaptabilidade no fechamento, pedindo apenas constância para não deixar pontas soltas.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "6-6": {
+            conteudo: `<h3>Início Dedicado e Conclusão Comprometida (6 → 6)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara oportunidades e obstáculos com forte senso de dever, cuidado com o entorno e disposição para assumir o que lhe cabe desde o começo. Sua atitude inicial prioriza responsabilidade e coerência.</p>
+            <p>Na hora de concluir, você mantém o mesmo zelo pelo acabamento, fidelidade ao combinado e atenção ao bem-estar ligado ao resultado. Esse padrão favorece entregas sérias e consistentes, pedindo apenas atenção para não carregar sozinha cobranças além do seu limite.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "6-7": {
+            conteudo: `<h3>Início Cuidadoso e Conclusão Analítica (6 → 7)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda novas frentes com senso de responsabilidade e atenção ao que precisa ser protegido ou bem encaminhado na largada. Sua inclinação inicial diante de obstáculos é séria e ponderada.</p>
+            <p>Para concluir o projeto, você tende a aplicar critério, revisão minuciosa e profundidade técnica antes de dar o ciclo por encerrado. Essa combinação junta cuidado no início e rigor na conclusão, pedindo apenas equilíbrio para não prolongar demais o fechamento por excesso de análise.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "6-8": {
+            conteudo: `<h3>Início Comprometido e Conclusão Estratégica (6 → 8)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra nas oportunidades com senso de dever, postura firme e disposição para responder aos obstáculos iniciais com seriedade. O primeiro passo costuma ser consciente e orientado ao compromisso.</p>
+            <p>Na conclusão, sua capacidade se fortalece na organização prática, na visão de resultado e na firmeza executiva para fechar o ciclo com solidez. É um padrão forte para unir responsabilidade inicial e realização concreta, pedindo apenas medida na cobrança sobre si mesma e sobre os outros.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "6-9": {
+            conteudo: `<h3>Início Zeloso e Conclusão Abrangente (6 → 9)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com senso de cuidado, atenção ao entorno e vontade de agir com responsabilidade desde a partida. Sua atitude inicial busca construir com seriedade.</p>
+            <p>Ao concluir, você tende a enxergar o panorama maior, encerrando ciclos com visão madura, senso de conjunto e atenção ao impacto mais amplo do que realizou. Essa combinação une cuidado na partida e amplitude no fechamento, pedindo apenas clareza de limites para não absorver peso excessivo.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+
+
+     "7-1": {
+            conteudo: `<h3>Início Analítico e Conclusão Independente (7 → 1)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com observação, critério e necessidade de entender a lógica por trás do cenário antes de dar o primeiro passo. Sua atitude inicial costuma ser reservada e investigativa, evitando entrar às cegas.</p>
+            <p>Na hora de concluir, porém, você assume decisão própria, autonomia e firmeza para fechar o ciclo no seu comando. Essa combinação funciona bem quando a análise inicial do 7 dá clareza de terreno e a objetividade do 1 encerra o projeto sem hesitação.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "7-2": {
+            conteudo: `<h3>Início Criterioso e Conclusão Ajustada (7 → 2)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas frentes com postura cautelosa, análise cuidadosa e leitura atenta dos obstáculos iniciais. O primeiro passo costuma ser reflexivo e seletivo.</p>
+            <p>Para concluir o que inicia, você soma escuta, sensibilidade e ajuste fino com pessoas e detalhes envolvidos na reta final. É um cruzamento que junta rigor na partida e sintonia no fechamento, pedindo apenas firmeza para não adiar o encerramento por excesso de dúvida.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "7-3": {
+            conteudo: `<h3>Início Investigativo e Conclusão Expressiva (7 → 3)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com reflexão, curiosidade técnica e vontade de compreender os detalhes antes de acelerar. Sua atitude inicial tende a ser mais observadora e profunda.</p>
+            <p>Já na conclusão, você ganha desenvoltura, comunicação clara e criatividade para apresentar e finalizar a entrega com leveza. Essa combinação equilibra profundidade na análise inicial com fluidez expressiva na hora de fechar e comunicar o resultado.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "7-4": {
+            conteudo: `<h3>Início Reflexivo e Conclusão Metódica (7 → 4)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas situações com critério, avaliação técnica e cautela diante dos primeiros obstáculos. Sua inclinação inicial busca coerência e consistência antes de avançar.</p>
+            <p>Na conclusão, sua capacidade se apoia em método, ordem prática, disciplina e cuidado com os detalhes que sustentam o resultado. Esse padrão garante alto rigor do começo ao fim, pedindo apenas margem de flexibilidade para não travar a partida ou a finalização por excesso de perfeccionismo.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "7-5": {
+            conteudo: `<h3>Início Analítico e Conclusão Adaptável (7 → 5)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades avaliando premissas, falhas possíveis e lógica envolvida antes de se comprometer no primeiro passo. Sua atitude inicial diante de obstáculos é criteriosa e pouco impulsiva.</p>
+            <p>Ao concluir, porém, você demonstra agilidade prática, flexibilidade e rapidez para ajustar o plano e encerrar etapas quando o cenário muda. Essa combinação une critério na partida e adaptabilidade no fechamento, pedindo apenas foco suficiente para não mudar de rumo antes de terminar.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "7-6": {
+            conteudo: `<h3>Início Criterioso e Conclusão Comprometida (7 → 6)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas frentes com observação, rigor e análise cuidadosa dos obstáculos antes de dar o primeiro passo. Sua atitude inicial costuma ser reservada e atenta à coerência do que está sendo proposto.</p>
+            <p>Na hora de concluir, você assume responsabilidade, zelo pelo acabamento e compromisso sério com o resultado e com quem depende dele. Esse padrão junta profundidade analítica no início e seriedade na conclusão, pedindo apenas atenção para não cobrar além do necessário na reta final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "7-7": {
+            conteudo: `<h3>Início Investigativo e Conclusão Analítica (7 → 7)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com análise profunda, investigação cuidadosa e busca de consistência lógica desde a largada. Sua inclinação inicial prefere entender a fundo antes de agir.</p>
+            <p>Na conclusão, você mantém o mesmo rigor técnico, revisão minuciosa e exigência de precisão antes de dar o ciclo por encerrado. Esse padrão favorece entregas bem fundamentadas e criteriosas, pedindo apenas cuidado para não alongar demais o início ou o fechamento por excesso de análise.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "7-8": {
+            conteudo: `<h3>Início Reflexivo e Conclusão Estratégica (7 → 8)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra nas oportunidades com observação, critério e leitura cuidadosa dos riscos e obstáculos iniciais. Sua atitude de partida é mais ponderada e analítica.</p>
+            <p>Na conclusão, porém, sua capacidade se fortalece na organização prática, na visão de resultado e na firmeza executiva para fechar o ciclo. É um padrão forte quando a análise inicial do 7 aponta o caminho certo e a capacidade de realização do 8 consolida a entrega.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "7-9": {
+            conteudo: `<h3>Início Analítico e Conclusão Abrangente (7 → 9)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com reflexão, critério e vontade de enxergar a estrutura por trás do movimento logo no começo. Sua atitude inicial tende a ser mais reservada e criteriosa.</p>
+            <p>Ao concluir, você amplia o foco para o quadro geral, encerrando ciclos com visão madura, senso de conjunto e atenção ao alcance maior do que realizou. Essa combinação junta profundidade na partida e amplitude no fechamento, pedindo apenas clareza de limites para não se isolar na reta final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+
+
+     "8-1": {
+            conteudo: `<h3>Início Objetivo e Conclusão Independente (8 → 1)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com foco prático, senso de proporção e vontade de medir o retorno real logo no primeiro passo. Sua atitude inicial costuma ser firme, direta e atenta ao que gera avanço concreto.</p>
+            <p>Na hora de concluir, você mantém a autonomia, a decisão própria e a firmeza para fechar o ciclo no seu comando. Essa combinação dá muita objetividade do começo ao fim, pedindo apenas atenção para não endurecer o trato nem fechar portas a boas trocas na finalização.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "8-2": {
+            conteudo: `<h3>Início Estratégico e Conclusão Ajustada (8 → 2)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas frentes com postura firme, visão de resultado e disposição para enfrentar obstáculos iniciais de cabeça erguida. O primeiro passo costuma ser voltado a estrutura e realização.</p>
+            <p>Para concluir o que inicia, porém, você ganha escuta, tato e cuidado com o alinhamento entre pessoas e detalhes finais. É um cruzamento que equilibra firmeza na partida e sintonia no fechamento, ajudando você a encerrar acordos com mais equilíbrio e menos atrito.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "8-3": {
+            conteudo: `<h3>Início Firme e Conclusão Expressiva (8 → 3)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com senso de comando, clareza de meta e atitude prática desde a largada. Sua inclinação inicial busca ganhar terreno com firmeza e eficiência.</p>
+            <p>Já na conclusão, você soma expressão clara, criatividade e desenvoltura para apresentar e encerrar o resultado de forma envolvente. Essa combinação une peso estratégico na partida e leveza comunicativa no fechamento, pedindo apenas foco para não dispersar antes do ponto final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "8-4": {
+            conteudo: `<h3>Início Resoluto e Conclusão Metódica (8 → 4)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas situações com foco em resultado, organização e firmeza diante dos obstáculos iniciais. Sua atitude de partida é objetiva e orientada à realização.</p>
+            <p>Na conclusão, sua capacidade se apoia em método, ordem prática, disciplina e atenção rigorosa aos detalhes que sustentam o trabalho. Esse padrão garante consistência e solidez do início ao fim, pedindo apenas margem de flexibilidade para não engessar processos por excesso de controle.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "8-5": {
+            conteudo: `<h3>Início Direto e Conclusão Adaptável (8 → 5)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com firmeza, senso de proporção e disposição para encarar obstáculos iniciais sem rodeios. O primeiro passo costuma ser objetivo e focado em ação.</p>
+            <p>Ao concluir, porém, você demonstra agilidade prática, flexibilidade e rapidez para ajustar o plano e encerrar etapas quando o cenário muda. Essa combinação junta firmeza na partida e adaptabilidade no fechamento, pedindo apenas constância para não mudar o alvo antes de concluir.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "8-6": {
+            conteudo: `<h3>Início Estratégico e Conclusão Comprometida (8 → 6)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara oportunidades e obstáculos com postura firme, visão prática e senso de responsabilidade logo na largada. Sua atitude inicial busca estruturar o movimento com clareza.</p>
+            <p>Na hora de concluir, você reforça o compromisso, o zelo pelo acabamento e a atenção às pessoas ou demandas ligadas ao resultado. Esse padrão une capacidade executiva no início e responsabilidade na conclusão, pedindo apenas cuidado para não assumir cobranças além do necessário.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "8-7": {
+            conteudo: `<h3>Início Firme e Conclusão Analítica (8 → 7)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda novas frentes com foco em resultado, clareza de posição e disposição para enfrentar obstáculos iniciais com firmeza. Sua inclinação de partida é objetiva e determinada.</p>
+            <p>Para concluir o projeto, você tende a aplicar critério, revisão minuciosa e análise técnica antes de dar a entrega por encerrada. Essa combinação junta firmeza na partida e rigor na conclusão, pedindo apenas equilíbrio para não alongar demais a verificação na reta final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "8-8": {
+            conteudo: `<h3>Início Executivo e Conclusão Estratégica (8 → 8)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra nas oportunidades e obstáculos com senso de comando, organização de recursos e foco direto na realização concreta desde o primeiro passo. Sua atitude inicial é firme e orientada a metas.</p>
+            <p>Na conclusão, você mantém a mesma capacidade estratégica, visão de conjunto e firmeza para fechar o ciclo com solidez. Esse padrão favorece grandes entregas e condução prática, pedindo apenas medida na pressão sobre si mesma e sobre os outros para não transformar firmeza em rigidez.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "8-9": {
+            conteudo: `<h3>Início Determinado e Conclusão Abrangente (8 → 9)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com objetividade, senso de proporção e atitude firme ao dar o primeiro passo. Sua inclinação inicial busca movimento concreto e clareza de rumo.</p>
+            <p>Ao concluir, você amplia o foco para o quadro maior, encerrando ciclos com visão madura, senso de conjunto e atenção ao impacto mais amplo do que realizou. Essa combinação une firmeza para começar e amplitude para fechar, pedindo apenas clareza de limites para não absorver peso excessivo no fim.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+
+     "9-1": {
+            conteudo: `<h3>Início Abrangente e Conclusão Independente (9 → 1)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com visão ampla, sensibilidade ao contexto maior e abertura para enxergar além do detalhe imediato logo no primeiro passo. Sua atitude inicial costuma considerar o quadro geral antes de tomar impulso.</p>
+            <p>Na hora de concluir, porém, você assume decisão própria, autonomia e firmeza para fechar o ciclo no seu comando. Essa combinação funciona bem quando a visão ampla do 9 orienta a partida e a objetividade do 1 garante o encerramento sem dispersar na reta final.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "9-2": {
+            conteudo: `<h3>Início Amplo e Conclusão Ajustada (9 → 2)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas frentes com leitura abrangente, sensibilidade ao entorno e disposição para compreender o alcance da situação desde a largada. Diante de obstáculos iniciais, tende a buscar equilíbrio e entendimento.</p>
+            <p>Para concluir o que inicia, você soma escuta, tato e sintonia fina com pessoas e detalhes envolvidos no fechamento. É um cruzamento cuidadoso e receptivo, pedindo apenas firmeza para não adiar a conclusão por excesso de sensibilidade ou busca de consenso absoluto.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "9-3": {
+            conteudo: `<h3>Início Inspirado e Conclusão Expressiva (9 → 3)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com visão ampla, expressividade e facilidade para conectar ideias e sentidos logo no início. Sua inclinação inicial traz abertura e fôlego para começar.</p>
+            <p>Já na conclusão, você ganha desenvoltura, comunicação clara e criatividade para apresentar e encerrar o resultado de forma envolvente. Essa combinação favorece fechamentos expressivos, pedindo apenas foco prático para concluir sem deixar pontas soltas no caminho.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "9-4": {
+            conteudo: `<h3>Início Abrangente e Conclusão Metódica (9 → 4)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas situações enxergando o panorama maior e o impacto envolvido logo no primeiro passo. Sua atitude inicial costuma ter visão larga diante dos obstáculos.</p>
+            <p>Na conclusão, sua capacidade se apoia em método, ordem prática, disciplina e cuidado com os detalhes que sustentam o resultado. Esse padrão ajuda a transformar visão ampla em entrega concreta e bem estruturada, pedindo apenas flexibilidade para não engessar o processo.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "9-5": {
+            conteudo: `<h3>Início Aberto e Conclusão Adaptável (9 → 5)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com visão ampla, abertura para experiências diversas e disposição para encarar obstáculos iniciais sem rigidez. Sua atitude de partida é receptiva ao movimento.</p>
+            <p>Ao concluir, você demonstra agilidade prática, flexibilidade e rapidez para ajustar o plano e encerrar etapas diante de mudanças. Essa combinação une amplitude na partida e adaptabilidade no fechamento, pedindo apenas constância para não trocar o foco antes de finalizar.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "9-6": {
+            conteudo: `<h3>Início Sensível e Conclusão Comprometida (9 → 6)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara oportunidades e obstáculos com visão ampla, senso de humanidade e atenção ao impacto que a iniciativa gera ao redor logo no começo. Sua inclinação inicial carrega cuidado e amplitude.</p>
+            <p>Na hora de concluir, você reforça o compromisso, o zelo pelo acabamento e a responsabilidade séria com quem depende do resultado. Esse padrão favorece entregas conscientes e dedicadas, pedindo apenas clareza de limites para não absorver peso além do seu alcance.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "9-7": {
+            conteudo: `<h3>Início Reflexivo e Conclusão Analítica (9 → 7)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda novas frentes com visão ampla, ponderação e vontade de compreender o significado e a estrutura do cenário antes de agir. Sua atitude inicial tende a ser mais reservada e observadora.</p>
+            <p>Para concluir o projeto, você aplica critério, revisão minuciosa e profundidade técnica antes de dar o ciclo por encerrado. Essa combinação junta amplitude no início e rigor na conclusão, pedindo apenas cuidado para não alongar demais o fechamento por excesso de reflexão ou análise.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "9-8": {
+            conteudo: `<h3>Início Abrangente e Conclusão Estratégica (9 → 8)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra nas oportunidades com visão de conjunto e sensibilidade ao quadro maior logo na largada. Diante de obstáculos iniciais, busca entender o alcance da situação antes de acelerar.</p>
+            <p>Na conclusão, porém, sua capacidade ganha foco em resultado concreto, organização de recursos e firmeza executiva para fechar o ciclo. É uma combinação forte quando a visão ampla do 9 dá direção e a capacidade de realização do 8 consolida a entrega.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+        "9-9": {
+            conteudo: `<h3>Início Amplo e Conclusão Abrangente (9 → 9)</h3>
+            <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com visão larga, atenção ao panorama completo e abertura para considerar o impacto maior desde o primeiro passo. Sua atitude inicial evita respostas estreitas diante de desafios.</p>
+            <p>Na conclusão, você mantém essa mesma amplitude de visão, encerrando ciclos com maturidade, senso de conjunto e consolidação do que foi construído. Esse padrão favorece fechamentos maduros e abrangentes, pedindo apenas foco prático e limites claros para concluir sem se sobrecarregar.</p>`,
+            videoID: "F8bg1CTQ9HI"
+        },
+
+       }
 };
 
 
