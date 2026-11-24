@@ -1883,63 +1883,63 @@ Personalidade: {
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por uma atitude pioneira e uma capacidade de ação imediata. Você funciona através da autonomia, sendo uma mulher que não espera as circunstâncias mudarem para agir; você cria o seu próprio movimento e assume a responsabilidade total pelas suas escolhas.</p>
     <p>Na prática, você se comporta de maneira direta and assertiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua conduta é a de quem encara os desafios como oportunidades de provar sua competência. Você possui uma natureza resolutiva, focando sempre em soluções rápidas e eficientes, mantendo uma postura firme de comando sobre a própria vida.</p>
     <p>Sua expressão real é sinônimo de progresso, elegância e vigor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você opera com uma resiliência que sustenta grandes metas, agindo com a convicção de uma líder que nasceu para abrir caminhos e estabelecer novos padrões de excelência em tudo o que se propõe a realizar.</p>`,
- videoID: " "
+ videoID: "dUlISXgxU3R2bzA "
     },
     2: {
      conteudo:`<h3>Personalidade 2 - A Mediadora Equilibrada e Cooperativa</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa-se através de um comportamento diplomático, gentil e extremamente cuidadoso. Você funciona melhor quando atua em parceria, sendo uma mulher que utiliza o tato, o charme e a sensibilidade refinada para navegar pelas situações da vida com elegância e equilíbrio.</p>
     <p>Sua atitude prática é a de quem busca a harmonia acima de tudo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com paciência e possui uma habilidade natural para ouvir e entender as nuances que os outros ignoram. Sua conduta é o elo forte que une pessoas e ideias, preferindo a eficácia da colaboração ao conflito do ego.</p>
     <p>Na vida cotidiana, você se posiciona de forma receptiva e acolhedora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua expressão real é baseada na confiança e na lealdade, provando que a verdadeira força feminina reside na capacidade de mediar, nutrir relacionamentos e manter a paz em qualquer ambiente.</p>`,
- videoID: " "
+ videoID: "cEE3WVRQaERkNkU "
     },
     3: {
      conteudo:`<h3>Personalidade 3 - A Comunicadora Criativa e Expressiva</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma explosão de criatividade, magnetismo e dinamismo social. Você funciona através da expressão, sendo uma mulher que possui um talento natural para transformar ideias em comunicação envolvente e o cotidiano em algo vibrante, belo e cheio de vida.</p>
     <p>Na prática, sua conduta é entusiasmada e otimista, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com uma inteligência rápida, adaptando-se a diferentes cenários com charme, presença e bom humor. Sua atitude funciona como um catalisador de boas energias, facilitando trocas intelectuais e motivando todos ao seu redor de forma espontânea.</p>
     <p>Sua expressão real é marcada pela sociabilidade e pelo brilho pessoal único, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você encara os desafios com leveza e criatividade, agindo como uma fonte de inspiração constante que prova que a alegria e a boa comunicação são as chaves femininas para o êxito em qualquer projeto.</p>`,
- videoID: " "
+ videoID: "ZXFzVFVGVnQzQ28 "
     },
     4: {
      conteudo:`<h3>Personalidade 4 - A Construtora Ética e Disciplinada</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma conduta sólida, disciplinada e profundamente pautada pela ética. Você funciona com base na ordem e no planejamento, sendo uma mulher que valoriza o trabalho bem feito e a construção de alicerces totalmente seguros para o futuro.</p>
     <p>Na prática, sua atitude é de total responsabilidade e persistence, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com os pés no chão, focando no que é concreto, seguro e duradouro. Sua palavra é um compromisso de honra e sua conduta é marcada por uma seriedade exemplar que garante que nada saia dos trilhos sob sua supervisão focada.</p>
     <p>Sua expressão real é a de uma rocha firme, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você atinge resultados através da dedicação honesta e da organização impecável, agindo como a força estabilizadora e protetora que traz estrutura para a família, para o trabalho e para a sociedade como um todo.</p>`,
-  videoID: " "
+  videoID: "MWdYM21BVWFnX28 "
     },
     5: {
      conteudo:`<h3>Personalidade 5 - A Agente de Mudança e Versatilidade</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é caracterizada por um comportamento livre, moderno e em constante evolução. Você funciona através do movimento, sendo uma mulher independente que possui uma sede inesgotável por novas experiências e uma incrível agilidade para se adaptar a imprevistos com inteligência.</p>
     <p>Na prática, sua atitude é progressista e desimpedida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com coragem para romper padrões estagnados, utilizando sua inteligência versátil para explorar novos caminhos. Sua conduta desafia o óbvio e traz um frescor irresistível para qualquer situação, agindo como um verdadeiro radar de tendências.</p>
     <p>Sua expressão real é o elo perfeito entre o presente e o futuro, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vive intensamente e ensina, através do seu exemplo ousado, que a liberdade com responsabilidade e a coragem de mudar são as maiores ferramentas de crescimento humano.</p>`,
-  videoID: "z1nW3rmNeEI"
+  videoID: "LTZOUVVXMkl0S28"
     },
     6: {
      conteudo:`<h3>Personalidade 6 - A Protetora Justa e Harmonizadora</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa-se através de uma conduta responsável, calorosa e inteiramente voltada para o equilíbrio. Você funciona como um centro de harmonia, sendo uma mulher que valoriza a família, o lar, a estética e o bem-estar coletivo acima de tudo.</p>
     <p>Na prática, sua atitude é de cuidado, acolhimento e orientação, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com uma integridade moral admirável, servindo como a grande conselheira e o ponto de apoio seguro em momentos de crisis. Sua conduta busca embelezar a vida e resolver conflitos através do afeto genuíno.</p>
     <p>Sua expressão real é o exemplo perfeito da bondade ativa e matriarcal, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se posiciona como a guardiã dos valores éticos e afetivos, provando que uma vida bem-sucedida é aquela construída sobre a base do serviço carinhoso ao próximo e da dedicação aos que você ama.</p>`,
-  videoID: "z1nW3rmNeEI"
+  videoID: " Qm1ic25qSUo1WUU  "
     },
     7: {
      conteudo:`<h3>Personalidade 7 - A Analista Intelectual e Profunda</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por uma conduta reflexiva, culta e de grande profundidade mental. Você funciona através da observação, da intuição e do estudo, sendo uma mulher de classe que prefere a busca pela verdade e o silêncio produtivo às interações superficiais do dia a dia.</p>
     <p>Na prática, sua atitude é reservada, elegante e digna, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com um discernimento aguçado, analisando as causas fundamentais de tudo o que acontece ao seu redor. Sua conduta é pautada pela perfeição técnica e pela fidelidade absoluta aos seus próprios princípios e descobertas.</p>
     <p>Sua expressão real é a de uma especialista da vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você atrai um respeito profundo pela sua autoridade intelectual e pelo mistério fascinante que envolve sua sabedoria, provando que o autoconhecimento e a integridade são os pilares de uma alma verdadeiramente livre.</p>`,
-  videoID: "z1nW3rmNeEI"
+  videoID: " ZmRFaVBvTnJqUTQ"
     },
     8: {
      conteudo:`<h3>Personalidade 8 - A Gestora Poderosa e Pragmática</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma conduta poderosa, eficiente e focada em resultados de grande escala. Você funciona através da liderança executiva, sendo uma mulher de negócios que possui uma habilidade natural fantástica para gerir recursos e transformar grandes visões em prosperidade tangível.</p>
     <p>Na prática, sua atitude é de autoconfiança, comando e elegância imponente, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com um pragmatismo extraordinário, tomando decisões difíceis sob pressão com firmeza e justiça. Sua conduta decidida é o motor que gera progresso material e organização em estruturas complexas.</p>
     <p>Sua expressão real é a de uma vencedora ética, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você opera com uma força realizadora que garante a estabilidade financeira e social, provando que o poder, quando exercido por uma mulher de visão, disciplina e responsabilidade, é a maior ferramenta de transformação da realidade.</p>`,
-  videoID: "z1nW3rmNeEI"
+  videoID: " azZhUzlrWDU2N1E"
     },
     9: {
      conteudo:`<h3>Personalidade 9 - A Humanitária Generosa e Universal</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é caracterizada por uma conduta altruísta, sábia e desapegada. Você funciona através da compreensão universal, sendo uma mulher de sensibilidade profunda que possui uma visão que transcende o próprio ego e busca o bem de toda a humanidade.</p>
     <p>Na prática, sua atitude é inspiradora, carismática e compassiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com uma tolerância infinita, tratando todos com a mesma dignidade e carinho. Sua conduta é inteiramente voltada para o encerramento nobre de ciclos e para a cura social, agindo como uma guia sensível que aponta caminhos de esperança.</p>
     <p>Sua expressão real é o exemplo vivo do amor incondicional, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vive para deixar um impacto positivo no mundo, provando que a verdadeira grandeza humana reside na generosidade absoluta e no serviço desinteressado ao coletivo.</p>`,
-  videoID: "z1nW3rmNeEI"
+  videoID: " US1GU0ZfQkV0QXc"
     },
     11: {
      conteudo:`<h3>Personalidade 11 - A Visionária Intuitiva e Inspiradora</h3>
