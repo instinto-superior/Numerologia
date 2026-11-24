@@ -1847,63 +1847,63 @@ Personalidade: {
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por uma atitude pioneira e uma capacidade de ação imediata. Você funciona através da autonomia, sendo uma pessoa que não espera as circunstâncias mudarem para agir; você cria o seu próprio movimento e assume a responsabilidade total pelas suas escolhas.</p>
     <p>Na prática, você se comporta de maneira direta e assertiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua conduta é a de quem encara os desafios como oportunidades de provar sua competência. Você possui uma natureza resolutiva, focando sempre em soluções rápidas e eficientes, mantendo uma postura de comando sobre a própria vida.</p>
     <p>Sua expressão real é sinônimo de progresso e vigor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você opera com uma resiliência que sustenta grandes metas, agindo com a convicção de quem nasceu para abrir caminhos e estabelecer novos padrões de excelência em tudo o que se propõe a realizar.</p>`,
-   videoID: " "
+   videoID: " ZTdRVi1kRDNHWlU"
     },
     2: {
      conteudo:`<h3>Personalidade 2 - O Mediador Equilibrado e Cooperativo</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa-se através de um comportamento diplomático, gentil e extremamente cuidadoso. Você funciona melhor quando atua em parceria, sendo uma pessoa que utiliza o tato e a sensibilidade para navegar pelas situações da vida com elegância e equilíbrio.</p>
     <p>Sua atitude prática é a de quem busca a harmonia acima de tudo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com paciência e possui uma habilidade natural para ouvir e entender as nuances que os outros ignoram. Sua conduta é o "cimento" que une pessoas e ideias, preferindo a eficácia da colaboração ao conflito do ego.</p>
     <p>Na vida cotidiana, você se posiciona de forma receptiva e acolhedora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua expressão real é baseada na confiança e na lealdade, provando que a verdadeira força reside na capacidade de mediar, nutrir relacionamentos e manter a paz em qualquer ambiente.</p>`,
-   videoID: " "
+   videoID: "YW5sYlJYQXJuazA "
     },
     3: {
      conteudo:`<h3>Personalidade 3 - O Comunicador Criativo e Expressivo</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma explosão de criatividade e dinamismo social. Você funciona através da expressão, sendo uma pessoa que possui um talento natural para transformar ideias em comunicação envolvente e o cotidiano em algo vibrante e cheio de vida.</p>
     <p>Na prática, sua conduta é entusiasmada e otimista, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com uma inteligência rápida, adaptando-se a diferentes cenários com charme e bom humor. Sua atitude funciona como um catalisador de boas energias, facilitando trocas intelectuais e motivando todos ao seu redor de forma espontânea.</p>
     <p>Sua expressão real é marcada pela sociabilidade e pelo brilho pessoal, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você encara os desafios com leveza e criatividade, agindo como uma fonte de inspiração constante que prova que a alegria e a boa comunicação são as chaves para o êxito em qualquer projeto.</p>`,
-   videoID: " "
+   videoID: "dG1UQl9FY29INzA "
     },
     4: {
      conteudo:`<h3>Personalidade 4 - O Construtor Ético e Disciplinado</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma conduta sólida, disciplinada e profundamente pautada pela ética. Você funciona com base na ordem e no planejamento, sendo uma pessoa que valoriza o trabalho bem feito e a construção de alicerces seguros para o futuro.</p>
     <p>Na prática, sua atitude é de total responsabilidade e persistência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com os pés no chão, focando no que é concreto e duradouro. Sua palavra é um compromisso e sua conduta é marcada por uma seriedade que garante que nada saia dos trilhos sob sua supervisão.</p>
     <p>Sua expressão real é a de uma rocha firme, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você atinge resultados através da dedicação honesta e da organização impecável, agindo como a força estabilizadora que traz estrutura para a família, para o trabalho e para a sociedade como um todo.</p>`,
-   videoID: " "
+   videoID: " bm5QWDhmV0VKODQ"
     },
     5: {
      conteudo:`<h3>Personalidade 5 - O Agente de Mudança e Versatilidade</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é caracterizada por um comportamento livre, moderno e em constante evolução. Você funciona através do movimento, sendo uma pessoa que possui uma sede inesgotável por novas experiências e uma incrível agilidade para se adaptar a imprevistos.</p>
     <p>Na prática, sua atitude é progressista e desimpedida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com coragem para romper padrões estagnados, utilizando sua inteligência versátil para explorar novos caminhos. Sua conduta desafia o óbvio e traz frescor para qualquer situação, agindo como um radar de tendências.</p>
     <p>Sua expressão real é o elo entre o presente e o futuro, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vive intensamente e ensina, através do seu exemplo, que a liberdade com responsabilidade e a ousadia de mudar são as maiores ferramentas de crescimento humano.</p>`,
-   videoID: " "
+   videoID: " eVg4eXJ4U1hzSUE"
     },
     6: {
      conteudo:`<h3>Personalidade 6 - O Protetor Justo e Harmonizador</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa-se através de uma conduta responsável, calorosa e inteiramente voltada para o equilíbrio. Você funciona como um centro de harmonia, sendo uma pessoa que valoriza a família, a beleza e o bem-estar coletivo acima de tudo.</p>
     <p>Na prática, sua atitude é de cuidado e orientação, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com uma integridade moral admirável, servindo como o ponto de apoio seguro em momentos de crise. Sua conduta busca embelezar a vida e resolver conflitos através do afeto e do senso de dever cumprido.</p>
     <p>Sua expressão real é o exemplo da bondade ativa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se posiciona como o guardião dos valores éticos e afetivos, provando que uma vida bem-sucedida é aquela construída sobre a base do serviço ao próximo e da dedicação aos que você ama.</p>`,
-   videoID: " "
+   videoID: " LWplX2lkd3pEeXc"
     },
     7: {
      conteudo:`<h3>Personalidade 7 - O Analista Intelectual e Profundo</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por uma conduta reflexiva, culta e de grande profundidade mental. Você funciona através da observação e do estudo, sendo uma pessoa que prefere a busca pela verdade e o silêncio produtivo às interações superficiais.</p>
     <p>Na prática, sua atitude é reservada e digna, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com um discernimento aguçado, analisando as causas fundamentais de tudo o que acontece ao seu redor. Sua conduta é pautada pela perfeição técnica e pela fidelidade absoluta aos seus próprios princípios e descobertas.</p>
     <p>Sua expressão real é a de um especialista da vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você atrai o respeito pela sua autoridade intelectual e pelo mistério que envolve sua sabedoria, provando que o autoconhecimento e a integridade são os pilares de uma alma verdadeiramente livre.</p>`,
-   videoID: " "
+   videoID: "WnVvYjNnbDUxYjA "
     },
     8: {
      conteudo:`<h3>Personalidade 8 - O Gestor Poderoso e Pragmático</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma conduta poderosa, eficiente e focada em resultados de grande escala. Você funciona através da liderança executiva, sendo uma pessoa que possui uma habilidade natural para gerir recursos e transformar visões em prosperidade tangível.</p>
     <p>Na prática, sua atitude é de autoconfiança e comando, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com um pragmatismo extraordinário, tomando decisões difíceis sob pressão com firmeza e justiça. Sua conduta é o motor que gera progresso material e organização em estruturas complexas.</p>
     <p>Sua expressão real é a do vencedor ético, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você opera com uma força que garante a estabilidade financeira e social, provando que o poder, quando exercido com responsabilidade e disciplina, é a maior ferramenta de transformação da realidade.</p>`,
-   videoID: "F8bg1CTQ9HI"
+   videoID: "SEJJdnN2ZUNXX1U  "
     },
     9: {
      conteudo:`<h3>Personalidade 9 - O Humanitário Generoso e Universal</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é caracterizada por uma conduta altruísta, sábia e desapegada. Você funciona através da compreensão universal, sendo uma pessoa que possui uma visão que transcende o ego e busca o bem de toda a humanidade.</p>
     <p>Na prática, sua atitude é inspiradora e compassiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com uma tolerância infinita, tratando todos com a mesma dignidade e carisma. Sua conduta é voltada para o encerramento de ciclos e para a cura social, agindo como um guia que aponta caminhos de esperança e renovação.</p>
     <p>Sua expressão real é o exemplo do amor incondicional, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vive para deixar um impacto positivo no mundo, provando que a verdadeira grandeza humana reside na generosidade absoluta e no serviço desinteressado ao coletivo.</p>`,
-   videoID: " "
+   videoID: "M09LLUtCMTRiUmc "
     },
     11: {
      conteudo:`<h3>Personalidade 11 - O Visionário Intuitivo e Inspirador</h3>
