@@ -3441,11 +3441,16 @@ function extrairPrimeiroNome(texto) {
 }
 
 function calcularHabilidadeEspecialCientifica(nomeEntrada) {
-    const primeiroNome = extrairPrimeiroNome(nomeEntrada);
-    if (!primeiroNome) return null;
+    if (!nomeEntrada || typeof nomeEntrada !== "string") return null;
+
+    const nomeLimpo = nomeEntrada.trim();
+    if (!nomeLimpo) return null;
 
     const contagemLetras = {};
-    const nomeProcessado = primeiroNome.toUpperCase();
+    const nomeProcessado = nomeLimpo
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toUpperCase();
 
     // 1. Contagem de frequencia absoluta de cada letra (sem acentos)
     for (let letra of nomeProcessado) {
@@ -3473,8 +3478,10 @@ function calcularHabilidadeEspecialCientifica(nomeEntrada) {
 }
 
 function gerarHTMLHabilidadeEspecial(nomeEntrada) {
-    const primeiroNome = extrairPrimeiroNome(nomeEntrada);
-    const dados = calcularHabilidadeEspecialCientifica(primeiroNome);
+    if (!nomeEntrada || typeof nomeEntrada !== "string") return "";
+
+    const nomeCompleto = nomeEntrada.trim();
+    const dados = calcularHabilidadeEspecialCientifica(nomeCompleto);
     if (!dados) return "";
 
     const textoTalento = textos.talentosEspeciais[dados.numero]?.conteudo || textos.talentosEspeciais[dados.numero] || "";
@@ -3488,7 +3495,7 @@ function gerarHTMLHabilidadeEspecial(nomeEntrada) {
 
     <div class="page">
         <div class="intro-texto">
-            <p>A analise do seu primeiro nome (<strong>${primeiroNome}</strong>) revelou predominancia na letra <strong>"${dados.letraOriginal}"</strong>, conectada ao numero <strong>${dados.numero}</strong>.</p>
+            <p>A analise do seu nome completo (<strong>${nomeCompleto}</strong>) revelou predominancia na letra <strong>"${dados.letraOriginal}"</strong>, conectada ao numero <strong>${dados.numero}</strong>.</p>
         </div>
 
         <div class="secao-resultado-cientifico">
@@ -3511,16 +3518,16 @@ function montarSecaoHabilidadeEspecial() {
 
 function verificarGeneroEGerar() {
     console.log("Botão clicado! Verificando gênero...");
-    
+
     // 1. Pega o elemento
     const campoGênero = document.getElementById("generoTexto");
-    
+
     // 2. Define o formato (o que você usa para escolher o arquivo)
     const formatoGênero = campoGênero ? campoGênero.value : "masculino";
-    
+
     // 3. ATUALIZA A VARIÁVEL GLOBAL (Corrigido para usar campoGênero)
-    generoAtual = formatoGênero; 
-    
+    generoAtual = formatoGênero;
+
     // 4. Define o arquivo
     let arquivoAlvo = (formatoGênero === "feminino") ? "textosfeminino.js" : "textosestudonumerologico.js";
 
@@ -3535,17 +3542,17 @@ function verificarGeneroEGerar() {
 
     let scriptNovo = document.createElement("script");
     scriptNovo.id = "script-textos-dinamico";
-    scriptNovo.src = urlComCacheBuster; 
-    
+    scriptNovo.src = urlComCacheBuster;
+
     scriptNovo.onload = function() {
         console.log("Textos prontos na memória. Rodando o mapa!");
-        gerarMapaCompleto(); 
+        gerarMapaCompleto();
     };
 
     scriptNovo.onerror = function() {
         alert("Erro ao carregar os textos do servidor.");
     };
-    
+
     document.head.appendChild(scriptNovo);
 }
 
