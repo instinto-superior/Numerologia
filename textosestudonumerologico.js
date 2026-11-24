@@ -5553,61 +5553,60 @@ videoID: "z1nW3rmNeEI"
 // --- POTENCIAL E DESAFIO (TALENTOS ESPECIAIS / EXCESSOS) ---
 talentosEspeciais: {
     1: {
-     conteudo:`<h3>Potencial de Firmeza e Desafio da Obstinação - 1</h3>
-    <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, demonstra uma independência e uma ambição que estão muito acima da média comum. Seu potencial natural reside em uma determinação férrea e na capacidade invejável de manter a firmeza absoluta sob pressão, agindo com um brilhantismo singular em momentos de grandes crises ou desafios estratégicos onde outros recuariam.</p>
-    <p>Entretanto, essa força monumental pode se tornar uma deficiência perigosa quando se transmuta em uma obstinação rígida e cega. O risco surge quando você se fecha excessivamente em seu ponto de vista, ignorando sugestões valiosas ao redor e gerando traços de possessividade ou autoritarismo que podem afastar aliados importantes. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu desafio é entender que a verdadeira liderança sabe a hora de avançar com força e a hora de ouvir com sabedoria, integrando a visão alheia para fortalecer o seu próprio império sem perder sua essência pioneira.</p>`,
-  videoID: "Q1ExYmNHSWNYX3c="
+        conteudo: `<h3>Habilidade de Iniciativa e Firmeza - 1</h3>
+        <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, demonstra uma capacidade natural de assumir a frente, tomar decisões rápidas e sustentar a própria direção quando o cenário exige firmeza. Sua habilidade se destaca especialmente na iniciativa, na autonomia para resolver problemas sem depender de empurrão externo e na clareza para definir o que precisa ser feito.</p>
+        <p>Na prática, essa força ajuda você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a abrir caminhos, manter o foco sob pressão e transformar intenção em movimento concreto com mais facilidade do que a média. Como ponto de atenção bem pontual, vale apenas cuidar para que a firmeza não vire teimosia excessiva quando outra pessoa apresentar um argumento válido.</p>`,
+        videoID: "Q1ExYmNHSWNYX3c="
     },
     2: {
-     conteudo:`<h3>Potencial de Diplomacia e Desafio da Insegurança - 2</h3>
-    <p>Existe em você um dom nato para a organização harmoniosa e para a pacificação de ambientes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua natureza gentil, detalhista e profundamente cooperativa faz de você alguém excelente na mediação de conflitos, capaz de desarmar as situações mais tensas sem recorrer a ofensas, sendo aquela presença magnética que as pessoas procuram naturalmente quando precisam de equilíbrio e bom senso.</p>
-    <p>A deficiência desta vibração em excesso, porém, pode se manifestar como uma insegurança que paralisa sua tomada de decisão no momento em que você mais precisa agir. Essa receptividade constante pode, às vezes, permitir que pessoas mal-intencionadas se aproveitem da sua bondade, fazendo com que seus objetivos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, se percam em favor de um desejo quase desesperado de manter a paz a qualquer custo. O aprendizado aqui é entender que dizer "não" e estabelecer limites claros é, na verdade, a forma mais alta de diplomacia que você pode exercer para proteger sua própria energia e seus projetos.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Habilidade de Mediação e Sensibilidade Prática - 2</h3>
+        <p>Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma habilidade apurada para perceber nuances, escutar com atenção e ajustar o tom entre pessoas ou situações que estão desalinhadas. Seu ponto forte aparece na cooperação, na leitura fina do ambiente e na facilidade para construir acordos onde outros só enxergam impasse.</p>
+        <p>Esse padrão favorece parcerias estáveis, trabalho em equipe e soluções equilibradas no dia a dia, permitindo que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, conduza conversas difíceis com tato e precisão. Apenas um detalhe mínimo para observar: não adiar escolhas importantes só para evitar um pequeno desconforto momentâneo.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     3: {
-     conteudo:`<h3>Potencial de Criatividade e Desafio da Impaciência - 3</h3>
-    <p>Sua mente, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma verdadeira usina de lógica própria e criatividade efervescente. Seu potencial especial reside em uma imaginação extraordinária e na capacidade rara de surpreender a todos com soluções concebidas de forma única, comunicando conceitos complexos com uma clareza e um entusiasmo que são simplesmente contagiantes para quem o(a) ouve.</p>
-    <p>A deficiência desse brilho em excesso é uma impaciência crônica com o ritmo de raciocínio alheio, que muitas vezes parece lento demais para a sua velocidade mental. Por estar sempre vários passos à frente, você pode demonstrar certa imprudência, negligenciando o "aterramento" das suas ideias e esquecendo-se de lidar com as responsabilidades práticas e burocráticas que sustentam o sucesso real. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua grande lição é aprender a dar tempo ao tempo e a valorizar os processos estruturais, garantindo que suas ideias geniais não sejam apenas fogos de artifício, mas construções que permanecem no tempo.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Habilidade de Expressão e Soluções Criativas - 3</h3>
+        <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma facilidade marcante para gerar ideias, conectar pontos diferentes e comunicar raciocínios de forma clara e envolvente. Sua habilidade se sobressai quando o trabalho pede criatividade aplicada, agilidade mental para destravar bloqueios e capacidade de tornar um assunto complexo mais simples de entender.</p>
+        <p>Essa força dá leveza, repertório e velocidade para criar e apresentar soluções, ajudando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a tirar projetos do papel com originalidade. O único cuidado simples é reservar um pouco de constância para concluir o que começou antes de pular para a próxima ideia.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     4: {
-     conteudo:`<h3>Potencial de Estabilidade e Desafio da Resistência - 4</h3>
-    <p>Você tem o potencial extraordinário de construir bases sólidas, seguras e duradouras em tudo o que toca, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu perfil é o de alguém estável, metódico e extremamente confiável, que sabe respeitar limites e oferece uma segurança inabalável para quem convive ao seu redor, mantendo sempre uma postura de alta competência técnica e ética profissional.</p>
-    <p>Todavia, a deficiência dessa vibração revela um tradicionalismo que pode acabar travando sua própria evolução pessoal e financeira. Uma desconfiança excessiva com o novo e uma teimosia em aceitar o que foge do "protocolo normal" podem tornar você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, alguém de difícil convencimento, que reluta em arriscar mesmo quando a mudança é necessária para o progresso. O desafio é aprender a abraçar a inovação como uma ferramenta de melhoria para suas próprias estruturas, entendendo que a flexibilidade, longe de ser uma fraqueza, é o que impede que as bases sólidas se tornem rígidas demais e acabem quebrando sob o peso do tempo.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Habilidade de Estrutura e Consistência - 4</h3>
+        <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem uma aptidão sólida para organizar processos, criar método e manter consistência onde outras pessoas perdem o ritmo. Sua habilidade aparece na disciplina prática, na atenção a detalhes que evitam retrabalho e na capacidade de construir resultados duráveis passo a passo.</p>
+        <p>Esse padrão oferece confiabilidade, previsibilidade e base firme para qualquer projeto que exija execução disciplinada, permitindo que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entregue com qualidade constante. Como ajuste pontual, basta manter uma margem mínima de flexibilidade quando surgirem mudanças úteis no caminho.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     5: {
-     conteudo:`<h3>Potencial de Ajuste e Desafio da Impulsividade - 5</h3>
-    <p>Seu potencial brilha com uma intensidade máxima justamente no meio do caos, da pressão e da imprevisibilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você possui uma capacidade incrível de ajuste a situações estressantes, conseguindo enxergar vantagens e agir de forma dinâmica onde a maioria das pessoas entraria em colapso emocional ou paralisia completa.</p>
-    <p>Contudo, esse excesso de energia vital gera uma deficiência perigosa na forma de uma impulsividade nervosa e, por vezes, cortante. A falta de filtros em momentos de tensão pode fazer com que você reaja de forma direta demais a críticas, parecendo alguém distante, impaciente ou excessivamente ríspido(a). <strong>MASCULINO-FEMININO-NEUTRO</strong>, é vital que você aprenda a domar essa eletricidade interna, garantindo que sua sede de movimento e mudança não acabe rompendo conexões humanas e profissionais valiosas por puro impulso momentâneo. Use sua rapidez para criar soluções, não para criar conflitos desnecessários.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Habilidade de Adaptação e Resposta Rápida - 5</h3>
+        <p>Seu ponto forte, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está na rapidez para se adaptar a mudanças, ler cenários instáveis e agir sem travar quando o plano inicial muda. Você demonstra facilidade para experimentar caminhos novos, aprender na prática e responder com agilidade diante do imprevisto.</p>
+        <p>Essa habilidade dá mobilidade, versatilidade e fôlego para lidar com ambientes dinâmicos, ajudando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a encontrar saídas práticas onde tudo parece parado. Um detalhe mínimo para ficar de olho é pausar alguns segundos antes de responder no calor do momento.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     6: {
-     conteudo:`<h3>Potencial de Proteção e Desafio do Detalhismo - 6</h3>
-    <p>Você atua como um pilar de apoio indispensável e de responsabilidade coletiva por onde passa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu potencial especial é o protecionismo sábio e uma atenção minuciosa aos detalhes humanos, mantendo-se sempre em prontidão para defender causas justas e cuidar do seu ambiente com um senso de ética e estética muito apurado.</p>
-    <p>A deficiência surge quando o seu envolvimento em tudo e com todos gera preocupações pouco práticas, fazendo com que pequenos problemas do dia a dia pareçam tragédias gregas. Essa dificuldade em esquecer as falhas alheias ou o excesso de cobrança por perfeição nas relações pode custar muito caro para sua própria paz de espírito, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O aprendizado aqui é entender que o amor e a proteção são mais eficazes quando acompanhados de aceitação. Aprenda a soltar as rédeas do controle emocional sobre os outros e foque em harmonizar a si mesmo(a) primeiro, permitindo que a perfeição seja uma meta, e não uma obsessão paralisante.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Habilidade de Cuidado e Senso de Responsabilidade - 6</h3>
+        <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, apresenta uma habilidade natural para assumir responsabilidades, zelar pelo que está sob sua guarda e manter padrões altos de comprometimento e ordem. Seu destaque está na atenção ao bem-estar do grupo, no senso de dever e na postura cuidadosa com aquilo que importa.</p>
+        <p>Essa capacidade fortalece vínculos, eleva o nível de cuidado nos detalhes e dá segurança às pessoas ao redor, permitindo que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sustente compromissos com seriedade. Vale apenas observar com leveza para não assumir sozinho(a) exigências que não são suas.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     7: {
-     conteudo:`<h3>Potencial de Análise e Desafio do Isolamento - 7</h3>
-    <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma mente analítica, perfeccionista e investigativa de altíssimo nível. Seu potencial reside na disciplina intelectual e na busca incansável pela verdade e pela qualidade técnica, o que faz com que suas conclusões sejam precisas, profundas e extremamente respeitadas por quem busca um trabalho de excelência superior.</p>
-    <p>Por outro lado, o excesso dessa energia cria um perfil contestador que dificilmente aceita perder discussões ou admitir lacunas no próprio conhecimento. A irritação com falhas alheias e a dificuldade em dar segundas chances podem acabar isolando você em uma torre de marfim intelectual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Para que seu potencial seja plenamente realizado, você precisa aprender a integrar a compaixão e a tolerância ao seu rigor analítico, entendendo que a imperfeição faz parte da experiência humana. Ao se abrir para o mundo com menos julgamento, sua sabedoria se tornará uma luz que atrai, e não uma espada que afasta.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Habilidade de Análise e Profundidade Técnica - 7</h3>
+        <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem uma habilidade destacada para investigar a fundo, analisar dados com critério e identificar falhas ou padrões que passam despercebidos. Sua força está no rigor intelectual, na pesquisa cuidadosa e na capacidade de chegar a conclusões bem fundamentadas.</p>
+        <p>Esse padrão traz precisão, critério técnico e qualidade apurada em decisões complexas, ajudando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a construir análises consistentes e confiáveis. Como ponto mínimo de atenção, lembre-se de compartilhar suas conclusões de forma acessível sem se fechar totalmente ao diálogo.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
     8: {
-     conteudo:`<h3>Potencial de Comando e Desafio do Controle - 8</h3>
-    <p>O seu potencial especial é o poder de comando nato e uma visão estratégica de longo alcance que poucos possuem, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe em você uma habilidade quase instintiva de organizar o caos e transformá-lo em estruturas de sucesso material, mantendo uma iniciativa que surpreende a todos pela eficiência, autoridade e capacidade de realização concreta.</p>
-    <p>A sombra dessa força toda é o risco real da prepotência e do autoritarismo excessivo. Quando essa vibração está em desequilíbrio, você pode demonstrar um perfil controlador ao extremo, perdendo completamente a paciência com quem não consegue acompanhar seu ritmo acelerado de produção ou sua visão ambiciosa. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu grande desafio de mestre é aprender a equilibrar essa liderança poderosa com uma empatia real, entendendo que grandes impérios são construídos com braços fortes, mas mantidos por corações leais. Lidere inspirando, e não apenas mandando.</p>`,
-  videoID: "F8bg1CTQ9HI"
+        conteudo: `<h3>Habilidade de Gestão e Execução Estratégica - 8</h3>
+        <p>Sua habilidade central, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está na capacidade de organizar recursos, enxergar o quadro completo e conduzir metas com foco em resultado concreto. Você mostra facilidade para estruturar planos, assumir responsabilidade por grandes entregas e manter firmeza na execução.</p>
+        <p>Essa força favorece liderança prática, senso de proporção e capacidade de realizar projetos de maior porte, permitindo que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transforme estratégia em avanço real. Apenas um cuidado pontual: dosar a pressão sobre o ritmo dos outros quando a meta apertar.</p>`,
+        videoID: "F8bg1CTQ9HI"
     },
-    9:  {
-     conteudo:`<h3>Potencial de Compaixão e Desafio do Desgaste - 9</h3>
-    <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui um potencial magnífico para a compaixão e para a compreensão profunda das leis universais que regem a vida. Sua visão é generosa, ampla e humanitária, capaz de entender as necessidades do coletivo com uma sabedoria que transcende o ego, atuando como um farol de esperança e auxílio para muitos.</p>
-    <p>A deficiência, contudo, pode levá-lo(a) a um papel de sacrifício excessivo e perigoso, onde você acaba esquecendo das suas próprias necessidades básicas para carregar a dor do mundo nas costas. Existe uma tendência a se envolver em dramas alheios de forma desproporcional, o que gera um desgaste emocional e físico que acaba impedindo a manifestação do seu potencial de forma saudável. <strong>MASCULINO-FEMININO-NEUTRO</strong>, lembre-se de que para ajudar o mundo, você precisa estar inteiro(a). Aprenda a ser generoso(a) consigo mesmo(a) na mesma medida em que é com os outros, transformando seu altruísmo em uma força sustentável e equilibrada.</p>`,
-     videoID: "F8bg1CTQ9HI"
-    },
-  
-    },
+    9: {
+        conteudo: `<h3>Habilidade de Visão Ampla e Empatia Prática - 9</h3>
+        <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma habilidade marcante para enxergar o panorama mais amplo, compreender diferentes perspectivas humanas e agir com generosidade e senso de propósito. Sua força aparece na empatia, na capacidade de somar com o coletivo e na visão madura diante de desafios maiores.</p>
+        <p>Esse padrão amplia o alcance das suas ações e facilita conexões verdadeiras, ajudando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a contribuir de forma significativa ao seu redor. Como ajuste mínimo, basta preservar seus próprios limites de tempo e energia ao ajudar os outros.</p>`,
+        videoID: "F8bg1CTQ9HI"
+    }
+},
  
 
 
