@@ -5841,7 +5841,6 @@ html += `
     
 const dadosHabilidade = calcularHabilidadeEspecialCientifica(nomeRaw);
 
-let idVideoTalento = dadosHabilidade ? buscarVideoID("talentosEspeciais", dadosHabilidade.numero, generoAtual) : null;
 const idVideoIntrohabilidadeEmbaralhado = "Q1ExYmNHSWNYX3c=";
 
 const desembaralharID = (idEmbaralhado) => {
@@ -5854,7 +5853,28 @@ const desembaralharID = (idEmbaralhado) => {
 };
 
 const idVideoIntrohabilidade = desembaralharID(idVideoIntrohabilidadeEmbaralhado);
-idVideoTalento = desembaralharID(idVideoTalento);
+
+// Garante array de números mesmo se vier só dadosHabilidade.numero
+const listaNumerosHabilidade = dadosHabilidade
+    ? (Array.isArray(dadosHabilidade.numeros) && dadosHabilidade.numeros.length > 0
+        ? dadosHabilidade.numeros
+        : [dadosHabilidade.numero])
+    : [];
+
+const blocosResultadosHTML = listaNumerosHabilidade.map((num) => {
+    const rawVideoTalento = buscarVideoID("talentosEspeciais", num, generoAtual);
+    const idVideoNum = desembaralharID(rawVideoTalento);
+    const textoNum = textos.talentosEspeciais[num]?.conteudo || textos.talentosEspeciais[num] || "";
+
+    return `
+        <div class="resultado-talento" style="margin-top: 25px;">
+            <div class="evitar-corte texto-res">
+                ${aplicarFiltroTexto(textoNum)}
+            </div>
+            ${idVideoNum ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoNum)}</div>` : ""}
+        </div>
+    `;
+}).join("");
 
 tituloBonito = "Habilidades Especiais e Deficiencias";
 
@@ -5872,27 +5892,20 @@ html += `
         
         <div class="intro-texto">
             ${(textos.introducoes && textos.introducoes.talentosEspeciais) ? aplicarFiltroTexto(textos.introducoes.talentosEspeciais) : `
-<p><strong>Fundamento e Origem:</strong> Obtido pela contagem e frequência das letras do seu nome completo, identificando a letra que aparece em maior quantidade e o seu valor numérico correspondente.</p>
+<p><strong>Fundamento e Origem:</strong> Obtido pela contagem e frequência numérica das letras do seu nome completo, identificando o(s) número(s) que aparecem em maior quantidade.</p>
 
 <p><strong>Perfil e Identidade Estática:</strong> Este resultado destaca, em sua maior parte, a habilidade natural que mais se sobressai na sua estrutura comportamental — uma aptidão prática que tende a fluir com facilidade no dia a dia — acompanhada apenas de um pequeno ponto de atenção para evitar qualquer excesso pontual.</p>
             `} 
             ${idVideoIntrohabilidade ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoIntrohabilidade)}</div>` : ""}
         </div>
 
-        ${dadosHabilidade ? `
-            <div class="resultado-talento" style="margin-top: 25px;">
-                <div class="evitar-corte texto-res">
-                    ${aplicarFiltroTexto(textos.talentosEspeciais[dadosHabilidade.numero]?.conteudo || textos.talentosEspeciais[dadosHabilidade.numero] || "")}
-                </div>
-            </div>
-        ` : `
+        ${listaNumerosHabilidade.length > 0 ? blocosResultadosHTML : `
             <div class="alerta-suave" style="margin-top: 20px; padding: 15px; background: #f9f9f9; border-radius: 8px;">
                 <p>Nao foi possivel detectar uma dominancia clara para este primeiro nome.</p>
             </div>
         `}
     </div>
 `;
-
     
  html += '</div>'; 
 
