@@ -3446,7 +3446,11 @@ function calcularHabilidadeEspecialCientifica(nomeEntrada) {
     const nomeLimpo = nomeEntrada.trim();
     if (!nomeLimpo) return null;
 
-    const contagemLetras = {};
+    // Contagem de quantas vezes cada número (1 a 9) aparece no nome
+    const contagemNumeros = {
+        1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0
+    };
+
     const nomeProcessado = nomeLimpo
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
@@ -3454,38 +3458,38 @@ function calcularHabilidadeEspecialCientifica(nomeEntrada) {
 
     for (let letra of nomeProcessado) {
         if (/[A-ZÇ]/.test(letra)) {
-            contagemLetras[letra] = (contagemLetras[letra] || 0) + 1;
+            const valorCabalistico = calcularValorLetra(letra);
+            if (valorCabalistico > 0) {
+                const numeroReduzido = (valorCabalistico > 9)
+                    ? (valorCabalistico % 9 || 9)
+                    : valorCabalistico;
+
+                contagemNumeros[numeroReduzido] = (contagemNumeros[numeroReduzido] || 0) + 1;
+            }
         }
     }
 
-    const ordenado = Object.entries(contagemLetras).sort((a, b) => b[1] - a[1]);
-    if (ordenado.length === 0) return null;
+    const entradasNumeros = Object.entries(contagemNumeros).map(([num, freq]) => ({
+        numero: Number(num),
+        frequencia: freq
+    }));
 
-    const maiorFreq = ordenado[0][1];
+    const maiorFreq = Math.max(...entradasNumeros.map(item => item.frequencia));
+    if (maiorFreq <= 0) return null;
 
-    // Pega todas as letras que empataram na maior frequência
-    const letrasEmpatadas = ordenado
-        .filter(([, freq]) => freq === maiorFreq)
-        .map(([letra]) => {
-            const valorCabalistico = calcularValorLetra(letra);
-            const numeroFinal = (valorCabalistico > 9) ? (valorCabalistico % 9 || 9) : valorCabalistico;
-            return {
-                letra,
-                numero: numeroFinal
-            };
-        });
+    // Todos os números (1-9) que empataram na maior frequência
+    const vencedores = entradasNumeros
+        .filter(item => item.frequencia === maiorFreq)
+        .sort((a, b) => a.numero - b.numero);
 
-    const principal = letrasEmpatadas[0];
+    const numerosEmpatados = vencedores.map(item => item.numero);
 
     return {
-        // Mantém os campos antigos para não quebrar outros trechos (como vHabDefFinal)
-        letraOriginal: principal.letra,
-        numero: principal.numero,
+        numero: numerosEmpatados[0],
+        numeros: numerosEmpatados,
         frequencia: maiorFreq,
-        // Novos campos com todos os empatados
-        empatadas: letrasEmpatadas,
-        letras: letrasEmpatadas.map(item => item.letra),
-        numerosUnicos: [...new Set(letrasEmpatadas.map(item => item.numero))]
+        empatou: numerosEmpatados.length > 1,
+        contagemNumeros
     };
 }
 
@@ -3496,11 +3500,14 @@ function gerarHTMLHabilidadeEspecial(nomeEntrada) {
     const dados = calcularHabilidadeEspecialCientifica(nomeCompleto);
     if (!dados) return "";
 
-    const listaLetrasHTML = dados.letras.map(l => `"<strong>${l}</strong>"`).join(" e ");
-    const listaNumerosHTML = dados.numerosUnicos.map(n => `<strong>${n}</strong>`).join(" e ");
-    const rotuloFrequencia = dados.frequencia === 1 ? "1 vez" : `${dados.frequencia} vezes`;
+    const rotuloFrequencia = dados.frequencia === 1 ? "1 ocorrência" : `${dados.frequencia} ocorrências`;
+    const listaNumerosHTML = dados.numeros.map(n => `<strong>${n}</strong>`).join(" e ");
 
-    const blocosTalentoHTML = dados.numerosUnicos.map(num => {
+    const fraseResumo = dados.empatou
+        ? `<p>A análise numérica do seu nome completo (<strong>${nomeCompleto}</strong>) apontou <strong>empate</strong> com ${rotuloFrequencia} para os números ${listaNumerosHTML}.</p>`
+        : `<p>A análise numérica do seu nome completo (<strong>${nomeCompleto}</strong>) apontou predominância com ${rotuloFrequencia} para o número ${listaNumerosHTML}.</p>`;
+
+    const blocosTalentoHTML = dados.numeros.map(num => {
         const textoTalento = textos.talentosEspeciais[num]?.conteudo || textos.talentosEspeciais[num] || "";
         return `
             <div class="bloco-talento-base">
@@ -3513,13 +3520,13 @@ function gerarHTMLHabilidadeEspecial(nomeEntrada) {
     const html = `
     <div class="separador-luxo">
         <div class="caixa-interna">
-            <h2>Habilidade Especial e Deficiencia</h2>
+            <h2>Habilidade Especial e Deficiência</h2>
         </div>
     </div>
 
     <div class="page">
         <div class="intro-texto">
-            <p>A analise do seu nome completo (<strong>${nomeCompleto}</strong>) revelou predominancia (${rotuloFrequencia}) na(s) letra(s) ${listaLetrasHTML}, conectada(s) ao(s) numero(s) ${listaNumerosHTML}.</p>
+            ${fraseResumo}
         </div>
 
         <div class="secao-resultado-cientifico">
@@ -4337,15 +4344,9 @@ if (candidatosInclinacao.length > 0) {
 const dadosCientificos = calcularHabilidadeEspecialCientifica(nomeRaw);
 
 let vHabDefFinal = "Equilibrado";
-if (dadosCientificos) {
-    if (Array.isArray(dadosCientificos.empatadas) && dadosCientificos.empatadas.length > 1) {
-        // Ex.: "A (1) / E (5)" ou "A (1) / J (1)"
-        vHabDefFinal = dadosCientificos.empatadas
-            .map(item => `${item.letra} (${item.numero})`)
-            .join(" / ");
-    } else {
-        vHabDefFinal = `${dadosCientificos.letraOriginal} (${dadosCientificos.numero})`;
-    }
+if (dadosCientificos && Array.isArray(dadosCientificos.numeros) && dadosCientificos.numeros.length > 0) {
+    // Ex.: "4 / 6" quando empatar, ou apenas "4" quando for único
+    vHabDefFinal = dadosCientificos.numeros.join(" / ");
 }
 
     const introProfissionalTexto = `
