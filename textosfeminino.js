@@ -258,7 +258,7 @@ inclinacoes: {
 <p>Esses comportamentos repetitivos são inclinações naturais que, quando passam despercebidas, estreitam a forma como você lê e reage ao que acontece. Impulsionadas por reações automáticas ou falta de pausa para avaliar, essas repetições costumam dar a impressão de que tudo acontece fora do seu controle ou por culpa apenas de fatores externos.</p>
 
 <p>Perceber esses padrões antes de reagir é o que permite quebrar o ciclo. Ao assumir o controle consciente sobre essas inclinações repetitivas, você deixa de reagir no automático e passa a conduzir suas escolhas com mais clareza, critério e firmeza.</p>`,
- videoID: "z1nW3rmNeEI"
+ videoID: "R2dWWjAyNko2eEk"
     },
         
         
