@@ -3452,28 +3452,40 @@ function calcularHabilidadeEspecialCientifica(nomeEntrada) {
         .replace(/[\u0300-\u036f]/g, "")
         .toUpperCase();
 
-    // 1. Contagem de frequencia absoluta de cada letra (sem acentos)
     for (let letra of nomeProcessado) {
         if (/[A-ZÇ]/.test(letra)) {
             contagemLetras[letra] = (contagemLetras[letra] || 0) + 1;
         }
     }
 
-    // 2. Ordenar para identificar qual letra aparece MAIS vezes
     const ordenado = Object.entries(contagemLetras).sort((a, b) => b[1] - a[1]);
     if (ordenado.length === 0) return null;
 
-    const letraDominante = ordenado[0][0];
     const maiorFreq = ordenado[0][1];
 
-    // 3. Valor cabalístico e reducao para 1-9
-    const valorCabalistico = calcularValorLetra(letraDominante);
-    const numeroFinal = (valorCabalistico > 9) ? (valorCabalistico % 9 || 9) : valorCabalistico;
+    // Pega todas as letras que empataram na maior frequência
+    const letrasEmpatadas = ordenado
+        .filter(([, freq]) => freq === maiorFreq)
+        .map(([letra]) => {
+            const valorCabalistico = calcularValorLetra(letra);
+            const numeroFinal = (valorCabalistico > 9) ? (valorCabalistico % 9 || 9) : valorCabalistico;
+            return {
+                letra,
+                numero: numeroFinal
+            };
+        });
+
+    const principal = letrasEmpatadas[0];
 
     return {
-        letraOriginal: letraDominante,
-        numero: numeroFinal,
-        frequencia: maiorFreq
+        // Mantém os campos antigos para não quebrar outros trechos (como vHabDefFinal)
+        letraOriginal: principal.letra,
+        numero: principal.numero,
+        frequencia: maiorFreq,
+        // Novos campos com todos os empatados
+        empatadas: letrasEmpatadas,
+        letras: letrasEmpatadas.map(item => item.letra),
+        numerosUnicos: [...new Set(letrasEmpatadas.map(item => item.numero))]
     };
 }
 
@@ -3484,7 +3496,19 @@ function gerarHTMLHabilidadeEspecial(nomeEntrada) {
     const dados = calcularHabilidadeEspecialCientifica(nomeCompleto);
     if (!dados) return "";
 
-    const textoTalento = textos.talentosEspeciais[dados.numero]?.conteudo || textos.talentosEspeciais[dados.numero] || "";
+    const listaLetrasHTML = dados.letras.map(l => `"<strong>${l}</strong>"`).join(" e ");
+    const listaNumerosHTML = dados.numerosUnicos.map(n => `<strong>${n}</strong>`).join(" e ");
+    const rotuloFrequencia = dados.frequencia === 1 ? "1 vez" : `${dados.frequencia} vezes`;
+
+    const blocosTalentoHTML = dados.numerosUnicos.map(num => {
+        const textoTalento = textos.talentosEspeciais[num]?.conteudo || textos.talentosEspeciais[num] || "";
+        return `
+            <div class="bloco-talento-base">
+                <h4>Número ${num}</h4>
+                ${textoTalento}
+            </div>
+        `;
+    }).join("");
 
     const html = `
     <div class="separador-luxo">
@@ -3495,13 +3519,11 @@ function gerarHTMLHabilidadeEspecial(nomeEntrada) {
 
     <div class="page">
         <div class="intro-texto">
-            <p>A analise do seu nome completo (<strong>${nomeCompleto}</strong>) revelou predominancia na letra <strong>"${dados.letraOriginal}"</strong>, conectada ao numero <strong>${dados.numero}</strong>.</p>
+            <p>A analise do seu nome completo (<strong>${nomeCompleto}</strong>) revelou predominancia (${rotuloFrequencia}) na(s) letra(s) ${listaLetrasHTML}, conectada(s) ao(s) numero(s) ${listaNumerosHTML}.</p>
         </div>
 
         <div class="secao-resultado-cientifico">
-            <div class="bloco-talento-base">
-                ${textoTalento}
-            </div>
+            ${blocosTalentoHTML}
         </div>
     </div>
     `;
@@ -4312,12 +4334,19 @@ if (candidatosInclinacao.length > 0) {
     res.numEquilibrioInicio = numInicio; 
     res.numEquilibrioFim = numFim;
 
-    const dadosCientificos = calcularHabilidadeEspecialCientifica(nomeRaw);
+const dadosCientificos = calcularHabilidadeEspecialCientifica(nomeRaw);
 
-    let vHabDefFinal = "Equilibrado"; 
-    if (dadosCientificos) {
+let vHabDefFinal = "Equilibrado";
+if (dadosCientificos) {
+    if (Array.isArray(dadosCientificos.empatadas) && dadosCientificos.empatadas.length > 1) {
+        // Ex.: "A (1) / E (5)" ou "A (1) / J (1)"
+        vHabDefFinal = dadosCientificos.empatadas
+            .map(item => `${item.letra} (${item.numero})`)
+            .join(" / ");
+    } else {
         vHabDefFinal = `${dadosCientificos.letraOriginal} (${dadosCientificos.numero})`;
     }
+}
 
     const introProfissionalTexto = `
         <div style="margin-bottom: 15px; text-align: justify; line-height: 1.3;">
