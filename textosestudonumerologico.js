@@ -5556,55 +5556,55 @@ talentosEspeciais: {
         conteudo: `<h3>Habilidade de Iniciativa e Firmeza - 1</h3>
         <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, demonstra uma capacidade natural de assumir a frente, tomar decisões rápidas e sustentar a própria direção quando o cenário exige firmeza. Sua habilidade se destaca especialmente na iniciativa, na autonomia para resolver problemas sem depender de empurrão externo e na clareza para definir o que precisa ser feito.</p>
         <p>Na prática, essa força ajuda você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a abrir caminhos, manter o foco sob pressão e transformar intenção em movimento concreto com mais facilidade do que a média. Como ponto de atenção bem pontual, vale apenas cuidar para que a firmeza não vire teimosia excessiva quando outra pessoa apresentar um argumento válido.</p>`,
-        videoID: "Q1ExYmNHSWNYX3c="
+        videoID: "OTYxb2R3a0dyVXM"
     },
     2: {
         conteudo: `<h3>Habilidade de Mediação e Sensibilidade Prática - 2</h3>
         <p>Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma habilidade apurada para perceber nuances, escutar com atenção e ajustar o tom entre pessoas ou situações que estão desalinhadas. Seu ponto forte aparece na cooperação, na leitura fina do ambiente e na facilidade para construir acordos onde outros só enxergam impasse.</p>
         <p>Esse padrão favorece parcerias estáveis, trabalho em equipe e soluções equilibradas no dia a dia, permitindo que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, conduza conversas difíceis com tato e precisão. Apenas um detalhe mínimo para observar: não adiar escolhas importantes só para evitar um pequeno desconforto momentâneo.</p>`,
-        videoID: "F8bg1CTQ9HI"
+        videoID: "RnJ3elV2aFcxMFU"
     },
     3: {
         conteudo: `<h3>Habilidade de Expressão e Soluções Criativas - 3</h3>
         <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma facilidade marcante para gerar ideias, conectar pontos diferentes e comunicar raciocínios de forma clara e envolvente. Sua habilidade se sobressai quando o trabalho pede criatividade aplicada, agilidade mental para destravar bloqueios e capacidade de tornar um assunto complexo mais simples de entender.</p>
         <p>Essa força dá leveza, repertório e velocidade para criar e apresentar soluções, ajudando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a tirar projetos do papel com originalidade. O único cuidado simples é reservar um pouco de constância para concluir o que começou antes de pular para a próxima ideia.</p>`,
-        videoID: "F8bg1CTQ9HI"
+        videoID: "VjNQRHozMTFqNm8"
     },
     4: {
         conteudo: `<h3>Habilidade de Estrutura e Consistência - 4</h3>
         <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem uma aptidão sólida para organizar processos, criar método e manter consistência onde outras pessoas perdem o ritmo. Sua habilidade aparece na disciplina prática, na atenção a detalhes que evitam retrabalho e na capacidade de construir resultados duráveis passo a passo.</p>
         <p>Esse padrão oferece confiabilidade, previsibilidade e base firme para qualquer projeto que exija execução disciplinada, permitindo que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entregue com qualidade constante. Como ajuste pontual, basta manter uma margem mínima de flexibilidade quando surgirem mudanças úteis no caminho.</p>`,
-        videoID: "F8bg1CTQ9HI"
+        videoID: "d0tFWXJkSWZQVms"
     },
     5: {
         conteudo: `<h3>Habilidade de Adaptação e Resposta Rápida - 5</h3>
         <p>Seu ponto forte, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está na rapidez para se adaptar a mudanças, ler cenários instáveis e agir sem travar quando o plano inicial muda. Você demonstra facilidade para experimentar caminhos novos, aprender na prática e responder com agilidade diante do imprevisto.</p>
         <p>Essa habilidade dá mobilidade, versatilidade e fôlego para lidar com ambientes dinâmicos, ajudando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a encontrar saídas práticas onde tudo parece parado. Um detalhe mínimo para ficar de olho é pausar alguns segundos antes de responder no calor do momento.</p>`,
-        videoID: "F8bg1CTQ9HI"
+        videoID: "SlJ4RzJCclpFcEU"
     },
     6: {
         conteudo: `<h3>Habilidade de Cuidado e Senso de Responsabilidade - 6</h3>
         <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, apresenta uma habilidade natural para assumir responsabilidades, zelar pelo que está sob sua guarda e manter padrões altos de comprometimento e ordem. Seu destaque está na atenção ao bem-estar do grupo, no senso de dever e na postura cuidadosa com aquilo que importa.</p>
         <p>Essa capacidade fortalece vínculos, eleva o nível de cuidado nos detalhes e dá segurança às pessoas ao redor, permitindo que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sustente compromissos com seriedade. Vale apenas observar com leveza para não assumir sozinho(a) exigências que não são suas.</p>`,
-        videoID: "F8bg1CTQ9HI"
+        videoID: "SkVIWEdnWDFiRzQ"
     },
     7: {
         conteudo: `<h3>Habilidade de Análise e Profundidade Técnica - 7</h3>
         <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem uma habilidade destacada para investigar a fundo, analisar dados com critério e identificar falhas ou padrões que passam despercebidos. Sua força está no rigor intelectual, na pesquisa cuidadosa e na capacidade de chegar a conclusões bem fundamentadas.</p>
         <p>Esse padrão traz precisão, critério técnico e qualidade apurada em decisões complexas, ajudando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a construir análises consistentes e confiáveis. Como ponto mínimo de atenção, lembre-se de compartilhar suas conclusões de forma acessível sem se fechar totalmente ao diálogo.</p>`,
-        videoID: "F8bg1CTQ9HI"
+        videoID: "WVRXQUtwMmNydEk"
     },
     8: {
         conteudo: `<h3>Habilidade de Gestão e Execução Estratégica - 8</h3>
         <p>Sua habilidade central, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está na capacidade de organizar recursos, enxergar o quadro completo e conduzir metas com foco em resultado concreto. Você mostra facilidade para estruturar planos, assumir responsabilidade por grandes entregas e manter firmeza na execução.</p>
         <p>Essa força favorece liderança prática, senso de proporção e capacidade de realizar projetos de maior porte, permitindo que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transforme estratégia em avanço real. Apenas um cuidado pontual: dosar a pressão sobre o ritmo dos outros quando a meta apertar.</p>`,
-        videoID: "F8bg1CTQ9HI"
+        videoID: "NktmdV81anFqNjA"
     },
     9: {
         conteudo: `<h3>Habilidade de Visão Ampla e Empatia Prática - 9</h3>
         <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma habilidade marcante para enxergar o panorama mais amplo, compreender diferentes perspectivas humanas e agir com generosidade e senso de propósito. Sua força aparece na empatia, na capacidade de somar com o coletivo e na visão madura diante de desafios maiores.</p>
         <p>Esse padrão amplia o alcance das suas ações e facilita conexões verdadeiras, ajudando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a contribuir de forma significativa ao seu redor. Como ajuste mínimo, basta preservar seus próprios limites de tempo e energia ao ajudar os outros.</p>`,
-        videoID: "F8bg1CTQ9HI"
+        videoID: "aS1yU0U4d05BY2c"
     }
 },
  
