@@ -6028,55 +6028,55 @@ window.bancoEquilibrioUnificado = {
             conteudo: `<h3>Início Direto e Conclusão Independente (1 → 1)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com iniciativa própria, tomando a frente logo no primeiro passo e encarando desafios com autonomia. Sua atitude inicial é direta e decidida, sem esperar que outras pessoas puxem o movimento para você começar.</p>
             <p>Para concluir o que inicia, você mantém a mesma independência e firmeza, preferindo conduzir os fechamentos no seu próprio comando. Esse padrão favorece entregas rápidas e decisões autônomas, pedindo apenas atenção para não fechar portas a boas parcerias quando o fechamento exigir troca.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "IVB0UzNINW9ZSlow"
         },
         "1-2": {
             conteudo: `<h3>Início Decidido e Conclusão Ajustada (1 → 2)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra nas oportunidades com impulso próprio e atitude firme diante de obstáculos, assumindo a partida com clareza de direção. O primeiro passo costuma ser rápido e determinado, marcando o tom de quem não fica parado esperando o cenário se resolver sozinho.</p>
             <p>Na hora de concluir, porém, sua atitude ganha escuta, sensibilidade e ajuste fino com pessoas ou detalhes que precisam de acordo. A combinação funciona bem quando você usa a iniciativa do 1 para abrir caminho e a cooperação do 2 para alinhar os últimos passos sem perder o ritmo de fechamento.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "TmZxLTFMeTlXZlE"
         },
         "1-3": {
             conteudo: `<h3>Início Firme e Conclusão Expressiva (1 → 3)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas frentes com postura ativa e objetiva, buscando abrir espaço e vencer obstáculos logo na largada. Sua inclinação inicial é de quem assume o movimento com praticidade e não teme dar o primeiro passo.</p>
             <p>Para concluir o que começa, você tende a buscar soluções criativas, comunicação clara e adaptabilidade para resolver as etapas finais. Esse cruzamento dá agilidade e fôlego para finalizar projetos, pedindo apenas foco no encerramento prático para não dispersar antes do ponto final.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "osQF88e2A2o"
         },
         "1-4": {
             conteudo: `<h3>Início Impulsionado e Conclusão Metódica (1 → 4)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com iniciativa e coragem para romper a inércia inicial, reagindo aos obstáculos com atitude de quem quer fazer acontecer. O começo costuma ter impulso rápido e determinação para colocar o projeto em marcha.</p>
             <p>Já na conclusão, sua capacidade se apoia em ordem, rotina, disciplina e cuidado prático com os detalhes que sustentam o resultado. É uma dinâmica forte para tirar ideias do papel e levá-las até o fim com consistência, desde que você não trave a partida por exigir controle excessivo logo no início.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "RkZvcW1YZlB0Q2s"
         },
         "1-5": {
             conteudo: `<h3>Início Resoluto e Conclusão Adaptável (1 → 5)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, parte para o ataque ao ver uma oportunidade, mostrando iniciativa e disposição para enfrentar obstáculos de frente no primeiro momento. Sua inclinação inicial é dinâmica e voltada à ação direta.</p>
             <p>Ao concluir, você se destaca pela capacidade de ajustar a rota, lidar com imprevistos e resolver pendências com agilidade prática. Esse padrão favorece fechamentos rápidos e flexíveis, exigindo apenas constância suficiente para não perder o interesse logo antes da última etapa.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "dm5idk9YWGl4LVU"
         },
         "1-6": {
             conteudo: `<h3>Início Autônomo e Conclusão Comprometida (1 → 6)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, assume a iniciativa ao abordar oportunidades e encara obstáculos com firmeza pessoal, definindo sua própria posição desde o começo. A atitude inicial carrega autonomia e disposição para agir sem depender de terceiros.</p>
             <p>Na conclusão, você tende a ser responsável, cuidadoso e fiel ao compromisso assumido, buscando entregar algo bem estruturado e confiável para quem depende do resultado. Esse equilíbrio une coragem para começar e senso de dever para fechar, pedindo apenas que você não carregue sozinho exigências além do necessário.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "ek44cGt1RXpjbWM"
         },
         "1-7": {
             conteudo: `<h3>Início Ativo e Conclusão Analítica (1 → 7)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, demonstra atitude de partida clara diante de oportunidades e não recua facilmente quando surgem os primeiros obstáculos. Sua inclinação inicial é de quem dá o passo com decisão e postura própria.</p>
             <p>Para concluir o projeto, você costuma exigir critério, revisão técnica e coerência antes de dar a entrega por encerrada. Essa combinação junta ação inicial com rigor no fechamento, pedindo apenas atenção para não alongar demais a análise na reta final quando a execução já está pronta.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "QmtDSEFSWWJNNzQ"
         },
         "1-8": {
             conteudo: `<h3>Início Pioneiro e Conclusão Estratégica (1 → 8)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades com iniciativa firme e encara obstáculos com determinação para abrir espaço e assumir o comando inicial. O primeiro passo costuma ser objetivo e voltado à ação concreta.</p>
             <p>Na hora de concluir, sua capacidade se fortalece na organização de recursos, na visão de resultado e na firmeza para fechar o ciclo com solidez. É um padrão forte para começar e realizar com peso prático, pedindo apenas medida na pressão sobre si mesmo e sobre os outros durante a finalização.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "aGpzTXRlcnhlN1k"
         },
         "1-9": {
             conteudo: `<h3>Início Determinado e Conclusão Abrangente (1 → 9)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, toma a iniciativa diante de novas possibilidades e enfrenta os obstáculos iniciais com firmeza e autonomia. Sua atitude de partida é direta, buscando movimentar o cenário sem hesitação.</p>
             <p>Ao concluir, você tende a enxergar o quadro mais amplo, encerrando ciclos com visão madura e atenção ao impacto maior daquilo que foi realizado. Essa combinação une impulso próprio para começar e amplitude para fechar, pedindo apenas clareza de limite para não assumir mais peso do que o escopo exige no fim.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "dUtkNDhfSjFuSGs"
         },
 
    "2-1": {
