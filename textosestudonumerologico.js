@@ -6083,55 +6083,55 @@ window.bancoEquilibrioUnificado = {
             conteudo: `<h3>Início Cauteloso e Conclusão Independente (2 → 1)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com observação, sensibilidade e leitura do ambiente antes de dar o primeiro passo. Sua atitude inicial costuma avaliar o contexto e buscar sintonia, evitando avançar no escuro logo na largada.</p>
             <p>Na hora de concluir, porém, você assume autonomia, firmeza e decisão própria para fechar o ciclo com independência. Essa dinâmica ajuda quando você não deixa a cautela inicial adiar a partida e usa a firmeza final para encerrar o projeto por conta própria.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "cHdjeUNQdFZkWGs"
         },
         "2-2": {
             conteudo: `<h3>Início Sensível e Conclusão Ajustada (2 → 2)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara novas oportunidades e obstáculos com atenção ao contexto, escuta e busca de equilíbrio antes de agir. Sua inclinação inicial prefere entender o cenário e alinhar forças antes de acelerar.</p>
             <p>Para concluir o que inicia, você mantém o mesmo cuidado com acordos, detalhes e harmonia entre as partes envolvidas. Esse padrão favorece fechamentos bem alinhados, pedindo apenas que você decida com clareza sem adiar a conclusão por receio de desagradar.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "bEVuWTNmSUdHamM"
         },
         "2-3": {
             conteudo: `<h3>Início Observador e Conclusão Expressiva (2 → 3)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com cautela e leitura prévia, medindo o terreno antes de se expor no primeiro passo. Sua atitude inicial tende a ser mais receptiva e cuidadosa do que impulsiva.</p>
             <p>Já para concluir, você ganha facilidade de expressão, soluções criativas e agilidade para destravar e apresentar o resultado final. É uma combinação útil quando a leitura inicial do 2 dá base para a realização comunicativa do 3 fechar o ciclo com fluidez.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "VUV4MFB6a3JuaEk"
         },
         "2-4": {
             conteudo: `<h3>Início Receptivo e Conclusão Metódica (2 → 4)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em novas situações com atenção ao entorno, avaliando nuances e possíveis atritos antes de avançar. Sua atitude inicial busca entendimento e estabilidade antes de assumir compromissos maiores.</p>
             <p>Na conclusão, sua capacidade se apoia em método, ordem prática e disciplina para estruturar e entregar o que foi iniciado. Esse cruzamento junta sensibilidade de partida com consistência no fechamento, pedindo apenas firmeza para começar sem esperar todas as garantias.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "dXlVbHZBOUUyelk"
         },
         "2-5": {
             conteudo: `<h3>Início Cuidadoso e Conclusão Adaptável (2 → 5)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com tato e observação inicial, procurando compreender o cenário antes de se movimentar. O primeiro passo costuma ser ponderado e atento às reações ao redor.</p>
             <p>Ao concluir, você se mostra ágil para ajustar o plano, lidar com mudanças de última hora e resolver etapas práticas com rapidez. Essa combinação equilibra uma partida cautelosa com um encerramento flexível, pedindo apenas constância para não mudar o rumo no meio do fechamento.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "TFBxOGdULWZOa0E"
         },
         "2-6": {
             conteudo: `<h3>Início Cooperativo e Conclusão Comprometida (2 → 6)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, encara oportunidades e obstáculos com sensibilidade, escuta e disposição para avaliar como cada parte se encaixa no início. Sua atitude inicial costuma priorizar alinhamento e cautela diante de conflitos.</p>
             <p>Na hora de concluir, você assume responsabilidade, cuidado com os detalhes e compromisso firme com o resultado entregue. Esse padrão favorece conclusões confiáveis e cuidadosas, pedindo apenas que você não adie decisões finais por excesso de preocupação com o agrado alheio.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "cml3R3g0Q3pqYWs"
         },
         "2-7": {
             conteudo: `<h3>Início Ponderado e Conclusão Analítica (2 → 7)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda novas frentes com observação e cautela, buscando ler o cenário e evitar atritos desnecessários ao dar o primeiro passo. Sua inclinação inicial prefere avaliar antes de reagir.</p>
             <p>Para concluir o projeto, você tende a aplicar critério, análise detalhada e verificação técnica para garantir que o fechamento esteja consistente. É uma dinâmica que une cautela de início e rigor na conclusão, pedindo apenas decisão prática na hora de encerrar sem prolongar indefinidamente a revisão.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "LVFneEpvNzhxQmc"
         },
         "2-8": {
             conteudo: `<h3>Início Sensível e Conclusão Estratégica (2 → 8)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra nas oportunidades com atenção ao contexto e leitura cuidadosa dos obstáculos, medindo o ambiente antes de avançar. Sua atitude inicial costuma ser mais cautelosa e receptiva.</p>
             <p>Na conclusão, porém, você ganha firmeza prática, visão de resultado e capacidade de organizar o encerramento com autoridade e foco. Esse cruzamento funciona bem quando a leitura atenta do 2 prepara o terreno para a realização objetiva do 8 fechar o ciclo.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "XzBhSXU5SUx2Zzg"
         },
         "2-9": {
             conteudo: `<h3>Início Atento e Conclusão Abrangente (2 → 9)</h3>
             <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, aborda oportunidades e obstáculos com sensibilidade e escuta, procurando compreender o cenário e as pessoas envolvidas logo no começo. Sua atitude inicial valoriza equilíbrio antes de tomar impulso.</p>
             <p>Ao concluir, você tende a fechar o ciclo com visão mais ampla, senso de conjunto e capacidade de consolidar o que foi construído. Essa combinação junta tato na partida e amplitude na realização, pedindo apenas clareza de limites para encerrar sem absorver peso excessivo.</p>`,
-            videoID: "F8bg1CTQ9HI"
+            videoID: "LTlsTlJQTlFNTUU"
         },
 
    "3-1": {
